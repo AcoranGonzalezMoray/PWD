@@ -1,0 +1,137 @@
+/*CSS UBICATION*/
+.ubication {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+.ubication img {
+  width: 500px;
+
+}
+.description-ubication{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width:50%;
+}
+
+
+/*CSS PRESENTATION*/
+.presentation {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+ .presentation img {
+    width: 250px;
+
+ }
+
+ .description {
+   padding: 20px;
+   width:50%;
+ }
+
+/*CSS CAROUSEL*/
+.carousel {
+  width: 100%;
+}
+.carousel img {
+  width: 100%;
+  height: 300px;
+}
+
+/*CSS  HEADER*/
+header {
+  background-color: #888888;
+  width: 100%;
+  position: fixed; /*absolute para que se mueva solo el ul*/
+  left: 0;
+  top: 0;
+}
+
+nav{
+  float: left;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.navbar-logo {
+  display: inline-block;
+  vertical-align: middle;
+  width: 90px;
+}
+.navbar-logo img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+nav ul {
+  list-style: none;
+  height: fit-content;
+  position: fixed;
+  right: 0;
+}
+nav ul li {
+  float: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li:hover {
+  background: #eca023;
+}
+
+
+
+
+/*CSS FOOTER*/
+
+footer {
+  background-color: grey;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: auto;
+
+  margin-top: 20px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-col1 {
+  width: 30%;
+}
+footer div p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.footer-col2, footer-col3 {
+  width: 40%;
+}
+
+.footer-logo {
+  height: 120px;
+  width: 120px;
+  margin-top: 10px;
+}
+
+/*CSS MAIN*/
+main {
+  margin-top: 100px;
+}
