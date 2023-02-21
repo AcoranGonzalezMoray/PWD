@@ -1,3 +1,72 @@
+/*CSS SIGN UP IN */
+.imgUser {
+  width:150px;
+  height:150px;
+  border-radius:150px;
+}
+.register-login-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-login-form form {
+  width: 350px;
+  text-align: center;
+  background-color: #fff;
+  padding: 50px;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+}
+.register-login-box {
+  margin-top: 20px;
+  width: 350px;
+  text-align: center;
+  background-color: #fff;
+  padding: 50px;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+}
+
+.register-login-form h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.register-login-form input[type="text"],
+.register-login-form input[type="email"],
+.register-login-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+}
+
+.register-login-form button {
+  background-color: #0095f6;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.register-login-form button:hover {
+  background-color: #0072b1;
+}
+
+.register-login-form p,.register-login-form a {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+
+
 /*CSS UBICATION*/
 .ubication {
   width: 100%;
@@ -76,7 +145,7 @@ nav ul {
   list-style: none;
   height: fit-content;
   position: fixed;
-  right: 0;
+  right: 15px;
 }
 nav ul li {
   float: left;
@@ -91,11 +160,28 @@ nav ul li a {
   text-decoration: none;
 }
 
-nav ul li:hover {
+nav ul li:hover,.dropdown-content-1:hover, .dropdown-content-2:hover   {
   background: #eca023;
 }
 
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+}
 
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 
 /*CSS FOOTER*/
