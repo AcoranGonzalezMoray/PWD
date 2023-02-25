@@ -1,3 +1,17 @@
+/*CSS QUE HACEMOS*/
+.whatwedo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-inline: 50px;
+  margin-bottom: 40px;
+}
+
+.whatwedo h1, .whatwedo p {
+  margin: 20px;
+}
+
+
 
 /*CSS TALLER*/
 .reserve {
