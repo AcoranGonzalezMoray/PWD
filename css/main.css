@@ -1,3 +1,22 @@
+
+
+
+
+/*CSS BOTONES*/
+.btn-color {
+  background-color: #378311;
+  border-radius: 0.375rem;
+}
+.btn-color a {
+  color: white;
+  width: 100%;
+}
+
+.btn-color a:hover  {
+  color: white;
+  background-color: #29650f;
+}
+
 /*CSS QUE HACEMOS*/
 .whatwedo {
   display: flex;
