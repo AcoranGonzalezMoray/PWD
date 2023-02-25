@@ -1,3 +1,4 @@
+
 /*CSS TALLER*/
 .reserve {
   margin-left: 310px;
@@ -14,7 +15,7 @@
   height: 500px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: flex-start;
 
 }
 
@@ -46,6 +47,7 @@ aside {
 .category-content {
   display: none;
   min-width: 160px;
+  margin-left: 50px;
 }
 
 .category-content a {
@@ -62,6 +64,14 @@ aside {
 .product-title {
   text-align: center;
 }
+.product-aline {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .filters {
   display: flex;
   flex-direction: row;
@@ -75,9 +85,8 @@ aside {
   font-size: 16px;
   border-radius: 5px;
 }
-.order-select{
-  position: fixed;
-  right: 100px;
+.filters select {
+  margin: 30px;
 }
 .products {
   margin-left: 310px;
@@ -89,9 +98,10 @@ aside {
 }
 
 .product {
-  width: 23.33%;
+  padding: 15px;
   float: left;
   text-align: center;
+  margin-right: 20px;
   margin-bottom: 30px;
 }
 
@@ -118,22 +128,23 @@ aside {
 
 /*CSS COLOR*/
 nav {
-  background-color: #fff;
-  box-shadow: 1px 1px 2px #000000;
+  background-color: rgba(42,45,49,1);
 }
 nav ul li a {
-  color: black;
+  color: white;
 }
-nav ul li:hover,.dropdown-content-1:hover, .dropdown-content-2:hover   {
-  background: #99d98c;
+nav ul li a:hover,.dropdown-content-1:hover, .dropdown-content-2:hover   {
+  color: #99d98c;
 }
 .dropdown-content {
-  background-color: #fff;
+  background-color: rgba(42,45,49,1);
 }
 
+footer div a:hover {
+  color:  #99d98c;
+}
 
-
-/*CSS SIGN UP IN */
+  /*CSS SIGN UP IN */
 .imgUser {
   width:150px;
   height:150px;
@@ -148,7 +159,7 @@ nav ul li:hover,.dropdown-content-1:hover, .dropdown-content-2:hover   {
 }
 
 .register-login-form form {
-  width: 350px;
+  width: 450px;
   text-align: center;
   background-color: #fff;
   padding: 50px;
@@ -157,7 +168,7 @@ nav ul li:hover,.dropdown-content-1:hover, .dropdown-content-2:hover   {
 }
 .register-login-box {
   margin-top: 20px;
-  width: 350px;
+  width: 450px;
   text-align: center;
   background-color: #fff;
   padding: 50px;
@@ -244,12 +255,11 @@ nav ul li:hover,.dropdown-content-1:hover, .dropdown-content-2:hover   {
  }
 
 /*CSS CAROUSEL*/
-.carousel {
+.carousel-home {
   width: 100%;
 }
-.carousel img {
-  width: 100%;
-  height: 300px;
+.carousel-home img {
+  height: 350px;
 }
 
 /*CSS  HEADER*/
@@ -258,12 +268,14 @@ header {
   position: fixed; /*absolute para que se mueva solo el ul*/
   left: 0;
   top: 0;
+  z-index: 3;
 }
 
 nav{
   float: left;
   display: flex;
   flex-direction: row;
+  align-items: center;
   width: 100%;
 }
 .navbar-logo {
@@ -273,7 +285,8 @@ nav{
 }
 .navbar-logo img{
   display: block;
-  width: 100%;
+  width: 150px;
+  height: 150px;
   height: auto;
 }
 nav ul {
@@ -322,7 +335,8 @@ footer {
   left: 0;
   width: 100%;
   height: auto;
-
+  background-color: rgba(42,45,49,1);
+  color: white;
   margin-top: 20px;
 
   display: flex;
@@ -334,9 +348,12 @@ footer {
 .footer-col1 {
   width: 30%;
 }
-footer div p {
+footer div p, footer div a  {
   font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: white;
 }
+
 .footer-col2, footer-col3 {
   width: 40%;
 }
@@ -345,9 +362,13 @@ footer div p {
   height: 120px;
   width: 120px;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /*CSS MAIN*/
 main {
   margin-top: 100px;
+}
+.p-justify {
+  text-align: justify;
 }
