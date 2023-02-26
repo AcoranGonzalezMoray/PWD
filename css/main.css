@@ -1,3 +1,73 @@
+/*CSS PANEL DE CONTROL ROL: ADMIN*/
+.content-tab {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+.content-op-1 {
+  width: 65%;
+  border-radius: 10px;
+  border-left: 3px solid #239107 !important;
+  background-color: #ffffff;
+  overflow-y: scroll;
+}
+.content-op-2 {
+  width: 25%;
+  border-radius: 10px;
+  border-left: 3px solid #239107 !important;
+  background-color: #ffffff;
+  overflow-y: scroll;
+}
+
+.content-op-3 {
+  width: 45%;
+  border-radius: 10px;
+  border-left: 3px solid #239107 !important;
+  background-color: #ffffff;
+  overflow-y: scroll;
+}
+.content-op-4 {
+  width: 45%;
+  border-radius: 10px;
+  border-left: 3px solid #239107 !important;
+  background-color: #ffffff;
+  overflow-y: scroll;
+}
+
+.count-tab {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.count {
+  background-color: white;
+  border-left: 3px solid #239107 !important;
+  width: 15%;
+  text-align: center;
+  border-radius: 10px;
+  margin: 10px;
+}
+.aside-dashboard {
+  position: fixed;
+  left: 0;
+  top:95px;
+  width: 300px;
+  height: 100%;
+  padding-left: 15px;
+  font-style: italic;
+  background-color: #d5d8d5;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+
+
+
+
+
 
 /*CSS BOTONES*/
 .btn-color {
@@ -224,8 +294,8 @@ footer div a:hover {
   border: 1px solid #dbdbdb;
   border-radius: 3px;
 }
-
-.register-login-form button {
+.register-login-form .button {
+  text-decoration: none;
   background-color: #378311;
   color: #fff;
   font-weight: 600;
@@ -236,8 +306,9 @@ footer div a:hover {
   cursor: pointer;
 }
 
-.register-login-form button:hover {
+.register-login-form .button:hover {
   background-color: #36b920;
+  color: white;
 }
 
 .register-login-form p,.register-login-form a {
