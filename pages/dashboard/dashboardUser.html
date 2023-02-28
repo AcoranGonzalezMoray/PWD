@@ -20,7 +20,7 @@
         </svg><br>
         <h3>Usuario</h3>
       </div>
-      <p>Funcionlidades</p>
+      <p>Funcionalidades</p>
       <div class="accordion" id="accordionPanelsStayOpenExample">
         <div class="accordion-item">
           <h2 class="accordion-header" id="panelsStayOpen-headingOne">
@@ -64,24 +64,37 @@
 
 
   <section class="products">
+    <h1>Tu perfil</h1>
+    <hr>
     <div class="profile">
-      <h1>Tu perfil</h1>
-      <hr>
-      <div class="name">
-        <p>Nombre de usuario: xxxxxxx</p>
-        <p>e-mail: example@example.com</p>
-      </div>
-      <div  class="btn-color">
-        <a ref="" class="btn">Cambiar nombre</a>
-      </div>
-      <div class="password">
-        <input class="shadow-lg" type="password" placeholder="Contraseña antigua">
-        <input class="shadow-lg" type="password" placeholder="Contraseña nueva">
-        <input class="shadow-lg" type="password" placeholder="Contraseña nueva">
-        <div  class="btn-color">
-          <a ref="#" class="btn">Cambiar contraseña</a>
+      <div class="user-data">
+        <div class="name">
+          <p> <strong>Nombre de usuario</strong></p>
+          <input class="shadow-lg" type="text" readonly value="name">
+          <div  class="btn-color change-name">
+            <a ref="" class="btn">Cambiar nombre</a>
+          </div>
+          <p> <strong>E-mail</strong></p>
+          <input class="shadow-lg" type="text" readonly value="example@example.com">
+          <div  class="btn-color change-name">
+            <a ref="" class="btn">Cambiar correo</a>
+          </div>
+        </div>
+
+        <div class="password">
+          <input class="shadow-lg" type="password" placeholder="Contraseña antigua">
+          <input class="shadow-lg" type="password" placeholder="Contraseña nueva">
+          <input class="shadow-lg" type="password" placeholder="Contraseña nueva">
+          <div  class="btn-color">
+            <a ref="#" class="btn">Cambiar contraseña</a>
+          </div>
         </div>
       </div>
+
+      <div class="user-image">
+        <img src="/PWM-TEMPLATES/img/templatebox.png" class="d-block w-100" alt="TEMPLATE">
+      </div>
+
 
     </div>
 
