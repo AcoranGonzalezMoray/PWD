@@ -299,6 +299,7 @@
 
   .product img {
     max-width: 100%;
+    height: 12rem;
   }
 
   .product h2 {
@@ -310,7 +311,9 @@
   .product p {
     font-size: 1rem;
     margin-top: 5px;
-    margin-bottom: 10px;
+    max-width: 200px;
+    height: 5rem;
+    overflow: hidden;
   }
 
   .footer-store {
