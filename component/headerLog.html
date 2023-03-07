@@ -1,23 +1,41 @@
-<nav class="shadow-lg">
-  <a class="navbar-logo" href="#">
-    <img class="logo" src="/PWM-TEMPLATES/img/LOGO.png">
-  </a>
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-logo" href="#">
+      <img class="logo" src="/PWM-TEMPLATES/img/LOGO.png">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+        <li class="nav-item">
+          <a class="nav-link active"  aria-current="page" href="\PWM-TEMPLATES\index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="/PWM-TEMPLATES/pages/whatWeDo.html">¿Qué hacemos?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="/PWM-TEMPLATES/pages/store.html">Tienda</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-primary text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Taller
+          </a>
+          <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/PWM-TEMPLATES/pages/workshopStore.html">Productos</a></li>
+            <li><a class="dropdown-item" href="/PWM-TEMPLATES/pages/workshopService.html">Servicios</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+          <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+        </svg>
+        </li>
+      </ul>
 
-  <ul>
-    <li><a href="\PWM-TEMPLATES\index.html">Inicio</a></li>
-    <li><a href="/PWM-TEMPLATES/pages/whatWeDo.html">¿Qué hacemos?</a></li>
-    <li><a href="/PWM-TEMPLATES/pages/store.html">Tienda</a></li>
-    <li class="dropdown">
-      <a href="#"  >Taller</a>
-      <div class="dropdown-content">
-        <a class="dropdown-content-1"href="/PWM-TEMPLATES/pages/workshopStore.html">Productos</a>
-        <a class="dropdown-content-2"href="/PWM-TEMPLATES/pages/workshopService.html">Servicios</a>
-      </div>
-    </li>
-    <li><a href="\PWM-TEMPLATES\pages\dashboard\dashboardAdmin.html">
-      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
-      </svg>
-    </a></li>
-  </ul>
+    </div>
+  </div>
 </nav>
+
+
+
