@@ -180,7 +180,12 @@
   }
 
   .whatwedo h1, .whatwedo p {
-    margin: 20px;
+    margin: 2rem;
+    max-width: 60%;
+  }
+
+  .whatwedo h1 {
+    color: #21b916;
   }
 
 
@@ -298,7 +303,12 @@
   }
 
   .product img {
-    max-width: 100%;
+    max-width: 200px;
+    max-height: 200px;
+    overflow: hidden;
+  }
+
+  .img-product {
     height: 12rem;
   }
 
@@ -439,9 +449,8 @@
     align-items: center;
 
   }
-  .ubication img {
-    width: 500px;
-
+  .ubication iframe {
+    margin-bottom: 1rem;
   }
   .description-ubication{
     display: flex;
@@ -462,9 +471,13 @@
     justify-content: center;
     margin-top: 5px;
   }
-  .presentation img {
-    width: 250px;
 
+  .presentation h1 {
+    color: #21b916;
+    margin-bottom: 1rem;
+  }
+  .presentation img {
+    width: 600px;
   }
 
   .description {
@@ -474,10 +487,13 @@
 
   /*CSS CAROUSEL*/
   .carousel-home {
-    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1.5rem;
   }
-  .carousel-home img {
-    height: 350px;
+
+  .carousel-item img {
+    max-height: 500px;
+    margin-left: 550px;
   }
 
   /*CSS  HEADER*/
@@ -569,7 +585,36 @@
 
   .p-justify {
     text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
   }
+
+  /*Teléfono, Correo y Ubicación del index*/
+  .dato-icono {
+    display: flex;
+    align-items: center;
+    vertical-align: center;
+  }
+
+  .dato-icono h2 {
+    margin: 1rem;
+  }
+
+  .dato-icono svg {
+    width: 2rem;
+    height: 2rem;
+    color: #21b916;
+  }
+
+  .dato-icono a {
+    text-decoration: none;
+    color: black;
+    margin: 1rem;
+  }
+
+  dato-icono a:hover {
+    color: #21b916 !important;
+  }
+
 
 
 
@@ -1020,7 +1065,6 @@
   }
   .ubication img {
     width: 350px;
-
   }
   .description-ubication{
     display: flex;

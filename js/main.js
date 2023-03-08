@@ -1,6 +1,6 @@
 
 // Cargar el archivo JSON con fetch
-fetch('/PWM-TEMPLATES/json/archivo.json')
+fetch('/PWM-TEMPLATES/json/archivo2.json')
   .then(response => response.json())
   .then(data => {
     const productos = data['Catalogo Tienda']['Productos'];
@@ -14,14 +14,14 @@ fetch('/PWM-TEMPLATES/json/archivo.json')
       // Reemplazar los valores del nombre corto y el PVP con los valores del producto actual
       productClone.querySelector('.card-text').textContent = producto['Nombre Corto'];
       productClone.querySelector('.card-title').textContent = producto['PVP'];
-      productClone.querySelector('.card-img-top').setAttribute('src', producto['Imagen']);
+      productClone.querySelector('.card-img-top').setAttribute('src', producto['IMAGEN']);
       // Agregar el clon al contenedor de productos
       contenedorProductos.appendChild(productClone);
     });
   })
   .catch(error => console.error('Error al cargar el archivo JSON:', error));
 
-fetch('/PWM-TEMPLATES/json/archivo.json')
+fetch('/PWM-TEMPLATES/json/archivo2.json')
   .then(response => response.json())
   .then(data => {
     const productos = data['Catalogo Taller']['Productos'];
@@ -35,7 +35,7 @@ fetch('/PWM-TEMPLATES/json/archivo.json')
       // Reemplazar los valores del nombre corto y el PVP con los valores del producto actual
       productClone.querySelector('.card-text').textContent = producto['Nombre Corto'];
       productClone.querySelector('.card-title').textContent = producto['PVP'];
-      productClone.querySelector('.card-img-top').setAttribute('src', producto['Imagen']);
+      productClone.querySelector('.card-img-top').setAttribute('src', producto['IMAGEN']);
       // Agregar el clon al contenedor de productos
       contenedorProductos.appendChild(productClone);
     });

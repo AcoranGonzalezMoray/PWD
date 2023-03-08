@@ -1,0 +1,4150 @@
+{
+  "Catalogo Tienda": {
+    "Productos":[
+      {
+        "posCode": "19000167",
+        "PROVEEDOR": "SANTIAGO GUERRA GONZALEZ, S.L.",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "BOLLERIA",
+        "Nombre Corto": "BIZCOCHO 0% LA BELLA EASO",
+        "PVP": "2,90 €",
+        "IMAGEN": "https://www.bimbo.es/uploads/bimbocorp/lbe_bizcocho_limon_0.png?7",
+        "Cod Barras": "8410022115330"
+      },
+      {
+        "posCode": "19000196",
+        "PROVEEDOR": "SANTIAGO GUERRA GONZALEZ, S.L.",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "BOLLERIA",
+        "Nombre Corto": "BIZCOCHO LIMON LBE 230G",
+        "PVP": "2,45 €",
+        "IMAGEN": "https://www.bimbo.es/uploads/bimbocorp/lbe_bizcocho_limon.png?7",
+        "Cod Barras": "8410022115347"
+      },
+      {
+        "posCode": "19000161",
+        "PROVEEDOR": "SANTIAGO GUERRA GONZALEZ, S.L.",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "BOLLERIA",
+        "Nombre Corto": "BRIOCHE TRADICIONAL 216G",
+        "PVP": "2,85 €",
+        "IMAGEN": "https://www.bimbo.es/uploads/bimbocorp/trb-brioche.png?7",
+        "Cod Barras": "8412600017616"
+      },
+      {
+        "posCode": "190646",
+        "PROVEEDOR": "TREBOL DE CHOCOLATE.DIEGO HERNANDEZ DIA",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "BOLLERIA",
+        "Nombre Corto": "CAMPESINA INTEGRAL EIDETESA",
+        "PVP": "1,50 €",
+        "IMAGEN": "https://eidetesa.com/wp-content/uploads/2022/11/producto-eidetesa-linea-campesina-frutos-rojos-full.png",
+        "Cod Barras": "8411439030513"
+      },
+      {
+        "posCode": "191047",
+        "PROVEEDOR": "TREBOL DE CHOCOLATE.DIEGO HERNANDEZ DIA",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "BOLLERIA",
+        "Nombre Corto": "CROISSANT BOMBON EIDETESA 130",
+        "PVP": "1,40 €",
+        "IMAGEN": "https://eidetesa.com/wp-content/uploads/2022/11/producto-eidetesa-regular-croissant-bombon-full.png",
+        "Cod Barras": "8411439002572"
+      },
+      {
+        "posCode": "19000096",
+        "PROVEEDOR": "TREBOL DE CHOCOLATE.DIEGO HERNANDEZ DIA",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "BOLLERIA",
+        "Nombre Corto": "CROISSANT FRANCES EIDETESA 150",
+        "PVP": "1,30 €",
+        "IMAGEN": "https://eidetesa.com/wp-content/uploads/2022/11/producto-eidetesa-regular-croissant-estilo-frances-full-1-1.png",
+        "Cod Barras": "8410022114616"
+      },
+      {
+        "posCode": "19000148",
+        "PROVEEDOR": "BIMBO DONUTS CANARIAS, S.L.U.",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "BOLLERIA",
+        "Nombre Corto": "CROISSANT LBE 10U",
+        "PVP": "2,10 €",
+        "IMAGEN": "https://www.bimbo.es/uploads/bimbocorp/08410022114418_C1N1_0.png?7",
+        "Cod Barras": "8410022115354"
+      },
+      {
+        "posCode": "190268",
+        "PROVEEDOR": "AHEMBO, S.L.",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "BOLLERIA",
+        "Nombre Corto": "CU A RELLENA DE CACAO EIDETES",
+        "PVP": "1,40 €",
+        "IMAGEN": "https://eidetesa.com/wp-content/uploads/2022/10/CUN%CC%83A_CHOCO.png",
+        "Cod Barras": "8411439008956"
+      },
+      {
+        "posCode": "191315",
+        "PROVEEDOR": "RUMARDI IMPORTACIONES, S.L.",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "BOLLERIA",
+        "Nombre Corto": "CU A WHITE EIDETESA 100GR",
+        "PVP": "1,40 €",
+        "IMAGEN": "https://eidetesa.com/wp-content/uploads/2022/10/CUN%CC%83A_WHITE.png",
+        "Cod Barras": "8410022113176"
+      },
+      {
+        "posCode": "190921",
+        "PROVEEDOR": "SANTIAGO GUERRA GONZALEZ, S.L.",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "BOLLERIA",
+        "Nombre Corto": "D. GLACE 3 OFERTA CD",
+        "PVP": "2,15 €",
+        "IMAGEN": "https://donuts.es/assets/img/donuts_classic1.png",
+        "Cod Barras": "8411439005573"
+      },
+      {
+        "posCode": "190920",
+        "PROVEEDOR": "SANTIAGO GUERRA GONZALEZ, S.L.",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "BOLLERIA",
+        "Nombre Corto": "DON DOCO 3 OFERTA CD",
+        "PVP": "2,15 €",
+        "IMAGEN": "https://donuts.es/assets/img/donuts_choco1.png",
+        "Cod Barras": "8411439033897"
+      },
+      {
+        "posCode": "19000152",
+        "PROVEEDOR": "BANDAMA, S.A.",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "BOLLERIA",
+        "Nombre Corto": "DONETTES CLASICOS 6U",
+        "PVP": "1,90 €",
+        "IMAGEN": "https://www.bimbo.es/uploads/bimbocorp/Donettes-Clasicos.png?7",
+        "Cod Barras": "8410022114944"
+      },
+      {
+        "posCode": "19000174",
+        "PROVEEDOR": "BANDAMA, S.A.",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "BOLLERIA",
+        "Nombre Corto": "DONETTES KAWAII 6U",
+        "PVP": "1,90 €",
+        "IMAGEN": "https://www.donettes.com/kawaii/assets/img/packshot.png",
+        "Cod Barras": "8410022115613"
+      },
+      {
+        "posCode": "19000153",
+        "PROVEEDOR": "PANADERIA PASTELERIA PULIDO",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "BOLLERIA",
+        "Nombre Corto": "DONETTES RAYADOS 6U",
+        "PVP": "1,90 €",
+        "IMAGEN": "https://www.bimbo.es/uploads/bimbocorp/Donettes-Rayados.png?7",
+        "Cod Barras": "8410022114951"
+      },
+      {
+        "posCode": "190651",
+        "PROVEEDOR": "SANTIAGO GUERRA GONZALEZ, S.L.",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "BOLLERIA",
+        "Nombre Corto": "DONUTS BOMBON BLANCO EIDETESA",
+        "PVP": "1,90 €",
+        "IMAGEN": "https://somosgentedonuts.com/wp-content/uploads/2020/01/Donuts-blanco-solo.png",
+        "Cod Barras": "8411439031350"
+      },
+      {
+        "posCode": "190531",
+        "PROVEEDOR": "SANTIAGO GUERRA GONZALEZ, S.L.",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "BOLLERIA",
+        "Nombre Corto": "DOOWY CHOCO/LECHE LA BELLA EA",
+        "PVP": "1,40 €",
+        "IMAGEN": "https://www.bimbo.es/uploads/bimbocorp/08410099571794_C1N1.png?7",
+        "Cod Barras": "8410099573675"
+      },
+      {
+        "posCode": "190630",
+        "PROVEEDOR": "SANTIAGO GUERRA GONZALEZ, S.L.",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "BOLLERIA",
+        "Nombre Corto": "GOFRE EIDETESA",
+        "PVP": "1,55 €",
+        "IMAGEN": "https://www.tutrebol.es/28186-large_default/qe-gofre-120grs-.jpg",
+        "Cod Barras": "8410022107595"
+      },
+      {
+        "posCode": "190113",
+        "PROVEEDOR": "AFFINITY PETCARE",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "BOLLERIA",
+        "Nombre Corto": "HERRADURA BOMBON EIDETESA",
+        "PVP": "1,40 €",
+        "IMAGEN": "https://eidetesa.com/wp-content/uploads/2022/10/HER_CHOC.png",
+        "Cod Barras": "8411444002086"
+      },
+      {
+        "posCode": "190114",
+        "PROVEEDOR": "SANTIAGO GUERRA GONZALEZ, S.L.",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "BOLLERIA",
+        "Nombre Corto": "HERRADURA EIDETESA",
+        "PVP": "1,40 €",
+        "IMAGEN": "https://eidetesa.com/wp-content/uploads/2022/10/HER.png",
+        "Cod Barras": "8411444002062"
+      },
+      {
+        "posCode": "190221",
+        "PROVEEDOR": "BIMBO DONUTS CANARIAS, S.L.U.",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "PANADERIA",
+        "Nombre Corto": "HOT DOGS BIMBO 6U",
+        "PVP": "1,75 €",
+        "IMAGEN": "https://www.bimbo.es/uploads/bimbocorp/77002_3D_HOTDOG_05_2020_0.png?7",
+        "Cod Barras": "8412600450024"
+      },
+      {
+        "posCode": "190209",
+        "PROVEEDOR": "BIMBO DONUTS CANARIAS, S.L.U.",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "BOLLERIA",
+        "Nombre Corto": "MATAHAMBRE EIDETESA 100G",
+        "PVP": "1,40 €",
+        "IMAGEN": "https://eidetesa.com/wp-content/uploads/2019/01/producto-eidetesa-regular-matahambre-full.png",
+        "Cod Barras": "8411439002107"
+      },
+      {
+        "posCode": "190259",
+        "PROVEEDOR": "BIMBO DONUTS CANARIAS, S.L.U.",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "PANADERIA",
+        "Nombre Corto": "MAXI PANECILLOS BIMBO 4U",
+        "PVP": "2,15 €",
+        "IMAGEN": "https://www.bimbo.es/uploads/bimbocorp/77018_3D_MAXIBURGER_05_2020_0.png?7",
+        "Cod Barras": "8412600009338"
+      },
+      {
+        "posCode": "19000160",
+        "PROVEEDOR": "PANADERIA PASTELERIA PULIDO",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "BOLLERIA",
+        "Nombre Corto": "MINI MAGDALENAS PEPITAS 190G",
+        "PVP": "2,90 €",
+        "IMAGEN": "https://www.bimbo.es/uploads/bimbocorp/trb-mini-magdalenas-pepitas.png?7",
+        "Cod Barras": "8412600017593"
+      },
+      {
+        "posCode": "190993",
+        "PROVEEDOR": "PANADERIA PASTELERIA PULIDO",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "PANADERIA",
+        "Nombre Corto": "OROWEAT 12 CEREALES 680G",
+        "PVP": "3,15 €",
+        "IMAGEN": "https://www.bimbo.es/uploads/bimbocorp/OROWEAT-12-CEREALES-Y-SEMILLAS_2023.png?7",
+        "Cod Barras": "8412600024485"
+      },
+      {
+        "posCode": "190111",
+        "PROVEEDOR": "PANADERIA PASTELERIA PULIDO",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "BOLLERIA",
+        "Nombre Corto": "PALMERA BOMBON EIDETESA",
+        "PVP": "1,40 €",
+        "IMAGEN": "https://eidetesa.com/wp-content/uploads/2022/10/PALM_CHOCO.png",
+        "Cod Barras": "8411444002116"
+      },
+      {
+        "posCode": "190110",
+        "PROVEEDOR": "BIMBO DONUTS CANARIAS, S.L.U.",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "BOLLERIA",
+        "Nombre Corto": "PALMERA CHOCOLATE BLANCO EIDE",
+        "PVP": "1,50 €",
+        "IMAGEN": "https://eidetesa.com/wp-content/uploads/2022/10/PALM_WHITE.png",
+        "Cod Barras": "8411444002444"
+      },
+      {
+        "posCode": "190115",
+        "PROVEEDOR": "PANADERIA PASTELERIA PULIDO",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "BOLLERIA",
+        "Nombre Corto": "PALMERA H.100% INTEGRAL",
+        "PVP": "1,50 €",
+        "IMAGEN": "https://eidetesa.com/wp-content/uploads/2022/11/producto-eidetesa-linea-palmera-salvado-trigo-full.png",
+        "Cod Barras": "8411439005139"
+      },
+      {
+        "posCode": "190219",
+        "PROVEEDOR": "PANADERIA PASTELERIA PULIDO",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "PANADERIA",
+        "Nombre Corto": "PAN BIMBO SIN CORTEZA 450G",
+        "PVP": "2,50 €",
+        "IMAGEN": "https://www.bimbo.es/uploads/bimbocorp/BIMBO_SINCORTEZA_2023.png?7",
+        "Cod Barras": "8412600100325"
+      },
+      {
+        "posCode": "19000149",
+        "PROVEEDOR": "PANADERIA PASTELERIA PULIDO",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "BOLLERIA",
+        "Nombre Corto": "PAN LECHE LBE 10U",
+        "PVP": "2,89 €",
+        "IMAGEN": "https://www.bimbo.es/uploads/bimbocorp/08410022114401_C1N1_0.png?7",
+        "Cod Barras": "8410099574054"
+      },
+      {
+        "posCode": "190474",
+        "PROVEEDOR": "APERITIVOS SNACK, S.A.",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "BOLLERIA",
+        "Nombre Corto": "PLUM CAKE BOMBON EIDETESA",
+        "PVP": "1,40 €",
+        "IMAGEN": "https://eidetesa.com/wp-content/uploads/2022/11/producto-eidetesa-regular-plum-cake-bombon-full-1.png",
+        "Cod Barras": "8411439003517"
+      },
+      {
+        "posCode": "190390",
+        "PROVEEDOR": "APERITIVOS SNACK, S.A.",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "BOLLERIA",
+        "Nombre Corto": "QUEQUE CON FIBRA DIET EIDETES",
+        "PVP": "1,35 €",
+        "IMAGEN": "https://eidetesa.com/wp-content/uploads/2022/11/producto-eidetesa-linea-queque-salvado-trigo-full.png",
+        "Cod Barras": "8411439005009"
+      },
+      {
+        "posCode": "190208",
+        "PROVEEDOR": "SUCHACHY CANARIAS, S.L.",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "BOLLERIA",
+        "Nombre Corto": "QUEQUE EIDETESA 95 G",
+        "PVP": "1,40 €",
+        "IMAGEN": "https://eidetesa.com/wp-content/uploads/2022/11/producto-eidetesa-regular-queque-full-1.png",
+        "Cod Barras": "8411439002039"
+      },
+      {
+        "posCode": "190870",
+        "PROVEEDOR": "APERITIVOS SNACK, S.A.",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "PANADERIA",
+        "Nombre Corto": "SDW 410G BIMBO",
+        "PVP": "1,59 €",
+        "IMAGEN": "https://www.bimbo.es/uploads/bimbocorp/BIMBO_GRANDE_2023.png?7",
+        "Cod Barras": "8412600022986"
+      },
+      {
+        "posCode": "191159",
+        "PROVEEDOR": "BANDAMA, S.A.",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "PANADERIA",
+        "Nombre Corto": "SDW ARTESANO EXTRA TIERNO 550",
+        "PVP": "2,89 €",
+        "IMAGEN": "https://www.bimbo.es/uploads/bimbocorp/78078_BIMBO_CROISSANT_10UDS_0.png?7",
+        "Cod Barras": "8412600028568"
+      },
+      {
+        "posCode": "191120",
+        "PROVEEDOR": "BIMBO DONUTS CANARIAS, S.L.U.",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "GALLETAS",
+        "Nombre Corto": "MCV DIGESTIVE INTEGRAL 400GR",
+        "PVP": "3,60 €",
+        "IMAGEN": "https://www.mcvities.es/wp-content/uploads/2017/08/55002413-integral.png",
+        "Cod Barras": "5000396025026"
+      },
+      {
+        "posCode": "191122",
+        "PROVEEDOR": "SANTIAGO GUERRA GONZALEZ, S.L.",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "GALLETAS",
+        "Nombre Corto": "MCV DIGESTIVE MILK CHOC.200GR",
+        "PVP": "2,80 €",
+        "IMAGEN": "https://www.mcvities.es/wp-content/uploads/2022/01/xx-5000168194189_32572_McVities_Milk-Choc-Digestive_266g_T1_February_2029-2.png",
+        "Cod Barras": "5000396037531"
+      },
+      {
+        "posCode": "191121",
+        "PROVEEDOR": "SANTIAGO GUERRA GONZALEZ, S.L.",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "GALLETAS",
+        "Nombre Corto": "MCV DIGESTIVE ORIGINAL 250GR",
+        "PVP": "2,10 €",
+        "IMAGEN": "https://www.mcvities.es/wp-content/uploads/2022/01/xx-5000168001142_11172_13027_McVities_Original-Digestive_250g_T1_February_2021.png",
+        "Cod Barras": "5000396037944"
+      },
+      {
+        "posCode": "191142",
+        "PROVEEDOR": "SANTIAGO GUERRA GONZALEZ, S.L.",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "GALLETAS",
+        "Nombre Corto": "MCV DIGESTIVE ORIGINAL 400G",
+        "PVP": "2,40 €",
+        "IMAGEN": "https://www.mcvities.es/wp-content/uploads/2022/01/xx-5000168001159_36731_45890_McVities_Orginal-Digestive_12pk_400g_T1_February_2021-2.png",
+        "Cod Barras": "5000396037937"
+      },
+      {
+        "posCode": "19000180",
+        "PROVEEDOR": "SANTIAGO GUERRA GONZALEZ, S.L.",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "GALLETAS",
+        "Nombre Corto": "MCV HOB NOBS MILK CHOCOLATE 30",
+        "PVP": "2,95 €",
+        "IMAGEN": "https://www.mcvities.es/wp-content/uploads/2022/01/5000168176833_26146_McVities_Milk-Chocolate-HobNobs_RRP_262g_T1_February_2021-1.png",
+        "Cod Barras": "5000168186597"
+      },
+      {
+        "posCode": "190959",
+        "PROVEEDOR": "SANTIAGO GUERRA GONZALEZ, S.L.",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "LACTEOS",
+        "Nombre Corto": "PASCUAL LECHE DESNATADA 1L",
+        "PVP": "2,00 €",
+        "IMAGEN": "https://lechepascual.es/wp-content/uploads/2018/05/Diseno-sin-titulo-69.png",
+        "Cod Barras": "8410128010225"
+      },
+      {
+        "posCode": "190957",
+        "PROVEEDOR": "SANTIAGO GUERRA GONZALEZ, S.L.",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "LACTEOS",
+        "Nombre Corto": "PASCUAL LECHE ENTERA 1L",
+        "PVP": "2,00 €",
+        "IMAGEN": "https://lechepascual.es/wp-content/uploads/2018/05/Diseno-sin-titulo-70.png",
+        "Cod Barras": "8410128010096"
+      },
+      {
+        "posCode": "190958",
+        "PROVEEDOR": "AFFINITY PETCARE",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "LACTEOS",
+        "Nombre Corto": "PASCUAL LECHE SEMIDESNATADA 1",
+        "PVP": "2,00 €",
+        "IMAGEN": "https://lechepascual.es/wp-content/uploads/2018/05/Diseno-sin-titulo-71.png",
+        "Cod Barras": "8410128010119"
+      },
+      {
+        "posCode": "19000066",
+        "PROVEEDOR": "AFFINITY PETCARE",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "LACTEOS",
+        "Nombre Corto": "PASCUAL LECHE SIN LACTOSA DESN",
+        "PVP": "1,80 €",
+        "IMAGEN": "https://lechepascual.es/wp-content/uploads/2018/05/Diseno-sin-titulo-81.png",
+        "Cod Barras": "8410128750046"
+      },
+      {
+        "posCode": "19000065",
+        "PROVEEDOR": "AFFINITY PETCARE",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "LACTEOS",
+        "Nombre Corto": "PASCUAL LECHE SIN LACTOSA ENTE",
+        "PVP": "1,80 €",
+        "IMAGEN": "https://lechepascual.es/wp-content/uploads/2018/05/Diseno-sin-titulo-80.png",
+        "Cod Barras": "8410128750145"
+      },
+      {
+        "posCode": "19000067",
+        "PROVEEDOR": "AFFINITY PETCARE",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "LACTEOS",
+        "Nombre Corto": "PASCUAL LECHE SIN LACTOSA SEMI",
+        "PVP": "1,80 €",
+        "IMAGEN": "https://lechepascual.es/wp-content/uploads/2018/05/Diseno-sin-titulo-79.png",
+        "Cod Barras": "8410128750008"
+      },
+      {
+        "posCode": "190059",
+        "PROVEEDOR": "BIMBO DONUTS CANARIAS, S.L.U.",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "ARROZ, LEGUMBRES Y PASTAS",
+        "Nombre Corto": "ARROZ BRILLANTE 1KG",
+        "PVP": "2,40 €",
+        "IMAGEN": "https://www.brillante.es/wp-content/uploads/2017/04/brillante-calidad-oro-1kg.jpg",
+        "Cod Barras": "8410184077118"
+      },
+      {
+        "posCode": "190926",
+        "PROVEEDOR": "RUMARDI IMPORTACIONES, S.L.",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "CACAO, CAFÉ, INFUISONES",
+        "Nombre Corto": "BOXCAO 200G",
+        "PVP": "1,95 €",
+        "IMAGEN": "https://www.tirma.com/uppertirma/tirmaimg/item/8410085210607.jpg",
+        "Cod Barras": "8410085210607"
+      },
+      {
+        "posCode": "190181",
+        "PROVEEDOR": "GALARZA ATLANTICO, S.A.",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "CACAO, CAFÉ, INFUISONES",
+        "Nombre Corto": "CAFE DESCAFEINADO TIRMA V.M.2",
+        "PVP": "3,95 €",
+        "IMAGEN": "https://www.tirma.com/uppertirma/tirmaimg/item/8410085870108.jpg",
+        "Cod Barras": "8410085870108"
+      },
+      {
+        "posCode": "190183",
+        "PROVEEDOR": "GALARZA ATLANTICO, S.A.",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "CACAO, CAFÉ, INFUISONES",
+        "Nombre Corto": "CAFE MEZCLA SUAVE TIRMA 250G",
+        "PVP": "3,25 €",
+        "IMAGEN": "https://www.tirma.com/uppertirma/tirmaimg/item/8410085830102.jpg",
+        "Cod Barras": "8410085830102"
+      },
+      {
+        "posCode": "190319",
+        "PROVEEDOR": "GALARZA ATLANTICO, S.A.",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "CACAO, CAFÉ, INFUISONES",
+        "Nombre Corto": "CAFE NATURAL DESCAFEINADO",
+        "PVP": "3,45 €",
+        "IMAGEN": "https://www.tirma.com/uppertirma/tirmaimg/item/8410085831659.jpg",
+        "Cod Barras": "8410085831659"
+      },
+      {
+        "posCode": "190179",
+        "PROVEEDOR": "GALARZA ATLANTICO, S.A.",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "CACAO, CAFÉ, INFUISONES",
+        "Nombre Corto": "CAFE NATURAL TIRMA V.M.250G",
+        "PVP": "3,25 €",
+        "IMAGEN": "https://www.tirma.com/uppertirma/tirmaimg/item/8410085811200.jpg",
+        "Cod Barras": "8410085811200"
+      },
+      {
+        "posCode": "190180",
+        "PROVEEDOR": "GALARZA ATLANTICO, S.A.",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "CACAO, CAFÉ, INFUISONES",
+        "Nombre Corto": "CAFE TORREFACTO TIRMA V.M.250",
+        "PVP": "3,25 €",
+        "IMAGEN": "https://www.tirma.com/uppertirma/tirmaimg/item/8410085822206.jpg",
+        "Cod Barras": "8410085822206"
+      },
+      {
+        "posCode": "191045",
+        "PROVEEDOR": "GALARZA ATLANTICO, S.A.",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "CHOCOLATES",
+        "Nombre Corto": "CHOCO CREM CACHITOS TIRMA 120",
+        "PVP": "1,60 €",
+        "IMAGEN": "https://www.tirma.com/uppertirma/tirmaimg/item/8410085233415.jpg",
+        "Cod Barras": "8410085233354"
+      },
+      {
+        "posCode": "190172",
+        "PROVEEDOR": "GALARZA ATLANTICO, S.A.",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "CHOCOLATES",
+        "Nombre Corto": "CHOCO GALLETAS BLANCO TIRMA 2",
+        "PVP": "2,15 €",
+        "IMAGEN": "https://www.tirma.com/uppertirma/tirmaimg/item/8410085886666.jpg",
+        "Cod Barras": "8410085886000"
+      },
+      {
+        "posCode": "190171",
+        "PROVEEDOR": "BIMBO DONUTS CANARIAS, S.L.U.",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "CHOCOLATES",
+        "Nombre Corto": "CHOCO GALLETAS LECHE TIRMA 24",
+        "PVP": "2,15 €",
+        "IMAGEN": "https://www.tirma.com/uppertirma/tirmaimg/item/8410085886901.jpg",
+        "Cod Barras": "8410085885003"
+      },
+      {
+        "posCode": "190173",
+        "PROVEEDOR": "ISLAND DEAL BRANDS & PROJECTS",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "CHOCOLATES",
+        "Nombre Corto": "CHOCO GALLETAS NEGRO TIRMA 24",
+        "PVP": "2,15 €",
+        "IMAGEN": "https://www.tirma.com/uppertirma/tirmaimg/item/8410085886710.jpg",
+        "Cod Barras": "8410085886505"
+      },
+      {
+        "posCode": "191322",
+        "PROVEEDOR": "ISLAND DEAL BRANDS & PROJECTS",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "CHOCOLATES",
+        "Nombre Corto": "CHOCOLATE LECHE/AVELL 170G",
+        "PVP": "2,20 €",
+        "IMAGEN": "https://www.tirma.com/uppertirma/tirmaimg/item/8410085240024.jpg",
+        "Cod Barras": "8410085240024"
+      },
+      {
+        "posCode": "190157",
+        "PROVEEDOR": "ISLAND DEAL BRANDS & PROJECTS",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "CONSERVAS",
+        "Nombre Corto": "CREMA DE GUAYABA TIRMA 400G",
+        "PVP": "2,30 €",
+        "IMAGEN": "https://www.tirma.com/uppertirma/tirmaimg/item/8410085610506.jpg",
+        "Cod Barras": "8410085610506"
+      },
+      {
+        "posCode": "190156",
+        "PROVEEDOR": "ISLAND DEAL BRANDS & PROJECTS",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "CONSERVAS",
+        "Nombre Corto": "DULCE DE MEMBRILLO TIRMA 400G",
+        "PVP": "2,30 €",
+        "IMAGEN": "https://www.tirma.com/uppertirma/tirmaimg/item/8410085610100.jpg",
+        "Cod Barras": "8410085610100"
+      },
+      {
+        "posCode": "190641",
+        "PROVEEDOR": "ISLAND DEAL BRANDS & PROJECTS",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "CONSERVAS",
+        "Nombre Corto": "DULCE MENBRILLO TIRMA 3X100G",
+        "PVP": "2,00 €",
+        "IMAGEN": "https://www.tirma.com/uppertirma/tirmaimg/item/8410085650205.jpg",
+        "Cod Barras": "8410085610605"
+      },
+      {
+        "posCode": "190161",
+        "PROVEEDOR": "ISLAND DEAL BRANDS & PROJECTS",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "MERMELADAS",
+        "Nombre Corto": "MERMELADA TIRMA MELOCOTON DI",
+        "PVP": "2,40 €",
+        "IMAGEN": "https://www.tirma.com/uppertirma/tirmaimg/item/8410085721554.jpg",
+        "Cod Barras": "8410085721554"
+      },
+      {
+        "posCode": "19000123",
+        "PROVEEDOR": "ISLAND DEAL BRANDS & PROJECTS",
+        "FAMILIA": "ALIMENTACION",
+        "CATEGORIA": "CHOCOLATES",
+        "Nombre Corto": "TIRMA CHOCOLATE LECHE 50% 125G",
+        "PVP": "2,30 €",
+        "IMAGEN": "https://www.tirma.com/uppertirma/tirmaimg/item/8410085230650.jpg",
+        "Cod Barras": "8410085230650"
+      },
+      {
+        "posCode": "21000066",
+        "PROVEEDOR": "ISLAND DEAL BRANDS & PROJECTS",
+        "FAMILIA": "APERITIVOS",
+        "CATEGORIA": "",
+        "Nombre Corto": "TAKIS EXTRA HOT 90G",
+        "PVP": "1,85 €",
+        "IMAGEN": "https://www.bimbo.es/uploads/bimbocorp/TAKIS-XTRAHOT.png?7",
+        "Cod Barras": "8412600028629"
+      },
+      {
+        "posCode": "21000064",
+        "PROVEEDOR": "ISLAND DEAL BRANDS & PROJECTS",
+        "FAMILIA": "APERITIVOS",
+        "CATEGORIA": "",
+        "Nombre Corto": "TAKIS FUEGO 90G",
+        "PVP": "1,85 €",
+        "IMAGEN": "https://www.bimbo.es/uploads/bimbocorp/117187_TAKIS-HOT_100g.png?7",
+        "Cod Barras": "8412600028599"
+      },
+      {
+        "posCode": "21000065",
+        "PROVEEDOR": "BIMBO DONUTS CANARIAS, S.L.U.",
+        "FAMILIA": "APERITIVOS",
+        "CATEGORIA": "",
+        "Nombre Corto": "TAKIS QUESO 90G",
+        "PVP": "1,85 €",
+        "IMAGEN": "https://www.bimbo.es/uploads/bimbocorp/TAKIS-QUESO_VOLCANO.png?7",
+        "Cod Barras": "8412600028605"
+      },
+      {
+        "posCode": "200155",
+        "PROVEEDOR": "BIMBO DONUTS CANARIAS, S.L.U.",
+        "FAMILIA": "GOLOSINAS",
+        "CATEGORIA": "CHOCOLATES",
+        "Nombre Corto": "AMBROSIA TIRMA 301G",
+        "PVP": "3,90 €",
+        "IMAGEN": "https://www.tirma.com/uppertirma/tirmaimg/item/8410085420297.jpg",
+        "Cod Barras": "8410085420297"
+      },
+      {
+        "posCode": "200156",
+        "PROVEEDOR": "BIMBO DONUTS CANARIAS, S.L.U.",
+        "FAMILIA": "GOLOSINAS",
+        "CATEGORIA": "CHOCOLATES",
+        "Nombre Corto": "AMBROSIA TIRMA BLANCA 301G",
+        "PVP": "3,90 €",
+        "IMAGEN": "https://www.tirma.com/uppertirma/tirmaimg/item/8410085422567.jpg",
+        "Cod Barras": "8410085422567"
+      },
+      {
+        "posCode": "201107",
+        "PROVEEDOR": "RUMARDI IMPORTACIONES, S.L.",
+        "FAMILIA": "GOLOSINAS",
+        "CATEGORIA": "CHOCOLATES",
+        "Nombre Corto": "AMBROSIAS TIRMA SABOR AVELLAN",
+        "PVP": "3,90 €",
+        "IMAGEN": "https://www.tirma.com/uppertirma/tirmaimg/item/8410085422505.jpg",
+        "Cod Barras": "8410085422505"
+      },
+      {
+        "posCode": "201046",
+        "PROVEEDOR": "BIMBO DONUTS CANARIAS, S.L.U.",
+        "FAMILIA": "GOLOSINAS",
+        "CATEGORIA": "CHOCOLATES",
+        "Nombre Corto": "CHOC. LEC/ALM 300G TIRMA",
+        "PVP": "4,95 €",
+        "IMAGEN": "https://www.tirma.com/uppertirma/tirmaimg/item/8410085240062.jpg",
+        "Cod Barras": "8410085240062"
+      },
+      {
+        "posCode": "201429",
+        "PROVEEDOR": "BIMBO DONUTS CANARIAS, S.L.U.",
+        "FAMILIA": "GOLOSINAS",
+        "CATEGORIA": "CHOCOLATES",
+        "Nombre Corto": "CHOCOLATE 70% CACAO TIRMA 125",
+        "PVP": "2,15 €",
+        "IMAGEN": "https://www.tirma.com/uppertirma/tirmaimg/item/8410085219921.jpg",
+        "Cod Barras": "8410085219921"
+      },
+      {
+        "posCode": "200291",
+        "PROVEEDOR": "SANTIAGO GUERRA GONZALEZ, S.L.",
+        "FAMILIA": "GOLOSINAS",
+        "CATEGORIA": "CHOCOLATES",
+        "Nombre Corto": "CHOCOLATE CON LECHE TIRMA 300",
+        "PVP": "3,75 €",
+        "IMAGEN": "https://www.tirma.com/uppertirma/tirmaimg/item/8410085230162.jpg",
+        "Cod Barras": "8410085230155"
+      },
+      {
+        "posCode": "200149",
+        "PROVEEDOR": "SANTIAGO GUERRA GONZALEZ, S.L.",
+        "FAMILIA": "GOLOSINAS",
+        "CATEGORIA": "CHOCOLATES",
+        "Nombre Corto": "CHOCOLATE TIRMA BLANCO 150G",
+        "PVP": "1,90 €",
+        "IMAGEN": "https://www.tirma.com/uppertirma/tirmaimg/item/8410085291101.jpg",
+        "Cod Barras": "8410085291101"
+      },
+      {
+        "posCode": "200232",
+        "PROVEEDOR": "SANTIAGO GUERRA GONZALEZ, S.L.",
+        "FAMILIA": "GOLOSINAS",
+        "CATEGORIA": "CHOCOLATES",
+        "Nombre Corto": "CHOCOLATE TIRMA CREMA MENTA 7",
+        "PVP": "1,60 €",
+        "IMAGEN": "https://www.tirma.com/uppertirma/tirmaimg/item/8410085251488.jpg",
+        "Cod Barras": "8410085241502"
+      },
+      {
+        "posCode": "200140",
+        "PROVEEDOR": "SANTIAGO GUERRA GONZALEZ, S.L.",
+        "FAMILIA": "GOLOSINAS",
+        "CATEGORIA": "CHOCOLATES",
+        "Nombre Corto": "CHOCOLATE TIRMA FONDANT 150G",
+        "PVP": "2,00 €",
+        "IMAGEN": "https://www.tirma.com/uppertirma/tirmaimg/item/8410085220101.jpg",
+        "Cod Barras": "8410085220101"
+      },
+      {
+        "posCode": "200141",
+        "PROVEEDOR": "SANTIAGO GUERRA GONZALEZ, S.L.",
+        "FAMILIA": "GOLOSINAS",
+        "CATEGORIA": "CHOCOLATES",
+        "Nombre Corto": "CHOCOLATE TIRMA LECHE 150G",
+        "PVP": "1,60 €",
+        "IMAGEN": "https://www.tirma.com/uppertirma/tirmaimg/item/8410085230704.jpg",
+        "Cod Barras": "8410085230704"
+      },
+      {
+        "posCode": "200142",
+        "PROVEEDOR": "RUMARDI IMPORTACIONES, S.L.",
+        "FAMILIA": "GOLOSINAS",
+        "CATEGORIA": "CHOCOLATES",
+        "Nombre Corto": "CHOCOLATE TIRMA LECHE 75G",
+        "PVP": "1,00 €",
+        "IMAGEN": "https://www.tirma.com/uppertirma/tirmaimg/item/8410085230605.jpg",
+        "Cod Barras": "8410085230605"
+      },
+      {
+        "posCode": "201424",
+        "PROVEEDOR": "RUMARDI IMPORTACIONES, S.L.",
+        "FAMILIA": "GOLOSINAS",
+        "CATEGORIA": "CHOCOLATES",
+        "Nombre Corto": "TIRMA CHO LECH/PAS/ALM. 170GR",
+        "PVP": "2,40 €",
+        "IMAGEN": "https://www.tirma.com/uppertirma/tirmaimg/item/8410085241045.jpg",
+        "Cod Barras": "8410085241045"
+      },
+      {
+        "posCode": "201423",
+        "PROVEEDOR": "GRANJA LA CUESTA, S.L.",
+        "FAMILIA": "GOLOSINAS",
+        "CATEGORIA": "CHOCOLATES",
+        "Nombre Corto": "TIRMA CHOCOLATE LECHE/ALM 170",
+        "PVP": "2,30 €",
+        "IMAGEN": "https://www.tirma.com/uppertirma/tirmaimg/item/8410085240086.jpg",
+        "Cod Barras": "8410085240086"
+      }
+    ]
+  },
+  "Catalogo Taller": {
+    "Productos": [
+      {
+        "posCode": "180224",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "LIMPIEZA",
+        "Nombre Corto": "ABRILLANT.NEUMAT.STAC PLAST40",
+        "PVP": "5,10 €",
+        "Cod Barras": "8006231060327"
+      },
+      {
+        "posCode": "180073",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "LIMPIEZA",
+        "Nombre Corto": "ABRILLANTADOR NEUMA. ST. CLEA",
+        "PVP": "3,50 €",
+        "Cod Barras": "8437005920514"
+      },
+      {
+        "posCode": "180241",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMB.CAR ESSENT MANZANA 4.5ML",
+        "PVP": "2,00 €",
+        "Cod Barras": "8415001118098"
+      },
+      {
+        "posCode": "180249",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMB.CAR ESSENT VAINILLA",
+        "PVP": "2,00 €",
+        "Cod Barras": "8415001118197"
+      },
+      {
+        "posCode": "180243",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMB.CAR ESSENT.BEBES 4.5ML",
+        "PVP": "2,00 €",
+        "Cod Barras": "8415001118128"
+      },
+      {
+        "posCode": "180240",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMB.CAR ESSENT.CITRICOS 4.5ML",
+        "PVP": "2,00 €",
+        "Cod Barras": "8415001118111"
+      },
+      {
+        "posCode": "180255",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMB.CAR ESSENT.COCHE NUEVO4.5",
+        "PVP": "2,00 €",
+        "Cod Barras": "8415001118289"
+      },
+      {
+        "posCode": "180256",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMB.CAR ESSENT.COCO 4.5ML",
+        "PVP": "2,00 €",
+        "Cod Barras": "8415001118296"
+      },
+      {
+        "posCode": "180242",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMB.CAR ESSENT.FR.ROJOS 4.5ML",
+        "PVP": "2,00 €",
+        "Cod Barras": "8415001118081"
+      },
+      {
+        "posCode": "180239",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMB.CAR ESSENT.OCEANO 4.5ML",
+        "PVP": "2,00 €",
+        "Cod Barras": "8415001118104"
+      },
+      {
+        "posCode": "180248",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMB.CAR ESSENT.PIRULETA 4.5ML",
+        "PVP": "2,00 €",
+        "Cod Barras": "8415001118180"
+      },
+      {
+        "posCode": "180234",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMB.CAR SMILE BEBES 10ML",
+        "PVP": "2,95 €",
+        "Cod Barras": "8415001118173"
+      },
+      {
+        "posCode": "180238",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMB.CAR SMILE CITRICOS 10ML",
+        "PVP": "2,95 €",
+        "Cod Barras": "8415001118166"
+      },
+      {
+        "posCode": "180236",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMB.CAR SMILE FRUTOS ROJOS 10",
+        "PVP": "2,95 €",
+        "Cod Barras": "8415001118135"
+      },
+      {
+        "posCode": "180237",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMB.CAR SMILE MANZANA 10ML",
+        "PVP": "2,95 €",
+        "Cod Barras": "8415001118142"
+      },
+      {
+        "posCode": "180235",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMB.CAR SMILE OCEANO 10ML",
+        "PVP": "2,95 €",
+        "Cod Barras": "8415001118159"
+      },
+      {
+        "posCode": "18000002",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMB.MON DELICIOUS AROMAS VARIO",
+        "PVP": "1,60 €",
+        "Cod Barras": "3800034955560"
+      },
+      {
+        "posCode": "180229",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMB.TROPI CAR HOT COCONUT 10M",
+        "PVP": "2,95 €",
+        "Cod Barras": "8415001118012"
+      },
+      {
+        "posCode": "18000012",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMB.TROPI CAR PAPAYA",
+        "PVP": "2,95 €",
+        "Cod Barras": "8415001118692"
+      },
+      {
+        "posCode": "180231",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMB.TROPI CAR PI A COLADA 10M",
+        "PVP": "2,95 €",
+        "Cod Barras": "8415001118067"
+      },
+      {
+        "posCode": "180230",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMB.TROPI CAR SWEET MANGO 10M",
+        "PVP": "2,95 €",
+        "Cod Barras": "8415001118005"
+      },
+      {
+        "posCode": "180232",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMB.TROPIC CAR OCEAN SPIRIT 1",
+        "PVP": "2,95 €",
+        "Cod Barras": "8415001118029"
+      },
+      {
+        "posCode": "180233",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMB.TROPIC CAR RED GUN 10ML",
+        "PVP": "2,95 €",
+        "Cod Barras": "8415001118036"
+      },
+      {
+        "posCode": "180228",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMB.TROPIC CAR WHITE PEACH 10",
+        "PVP": "2,95 €",
+        "Cod Barras": "8415001118074"
+      },
+      {
+        "posCode": "180015",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBI PUR CAR ANTITABACO",
+        "PVP": "7,00 €",
+        "Cod Barras": "8414300239008"
+      },
+      {
+        "posCode": "180023",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBI PUR CAR AQUA",
+        "PVP": "7,00 €",
+        "Cod Barras": "8414300239015"
+      },
+      {
+        "posCode": "180065",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBI PUR CAR DESERT SUN APARA",
+        "PVP": "7,00 €",
+        "Cod Barras": "8414300001278"
+      },
+      {
+        "posCode": "180032",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBI PUR CAR DISCOVERY",
+        "PVP": "7,00 €",
+        "Cod Barras": "8414300006860"
+      },
+      {
+        "posCode": "180014",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBI PUR CAR EXPLORE",
+        "PVP": "7,00 €",
+        "Cod Barras": "8414300816803"
+      },
+      {
+        "posCode": "180021",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBI PUR CAR FOR HER",
+        "PVP": "7,00 €",
+        "Cod Barras": "8004130192712"
+      },
+      {
+        "posCode": "180020",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBI PUR CAR FOR HIM",
+        "PVP": "7,00 €",
+        "Cod Barras": "8004130192798"
+      },
+      {
+        "posCode": "180022",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBI PUR CAR GRAND PRIX",
+        "PVP": "7,00 €",
+        "Cod Barras": "8414300006877"
+      },
+      {
+        "posCode": "180048",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBI PUR CAR ODOR ELIMINATOR",
+        "PVP": "7,00 €",
+        "Cod Barras": "8414300034672"
+      },
+      {
+        "posCode": "180031",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBI PUR CAR PACIFIC AIR",
+        "PVP": "7,00 €",
+        "Cod Barras": "8414300816827"
+      },
+      {
+        "posCode": "180013",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBI PUR CAR VOYAGE",
+        "PVP": "7,00 €",
+        "Cod Barras": "8414300239022"
+      },
+      {
+        "posCode": "180011",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIEN",
+        "PVP": "1,00 €",
+        "Cod Barras": "18001105"
+      },
+      {
+        "posCode": "180096",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIENT AMBIPUR REC EUCALIPTO",
+        "PVP": "4,90 €",
+        "Cod Barras": "8414300034641"
+      },
+      {
+        "posCode": "18000009",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIENTADOR 7ML ONE MIL",
+        "PVP": "4,50 €",
+        "Cod Barras": "8435030804434"
+      },
+      {
+        "posCode": "180059",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIENTADOR AIR FRESHENER ARO",
+        "PVP": "1,70 €",
+        "Cod Barras": "8410202200061"
+      },
+      {
+        "posCode": "180030",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIENTADOR AMBIPUR RECAMBIO",
+        "PVP": "4,90 €",
+        "Cod Barras": "8414300239053"
+      },
+      {
+        "posCode": "180029",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIENTADOR AMBIPUR RECAMBIO",
+        "PVP": "4,90 €",
+        "Cod Barras": "8414300006891"
+      },
+      {
+        "posCode": "180017",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIENTADOR AMBIPUR RECAMBIO",
+        "PVP": "4,90 €",
+        "Cod Barras": "8414300239077"
+      },
+      {
+        "posCode": "180016",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIENTADOR AMBIPUR RECAMBIO",
+        "PVP": "4,90 €",
+        "Cod Barras": "8414300239060"
+      },
+      {
+        "posCode": "180053",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIENTADOR AQUA AROMAS VARI",
+        "PVP": "5,10 €",
+        "Cod Barras": "5203987500555"
+      },
+      {
+        "posCode": "18000008",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIENTADOR COCHE 7ML MADROÑO",
+        "PVP": "4,50 €",
+        "Cod Barras": "8435030817021"
+      },
+      {
+        "posCode": "180055",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIENTADOR DE INTERIORES SOL",
+        "PVP": "3,70 €",
+        "Cod Barras": "8429437000964"
+      },
+      {
+        "posCode": "180222",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIENTADOR EURESCENTS ADG",
+        "PVP": "4,50 €",
+        "Cod Barras": "8435030806759"
+      },
+      {
+        "posCode": "180125",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIENTADOR EURESCENTS AGL",
+        "PVP": "4,50 €",
+        "Cod Barras": "8435030804373"
+      },
+      {
+        "posCode": "180128",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIENTADOR EURESCENTS DYG",
+        "PVP": "4,50 €",
+        "Cod Barras": "8435030804403"
+      },
+      {
+        "posCode": "180216",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIENTADOR EURESCENTS HGO",
+        "PVP": "4,50 €",
+        "Cod Barras": "8435030804410"
+      },
+      {
+        "posCode": "180047",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIENTADOR FRESH FRUIT CEREZ",
+        "PVP": "1,70 €",
+        "Cod Barras": "8410202110117"
+      },
+      {
+        "posCode": "180019",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIENTADOR FRESH FRUIT COCO",
+        "PVP": "1,70 €",
+        "Cod Barras": "8410202110032"
+      },
+      {
+        "posCode": "180004",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIENTADOR FRESH FRUIT LIMON",
+        "PVP": "1,70 €",
+        "Cod Barras": "8410202110018"
+      },
+      {
+        "posCode": "180005",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIENTADOR FRESH FRUIT MANZA",
+        "PVP": "1,70 €",
+        "Cod Barras": "8410202110070"
+      },
+      {
+        "posCode": "180003",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIENTADOR FRESH FRUIT MENTA",
+        "PVP": "1,70 €",
+        "Cod Barras": "8410202110100"
+      },
+      {
+        "posCode": "180002",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIENTADOR FRESH FRUIT PIÑA",
+        "PVP": "1,70 €",
+        "Cod Barras": "8410202110001"
+      },
+      {
+        "posCode": "180001",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIENTADOR FRESH FRUIT ROSA",
+        "PVP": "1,70 €",
+        "Cod Barras": "8410202110087"
+      },
+      {
+        "posCode": "180024",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIENTADOR FRESH FRUIT STRAW",
+        "PVP": "1,70 €",
+        "Cod Barras": "8410202110049"
+      },
+      {
+        "posCode": "180018",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIENTADOR FRESH FRUIT VAINI",
+        "PVP": "1,70 €",
+        "Cod Barras": "8410202110025"
+      },
+      {
+        "posCode": "180037",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIENTADOR MANZANA SMILEY L",
+        "PVP": "2,00 €",
+        "Cod Barras": "3700006234740"
+      },
+      {
+        "posCode": "180035",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIENTADOR NEW CAR 60ML SPRA",
+        "PVP": "3,40 €",
+        "Cod Barras": "8410202921003"
+      },
+      {
+        "posCode": "180050",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIENTADOR SPRAY AIRE SURTID",
+        "PVP": "3,75 €",
+        "Cod Barras": "8410202961993"
+      },
+      {
+        "posCode": "180245",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIENTADOR T.CAR MARACUYA 10",
+        "PVP": "2,95 €",
+        "Cod Barras": "8415001118210"
+      },
+      {
+        "posCode": "180041",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIENTADOR TROPI FRESH",
+        "PVP": "3,75 €",
+        "Cod Barras": "8410202890996"
+      },
+      {
+        "posCode": "180046",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIENTADOR TROPI FRESH LITTL",
+        "PVP": "2,05 €",
+        "Cod Barras": "8410202881994"
+      },
+      {
+        "posCode": "180246",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIENTADOR TROPIC CAR MOJITO",
+        "PVP": "2,95 €",
+        "Cod Barras": "8415001118203"
+      },
+      {
+        "posCode": "180253",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIENTADOR TROPIK CAR 60ML",
+        "PVP": "2,20 €",
+        "Cod Barras": "8415001118364"
+      },
+      {
+        "posCode": "180036",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIENTADOR VAINILLA SMILEY L",
+        "PVP": "2,00 €",
+        "Cod Barras": "3700006234528"
+      },
+      {
+        "posCode": "180121",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIENTADOR WEWANGIAN F.PASIO",
+        "PVP": "3,75 €",
+        "Cod Barras": "8435030860010"
+      },
+      {
+        "posCode": "180122",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIENTADOR WEWANGIAN FRUT.RO",
+        "PVP": "3,75 €",
+        "Cod Barras": "8435030860027"
+      },
+      {
+        "posCode": "180124",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIENTADOR WEWANGIAN LIMPIO",
+        "PVP": "3,75 €",
+        "Cod Barras": "8435030860065"
+      },
+      {
+        "posCode": "180226",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIENTADOR WEWANGIAN MELON",
+        "PVP": "3,75 €",
+        "Cod Barras": "8435030860041"
+      },
+      {
+        "posCode": "180123",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIENTADOR WEWANGIAN TERNURA",
+        "PVP": "3,75 €",
+        "Cod Barras": "8435030860058"
+      },
+      {
+        "posCode": "180116",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIPUR AR RECAMBIO AMAZON RA",
+        "PVP": "4,90 €",
+        "Cod Barras": "5410076583287"
+      },
+      {
+        "posCode": "180097",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIPUR CAR 2MOT AP+R MOUNTAI",
+        "PVP": "9,60 €",
+        "Cod Barras": "8414300039684"
+      },
+      {
+        "posCode": "180098",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIPUR CAR 2MOT AP+R RENOVAI",
+        "PVP": "9,60 €",
+        "Cod Barras": "8414300039691"
+      },
+      {
+        "posCode": "180118",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIPUR CAR ABSOLUTR VARIOS",
+        "PVP": "7,00 €",
+        "Cod Barras": "5410076582822"
+      },
+      {
+        "posCode": "180099",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIPUR CAR EXOTIC MELON-MELO",
+        "PVP": "4,90 €",
+        "Cod Barras": "8414300064037"
+      },
+      {
+        "posCode": "180117",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIPUR CAR RECAMBIO ARCTIC I",
+        "PVP": "4,90 €",
+        "Cod Barras": "5410076583379"
+      },
+      {
+        "posCode": "180034",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIPUR CAR RECAMBIO EXPLORE",
+        "PVP": "4,90 €",
+        "Cod Barras": "8414300816810"
+      },
+      {
+        "posCode": "180033",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIPUR CAR RECAMBIO PACIF AI",
+        "PVP": "4,90 €",
+        "Cod Barras": "8414300816834"
+      },
+      {
+        "posCode": "180100",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIPUR CAR RECAMBIO PURESSE",
+        "PVP": "4,90 €",
+        "Cod Barras": "8414300064105"
+      },
+      {
+        "posCode": "180101",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIPUR CAR RECAMBIOS RESPIRA",
+        "PVP": "4,90 €",
+        "Cod Barras": "8414300064075"
+      },
+      {
+        "posCode": "180040",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIPUR CAR SPEED",
+        "PVP": "7,00 €",
+        "Cod Barras": "8414300006884"
+      },
+      {
+        "posCode": "180027",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIPUR RECAMBIO FOR HER",
+        "PVP": "4,90 €",
+        "Cod Barras": "8004130192675"
+      },
+      {
+        "posCode": "180028",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIPUR RECAMBIO FOR HIM",
+        "PVP": "4,90 €",
+        "Cod Barras": "8004130192750"
+      },
+      {
+        "posCode": "180026",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIPUR RECAMBIO GRAND PRIX",
+        "PVP": "4,90 €",
+        "Cod Barras": "8414300006907"
+      },
+      {
+        "posCode": "180052",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIPUR RECAMBIO ODOR ELIMINA",
+        "PVP": "4,30 €",
+        "Cod Barras": "8414300039516"
+      },
+      {
+        "posCode": "180025",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIPUR RECAMBIO SPEED",
+        "PVP": "4,90 €",
+        "Cod Barras": "8414300006914"
+      },
+      {
+        "posCode": "180095",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "PAÑOS",
+        "Nombre Corto": "AUTENTICA PIEL DE GAMUZA JP.4",
+        "PVP": "16,00 €",
+        "Cod Barras": "8420136000040"
+      },
+      {
+        "posCode": "180081",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "PAÑOS",
+        "Nombre Corto": "AUTENTICA PIEL DE GAMUZA JP.5",
+        "PVP": "13,90 €",
+        "Cod Barras": "8420136000057"
+      },
+      {
+        "posCode": "180079",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "PAÑOS",
+        "Nombre Corto": "AUTENTICA PIEL DE GAMUZA JP.6",
+        "PVP": "10,70 €",
+        "Cod Barras": "8420136000064"
+      },
+      {
+        "posCode": "180080",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "PAÑOS",
+        "Nombre Corto": "AUTENTICA PIEL DE GAMUZA JP.7",
+        "PVP": "7,30 €",
+        "Cod Barras": "8420136000071"
+      },
+      {
+        "posCode": "180043",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "PAÑOS",
+        "Nombre Corto": "AUTENTICA PIEL DE GAMUZA RM",
+        "PVP": "-   €",
+        "Cod Barras": "18004304"
+      },
+      {
+        "posCode": "180061",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "PAÑOS",
+        "Nombre Corto": "BAYETA COCHE VILEDA",
+        "PVP": "9,60 €",
+        "Cod Barras": "8410435008021"
+      },
+      {
+        "posCode": "180250",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "PAÑOS",
+        "Nombre Corto": "BAYETA MICRO.INTER.QUALITY CA",
+        "PVP": "1,95 €",
+        "Cod Barras": "8437005925021"
+      },
+      {
+        "posCode": "180038",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "PAÑOS",
+        "Nombre Corto": "BREVIA BAYETA ECOFIBRAS 2U",
+        "PVP": "1,90 €",
+        "Cod Barras": "8410800004900"
+      },
+      {
+        "posCode": "180049",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "PAÑOS",
+        "Nombre Corto": "BREVIA BAYETA PRACTICA SUAVE",
+        "PVP": "1,80 €",
+        "Cod Barras": "8410800005006"
+      },
+      {
+        "posCode": "180039",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "PAÑOS",
+        "Nombre Corto": "BREVIA TOALLITAS LIMPIASALPIC",
+        "PVP": "1,80 €",
+        "Cod Barras": "8410800008304"
+      },
+      {
+        "posCode": "18000007",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "LIMPIEZA",
+        "Nombre Corto": "CEPILLO LIMPIA LLANTAS",
+        "PVP": "3,45 €",
+        "Cod Barras": "8424332440006"
+      },
+      {
+        "posCode": "180218",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "LIMPIEZA",
+        "Nombre Corto": "CERA CON TEFLON 500ML TURTLE",
+        "PVP": "10,75 €",
+        "Cod Barras": "5010322503276"
+      },
+      {
+        "posCode": "180110",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "LIMPIEZA",
+        "Nombre Corto": "CERA PASTA 250G TWX01678",
+        "PVP": "7,65 €",
+        "Cod Barras": "5010322738968"
+      },
+      {
+        "posCode": "18000004",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "LIMPIEZA",
+        "Nombre Corto": "CERA SUPER HARD SHELL FINISH",
+        "PVP": "12,00 €",
+        "Cod Barras": "074660012222"
+      },
+      {
+        "posCode": "180225",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "LIMPIEZA",
+        "Nombre Corto": "CLIM EXTREME SALVAU AS",
+        "PVP": "0,90 €",
+        "Cod Barras": "8410262511008"
+      },
+      {
+        "posCode": "180115",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "LIMPIEZA",
+        "Nombre Corto": "DESENG HC21 1L",
+        "PVP": "4,45 €",
+        "Cod Barras": "8429036004226"
+      },
+      {
+        "posCode": "180227",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "PAÑOS",
+        "Nombre Corto": "ESPONJA LUXC CARROCERIAS",
+        "PVP": "2,50 €",
+        "Cod Barras": "8410262901601"
+      },
+      {
+        "posCode": "180082",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "PAÑOS",
+        "Nombre Corto": "ESPONJA PARA LAVADO",
+        "PVP": "2,75 €",
+        "Cod Barras": "8016038322627"
+      },
+      {
+        "posCode": "180078",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "PAÑOS",
+        "Nombre Corto": "ESPONJA PEQUEÑA",
+        "PVP": "1,35 €",
+        "Cod Barras": "5010373002452"
+      },
+      {
+        "posCode": "180247",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "PAÑOS",
+        "Nombre Corto": "ESPONJA QUALITY CAR",
+        "PVP": "5,50 €",
+        "Cod Barras": "8436018829098"
+      },
+      {
+        "posCode": "180093",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "PAÑOS",
+        "Nombre Corto": "ESPONJA SALPICADERO LUXCAR 10",
+        "PVP": "2,70 €",
+        "Cod Barras": "8410262907245"
+      },
+      {
+        "posCode": "180066",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "PAÑOS",
+        "Nombre Corto": "ESPONJA WURKO",
+        "PVP": "3,65 €",
+        "Cod Barras": "8414557777384"
+      },
+      {
+        "posCode": "180219",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "EURESCENTS FRAG. TIPO CHE",
+        "PVP": "4,50 €",
+        "Cod Barras": "8435030804397"
+      },
+      {
+        "posCode": "180064",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "PAÑOS",
+        "Nombre Corto": "GAMUZA DE PIEL JGB MEDIANA",
+        "PVP": "13,60 €",
+        "Cod Barras": "8414569070312"
+      },
+      {
+        "posCode": "180105",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "PAÑOS",
+        "Nombre Corto": "GAMUZA DE PIEL NATURAL STAR C",
+        "PVP": "8,90 €",
+        "Cod Barras": "8437005920217"
+      },
+      {
+        "posCode": "180067",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "PAÑOS",
+        "Nombre Corto": "GAMUZA ESPECIAL CUERO WURKO",
+        "PVP": "8,75 €",
+        "Cod Barras": "8414557740562"
+      },
+      {
+        "posCode": "18000006",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "PAÑOS",
+        "Nombre Corto": "GAMUZA KANEBO PEQUEÑA",
+        "PVP": "13,10 €",
+        "Cod Barras": "8414569071081"
+      },
+      {
+        "posCode": "180120",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "PAÑOS",
+        "Nombre Corto": "GAMUZA LUXCAR PIEL",
+        "PVP": "8,50 €",
+        "Cod Barras": "8410262140109"
+      },
+      {
+        "posCode": "18000005",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "PAÑOS",
+        "Nombre Corto": "GAMUZA PIEL SINTETICA ROYALEX",
+        "PVP": "6,10 €",
+        "Cod Barras": "8424332000071"
+      },
+      {
+        "posCode": "180084",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "PAÑOS",
+        "Nombre Corto": "GAMUZA SINTETICA QC CARTON",
+        "PVP": "3,20 €",
+        "Cod Barras": "8436018821719"
+      },
+      {
+        "posCode": "180102",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "PAÑOS",
+        "Nombre Corto": "GAMUZA SINTETICA STAR CLEAN",
+        "PVP": "3,55 €",
+        "Cod Barras": "8437005920187"
+      },
+      {
+        "posCode": "180051",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "LIMPIEZA",
+        "Nombre Corto": "GLICERINA 300CC DUQUE",
+        "PVP": "3,95 €",
+        "Cod Barras": "8437001213160"
+      },
+      {
+        "posCode": "180104",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "GRASA SPRAY 500ML KRAFFT",
+        "PVP": "14,50 €",
+        "Cod Barras": "8410410152039"
+      },
+      {
+        "posCode": "180252",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "LIMPIEZA",
+        "Nombre Corto": "IMPREGNACION C.BRILLO KRAFFT",
+        "PVP": "3,75 €",
+        "Cod Barras": "8410410148131"
+      },
+      {
+        "posCode": "180060",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "LIMPIEZA",
+        "Nombre Corto": "KRAFFT ELIMINADOR DE ARAéAZO",
+        "PVP": "6,45 €",
+        "Cod Barras": "8410410143822"
+      },
+      {
+        "posCode": "180012",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "LIMPIEZA",
+        "Nombre Corto": "LIMPIA CRISTALES POLIGLAS 500",
+        "PVP": "3,25 €",
+        "Cod Barras": "8410724003584"
+      },
+      {
+        "posCode": "180058",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "LIMPIEZA",
+        "Nombre Corto": "LIMPIA CRISTALES SOLIGEL 500M",
+        "PVP": "3,30 €",
+        "Cod Barras": "8429437000889"
+      },
+      {
+        "posCode": "180106",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "LIMPIEZA",
+        "Nombre Corto": "LIMPIA CROMADOS 250ML TURTLE",
+        "PVP": "9,00 €",
+        "Cod Barras": "5010322753121"
+      },
+      {
+        "posCode": "180056",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "LIMPIEZA",
+        "Nombre Corto": "LIMPIA LLANTAS ST. CLEAN 500M",
+        "PVP": "3,95 €",
+        "Cod Barras": "8437005920545"
+      },
+      {
+        "posCode": "180094",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "LIMPIEZA",
+        "Nombre Corto": "LIMPIA LLANTAS TURTLE WAX",
+        "PVP": "10,80 €",
+        "Cod Barras": "5010322736704"
+      },
+      {
+        "posCode": "180057",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "LIMPIEZA",
+        "Nombre Corto": "LIMPIA RUEDAS SOLIGEL 500ML",
+        "PVP": "3,95 €",
+        "Cod Barras": "8429437000902"
+      },
+      {
+        "posCode": "180251",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "LIMPIEZA",
+        "Nombre Corto": "LIMPIA SALPICADERO NEW CAR",
+        "PVP": "7,50 €",
+        "Cod Barras": "5010322771095"
+      },
+      {
+        "posCode": "180054",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "LIMPIEZA",
+        "Nombre Corto": "LIMPIA SALPICADEROS 520ML+BAY",
+        "PVP": "3,95 €",
+        "Cod Barras": "8429437000209"
+      },
+      {
+        "posCode": "180069",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "LIMPIEZA",
+        "Nombre Corto": "LIMPIA SALPICADEROS AROMAS VA",
+        "PVP": "5,50 €",
+        "Cod Barras": "8006231778406"
+      },
+      {
+        "posCode": "18000015",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "LIMPIEZA",
+        "Nombre Corto": "LIMPIA SALPICADEROS Y SUPERFIC",
+        "PVP": "10,25 €",
+        "Cod Barras": "8410410141620"
+      },
+      {
+        "posCode": "180077",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "LIMPIEZA",
+        "Nombre Corto": "LIMPIA TAPICERIAS TURTLE WAX",
+        "PVP": "10,95 €",
+        "Cod Barras": "5010322503290"
+      },
+      {
+        "posCode": "180111",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "PAÑOS",
+        "Nombre Corto": "LUXCAR CAMUZA SINTETICA",
+        "PVP": "3,20 €",
+        "Cod Barras": "8410262140086"
+      },
+      {
+        "posCode": "180114",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "PAÑOS",
+        "Nombre Corto": "LUXCAR MICROFIBRA CRISTALES",
+        "PVP": "3,60 €",
+        "Cod Barras": "8410262840122"
+      },
+      {
+        "posCode": "180112",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "PAÑOS",
+        "Nombre Corto": "LUXCAR MICROFIBRAS INTERIORES",
+        "PVP": "3,60 €",
+        "Cod Barras": "8410262840108"
+      },
+      {
+        "posCode": "180113",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "PAÑOS",
+        "Nombre Corto": "LUXCAR MICROFIBRAS MULTIUSOS",
+        "PVP": "2,80 €",
+        "Cod Barras": "8410262840115"
+      },
+      {
+        "posCode": "180220",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "PAÑOS",
+        "Nombre Corto": "PACK ECON.MICROFIBRAS 3U",
+        "PVP": "2,25 €",
+        "Cod Barras": "8436018821528"
+      },
+      {
+        "posCode": "180042",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "PAÑOS",
+        "Nombre Corto": "PAéO MICROFIBRA ESPECIAL 30X",
+        "PVP": "1,65 €",
+        "Cod Barras": "8431250711095"
+      },
+      {
+        "posCode": "180083",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "PAÑOS",
+        "Nombre Corto": "PAÑO GAMUZA DOS LISTAS",
+        "PVP": "3,25 €",
+        "Cod Barras": "8425379210065"
+      },
+      {
+        "posCode": "18000014",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "PAÑOS",
+        "Nombre Corto": "PAÑO MICROFIBRA 30 X 40 CM PAN",
+        "PVP": "1,65 €",
+        "Cod Barras": "8431250711576"
+      },
+      {
+        "posCode": "180062",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "PAÑOS",
+        "Nombre Corto": "PAÑO MICROFIBRA ESPECIAL POL",
+        "PVP": "1,65 €",
+        "Cod Barras": "8431250711156"
+      },
+      {
+        "posCode": "180044",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "PAÑOS",
+        "Nombre Corto": "PAÑO MICROFIBRA MULTIUSO",
+        "PVP": "1,50 €",
+        "Cod Barras": "8431250711064"
+      },
+      {
+        "posCode": "18000010",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "PAÑOS",
+        "Nombre Corto": "PAÑO MICROFIBRA PAMEX ULTRA CA",
+        "PVP": "3,00 €",
+        "Cod Barras": "8431250714638"
+      },
+      {
+        "posCode": "180244",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "PAÑOS",
+        "Nombre Corto": "PLUMERO TELESCOPICO FLEXIBLE",
+        "PVP": "2,65 €",
+        "Cod Barras": "8415001118050"
+      },
+      {
+        "posCode": "180068",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "LIMPIEZA",
+        "Nombre Corto": "SPRAY LIMPIASALPICADERO TURTL",
+        "PVP": "7,50 €",
+        "Cod Barras": "5010322755149"
+      },
+      {
+        "posCode": "180254",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "PAÑOS",
+        "Nombre Corto": "ST.CLEAN BAYETA LIMP.CRISTALE",
+        "PVP": "1,70 €",
+        "Cod Barras": "8437005925014"
+      },
+      {
+        "posCode": "180092",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "LIMPIEZA",
+        "Nombre Corto": "TURTLE WAX CERA EN PASTA 150G",
+        "PVP": "6,90 €",
+        "Cod Barras": "5010322300141"
+      },
+      {
+        "posCode": "180091",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "LIMPIEZA",
+        "Nombre Corto": "TURTLE WAX CERA LIQUIDA 500 M",
+        "PVP": "12,95 €",
+        "Cod Barras": "5010322503269"
+      },
+      {
+        "posCode": "180090",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "LIMPIEZA",
+        "Nombre Corto": "TURTLE WAX SUPER EN PASTA 150",
+        "PVP": "5,50 €",
+        "Cod Barras": "5010322501159"
+      },
+      {
+        "posCode": "18000000",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "LIMPIEZA",
+        "Nombre Corto": "VAJILLAS NETTCLEAN 1250ML",
+        "PVP": "2,55 €",
+        "Cod Barras": "8436032033754"
+      },
+      {
+        "posCode": "180119",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "LIMPIEZA",
+        "Nombre Corto": "VINIL SPRAY PEQUEÑO 400ML",
+        "PVP": "7,00 €",
+        "Cod Barras": "8423429220118"
+      },
+      {
+        "posCode": "180217",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "WEWANGIAN AMB.LIQ.ANTI-TABACO",
+        "PVP": "3,75 €",
+        "Cod Barras": "8435030860096"
+      },
+      {
+        "posCode": "180257",
+        "FAMILIA": "LIMPIEZA COCHE",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "WEWANGIAN CAR PERFUME COCO",
+        "PVP": "3,75 €",
+        "Cod Barras": "8435030860003"
+      },
+      {
+        "posCode": "08000035",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "INTERIOR VEHICULO",
+        "Nombre Corto": "ALFOMBR PVC ALU LOOK ROJA 4U",
+        "PVP": "23,99 €",
+        "Cod Barras": "8424332183002"
+      },
+      {
+        "posCode": "100436",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "ADITIVOS",
+        "Nombre Corto": "ADBLUE 5L FINBLUE",
+        "PVP": "13,95 €",
+        "Cod Barras": "8437015914022"
+      },
+      {
+        "posCode": "100164",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "ADITIVOS",
+        "Nombre Corto": "AGUA DESTILADA 1 L",
+        "PVP": "0,95 €",
+        "Cod Barras": "10016404"
+      },
+      {
+        "posCode": "100165",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "ADITIVOS",
+        "Nombre Corto": "AGUA DESTILADA 5L",
+        "PVP": "2,75 €",
+        "Cod Barras": "8411291001461"
+      },
+      {
+        "posCode": "100316",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "ADITIVOS",
+        "Nombre Corto": "AGUA LIMPIAPARABRISA DUQUE 1L",
+        "PVP": "2,15 €",
+        "Cod Barras": "8437001213214"
+      },
+      {
+        "posCode": "100296",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "ADITIVOS",
+        "Nombre Corto": "AGUA LIMPIAPARABRISAS DUQUE 2",
+        "PVP": "4,00 €",
+        "Cod Barras": "8437001213221"
+      },
+      {
+        "posCode": "100295",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "ADITIVOS",
+        "Nombre Corto": "AGUA LIMPIAPARABRISAS DUQUE 5",
+        "PVP": "7,00 €",
+        "Cod Barras": "8437001213238"
+      },
+      {
+        "posCode": "100290",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIENTADOR ACMA FRESH",
+        "PVP": "3,00 €",
+        "Cod Barras": "4718403026188"
+      },
+      {
+        "posCode": "100324",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIENTADOR NEW CAR CEREZA 12",
+        "PVP": "6,00 €",
+        "Cod Barras": "8410202270118"
+      },
+      {
+        "posCode": "100322",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIENTADOR NEW CAR COCHE NU",
+        "PVP": "6,00 €",
+        "Cod Barras": "8410202270125"
+      },
+      {
+        "posCode": "100321",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIENTADOR NEW CAR COCO 12MI",
+        "PVP": "6,00 €",
+        "Cod Barras": "8410202270033"
+      },
+      {
+        "posCode": "100323",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIENTADOR NEW CAR MENTA 12M",
+        "PVP": "6,00 €",
+        "Cod Barras": "8410202270101"
+      },
+      {
+        "posCode": "100308",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIENTADOR NEWCAR BOSQUE 12",
+        "PVP": "6,00 €",
+        "Cod Barras": "8410202270057"
+      },
+      {
+        "posCode": "100305",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIENTADOR NEWCAR EUCALIPTO",
+        "PVP": "6,00 €",
+        "Cod Barras": "8410202270163"
+      },
+      {
+        "posCode": "100307",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIENTADOR NEWCAR MANZANA '",
+        "PVP": "6,00 €",
+        "Cod Barras": "8410202270071"
+      },
+      {
+        "posCode": "100304",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIENTADOR NEWCAR OCEANO 12",
+        "PVP": "6,00 €",
+        "Cod Barras": "8410202270156"
+      },
+      {
+        "posCode": "100306",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIENTADOR NEWCAR VAINILLA 1",
+        "PVP": "6,00 €",
+        "Cod Barras": "8410202270026"
+      },
+      {
+        "posCode": "100311",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIENTADOR PINO RSP 200 ML",
+        "PVP": "4,25 €",
+        "Cod Barras": "8427120300414"
+      },
+      {
+        "posCode": "100309",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "AMBIENTADOR TROPI FRESH 60ML",
+        "PVP": "3,30 €",
+        "Cod Barras": "8410202970995"
+      },
+      {
+        "posCode": "100171",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "AUTO ARRANQUE KRAFFT 200ML",
+        "PVP": "7,30 €",
+        "Cod Barras": "8410410126016"
+      },
+      {
+        "posCode": "100076",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "BP AUTRAN GM-MP 2L",
+        "PVP": "10,50 €",
+        "Cod Barras": "3222046853175"
+      },
+      {
+        "posCode": "100347",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "BP AUTRAN MBX 1L",
+        "PVP": "13,95 €",
+        "Cod Barras": ""
+      },
+      {
+        "posCode": "100075",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "BP ENERGEAR HYPO 140 5L",
+        "PVP": "26,60 €",
+        "Cod Barras": "8420346051054"
+      },
+      {
+        "posCode": "100073",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "BP ENERGEAR HYPO 90W 1L",
+        "PVP": "8,70 €",
+        "Cod Barras": "8420346050019"
+      },
+      {
+        "posCode": "100355",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "BP ENERGEAR HYPO 90W 4L",
+        "PVP": "28,75 €",
+        "Cod Barras": "4008177071867"
+      },
+      {
+        "posCode": "100074",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "BP ENERGEAR HYPO 90W 5L",
+        "PVP": "26,60 €",
+        "Cod Barras": "8420346050057"
+      },
+      {
+        "posCode": "100319",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "BP ENERGEAR SGX 75W90",
+        "PVP": "14,60 €",
+        "Cod Barras": "5412639005922"
+      },
+      {
+        "posCode": "100077",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "BP ENERGOL HLP-HM ISO 46 5L",
+        "PVP": "27,25 €",
+        "Cod Barras": "10007709"
+      },
+      {
+        "posCode": "100078",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "BP ENERGREASE LS2 0,5KG",
+        "PVP": "3,75 €",
+        "Cod Barras": "10007808"
+      },
+      {
+        "posCode": "100079",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "BP ENERGREASE LS2 5KG",
+        "PVP": "51,00 €",
+        "Cod Barras": "10007907"
+      },
+      {
+        "posCode": "100071",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "BP SUPER V 20W/50 1L",
+        "PVP": "7,20 €",
+        "Cod Barras": "8420346050118"
+      },
+      {
+        "posCode": "100072",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "BP SUPER V 20W/50 5L",
+        "PVP": "32,30 €",
+        "Cod Barras": "8420346050156"
+      },
+      {
+        "posCode": "100068",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "BP VISCO 2000 15/40 5L",
+        "PVP": "32,00 €",
+        "Cod Barras": "8420346511084"
+      },
+      {
+        "posCode": "100067",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "BP VISCO 2000 15W/40 1L",
+        "PVP": "9,00 €",
+        "Cod Barras": "8420346020012"
+      },
+      {
+        "posCode": "100288",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "BP VISCO 2000 20W50 1L",
+        "PVP": "9,00 €",
+        "Cod Barras": "8420346512197"
+      },
+      {
+        "posCode": "100284",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "BP VISCO 2000 20W50 5L..",
+        "PVP": "32,00 €",
+        "Cod Barras": "8420346512180"
+      },
+      {
+        "posCode": "100066",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "BP VISCO 3000 10/40 5L",
+        "PVP": "32,00 €",
+        "Cod Barras": "8420346030059"
+      },
+      {
+        "posCode": "100065",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "BP VISCO 3000 10W/40 1L",
+        "PVP": "9,00 €",
+        "Cod Barras": "8420346030011"
+      },
+      {
+        "posCode": "100280",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "BP VISCO 3000 DIESEL 10W/40 1",
+        "PVP": "9,30 €",
+        "Cod Barras": "8420346512234"
+      },
+      {
+        "posCode": "100281",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "BP VISCO 3000 DIESEL 4L",
+        "PVP": "33,40 €",
+        "Cod Barras": "8420346512241"
+      },
+      {
+        "posCode": "100367",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "BP VISCO 5000 5W/30 1L",
+        "PVP": "14,00 €",
+        "Cod Barras": "4008177071157"
+      },
+      {
+        "posCode": "100366",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "BP VISCO 5000 5W/30 4L",
+        "PVP": "44,00 €",
+        "Cod Barras": "4008177071164"
+      },
+      {
+        "posCode": "100063",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "BP VISCO 5000 5W/40 1L",
+        "PVP": "12,00 €",
+        "Cod Barras": "10006306"
+      },
+      {
+        "posCode": "100064",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "BP VISCO 5000 5W/40 4L",
+        "PVP": "36,00 €",
+        "Cod Barras": "8420346001547"
+      },
+      {
+        "posCode": "100368",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "BP VISCO 5000 M 5W/30 4L",
+        "PVP": "42,75 €",
+        "Cod Barras": "8420346050262"
+      },
+      {
+        "posCode": "100369",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "BP VISCO 5000M 5W/30 1L",
+        "PVP": "12,50 €",
+        "Cod Barras": "8420346050279"
+      },
+      {
+        "posCode": "100391",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "BP VISCO 5000M 5W30 4L",
+        "PVP": "44,00 €",
+        "Cod Barras": "4008177151293"
+      },
+      {
+        "posCode": "100350",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "BP VISCO 7000 5W/30 1L",
+        "PVP": "15,00 €",
+        "Cod Barras": "4008177070990"
+      },
+      {
+        "posCode": "100349",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "BP VISCO 7000 5W/30 4L",
+        "PVP": "49,00 €",
+        "Cod Barras": "4008177071003"
+      },
+      {
+        "posCode": "100252",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "BP VISCO 7000 SPORT 1L",
+        "PVP": "13,00 €",
+        "Cod Barras": "5412639003133"
+      },
+      {
+        "posCode": "100253",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "BP VISCO 7000 SPORT 4L",
+        "PVP": "47,00 €",
+        "Cod Barras": "5412639003140"
+      },
+      {
+        "posCode": "100069",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "BP VISCO DIESEL 15W/40 1L",
+        "PVP": "7,35 €",
+        "Cod Barras": "8420346030110"
+      },
+      {
+        "posCode": "100070",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "BP VISCO DIESEL 15W/40 5L",
+        "PVP": "33,35 €",
+        "Cod Barras": "8420346030158"
+      },
+      {
+        "posCode": "100356",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "CASTROL 2T 0.125L",
+        "PVP": "2,10 €",
+        "Cod Barras": "8005707976506"
+      },
+      {
+        "posCode": "100357",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "CASTROL 2T 1L",
+        "PVP": "11,40 €",
+        "Cod Barras": "4008177053641"
+      },
+      {
+        "posCode": "10000007",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "CASTROL ATF DEX II MULTIVEHICL",
+        "PVP": "19,57 €",
+        "Cod Barras": "4008177071539"
+      },
+      {
+        "posCode": "10000017",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "CASTROL EDGE 0W-20 LL IV 1LITRO",
+        "PVP": "24,80 €",
+        "Cod Barras": "4008177141485"
+      },
+      {
+        "posCode": "100415",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "CASTROL EDGE 5W/30 LL 4L",
+        "PVP": "71,40 €",
+        "Cod Barras": "4008177107146"
+      },
+      {
+        "posCode": "10000009",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "CASTROL EDGE 5W-30 LL 1L",
+        "PVP": "20,50 €",
+        "Cod Barras": "4008177107115"
+      },
+      {
+        "posCode": "10000013",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "CASTROL GTX 15W-40 1L",
+        "PVP": "10,40 €",
+        "Cod Barras": "4008177075049"
+      },
+      {
+        "posCode": "10000012",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "CASTROL GTX 15W-40 5L",
+        "PVP": "48,75 €",
+        "Cod Barras": "4008177047602"
+      },
+      {
+        "posCode": "10000014",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "CASTROL GTX 20W-50 1L",
+        "PVP": "10,80 €",
+        "Cod Barras": "8005707986703"
+      },
+      {
+        "posCode": "10000011",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "CASTROL GTX 20W-50 5L",
+        "PVP": "48,20 €",
+        "Cod Barras": "8005707987106"
+      },
+      {
+        "posCode": "100439",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "CASTROL GTX ULTRACLEAN 10W/40",
+        "PVP": "45,35 €",
+        "Cod Barras": "4008177133893"
+      },
+      {
+        "posCode": "10000010",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "CASTROL GTX ULTRACLEAN 10W/40",
+        "PVP": "12,20 €",
+        "Cod Barras": "4008177133855"
+      },
+      {
+        "posCode": "10000018",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "CASTROL MAGNATEC 5W-30 C2 4L",
+        "PVP": "59,95 €",
+        "Cod Barras": "4008177124723"
+      },
+      {
+        "posCode": "10000016",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "CASTROL MAGNATEC 5W-40 C3 1L",
+        "PVP": "16,35 €",
+        "Cod Barras": "4008177155581"
+      },
+      {
+        "posCode": "100473",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "CASTROL MAGNATEC STOP START 0W",
+        "PVP": "19,05 €",
+        "Cod Barras": "4008177142017"
+      },
+      {
+        "posCode": "100467",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "CASTROL MAGNATEC STOP START 0W",
+        "PVP": "65,90 €",
+        "Cod Barras": "4008177142055"
+      },
+      {
+        "posCode": "100408",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "CASTROL MAGNATEC STOP START 5W",
+        "PVP": "17,30 €",
+        "Cod Barras": "4008177156977"
+      },
+      {
+        "posCode": "100407",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "CASTROL MAGNATEC STOP START 5W",
+        "PVP": "65,85 €",
+        "Cod Barras": "4008177127199"
+      },
+      {
+        "posCode": "100205",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "KRAFFT AFLOJATODO 400 ML",
+        "PVP": "12,00 €",
+        "Cod Barras": "8410410150943"
+      },
+      {
+        "posCode": "100225",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "KRAFFT AMBIENTADOR PINO 8GG",
+        "PVP": "3,85 €",
+        "Cod Barras": "8410410173928"
+      },
+      {
+        "posCode": "100186",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "KRAFFT AUTO BRILL AMB. PARFUM",
+        "PVP": "3,61 €",
+        "Cod Barras": "8411044012553"
+      },
+      {
+        "posCode": "100185",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "AMBIENTADOR",
+        "Nombre Corto": "KRAFFT AUTO BRILL AMBIENTADOR",
+        "PVP": "3,61 €",
+        "Cod Barras": "8411044012515"
+      },
+      {
+        "posCode": "100193",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LIMPIEZA",
+        "Nombre Corto": "KRAFFT BRILLA NEUMATICOS 500",
+        "PVP": "10,20 €",
+        "Cod Barras": "8410410142931"
+      },
+      {
+        "posCode": "100195",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LIMPIEZA",
+        "Nombre Corto": "KRAFFT BRILLO CERA 250 G",
+        "PVP": "8,80 €",
+        "Cod Barras": "8410410143228"
+      },
+      {
+        "posCode": "100197",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LIMPIEZA",
+        "Nombre Corto": "KRAFFT BRILLO METALICO 450 ML",
+        "PVP": "5,95 €",
+        "Cod Barras": "8410410143426"
+      },
+      {
+        "posCode": "100194",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LIMPIEZA",
+        "Nombre Corto": "KRAFFT BRILLO PROTECTOR 450 M",
+        "PVP": "8,10 €",
+        "Cod Barras": "8410410143129"
+      },
+      {
+        "posCode": "100196",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LIMPIEZA",
+        "Nombre Corto": "KRAFFT BRILLO RENOVADOR 450 M",
+        "PVP": "8,70 €",
+        "Cod Barras": "8410410143327"
+      },
+      {
+        "posCode": "100372",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LIMPIEZA",
+        "Nombre Corto": "KRAFFT CEPILLO BRILLO",
+        "PVP": "15,65 €",
+        "Cod Barras": "8410410148032"
+      },
+      {
+        "posCode": "100189",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LIMPIEZA",
+        "Nombre Corto": "KRAFFT ESPONJA IMPREGNADA",
+        "PVP": "4,05 €",
+        "Cod Barras": "8410410141514"
+      },
+      {
+        "posCode": "100206",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "KRAFFT GRASA CADENA MOTOS 250",
+        "PVP": "4,27 €",
+        "Cod Barras": "8410410152138"
+      },
+      {
+        "posCode": "100208",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "KRAFFT GRASA DE LITIO 150G",
+        "PVP": "3,19 €",
+        "Cod Barras": "8410410153937"
+      },
+      {
+        "posCode": "100207",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "KRAFFT GRASA PARA MOTOS 400 M",
+        "PVP": "12,25 €",
+        "Cod Barras": "10020708"
+      },
+      {
+        "posCode": "100179",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LIMPIEZA",
+        "Nombre Corto": "KRAFFT LAVA-ENCERA 1L",
+        "PVP": "9,20 €",
+        "Cod Barras": "8410410140753"
+      },
+      {
+        "posCode": "100180",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LIMPIEZA",
+        "Nombre Corto": "KRAFFT LAVA-PARABRISA 1L",
+        "PVP": "4,95 €",
+        "Cod Barras": "8410410174444"
+      },
+      {
+        "posCode": "100181",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LIMPIEZA",
+        "Nombre Corto": "KRAFFT LAVAPARABRISA 2L",
+        "PVP": "8,00 €",
+        "Cod Barras": "8410410141255"
+      },
+      {
+        "posCode": "100190",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LIMPIEZA",
+        "Nombre Corto": "KRAFFT LIMPIA CRISTALES 500 M",
+        "PVP": "7,75 €",
+        "Cod Barras": "8410410141934"
+      },
+      {
+        "posCode": "100191",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LIMPIEZA",
+        "Nombre Corto": "KRAFFT LIMPIA LLANTAS 500 ML",
+        "PVP": "8,75 €",
+        "Cod Barras": "8410410142023"
+      },
+      {
+        "posCode": "100218",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LIMPIEZA",
+        "Nombre Corto": "KRAFFT LIMPIA MOTORES TERCLEN",
+        "PVP": "7,65 €",
+        "Cod Barras": "8410410177629"
+      },
+      {
+        "posCode": "100188",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LIMPIEZA",
+        "Nombre Corto": "KRAFFT LIMPIA SALPICADEROS 20",
+        "PVP": "6,00 €",
+        "Cod Barras": "8410410141422"
+      },
+      {
+        "posCode": "100184",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LIMPIEZA",
+        "Nombre Corto": "KRAFFT LIMPIA SALPICADEROS 40",
+        "PVP": "10,85 €",
+        "Cod Barras": "8410410141460"
+      },
+      {
+        "posCode": "100183",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LIMPIEZA",
+        "Nombre Corto": "KRAFFT LIMPIA SALPICADEROS 75",
+        "PVP": "15,30 €",
+        "Cod Barras": "8410410141415"
+      },
+      {
+        "posCode": "100182",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LIMPIEZA",
+        "Nombre Corto": "KRAFFT LIMPIA TAPICERIA 520 M",
+        "PVP": "7,80 €",
+        "Cod Barras": "8410410141330"
+      },
+      {
+        "posCode": "100220",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "REFRIGERANTE",
+        "Nombre Corto": "KRAFFT POLIURETANO 300 ML",
+        "PVP": "10,58 €",
+        "Cod Barras": "10022009"
+      },
+      {
+        "posCode": "100173",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "REFRIGERANTE",
+        "Nombre Corto": "KRAFFT REFRIGERANTE 10% ROSA",
+        "PVP": "6,35 €",
+        "Cod Barras": "8410410132253"
+      },
+      {
+        "posCode": "100187",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "REFRIGERANTE",
+        "Nombre Corto": "KRAFFT REFRIGERANTE 10% VERDE",
+        "PVP": "7,00 €",
+        "Cod Barras": "8410410132352"
+      },
+      {
+        "posCode": "100172",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "REFRIGERANTE",
+        "Nombre Corto": "KRAFFT REFRIGERANTE 45% 5L",
+        "PVP": "11,12 €",
+        "Cod Barras": "8410410130655"
+      },
+      {
+        "posCode": "100243",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "REFRIGERANTE",
+        "Nombre Corto": "KRAFFT REFRIGERANTE 50%",
+        "PVP": "13,95 €",
+        "Cod Barras": "8410410131751"
+      },
+      {
+        "posCode": "100201",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LIMPIEZA",
+        "Nombre Corto": "KRAFFT RENUEVA COLOR PLASTICO",
+        "PVP": "10,00 €",
+        "Cod Barras": "8410410147233"
+      },
+      {
+        "posCode": "100192",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LIMPIEZA",
+        "Nombre Corto": "KRAFFT RENUEVA PARACHOQUES 32",
+        "PVP": "7,40 €",
+        "Cod Barras": "8410410142436"
+      },
+      {
+        "posCode": "100216",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "REPARACIÓN",
+        "Nombre Corto": "KRAFFT REPARA PINCHAZOS 200 M",
+        "PVP": "8,95 €",
+        "Cod Barras": "8410410176523"
+      },
+      {
+        "posCode": "100217",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "REPARACIÓN",
+        "Nombre Corto": "KRAFFT REPARA PINCHAZOS HINCH",
+        "PVP": "11,60 €",
+        "Cod Barras": "8410410176530"
+      },
+      {
+        "posCode": "100177",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LIMPIEZA",
+        "Nombre Corto": "KRAFFT SHAMPOO 1L",
+        "PVP": "4,75 €",
+        "Cod Barras": "8410410140043"
+      },
+      {
+        "posCode": "100358",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "ADITIVOS",
+        "Nombre Corto": "LIMPIA INYECTORES KRAFT 375ML",
+        "PVP": "7,55 €",
+        "Cod Barras": "8410410816436"
+      },
+      {
+        "posCode": "100343",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "ADITIVOS",
+        "Nombre Corto": "LIMPIA INYECTORES SLICK50400M",
+        "PVP": "6,80 €",
+        "Cod Barras": "5026349018075"
+      },
+      {
+        "posCode": "100359",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "ADITIVOS",
+        "Nombre Corto": "LIMPIA INYECTORES STP 200ML",
+        "PVP": "8,00 €",
+        "Cod Barras": "5020144814535"
+      },
+      {
+        "posCode": "100363",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "ADITIVOS",
+        "Nombre Corto": "LIMPIA INYECTORES WYNN'S 325M",
+        "PVP": "10,95 €",
+        "Cod Barras": "5411693139666"
+      },
+      {
+        "posCode": "100365",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "ADITIVOS",
+        "Nombre Corto": "LIMPIA INYECTROES GASOLINA 32",
+        "PVP": "10,35 €",
+        "Cod Barras": "5411693559662"
+      },
+      {
+        "posCode": "100334",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LIMPIEZA",
+        "Nombre Corto": "LIMPIA MOTORES KRAFFT 500ML",
+        "PVP": "8,20 €",
+        "Cod Barras": "8410410177438"
+      },
+      {
+        "posCode": "100351",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LIMPIEZA",
+        "Nombre Corto": "LIMPIA TAPICERIAS 500ML",
+        "PVP": "8,70 €",
+        "Cod Barras": "8410410170828"
+      },
+      {
+        "posCode": "100330",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "ADITIVOS",
+        "Nombre Corto": "LIQUIDO DE FRENO BOSCH DOT 4",
+        "PVP": "5,50 €",
+        "Cod Barras": "4047023028815"
+      },
+      {
+        "posCode": "100327",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "ADITIVOS",
+        "Nombre Corto": "LIQUIDO DE FRENO DOT 4 250ML",
+        "PVP": "3,50 €",
+        "Cod Barras": "5012759946695"
+      },
+      {
+        "posCode": "100331",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "ADITIVOS",
+        "Nombre Corto": "LIQUIDO DE FRENO DOT 4 BOSCH",
+        "PVP": "5,95 €",
+        "Cod Barras": "4047023028808"
+      },
+      {
+        "posCode": "100276",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "ADITIVOS",
+        "Nombre Corto": "LIQUIDO FRENO ATE DOT 3",
+        "PVP": "4,50 €",
+        "Cod Barras": "10027608"
+      },
+      {
+        "posCode": "100277",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "ADITIVOS",
+        "Nombre Corto": "LIQUIDO FRENO ATE DOT4",
+        "PVP": "5,10 €",
+        "Cod Barras": "4006633490016"
+      },
+      {
+        "posCode": "100227",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "REFRIGERANTE",
+        "Nombre Corto": "LIQUIDO REFRIGERANTE 2L.PEUGE",
+        "PVP": "6,15 €",
+        "Cod Barras": "10022702"
+      },
+      {
+        "posCode": "100247",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "ADITIVOS",
+        "Nombre Corto": "LOCHKEED DOT 5.",
+        "PVP": "5,30 €",
+        "Cod Barras": "5012759946770"
+      },
+      {
+        "posCode": "100239",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "ADITIVOS",
+        "Nombre Corto": "LOCKHEED DOT 3 1L",
+        "PVP": "6,61 €",
+        "Cod Barras": "5012759946558"
+      },
+      {
+        "posCode": "100238",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "ADITIVOS",
+        "Nombre Corto": "LOCKHEED DOT 3 500ML LIQUIDO",
+        "PVP": "3,50 €",
+        "Cod Barras": "5012759946497"
+      },
+      {
+        "posCode": "100144",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "ADITIVOS",
+        "Nombre Corto": "LOCKHEED DOT 4 500ML",
+        "PVP": "5,75 €",
+        "Cod Barras": "5012759946701"
+      },
+      {
+        "posCode": "100145",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "ADITIVOS",
+        "Nombre Corto": "LOCKHEED SUPER 105 DOT 3 500M",
+        "PVP": "4,03 €",
+        "Cod Barras": "10014509"
+      },
+      {
+        "posCode": "100326",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "ADITIVOS",
+        "Nombre Corto": "LUBE MULTIFUNCION PROFESSIONA",
+        "PVP": "7,60 €",
+        "Cod Barras": "8410410174932"
+      },
+      {
+        "posCode": "100360",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "LUBRICANTE SINTETICO 2T 3CV",
+        "PVP": "1,70 €",
+        "Cod Barras": "8414587202511"
+      },
+      {
+        "posCode": "10000019",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "MAGNATEC 10W-40 A3/B4 1L",
+        "PVP": "14,00 €",
+        "Cod Barras": "4008177157035"
+      },
+      {
+        "posCode": "10000015",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LUBRICANTES",
+        "Nombre Corto": "MAGNATEC 5W-40 C3 4L",
+        "PVP": "58,50 €",
+        "Cod Barras": "4008177155598"
+      },
+      {
+        "posCode": "100228",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "REPARACIÓN",
+        "Nombre Corto": "PEGAMENTO LOCTITE 27020",
+        "PVP": "9,41 €",
+        "Cod Barras": "8412432270203"
+      },
+      {
+        "posCode": "100302",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "REFRIGERANTE",
+        "Nombre Corto": "REFRIGERANTE 10% DUQUE 1L",
+        "PVP": "1,90 €",
+        "Cod Barras": "8437001213023"
+      },
+      {
+        "posCode": "100315",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "REFRIGERANTE",
+        "Nombre Corto": "REFRIGERANTE 10% DUQUE 5L",
+        "PVP": "5,90 €",
+        "Cod Barras": "8437001213283"
+      },
+      {
+        "posCode": "100317",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "REFRIGERANTE",
+        "Nombre Corto": "REFRIGERANTE 30% FULMAR 5L",
+        "PVP": "10,00 €",
+        "Cod Barras": "10031704"
+      },
+      {
+        "posCode": "10000003",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "REFRIGERANTE",
+        "Nombre Corto": "REFRIGERANTE 30% VERDE FULMAR",
+        "PVP": "9,95 €",
+        "Cod Barras": "8423190103108"
+      },
+      {
+        "posCode": "10000002",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "REFRIGERANTE",
+        "Nombre Corto": "REFRIGERANTE 30% VERDE FULMAR",
+        "PVP": "3,50 €",
+        "Cod Barras": "8423190103634"
+      },
+      {
+        "posCode": "100318",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "REFRIGERANTE",
+        "Nombre Corto": "REFRIGERANTE 50% FULMAR 5L",
+        "PVP": "17,00 €",
+        "Cod Barras": "8423190101661"
+      },
+      {
+        "posCode": "10000005",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "REFRIGERANTE",
+        "Nombre Corto": "REFRIGERANTE 50% ROSA FULMAR 1",
+        "PVP": "4,95 €",
+        "Cod Barras": "8437001213641"
+      },
+      {
+        "posCode": "10000004",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "REFRIGERANTE",
+        "Nombre Corto": "REFRIGERANTE 50% ROSA FULMAR 5",
+        "PVP": "15,95 €",
+        "Cod Barras": "8437001213092"
+      },
+      {
+        "posCode": "10000001",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "REFRIGERANTE",
+        "Nombre Corto": "REFRIGERANTE 50% ROSA G/12 1L",
+        "PVP": "5,50 €",
+        "Cod Barras": "8437001213757"
+      },
+      {
+        "posCode": "10000000",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "REFRIGERANTE",
+        "Nombre Corto": "REFRIGERANTE 50% ROSA G/12 PLU",
+        "PVP": "19,95 €",
+        "Cod Barras": "8437001213702"
+      },
+      {
+        "posCode": "100162",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LIMPIEZA",
+        "Nombre Corto": "TURTLE WAX LIMP. Y PROT. DE T",
+        "PVP": "5,41 €",
+        "Cod Barras": "5010322300257"
+      },
+      {
+        "posCode": "100161",
+        "FAMILIA": "FLUIDOS",
+        "CATEGORIA": "LIMPIEZA",
+        "Nombre Corto": "TURTLE WAX LIMPIA VINILO 400",
+        "PVP": "6,49 €",
+        "Cod Barras": "5010322300059"
+      },
+      {
+        "posCode": "08000038",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "INTERIOR VEHICULO",
+        "Nombre Corto": "ALFOMBRA GOMA NEGRA 3P",
+        "PVP": "34,50 €",
+        "Cod Barras": "8430046117349"
+      },
+      {
+        "posCode": "08000065",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "INTERIOR VEHICULO",
+        "Nombre Corto": "ALFOMBRA GOMA UNIV CARAT NE",
+        "PVP": "28,40 €",
+        "Cod Barras": "8424332408204"
+      },
+      {
+        "posCode": "08000039",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "INTERIOR VEHICULO",
+        "Nombre Corto": "ALFOMBRA MOQUETA CLASIC NEGRA",
+        "PVP": "14,50 €",
+        "Cod Barras": "8430046001013"
+      },
+      {
+        "posCode": "08000034",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "INTERIOR VEHICULO",
+        "Nombre Corto": "ALFOMBRA PVC ALU LOOK AZUL",
+        "PVP": "23,99 €",
+        "Cod Barras": "8424332182005"
+      },
+      {
+        "posCode": "08000033",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "INTERIOR VEHICULO",
+        "Nombre Corto": "ALFOMBRA PVC ALU LOOK PLATA",
+        "PVP": "23,99 €",
+        "Cod Barras": "8424332181008"
+      },
+      {
+        "posCode": "08000037",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "INTERIOR VEHICULO",
+        "Nombre Corto": "ALFOMBRA PVC PIANO-BLACK 4U",
+        "PVP": "23,99 €",
+        "Cod Barras": "8424332185006"
+      },
+      {
+        "posCode": "08000060",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "ELECTRICIDAD",
+        "Nombre Corto": "ANTENA 30CM CON ADAPTADOR 5/6M",
+        "PVP": "5,60 €",
+        "Cod Barras": "8424332630537"
+      },
+      {
+        "posCode": "08000040",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "ELECTRICIDAD",
+        "Nombre Corto": "ANTENA ALUMINIO VIPER PLATA",
+        "PVP": "8,10 €",
+        "Cod Barras": "8424332080097"
+      },
+      {
+        "posCode": "08000041",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "ELECTRICIDAD",
+        "Nombre Corto": "ANTENAS 38CM CON ADAPT 5/6MM",
+        "PVP": "5,60 €",
+        "Cod Barras": "8424332630568"
+      },
+      {
+        "posCode": "081989",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "ELECTRICIDAD",
+        "Nombre Corto": "BALIZA SE ALIZACION LUMINOSA",
+        "PVP": "20,95 €",
+        "Cod Barras": "8420277134642"
+      },
+      {
+        "posCode": "08000005",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "BATERIA",
+        "Nombre Corto": "BATERIA TUDOR HIGH-TECH TA770",
+        "PVP": "149,00 €",
+        "Cod Barras": "3661024054249"
+      },
+      {
+        "posCode": "08000003",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "BATERIA",
+        "Nombre Corto": "BATERIA TUDOR TB500 50AH 12V +",
+        "PVP": "95,00 €",
+        "Cod Barras": "3661024054515"
+      },
+      {
+        "posCode": "08000004",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "BATERIA",
+        "Nombre Corto": "BATERIA TUDOR TB620 62AH 540A",
+        "PVP": "105,00 €",
+        "Cod Barras": "3661024054539"
+      },
+      {
+        "posCode": "081971",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "LAMPARAS",
+        "Nombre Corto": "BLISTER 1 LAMPARA 788",
+        "PVP": "2,80 €",
+        "Cod Barras": "8426306077881"
+      },
+      {
+        "posCode": "081978",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "LAMPARAS",
+        "Nombre Corto": "BLISTER 2 LAMP. 151 12V 5W",
+        "PVP": "1,25 €",
+        "Cod Barras": "8426306071513"
+      },
+      {
+        "posCode": "081975",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "LAMPARAS",
+        "Nombre Corto": "BLISTER 2 LAMP. 21W12V21W 142",
+        "PVP": "1,00 €",
+        "Cod Barras": "8426306071421"
+      },
+      {
+        "posCode": "081985",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "LAMPARAS",
+        "Nombre Corto": "BLISTER 2 LAMP.12V 21W AMOLUX",
+        "PVP": "1,60 €",
+        "Cod Barras": "8426306072992"
+      },
+      {
+        "posCode": "081979",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "LAMPARAS",
+        "Nombre Corto": "BLISTER 2 LAMPARAS 158 AMOLUX",
+        "PVP": "1,00 €",
+        "Cod Barras": "8426306071582"
+      },
+      {
+        "posCode": "081987",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "LAMPARAS",
+        "Nombre Corto": "BLISTER 2 LAMPARAS 523",
+        "PVP": "1,25 €",
+        "Cod Barras": "8426306075238"
+      },
+      {
+        "posCode": "081970",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "LAMPARAS",
+        "Nombre Corto": "BLISTER 2 LAMPARAS 527",
+        "PVP": "1,25 €",
+        "Cod Barras": "8426306075276"
+      },
+      {
+        "posCode": "081972",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "LAMPARAS",
+        "Nombre Corto": "BLISTER 2 LAMPARAS 91",
+        "PVP": "1,20 €",
+        "Cod Barras": "8426306070912"
+      },
+      {
+        "posCode": "081969",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "LAMPARAS",
+        "Nombre Corto": "BLISTER H4 MEGAWATT",
+        "PVP": "3,00 €",
+        "Cod Barras": "8426306001794"
+      },
+      {
+        "posCode": "081960",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "LAMPARAS",
+        "Nombre Corto": "BLISTER LAMPARA H4 12V 60/55W",
+        "PVP": "4,50 €",
+        "Cod Barras": "8421779001043"
+      },
+      {
+        "posCode": "081983",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "LAMPARAS",
+        "Nombre Corto": "BLISTER MINI FUSIBLES 10U",
+        "PVP": "2,75 €",
+        "Cod Barras": "8424332052001"
+      },
+      {
+        "posCode": "08000009",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "INTERIOR VEHICULO",
+        "Nombre Corto": "BOLSA RESPALDO TRASERO ASIENTO",
+        "PVP": "14,50 €",
+        "Cod Barras": "8424332123862"
+      },
+      {
+        "posCode": "083573",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "ELECTRICIDAD",
+        "Nombre Corto": "CABLES BATERIA 400 AMP 3M KRAW",
+        "PVP": "26,00 €",
+        "Cod Barras": "8421779126012"
+      },
+      {
+        "posCode": "08000045",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "REPARACIÓN",
+        "Nombre Corto": "CAJA PARCHES BICI",
+        "PVP": "4,10 €",
+        "Cod Barras": "3349380075022"
+      },
+      {
+        "posCode": "08000055",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "LIMPIEZA",
+        "Nombre Corto": "CHAMPU AUTOLIMP 1L",
+        "PVP": "3,35 €",
+        "Cod Barras": "8435066359878"
+      },
+      {
+        "posCode": "08000025",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "EXTERIOR VEHÍCULO",
+        "Nombre Corto": "CINTA ANTI ESTATICA 1U",
+        "PVP": "8,35 €",
+        "Cod Barras": "8424332131201"
+      },
+      {
+        "posCode": "08000077",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "INTERIOR VEHICULO",
+        "Nombre Corto": "CONFORT TRASERO NEGRO",
+        "PVP": "36,10 €",
+        "Cod Barras": "8413206000095"
+      },
+      {
+        "posCode": "08000022",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "INTERIOR VEHICULO",
+        "Nombre Corto": "CUBRE ASIENTO",
+        "PVP": "21,15 €",
+        "Cod Barras": "8424332223340"
+      },
+      {
+        "posCode": "08000016",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "INTERIOR VEHICULO",
+        "Nombre Corto": "CUBRE ASIENTOS MOD.SURF 2P",
+        "PVP": "39,95 €",
+        "Cod Barras": ""
+      },
+      {
+        "posCode": "08000073",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "EXTERIOR VEHÍCULO",
+        "Nombre Corto": "CUBRECOCHES MOD M",
+        "PVP": "45,47 €",
+        "Cod Barras": "8424332431615"
+      },
+      {
+        "posCode": "08000051",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "PARABRISA",
+        "Nombre Corto": "ESCOBILLA UNIVERSAL GOMA 35CM",
+        "PVP": "10,00 €",
+        "Cod Barras": "8436049574165"
+      },
+      {
+        "posCode": "083313",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "PARABRISA",
+        "Nombre Corto": "ESCOBILLA UNIVERSAL GOMA 40CM",
+        "PVP": "9,50 €",
+        "Cod Barras": "8436049574189"
+      },
+      {
+        "posCode": "083538",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "PARABRISA",
+        "Nombre Corto": "ESCOBILLA UNIVERSAL GOMA 45CM",
+        "PVP": "9,50 €",
+        "Cod Barras": "8436049574196"
+      },
+      {
+        "posCode": "082648",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "PARABRISA",
+        "Nombre Corto": "ESCOBILLA UNIVERSAL GOMA 48 CM",
+        "PVP": "10,00 €",
+        "Cod Barras": "8436049574202"
+      },
+      {
+        "posCode": "083314",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "PARABRISA",
+        "Nombre Corto": "ESCOBILLA UNIVERSAL GOMA 50CM",
+        "PVP": "10,00 €",
+        "Cod Barras": "8436049574219"
+      },
+      {
+        "posCode": "083579",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "PARABRISA",
+        "Nombre Corto": "ESCOBILLA UNIVERSAL GOMA 55CM",
+        "PVP": "10,00 €",
+        "Cod Barras": "8436049574233"
+      },
+      {
+        "posCode": "082583",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "PARABRISA",
+        "Nombre Corto": "ESCOBILLA UNIVERSAL GOMA 60CM",
+        "PVP": "10,00 €",
+        "Cod Barras": "8436049574240"
+      },
+      {
+        "posCode": "083567",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "PARABRISA",
+        "Nombre Corto": "ESCOBILLA UNIVERSAL GOMA 65CM",
+        "PVP": "10,00 €",
+        "Cod Barras": "8436049574257"
+      },
+      {
+        "posCode": "082666",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "PARABRISA",
+        "Nombre Corto": "ESCOBILLA UNIVERSAL GOMA 70CM",
+        "PVP": "13,00 €",
+        "Cod Barras": "8436049574264"
+      },
+      {
+        "posCode": "081980",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "LAMPARAS",
+        "Nombre Corto": "ESTUCHE LAMP H4 NORMAL",
+        "PVP": "7,00 €",
+        "Cod Barras": "8426306902008"
+      },
+      {
+        "posCode": "081959",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "LAMPARAS",
+        "Nombre Corto": "ESTUCHE LAMPARA H7 12V 55W",
+        "PVP": "7,00 €",
+        "Cod Barras": "8426306920088"
+      },
+      {
+        "posCode": "081981",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "LAMPARAS",
+        "Nombre Corto": "ESTUCHE LAMPARA H7 AMOLUX",
+        "PVP": "9,00 €",
+        "Cod Barras": "8426306920002"
+      },
+      {
+        "posCode": "081291",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "LAMPARAS",
+        "Nombre Corto": "ESTUCHE LAMPARAS 12V+H4 LACUS",
+        "PVP": "7,00 €",
+        "Cod Barras": "4010356713598"
+      },
+      {
+        "posCode": "081973",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "LAMPARAS",
+        "Nombre Corto": "ESTUHE AMOLUX H7+H1",
+        "PVP": "10,00 €",
+        "Cod Barras": "8426306920057"
+      },
+      {
+        "posCode": "08000011",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "INTERIOR VEHICULO",
+        "Nombre Corto": "FUNDA ASIENTOS UNICORN 2 PCS",
+        "PVP": "10,10 €",
+        "Cod Barras": "8424332991300"
+      },
+      {
+        "posCode": "08000052",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "INTERIOR VEHICULO",
+        "Nombre Corto": "FUNDA ASIENTOS UNICORN 2PCS GR",
+        "PVP": "10,00 €",
+        "Cod Barras": "8424332999528"
+      },
+      {
+        "posCode": "08000071",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "INTERIOR VEHICULO",
+        "Nombre Corto": "FUNDA PROTECTORA NEPTUNO 1",
+        "PVP": "15,50 €",
+        "Cod Barras": "8424332453655"
+      },
+      {
+        "posCode": "08000017",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "INTERIOR VEHICULO",
+        "Nombre Corto": "FUNDA TEXTIL ASIENTO RACING",
+        "PVP": "38,45 €",
+        "Cod Barras": "8424332423429"
+      },
+      {
+        "posCode": "08000054",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "INTERIOR VEHICULO",
+        "Nombre Corto": "FUNDA TEXTIL ASIENTOS GT GRIS",
+        "PVP": "38,45 €",
+        "Cod Barras": "8424332814029"
+      },
+      {
+        "posCode": "083566",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "INTERIOR VEHICULO",
+        "Nombre Corto": "FUNDA VOLANTE 41-43CM CAR+",
+        "PVP": "14,00 €",
+        "Cod Barras": "8424332050304"
+      },
+      {
+        "posCode": "08000028",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "INTERIOR VEHICULO",
+        "Nombre Corto": "FUNDA VOLANTE FLOWER POWER",
+        "PVP": "12,45 €",
+        "Cod Barras": "8424332250902"
+      },
+      {
+        "posCode": "08000059",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "INTERIOR VEHICULO",
+        "Nombre Corto": "FUNDA VOLANTE GRIP NEGRA 38CM",
+        "PVP": "11,85 €",
+        "Cod Barras": "8424332250896"
+      },
+      {
+        "posCode": "08000001",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "INTERIOR VEHICULO",
+        "Nombre Corto": "FUNDA VOLANTE PIEL NEGRA LUX C",
+        "PVP": "12,95 €",
+        "Cod Barras": "8424332050540"
+      },
+      {
+        "posCode": "08000000",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "INTERIOR VEHICULO",
+        "Nombre Corto": "FUNDA VOLANTE POWER NEGRA CAR+",
+        "PVP": "9,95 €",
+        "Cod Barras": "8424332050656"
+      },
+      {
+        "posCode": "08000027",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "INTERIOR VEHICULO",
+        "Nombre Corto": "FUNDA VOLANTE POWER ROJO PLATA",
+        "PVP": "8,25 €",
+        "Cod Barras": "8424332050663"
+      },
+      {
+        "posCode": "08000026",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "INTERIOR VEHICULO",
+        "Nombre Corto": "FUNDA VOLANTE PVC SNAKE BEIG N",
+        "PVP": "12,95 €",
+        "Cod Barras": "8424332050694"
+      },
+      {
+        "posCode": "08000029",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "INTERIOR VEHICULO",
+        "Nombre Corto": "FUNDA VOLANTE PVC SNAKE ROJO N",
+        "PVP": "11,75 €",
+        "Cod Barras": "8424332050717"
+      },
+      {
+        "posCode": "083526",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "INTERIOR VEHICULO",
+        "Nombre Corto": "FUNDA VOLANTE SEMIPIEL 37-39",
+        "PVP": "7,45 €",
+        "Cod Barras": "8424332050489"
+      },
+      {
+        "posCode": "08000074",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "INTERIOR VEHICULO",
+        "Nombre Corto": "FUNDA VOLANTE SUPER FIBER NEGRA",
+        "PVP": "15,70 €",
+        "Cod Barras": "8424332051707"
+      },
+      {
+        "posCode": "080110",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "ELECTRICIDAD",
+        "Nombre Corto": "FUSIBLE SURTIDOS BL70",
+        "PVP": "1,50 €",
+        "Cod Barras": "8011008"
+      },
+      {
+        "posCode": "081984",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "ELECTRICIDAD",
+        "Nombre Corto": "FUSIBLES SURTIDO 10 MINIFUSIB",
+        "PVP": "3,00 €",
+        "Cod Barras": "8421779525013"
+      },
+      {
+        "posCode": "08000030",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "INTERIOR VEHICULO",
+        "Nombre Corto": "JGO ALFOMBRA GOMA BEIGE 4PZS",
+        "PVP": "29,95 €",
+        "Cod Barras": "8424332408105"
+      },
+      {
+        "posCode": "08000061",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "INTERIOR VEHICULO",
+        "Nombre Corto": "JGO ALFOMBRAS ALUMINIZADAS ROS",
+        "PVP": "25,99 €",
+        "Cod Barras": "8424332186607"
+      },
+      {
+        "posCode": "08000036",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "INTERIOR VEHICULO",
+        "Nombre Corto": "JGO ALFOMBRAS CARBONO",
+        "PVP": "23,99 €",
+        "Cod Barras": "8424332184009"
+      },
+      {
+        "posCode": "08000031",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "INTERIOR VEHICULO",
+        "Nombre Corto": "JGO ALFOMBRAS GOMA CARAT GRIS",
+        "PVP": "25,15 €",
+        "Cod Barras": "8424332408303"
+      },
+      {
+        "posCode": "08000047",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "INTERIOR VEHICULO",
+        "Nombre Corto": "JGO ALFOMBRAS MATRIX AZUL",
+        "PVP": "40,75 €",
+        "Cod Barras": "8421823720340"
+      },
+      {
+        "posCode": "08000063",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "INTERIOR VEHICULO",
+        "Nombre Corto": "JGO ALFOMBRAS MATRIX ROJA",
+        "PVP": "38,75 €",
+        "Cod Barras": "8421823720333"
+      },
+      {
+        "posCode": "08000032",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "INTERIOR VEHICULO",
+        "Nombre Corto": "JGO ALFOMBRAS NEGRAS 4PZAS",
+        "PVP": "28,50 €",
+        "Cod Barras": "8424332307200"
+      },
+      {
+        "posCode": "08000007",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "INTERIOR VEHICULO",
+        "Nombre Corto": "JGO ALMOHADILLA CINTURON SEGUR",
+        "PVP": "12,15 €",
+        "Cod Barras": "8424332625526"
+      },
+      {
+        "posCode": "08000006",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "INTERIOR VEHICULO",
+        "Nombre Corto": "JGO ALMOHADILLA CINTURON SEGUR",
+        "PVP": "11,95 €",
+        "Cod Barras": "8424332625502"
+      },
+      {
+        "posCode": "08000050",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "INTERIOR VEHICULO",
+        "Nombre Corto": "JGO ALMOHADILLAS CINTO SEGUR N",
+        "PVP": "11,95 €",
+        "Cod Barras": "8424332625489"
+      },
+      {
+        "posCode": "08000076",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "INTERIOR VEHICULO",
+        "Nombre Corto": "JGO ALMOHADILLAS SPARCO AZUL",
+        "PVP": "15,50 €",
+        "Cod Barras": "6922516334759"
+      },
+      {
+        "posCode": "08000070",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "INTERIOR VEHICULO",
+        "Nombre Corto": "JGO AUTOCONFORT NEGRO",
+        "PVP": "34,50 €",
+        "Cod Barras": "8413206000682"
+      },
+      {
+        "posCode": "08000064",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "INTERIOR VEHICULO",
+        "Nombre Corto": "JGO FUNDAS GRANADA AZUL",
+        "PVP": "23,25 €",
+        "Cod Barras": "8430046118209"
+      },
+      {
+        "posCode": "08000067",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "INTERIOR VEHICULO",
+        "Nombre Corto": "JGO FUNDAS GRANDA GRIS",
+        "PVP": "26,50 €",
+        "Cod Barras": "8430046118216"
+      },
+      {
+        "posCode": "08000068",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "INTERIOR VEHICULO",
+        "Nombre Corto": "JGO FUNDAS SEVILLA AZUL",
+        "PVP": "26,50 €",
+        "Cod Barras": "8430046118179"
+      },
+      {
+        "posCode": "08000072",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "INTERIOR VEHICULO",
+        "Nombre Corto": "JGO FUNDAS SEVILLA ROJO",
+        "PVP": "28,95 €",
+        "Cod Barras": "8430046118193"
+      },
+      {
+        "posCode": "18000011",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "INTERIOR VEHICULO",
+        "Nombre Corto": "JGO JARAPAS ADAPTABLES 3 PIEZA",
+        "PVP": "23,50 €",
+        "Cod Barras": "8422550040879"
+      },
+      {
+        "posCode": "081982",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "LAMPARAS",
+        "Nombre Corto": "JGO LAMP.H7+H1 C/LAMP AMOLUX",
+        "PVP": "11,95 €",
+        "Cod Barras": "8426306920576"
+      },
+      {
+        "posCode": "08000014",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "EXTERIOR VEHÍCULO",
+        "Nombre Corto": "JGO TAPACUBOS 15\" SILVESTONE",
+        "PVP": "28,40 €",
+        "Cod Barras": "8424332700896"
+      },
+      {
+        "posCode": "08000015",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "EXTERIOR VEHÍCULO",
+        "Nombre Corto": "JGO TAPACUBOS 16\" SILVERSTONE",
+        "PVP": "29,60 €",
+        "Cod Barras": "8424332800893"
+      },
+      {
+        "posCode": "08000053",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "EXTERIOR VEHÍCULO",
+        "Nombre Corto": "JGO.TAPACUBOS 14\" CARBON-SILVE",
+        "PVP": "27,15 €",
+        "Cod Barras": "8424332603609"
+      },
+      {
+        "posCode": "08000013",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "EXTERIOR VEHÍCULO",
+        "Nombre Corto": "JGO.TAPACUBOS 14\" SILVERSTONE",
+        "PVP": "27,15 €",
+        "Cod Barras": "8424332600899"
+      },
+      {
+        "posCode": "081988",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "ELECTRICIDAD",
+        "Nombre Corto": "JUEGO CABLE ARRANQUE 400A",
+        "PVP": "22,00 €",
+        "Cod Barras": "8436049573571"
+      },
+      {
+        "posCode": "083582",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "INTERIOR VEHICULO",
+        "Nombre Corto": "JUEGO DE ALFOMBRAS UNIVERSAL",
+        "PVP": "14,95 €",
+        "Cod Barras": "8424332206206"
+      },
+      {
+        "posCode": "083723",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "EMERGENCIA",
+        "Nombre Corto": "JUEGO DE TRIANGULOS DE EMERGEN",
+        "PVP": "12,95 €",
+        "Cod Barras": "8426306004313"
+      },
+      {
+        "posCode": "080109",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "ELECTRICIDAD",
+        "Nombre Corto": "JUEGO FUSIBLES SURTIDOS LACUS",
+        "PVP": "1,95 €",
+        "Cod Barras": "8010902"
+      },
+      {
+        "posCode": "081746",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "LAMPARAS",
+        "Nombre Corto": "JUEGO LAMPARA H7 9682. J3",
+        "PVP": "20,25 €",
+        "Cod Barras": ""
+      },
+      {
+        "posCode": "08000043",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "LAMPARAS",
+        "Nombre Corto": "JUEGO PARA OBTURAR LLANTAS",
+        "PVP": "8,60 €",
+        "Cod Barras": "716281509827"
+      },
+      {
+        "posCode": "081286",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "LAMPARAS",
+        "Nombre Corto": "LAMPARA 12V 21/5W LACUS BLIST",
+        "PVP": "1,50 €",
+        "Cod Barras": "8401922995351"
+      },
+      {
+        "posCode": "081287",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "LAMPARAS",
+        "Nombre Corto": "LAMPARA 12V 21W AMBAR LACUS B",
+        "PVP": "3,00 €",
+        "Cod Barras": "8401922995337"
+      },
+      {
+        "posCode": "081285",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "LAMPARAS",
+        "Nombre Corto": "LAMPARA 12V 21W LACUS BLISTER",
+        "PVP": "1,00 €",
+        "Cod Barras": "8401922995320"
+      },
+      {
+        "posCode": "081288",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "LAMPARAS",
+        "Nombre Corto": "LAMPARA 12V 4W LACUS BLISTER",
+        "PVP": "1,00 €",
+        "Cod Barras": "8401922995269"
+      },
+      {
+        "posCode": "081289",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "LAMPARAS",
+        "Nombre Corto": "LAMPARA 12V 5W PLAFON LACUS B",
+        "PVP": "1,00 €",
+        "Cod Barras": "8401922995283"
+      },
+      {
+        "posCode": "081283",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "LAMPARAS",
+        "Nombre Corto": "LAMPARA H1 LACUS BLISTER 1U",
+        "PVP": "3,15 €",
+        "Cod Barras": "8401922995184"
+      },
+      {
+        "posCode": "081675",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "LAMPARAS",
+        "Nombre Corto": "LAMPARA H7 6216.97",
+        "PVP": "11,20 €",
+        "Cod Barras": "8167507"
+      },
+      {
+        "posCode": "080817",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "LAMPARAS",
+        "Nombre Corto": "LAMPARA H7 BOSCH",
+        "PVP": "9,50 €",
+        "Cod Barras": "3165141238600"
+      },
+      {
+        "posCode": "081282",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "LAMPARAS",
+        "Nombre Corto": "LAMPARA H7 LACUS BLISTER 1U",
+        "PVP": "5,50 €",
+        "Cod Barras": "8401922995245"
+      },
+      {
+        "posCode": "081974",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "LAMPARAS",
+        "Nombre Corto": "LAMPARA HALOG. H-7",
+        "PVP": "4,00 €",
+        "Cod Barras": "8426306077799"
+      },
+      {
+        "posCode": "08000057",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "PARABRISA",
+        "Nombre Corto": "LIMPIA PARABRISA VAYCAR 1L",
+        "PVP": "2,15 €",
+        "Cod Barras": "8429325003299"
+      },
+      {
+        "posCode": "08000024",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "HERRAMIENTAS",
+        "Nombre Corto": "LLAVE BUJIA 35CM ARTICULADA",
+        "PVP": "6,25 €",
+        "Cod Barras": "8424332070845"
+      },
+      {
+        "posCode": "08000046",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "HERRAMIENTAS",
+        "Nombre Corto": "LLAVE BUJIA 35CM ARTICULADA 16",
+        "PVP": "8,25 €",
+        "Cod Barras": "8424332070838"
+      },
+      {
+        "posCode": "08000023",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "HERRAMIENTAS",
+        "Nombre Corto": "LLAVE RUEDAS CRUZ CROMADAS",
+        "PVP": "11,50 €",
+        "Cod Barras": "8424332070852"
+      },
+      {
+        "posCode": "08000021",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "INTERIOR VEHICULO",
+        "Nombre Corto": "ORGANIZADOR MALETERO JUMBO",
+        "PVP": "24,15 €",
+        "Cod Barras": "8424332080318"
+      },
+      {
+        "posCode": "08000002",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "INTERIOR VEHICULO",
+        "Nombre Corto": "PARASOL LASER TALLA M 145X60",
+        "PVP": "6,95 €",
+        "Cod Barras": "8424332718105"
+      },
+      {
+        "posCode": "08000012",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "INTERIOR VEHICULO",
+        "Nombre Corto": "PARASOL LATERAL. RECTA 36X44",
+        "PVP": "6,45 €",
+        "Cod Barras": "8424332440075"
+      },
+      {
+        "posCode": "08000048",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "INTERIOR VEHICULO",
+        "Nombre Corto": "PARASOL SPC DISEÑO ASIENTOS",
+        "PVP": "9,85 €",
+        "Cod Barras": "6922516312481"
+      },
+      {
+        "posCode": "08000044",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "INTERIOR VEHICULO",
+        "Nombre Corto": "PARASOL XXL",
+        "PVP": "11,00 €",
+        "Cod Barras": "8424332497338"
+      },
+      {
+        "posCode": "08000069",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "INTERIOR VEHICULO",
+        "Nombre Corto": "PARASOLES LATERALES 2UND 38X45",
+        "PVP": "2,70 €",
+        "Cod Barras": "8424445251803"
+      },
+      {
+        "posCode": "08000020",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "INTERIOR VEHICULO",
+        "Nombre Corto": "PERCHA ESPECIAL CABEZAL ASIENT",
+        "PVP": "26,95 €",
+        "Cod Barras": "8424332013040"
+      },
+      {
+        "posCode": "08000058",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "INTERIOR VEHICULO",
+        "Nombre Corto": "POMO CAMBIO MARCHA REDON N/N",
+        "PVP": "16,95 €",
+        "Cod Barras": "8424332445872"
+      },
+      {
+        "posCode": "08000008",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "INTERIOR VEHICULO",
+        "Nombre Corto": "POMO LEATHER CAMBIOS MARCHA",
+        "PVP": "13,95 €",
+        "Cod Barras": "8424332056986"
+      },
+      {
+        "posCode": "08000010",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "INTERIOR VEHICULO",
+        "Nombre Corto": "RED DE PERROS REFORZADA",
+        "PVP": "26,50 €",
+        "Cod Barras": "8424332063014"
+      },
+      {
+        "posCode": "08000019",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "INTERIOR VEHICULO",
+        "Nombre Corto": "RESPALDO BAMBO IPANEMA",
+        "PVP": "15,95 €",
+        "Cod Barras": "8424332303066"
+      },
+      {
+        "posCode": "08000018",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "INTERIOR VEHICULO",
+        "Nombre Corto": "RESPALDO PARA VERANO DE FIBRA",
+        "PVP": "17,70 €",
+        "Cod Barras": "8424332499325"
+      },
+      {
+        "posCode": "08000056",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "LIMPIEZA",
+        "Nombre Corto": "STAR CLEAN LAVAENCERA 1L",
+        "PVP": "3,60 €",
+        "Cod Barras": "8437005920330"
+      },
+      {
+        "posCode": "080425",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "EXTERIOR VEHÍCULO",
+        "Nombre Corto": "TAPON DE GASOLINA EMERGENCIA",
+        "PVP": "3,00 €",
+        "Cod Barras": "8711252022208"
+      },
+      {
+        "posCode": "08000049",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "EXTERIOR VEHÍCULO",
+        "Nombre Corto": "TAPONES DE VALVULA PLATA CIL",
+        "PVP": "5,45 €",
+        "Cod Barras": "8424332068002"
+      },
+      {
+        "posCode": "08000042",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "EXTERIOR VEHÍCULO",
+        "Nombre Corto": "TAPONES VALVULA PLATA HEXAGO",
+        "PVP": "6,30 €",
+        "Cod Barras": "8424332069009"
+      },
+      {
+        "posCode": "08000066",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "REPARACIÓN",
+        "Nombre Corto": "TUBOS DE MASILLA PARA REPARAR",
+        "PVP": "3,30 €",
+        "Cod Barras": "8000692942581"
+      },
+      {
+        "posCode": "08000075",
+        "FAMILIA": "CARROCERIA Y EQUIPO ELECTRICO",
+        "CATEGORIA": "EXTERIOR VEHÍCULO",
+        "Nombre Corto": "WHELL HUB \"15\" FORZA",
+        "PVP": "28,40 €",
+        "Cod Barras": "8424332630902"
+      }
+    ]
+  }
+}
