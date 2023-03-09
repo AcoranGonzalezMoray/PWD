@@ -138,3 +138,91 @@ $( document ).ajaxStop(function() {
   }, 700);
   ;
 });
+
+function validarEmail(email) {
+  var re = /\S+@\S+\.\S+/;
+  return re.test(email);
+}
+
+function validarFormulario() {
+  // Obtener los valores de los campos del formulario
+  var nombreCompleto = document.getElementById("nombreCompleto").value;
+  var correoElectronico = document.getElementById("correoElectronico").value;
+  var contrasena = document.getElementById("contrasena").value;
+  var repetirContrasena = document.getElementById("repetirContrasena").value;
+
+  // Validar que se haya ingresado un nombre completo
+  if (nombreCompleto === "") {
+    alert("Por favor, ingrese su nombre completo.");
+    return false;
+  }
+
+  // Validar que se haya ingresado un correo electrónico
+  if (correoElectronico === "") {
+    alert("Por favor, ingrese su correo electrónico.");
+    return false;
+  }
+
+  if (!(validarEmail(correoElectronico))) {
+    alert("Por favor, ingrese un correo electrónico válido.");
+    return false;
+  }
+
+  // Validar que se haya ingresado una contraseña
+  if (contrasena === "") {
+    alert("Por favor, ingrese una contraseña.");
+    return false;
+  }
+
+  // Validar que se haya ingresado la misma contraseña en ambos campos
+  if (contrasena !== repetirContrasena) {
+    alert("Las contraseñas no coinciden.");
+    return false;
+  }
+
+  // Si todos los campos son válidos, crear un objeto con los datos del usuario
+  var usuario = {
+    "Username": nombreCompleto,
+    "Email": correoElectronico,
+    "Password": contrasena
+  };
+
+// Convertir el objeto a formato JSON
+  var usuarioJSON = JSON.stringify(usuario);
+
+  fetch('/PWM-TEMPLATES/json/archivo2.json')
+    .then(response => response.json())
+    .then(data => {
+      data['Usuarios'].push(usuarioJSON);
+
+      // Enviar la solicitud de actualización al servidor
+      fetch('/PWM-TEMPLATES/json/archivo2.json', {
+        method: 'PUT', // Usar el método HTTP PUT para actualizar el archivo
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data) // Enviar el objeto JSON actualizado al servidor
+      })
+        .then(response => {
+          if (response.ok) {
+            console.log('Archivo JSON actualizado correctamente');
+          } else {
+            throw new Error('Error al actualizar el archivo JSON');
+          }
+        })
+        .catch(error => console.error(error));
+    })
+    .catch(error => console.error('Error al cargar el archivo JSON:', error));
+
+  // Mostrar un mensaje de éxito
+  alert("¡Registro exitoso!");
+
+  // Redirigir al usuario a la página de inicio de sesión
+  window.location.href = "/PWM-TEMPLATES/pages/signIn.html";
+
+  // Evitar que se envíe el formulario
+  return false;
+}
+
+
+
