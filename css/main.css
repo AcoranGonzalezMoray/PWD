@@ -2,6 +2,19 @@
 
 /*Tablets en horizonal y escritorios normales------------------------------------------------------------------------- */
 @media (min-width: 768px)  {
+
+  /*Loader*/
+  .loader {
+    position: fixed;
+    z-index: 9999;
+    left: 0px; top: 0px;
+    width: 100%; height: 100%;
+    background-color:#FFFFFF;
+    background-image:url(img/LOGO.png);
+    background-repeat:no-repeat;
+    background-position:50% 50%;
+    opacity:1;
+  }
   /*Fuentes y Tamaño*/
   p, a, h2, h3 {
     font-family: "Arial Black";
@@ -311,7 +324,10 @@
   .img-product {
     height: 12rem;
   }
-
+  .card {
+    width: 250px !important;
+    height: 450px !important;
+  }
   .product h2 {
     font-size: 1.2rem;
     margin-top: 10px;
@@ -493,7 +509,7 @@
 
   .carousel-item img {
     max-height: 500px;
-    margin-left: 550px;
+    margin-left: 25%;
   }
 
   /*CSS  HEADER*/
