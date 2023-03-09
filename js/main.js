@@ -54,19 +54,19 @@ function ordenar(i,e) {
       if(e == 1) productos = data['Catalogo Taller']['Productos'];
       //ordenar por precio + a -
       if(i == 4){
-        productos = productos.sort((a, b) => {if (a.PVP > b.PVP) {return -1;}});
+        productos = productos.sort((a, b) => {if (a.PVP.split("€")[0] > b.PVP.split("€")[0]) {return -1;}});
       }
       //ordenar por precio - a +
       if(i == 3){
-        productos = productos.sort((a, b) => {if (a.PVP < b.PVP) {return -1;}});
+        productos = productos.sort((a, b) => {if (a.PVP.split("€")[0] < b.PVP.split("€")[0]) {return -1;}});
       }
       //ordenar por precio A-Z
       if(i == 2){
-        productos = productos.sort((a, b) => {if (a.NombreCorto> b.NombreCorto) {return -1;}});
+        productos = productos.sort((a, b) => {if (a.NombreCorto.replace(/ /g, "")> b.NombreCorto.replace(/ /g, "")) {return -1;}});
       }
       //ordenar por precio A-Z
       if(i == 1){
-        productos = productos.sort((a, b) => {if (a.NombreCorto< b.NombreCorto) {return -1;}});
+        productos = productos.sort((a, b) => {if (a.NombreCorto.replace(/ /g, "")< b.NombreCorto.replace(/ /g, "")) {return -1;}});
       }
       limpiarTienda();
       agregarProductos(productos);
@@ -93,15 +93,16 @@ function loadComponenOther() {
   $(function (){$('#footer').load("/PWM-TEMPLATES/component/footer.html")});
   $(function (){$('#header').load("/PWM-TEMPLATES/component/header.html")});
 }
-
 function loadCategory(Catalogo){
   fetch('/PWM-TEMPLATES/json/archivo2.json')
     .then(response => response.json())
     .then(data => {
-      const productos = data[Catalogo]['Categorias'];
+      var categorias = data[Catalogo]['Categorias'];
+      categorias.sort((a,b)=>{if(a.Categoria < b.Categoria ){return -1;}})
       const contenedorCategoria = document.getElementById('aside');
-      var i = 0 ;
-      productos.forEach(producto => {
+
+      categorias.forEach(producto => {
+
         fetch("/PWM-TEMPLATES/component/aside.html")
           .then(response => response.text())
           .then(data => {
@@ -109,22 +110,21 @@ function loadCategory(Catalogo){
             var template = new DOMParser().parseFromString(data, "text/html").querySelector('.category')
             template = template.cloneNode(true)
             template.querySelector('.nameC').textContent = producto['Categoria'];
-            contenedorCategoria.appendChild(template);
+
+
 
             //Subcategoria
-            //const productosS = producto['Subcategorias'];
-            //const contenedorCategoria = document.getElementById('category-content');
-            //const categoryContent = document.createElement('div');
-            //categoryContent.className += "category-content";
-            //categoryContent.id = i;
-            //contenedorCategoria.appendChild(categoryContent);
-            //productosS.forEach(p => {
+            const productosS = producto['Subcategorias'];
+            const categoryContent = document.createElement('div');
+            categoryContent.className += "category-content";
 
-
-
-
-            //})
-            i++;
+            productosS.forEach(p => {
+              templateSubcategoria = document.createElement('a');
+              templateSubcategoria.textContent = p.Subcategoria;
+              categoryContent.appendChild(templateSubcategoria);
+            })
+            template.appendChild(categoryContent);
+            contenedorCategoria.appendChild(template);
 
           })
       });
@@ -132,3 +132,9 @@ function loadCategory(Catalogo){
     .catch(error => console.error('Error al cargar el archivo JSON:', error));
 
 }
+$( document ).ajaxStop(function() {
+  setTimeout(() => {
+    $('#loading').hide()
+  }, 700);
+  ;
+});
