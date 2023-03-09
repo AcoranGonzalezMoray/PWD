@@ -132,18 +132,8 @@ function loadCategory(Catalogo){
     .catch(error => console.error('Error al cargar el archivo JSON:', error));
 
 }
-$( document ).ajaxStop(function() {
-  setTimeout(() => {
-    $('#loading').hide()
-  }, 700);
-  ;
-});
 
-function validarEmail(email) {
-  var re = /\S+@\S+\.\S+/;
-  return re.test(email);
-}
-
+//no usado por ahora
 function validarFormulario() {
   // Obtener los valores de los campos del formulario
   var nombreCompleto = document.getElementById("nombreCompleto").value;
@@ -151,28 +141,6 @@ function validarFormulario() {
   var contrasena = document.getElementById("contrasena").value;
   var repetirContrasena = document.getElementById("repetirContrasena").value;
 
-  // Validar que se haya ingresado un nombre completo
-  if (nombreCompleto === "") {
-    alert("Por favor, ingrese su nombre completo.");
-    return false;
-  }
-
-  // Validar que se haya ingresado un correo electrónico
-  if (correoElectronico === "") {
-    alert("Por favor, ingrese su correo electrónico.");
-    return false;
-  }
-
-  if (!(validarEmail(correoElectronico))) {
-    alert("Por favor, ingrese un correo electrónico válido.");
-    return false;
-  }
-
-  // Validar que se haya ingresado una contraseña
-  if (contrasena === "") {
-    alert("Por favor, ingrese una contraseña.");
-    return false;
-  }
 
   // Validar que se haya ingresado la misma contraseña en ambos campos
   if (contrasena !== repetirContrasena) {
@@ -224,5 +192,10 @@ function validarFormulario() {
   return false;
 }
 
-
+$( document ).ajaxStop(function() {
+  setTimeout(() => {
+    $('#loading').hide()
+  }, 700);
+  ;
+});
 
