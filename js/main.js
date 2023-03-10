@@ -119,10 +119,13 @@ function loadCategory(Catalogo){
             const productosS = producto['Subcategorias'];
             const categoryContent = document.createElement('div');
             categoryContent.className += "category-content";
-
+            var click = "prueba(id);"
             productosS.forEach(p => {
               templateSubcategoria = document.createElement('a');
               templateSubcategoria.textContent = p.Subcategoria;
+              templateSubcategoria.id= p.Subcategoria;
+              templateSubcategoria.style="color:white;"
+              templateSubcategoria.href= "javascript:prueba("+p.Subcategoria.replace("\ \g","")+");";
               categoryContent.appendChild(templateSubcategoria);
             })
             template.appendChild(categoryContent);
@@ -135,6 +138,10 @@ function loadCategory(Catalogo){
 
 }
 
+function prueba(i) {
+
+  alert(i);
+}
 //no usado por ahora
 function validarFormulario() {
   // Obtener los valores de los campos del formulario
