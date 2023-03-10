@@ -72,8 +72,12 @@ function ordenar(i) {
   limpiarTienda();
   agregarProductos();
 }
-function filtrar(i) {
-  productos = baseProductos.filter(x => {return removeAccents(x.CATEGORIA).toLowerCase().toString() === removeAccents(i).toLowerCase().toString();})
+function filtrar(i, modo) {
+  if(modo){
+    productos = baseProductos.filter(x => {return removeAccents(x.CATEGORIA).toLowerCase().toString() === removeAccents(i).toLowerCase().toString();})
+  }else{
+    productos = baseProductos.filter(x => {return removeAccents(x.FAMILIA).toLowerCase().toString() === removeAccents(i).toLowerCase().toString();})
+  }
   limpiarTienda();
   agregarProductos();
 }
@@ -94,7 +98,8 @@ function loadCategory(Catalogo){
             var template = new DOMParser().parseFromString(data, "text/html").querySelector('.category')
             template = template.cloneNode(true)
             template.querySelector('.nameC').textContent = producto['Categoria'];
-
+            template.querySelector('.nameC').href = "#";
+            template.querySelector('.nameC').addEventListener("click", function(){filtrar(producto['Categoria'], false);});
 
 
             //Subcategoria
@@ -108,7 +113,7 @@ function loadCategory(Catalogo){
               templateSubcategoria.id= p.Subcategoria;
               templateSubcategoria.style="color:white;"
               templateSubcategoria.href="#";
-              templateSubcategoria.addEventListener("click", function(){filtrar(p.Subcategoria);});
+              templateSubcategoria.addEventListener("click", function(){filtrar(p.Subcategoria, true);});
               categoryContent.appendChild(templateSubcategoria);
             })
             template.appendChild(categoryContent);
