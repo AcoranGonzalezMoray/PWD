@@ -680,7 +680,61 @@
   }
 
 
+  /*Social*/
+  /* --- Floating Share Buttons --- */
+  /* Icons/Logos from FontAwesome4*/
 
+  #floating-share-buttons {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    z-index: 3;
+  }
+  #floating-share-buttons li {
+
+  }
+  #floating-share-buttons a {
+    color: #fff;
+    text-decoration:none;
+    font-size:14px;
+  }
+  #floating-share-buttons a.share-facebook {
+    background-color: #395793 ;
+  }
+  #floating-share-buttons a.share-pinterest {
+    background-color: #b8171c ;
+  }
+  #floating-share-buttons a.share-twitter {
+    background-color: #cc3ad2;
+  }
+  #floating-share-buttons a.share-linkedin {
+    background-color: #21577e ;
+  }
+  #floating-share-buttons a.share-whatsapp {
+    background-color: #48a91f ;
+  }
+  #floating-share-buttons a.share-mail {
+    background-color: #333 ;
+  }
+  ul#floating-share-buttons {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    min-height: 100px;
+    padding: 0px;
+  }
+  ul#floating-share-buttons a {
+    width:3rem;
+    height:3rem;
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    transition: width 0.5s;
+  }
+  ul#floating-share-buttons a:hover {
+    width:4.5rem;
+  }
 
 
 
@@ -692,6 +746,61 @@
 
 /* Móviles en vertical------------------------------------------------------------------------- */
 @media (max-width: 480px) {
+  /*Loader*/
+
+  #loading {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    background-color: #fff;
+    z-index: 99;
+  }
+
+  #loading-image {
+    z-index: 100;
+
+  }
+
+
+
+  .spinner {
+    margin-top:30px;
+    width: 56px;
+    height: 56px;
+    display: grid;
+    border: 4.5px solid #0000;
+    border-radius: 50%;
+    border-right-color: #21b916;
+    animation: spinner-a4dj62 1s infinite linear;
+  }
+
+  .spinner::before,
+  .spinner::after {
+    content: "";
+    grid-area: 1/1;
+    margin: 2.2px;
+    border: inherit;
+    border-radius: 50%;
+    animation: spinner-a4dj62 2s infinite;
+  }
+
+  .spinner::after {
+    margin: 8.9px;
+    animation-duration: 3s;
+  }
+
+  @keyframes spinner-a4dj62 {
+    100% {
+      transform: rotate(1turn);
+    }
+  }
   .card {
     width: 170px !important;
     height: 350px !important;
@@ -1267,6 +1376,70 @@
   .p-justify {
     text-align: justify;
   }
+
+  /*Social*/
+  /* --- Floating Share Buttons --- */
+  /* Icons/Logos from FontAwesome4*/
+
+  #floating-share-buttons {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    z-index: 3;
+  }
+  #floating-share-buttons li {
+
+  }
+  #floating-share-buttons a {
+    color: #fff;
+    text-decoration:none;
+    font-size:14px;
+  }
+  #floating-share-buttons a.share-facebook {
+    background-color: #395793 ;
+  }
+  #floating-share-buttons a.share-pinterest {
+    background-color: #b8171c ;
+  }
+  #floating-share-buttons a.share-twitter {
+    background-color: #cc3ad2;
+  }
+  #floating-share-buttons a.share-linkedin {
+    background-color: #21577e ;
+  }
+  #floating-share-buttons a.share-whatsapp {
+    background-color: #48a91f ;
+  }
+  #floating-share-buttons a.share-mail {
+    background-color: #333 ;
+  }
+  #social {
+    z-index: 5;
+  }
+  ul#floating-share-buttons {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: flex-end;
+    align-content: space-between;
+    justify-content: center;
+    bottom: 0;
+    min-height: 100px;
+    padding: 0px;
+  }
+  ul#floating-share-buttons a {
+    width:3rem;
+    height:3rem;
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    transition: width 0.5s;
+  }
+  ul#floating-share-buttons a:hover {
+    width:4.5rem;
+  }
+
 
 }
 

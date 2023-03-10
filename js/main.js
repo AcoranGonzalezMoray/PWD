@@ -88,10 +88,12 @@ function loadComponenHome() {
   $(function (){$('#footer').load("/PWM-TEMPLATES/component/footer.html")});
   $(function (){$('#header').load("/PWM-TEMPLATES/component/header.html")});
   $(function (){$('#carousel').load("/PWM-TEMPLATES/component/carousel.html")});
+  $(function (){$('#social').load("/PWM-TEMPLATES/component/social.html")});
 }
 function loadComponenOther() {
   $(function (){$('#footer').load("/PWM-TEMPLATES/component/footer.html")});
   $(function (){$('#header').load("/PWM-TEMPLATES/component/header.html")});
+  $(function (){$('#social').load("/PWM-TEMPLATES/component/social.html")});
 }
 function loadCategory(Catalogo){
   fetch('/PWM-TEMPLATES/json/archivo2.json')
