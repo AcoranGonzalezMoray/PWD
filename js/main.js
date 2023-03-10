@@ -1,10 +1,16 @@
 
+//Variables Globales !IMPORTANTE
+var productos =[];
+var baseProductos = [];
 
+//Funciones Tienda !IMPORTANTE
 function loadProducts(Catalogo) {
   fetch('/PWM-TEMPLATES/json/archivo2.json')
     .then(response => response.json())
     .then(data => {
-      const productos = data[Catalogo]['Productos'];
+      limpiarTienda()
+      productos = data[Catalogo]['Productos'];
+      baseProductos = data[Catalogo]['Productos'];
       const contenedorProductos = document.getElementById('contenedor-productos');
 
       // Recorrer el arreglo de productos
@@ -24,7 +30,7 @@ function loadProducts(Catalogo) {
     })
     .catch(error => console.error('Error al cargar el archivo JSON:', error));
 }
-function agregarProductos (productos) {
+function agregarProductos () {
   const contenedorProductos = document.getElementById('contenedor-productos');
   productos.forEach(producto => {
     fetch("/PWM-TEMPLATES/component/product.html")
@@ -46,54 +52,30 @@ function limpiarTienda() {
     show.removeChild(show.firstChild);
   }
 }
-function ordenar(i,e) {
-  fetch('/PWM-TEMPLATES/json/archivo2.json')
-    .then(response => response.json())
-    .then(data => {
-      var productos = data['Catalogo Tienda']['Productos'];
-      if(e == 1) productos = data['Catalogo Taller']['Productos'];
-      //ordenar por precio + a -
-      if(i == 4){
-        productos = productos.sort((a, b) => {if (a.PVP.split("€")[0] > b.PVP.split("€")[0]) {return -1;}});
-      }
-      //ordenar por precio - a +
-      if(i == 3){
-        productos = productos.sort((a, b) => {if (a.PVP.split("€")[0] < b.PVP.split("€")[0]) {return -1;}});
-      }
-      //ordenar por precio A-Z
-      if(i == 2){
-        productos = productos.sort((a, b) => {if (a.NombreCorto.replace(/ /g, "")> b.NombreCorto.replace(/ /g, "")) {return -1;}});
-      }
-      //ordenar por precio A-Z
-      if(i == 1){
-        productos = productos.sort((a, b) => {if (a.NombreCorto.replace(/ /g, "")< b.NombreCorto.replace(/ /g, "")) {return -1;}});
-      }
-      limpiarTienda();
-      agregarProductos(productos);
-    })
-    .catch(error => console.error('Error al cargar el archivo JSON:', error));
+function ordenar(i) {
+  //ordenar por precio + a -
+  if(i == 4){
+    productos = productos.sort((a, b) => {if (a.PVP.split("€")[0] > b.PVP.split("€")[0]) {return -1;}});
+  }
+  //ordenar por precio - a +
+  if(i == 3){
+    productos = productos.sort((a, b) => {if (a.PVP.split("€")[0] < b.PVP.split("€")[0]) {return -1;}});
+  }
+  //ordenar por precio A-Z
+  if(i == 2){
+    productos = productos.sort((a, b) => {if (a.NombreCorto.replace(/ /g, "")> b.NombreCorto.replace(/ /g, "")) {return -1;}});
+  }
+  //ordenar por precio A-Z
+  if(i == 1){
+    productos = productos.sort((a, b) => {if (a.NombreCorto.replace(/ /g, "")< b.NombreCorto.replace(/ /g, "")) {return -1;}});
+  }
+  limpiarTienda();
+  agregarProductos();
 }
-function filtrar() {
-  fetch('/PWM-TEMPLATES/json/archivo2.json')
-    .then(response => response.json())
-    .then(data => {
-      //filtrar
-      const FILTRADO = productos.filter(d => d.posCode === 25000008);
-      const ORDENADO = productos.filter(d => d.posCode = 25000008);
-
-    })
-    .catch(error => console.error('Error al cargar el archivo JSON:', error));
-}
-function loadComponenHome() {
-  $(function (){$('#footer').load("/PWM-TEMPLATES/component/footer.html")});
-  $(function (){$('#header').load("/PWM-TEMPLATES/component/header.html")});
-  $(function (){$('#carousel').load("/PWM-TEMPLATES/component/carousel.html")});
-  $(function (){$('#social').load("/PWM-TEMPLATES/component/social.html")});
-}
-function loadComponenOther() {
-  $(function (){$('#footer').load("/PWM-TEMPLATES/component/footer.html")});
-  $(function (){$('#header').load("/PWM-TEMPLATES/component/header.html")});
-  $(function (){$('#social').load("/PWM-TEMPLATES/component/social.html")});
+function filtrar(i) {
+  productos = baseProductos.filter(x => {return removeAccents(x.CATEGORIA).toLowerCase().toString() === removeAccents(i).toLowerCase().toString();})
+  limpiarTienda();
+  agregarProductos();
 }
 function loadCategory(Catalogo){
   fetch('/PWM-TEMPLATES/json/archivo2.json')
@@ -125,7 +107,8 @@ function loadCategory(Catalogo){
               templateSubcategoria.textContent = p.Subcategoria;
               templateSubcategoria.id= p.Subcategoria;
               templateSubcategoria.style="color:white;"
-              templateSubcategoria.href= "javascript:prueba("+p.Subcategoria.replace("\ \g","")+");";
+              templateSubcategoria.href="#";
+              templateSubcategoria.addEventListener("click", function(){filtrar(p.Subcategoria);});
               categoryContent.appendChild(templateSubcategoria);
             })
             template.appendChild(categoryContent);
@@ -138,11 +121,24 @@ function loadCategory(Catalogo){
 
 }
 
-function prueba(i) {
-
-  alert(i);
+//Utilidades Carga Dinamica de Componentes, Herramientas Tratamiento String
+const removeAccents = (str) => {
+  return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 }
-//no usado por ahora
+function loadComponenHome() {
+  $(function (){$('#footer').load("/PWM-TEMPLATES/component/footer.html")});
+  $(function (){$('#header').load("/PWM-TEMPLATES/component/header.html")});
+  $(function (){$('#carousel').load("/PWM-TEMPLATES/component/carousel.html")});
+  $(function (){$('#social').load("/PWM-TEMPLATES/component/social.html")});
+}
+function loadComponenOther() {
+  $(function (){$('#footer').load("/PWM-TEMPLATES/component/footer.html")});
+  $(function (){$('#header').load("/PWM-TEMPLATES/component/header.html")});
+  $(function (){$('#social').load("/PWM-TEMPLATES/component/social.html")});
+}
+
+
+//No Usado
 function validarFormulario() {
   // Obtener los valores de los campos del formulario
   var nombreCompleto = document.getElementById("nombreCompleto").value;

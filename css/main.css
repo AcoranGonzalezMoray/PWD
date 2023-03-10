@@ -2,9 +2,19 @@
 
 /*Tablets en horizonal y escritorios normales------------------------------------------------------------------------- */
 @media (min-width: 768px)  {
-
+  #reload {
+    position: fixed;
+    background-color: #21b916;
+    bottom: 130px;
+    right: 5px;
+    color: white;
+    border-radius: 50% 20% / 10% 40%;
+  }
+  #reload svg {
+    width: 40px;
+    height: 40px;
+  }
   /*Loader*/
-
   #loading {
     position: fixed;
     display: flex;
@@ -749,8 +759,19 @@
 
 /* Móviles en vertical------------------------------------------------------------------------- */
 @media (max-width: 480px) {
+  #reload {
+    position: fixed;
+    background-color: #21b916;
+    bottom: 50px;
+    right: 5px;
+    color: white;
+    border-radius: 50% 20% / 10% 40%;
+  }
+  #reload svg {
+    width: 40px;
+    height: 40px;
+  }
   /*Loader*/
-
   #loading {
     position: fixed;
     display: flex;
