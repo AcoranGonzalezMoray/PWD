@@ -3,6 +3,15 @@
 /*Tablets en horizonal y escritorios normales------------------------------------------------------------------------- */
 @media (min-width: 768px)  {
 
+
+  /*Prueba Imagen fondo Productos*/
+  .img-product {
+    min-height: 200px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
   /*Scroll Barra Lateral Servicios Taller*/
   #serviciosTaller {
     overflow-y: scroll;
@@ -782,6 +791,15 @@
 
 /* Móviles en vertical------------------------------------------------------------------------- */
 @media (max-width: 480px) {
+
+  /*Prueba Imagen fondo Productos*/
+  .img-product {
+    min-height: 100px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
   #reload {
     position: fixed;
     background-color: #21b916;

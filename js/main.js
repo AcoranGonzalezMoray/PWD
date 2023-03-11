@@ -22,7 +22,7 @@ function loadProducts(Catalogo) {
             template = template.cloneNode(true);
             template.querySelector('.card-text').textContent = producto['NombreCorto'];
             template.querySelector('.card-title').textContent = producto['PVP'];
-            template.querySelector('.card-img-top').setAttribute('src', producto['IMAGEN']);
+            template.querySelector('.img-product').style.backgroundImage = "url('" + producto['IMAGEN'] + "')";
 
             contenedorProductos.appendChild(template);
           })
