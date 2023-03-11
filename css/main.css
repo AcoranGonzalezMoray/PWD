@@ -398,12 +398,6 @@
     margin-bottom: 30px;
   }
 
-  .product img {
-    max-width: 200px;
-    max-height: 200px;
-    overflow: hidden;
-  }
-
   .img-product {
     height: 12rem;
   }
@@ -1195,13 +1189,6 @@
     margin-bottom: 30px;
     width: 43%;
   }
-
-  .product img {
-    width: 115px;
-    height: 100px;
-  }
-
-
 
   .product h2 {
     font-size: 1.2rem;
