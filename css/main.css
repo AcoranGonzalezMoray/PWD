@@ -589,6 +589,13 @@
     margin-left: 25%;
   }
 
+  .carousel-item {
+    min-height: 500px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
   /*CSS  HEADER*/
   header {
     width: 100%;
@@ -1321,6 +1328,12 @@
   }
   .carousel-home img {
     height: 350px;
+  }
+  .carousel-item {
+    min-height: 300px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
   /*CSS  HEADER*/
