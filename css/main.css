@@ -2,6 +2,12 @@
 
 /*Tablets en horizonal y escritorios normales------------------------------------------------------------------------- */
 @media (min-width: 768px)  {
+
+  /*Scroll Barra Lateral Servicios Taller*/
+  #serviciosTaller {
+    overflow-y: scroll;
+  }
+
   #reload {
     position: fixed;
     background-color: #21b916;
@@ -274,7 +280,8 @@
     flex-wrap: wrap;
     justify-content: space-between;
     overflow-y: scroll;
-
+    display: flex;
+    flex-direction: column;
   }
 
   #btn-reserve {

@@ -4454,8 +4454,26 @@
   "Reservas Taller": [
     {
       "Email": "example@gmail.com",
-      "Fecha": "dd-mm-aaaa",
-      "Hora": "hh:mm",
+      "Fecha": "13/03/2023",
+      "Hora": "08:30",
+      "Servicio": "Servicio que se solicita"
+    },
+    {
+      "Email": "example@gmail.com",
+      "Fecha": "14/03/2023",
+      "Hora": "10:30",
+      "Servicio": "Servicio que se solicita"
+    },
+    {
+      "Email": "example@gmail.com",
+      "Fecha": "15/03/2023",
+      "Hora": "14:30",
+      "Servicio": "Servicio que se solicita"
+    },
+    {
+      "Email": "example@gmail.com",
+      "Fecha": "17/03/2023",
+      "Hora": "09:00",
       "Servicio": "Servicio que se solicita"
     },
     {
@@ -4475,24 +4493,248 @@
       "Fecha": "dd-mm-aaaa",
       "Hora": "hh:mm",
       "Servicio": "Servicio que se solicita"
+    }
+  ],
+  "ServiciosTaller" : [
+    {
+      "Codigo": "3006",
+      "Descripcion": "Engrase",
+      "PVP": "2"
     },
     {
-      "Email": "example@gmail.com",
-      "Fecha": "dd-mm-aaaa",
-      "Hora": "hh:mm",
-      "Servicio": "Servicio que se solicita"
+      "Codigo": "3010",
+      "Descripcion": "Comprobación De Niveles",
+      "PVP": "5"
     },
     {
-      "Email": "example@gmail.com",
-      "Fecha": "dd-mm-aaaa",
-      "Hora": "hh:mm",
-      "Servicio": "Servicio que se solicita"
+      "Codigo": "3021",
+      "Descripcion": "Cambio De Aceite 1",
+      "PVP": "10"
     },
     {
-      "Email": "example@gmail.com",
-      "Fecha": "dd-mm-aaaa",
-      "Hora": "hh:mm",
-      "Servicio": "Servicio que se solicita"
+      "Codigo": "3022",
+      "Descripcion": "Cambio De Aceite Con Corasa",
+      "PVP": "15"
+    },
+    {
+      "Codigo": "3032",
+      "Descripcion": "Cambio De Aceite 2",
+      "PVP": "12"
+    },
+    {
+      "Codigo": "3043",
+      "Descripcion": "Cambio De Aceite Y Filtro 1",
+      "PVP": "13"
+    },
+    {
+      "Codigo": "3044",
+      "Descripcion": "Cambio De Aceite Y Filtro Con Corasa",
+      "PVP": "16"
+    },
+    {
+      "Codigo": "3054",
+      "Descripcion": "Cambio De Aceite Y Filtro 2",
+      "PVP": "15"
+    },
+    {
+      "Codigo": "3065",
+      "Descripcion": "Cambio Valvulina De La Caja",
+      "PVP": "10"
+    },
+    {
+      "Codigo": "3076",
+      "Descripcion": "Cambio Valvulina Del Diferencial",
+      "PVP": "10"
+    },
+    {
+      "Codigo": "3080",
+      "Descripcion": "Cambio Valvulina De Caja Y Diferencial",
+      "PVP": "15"
+    },
+    {
+      "Codigo": "3091",
+      "Descripcion": "Cambio Valvulina De Cajas Y Diferenciale",
+      "PVP": "15"
+    },
+    {
+      "Codigo": "3102",
+      "Descripcion": "Alineación 1",
+      "PVP": "40"
+    },
+    {
+      "Codigo": "3113",
+      "Descripcion": "Alineación 2",
+      "PVP": "48"
+    },
+    {
+      "Codigo": "3146",
+      "Descripcion": "Pinchazo",
+      "PVP": "8"
+    },
+    {
+      "Codigo": "3150",
+      "Descripcion": "Pinchazo E Instalada",
+      "PVP": "10"
+    },
+    {
+      "Codigo": "3161",
+      "Descripcion": "Pinchazo Camara Y Cubierta",
+      "PVP": "9"
+    },
+    {
+      "Codigo": "3172",
+      "Descripcion": "Pinchazo Carretilla",
+      "PVP": "8"
+    },
+    {
+      "Codigo": "3183",
+      "Descripcion": "Pinchazo Paraguas",
+      "PVP": "10"
+    },
+    {
+      "Codigo": "3194",
+      "Descripcion": "Pinchazo Paraguas E Instalada",
+      "PVP": "12"
+    },
+    {
+      "Codigo": "3205",
+      "Descripcion": "Parche Camara",
+      "PVP": "5"
+    },
+    {
+      "Codigo": "3216",
+      "Descripcion": "Montaje De Cubierta 1",
+      "PVP": "9"
+    },
+    {
+      "Codigo": "3220",
+      "Descripcion": "Montaje De Cubierta 2",
+      "PVP": "9"
+    },
+    {
+      "Codigo": "3231",
+      "Descripcion": "Montaje De Cubierta 3",
+      "PVP": "4"
+    },
+    {
+      "Codigo": "3242",
+      "Descripcion": "Montaje Camara",
+      "PVP": "6"
+    },
+    {
+      "Codigo": "3253",
+      "Descripcion": "Montaje Camara Más Instalada",
+      "PVP": "7"
+    },
+    {
+      "Codigo": "3264",
+      "Descripcion": "Montaje Mas Valvula",
+      "PVP": "7"
+    },
+    {
+      "Codigo": "3275",
+      "Descripcion": "Desmontar La Cubierta",
+      "PVP": "4"
+    },
+    {
+      "Codigo": "3286",
+      "Descripcion": "Cruce De Cubiertas 1",
+      "PVP": "12"
+    },
+    {
+      "Codigo": "3290",
+      "Descripcion": "Cruce De Cubiertas 2",
+      "PVP": "15"
+    },
+    {
+      "Codigo": "3301",
+      "Descripcion": "Medio Cruce 1",
+      "PVP": "6"
+    },
+    {
+      "Codigo": "3312",
+      "Descripcion": "Medio Cruce 2",
+      "PVP": "8"
+    },
+    {
+      "Codigo": "3323",
+      "Descripcion": "Montaje Pastillas De Freno 1",
+      "PVP": "12"
+    },
+    {
+      "Codigo": "3334",
+      "Descripcion": "Montaje Pastillas De Freno 2",
+      "PVP": "16"
+    },
+    {
+      "Codigo": "3345",
+      "Descripcion": "Montaje Bujias",
+      "PVP": "10"
+    },
+    {
+      "Codigo": "3356",
+      "Descripcion": "Montaje Platinos",
+      "PVP": "10"
+    },
+    {
+      "Codigo": "3360",
+      "Descripcion": "Puesta A Punto",
+      "PVP": "30"
+    },
+    {
+      "Codigo": "3426",
+      "Descripcion": "Equilibrado",
+      "PVP": "7"
+    },
+    {
+      "Codigo": "3430",
+      "Descripcion": "Equilibrados Adhesivos",
+      "PVP": "8"
+    },
+    {
+      "Codigo": "3441",
+      "Descripcion": "Cambio Cubierta Camion",
+      "PVP": "8"
+    },
+    {
+      "Codigo": "3452",
+      "Descripcion": "Reparación De Cubierta.",
+      "PVP": "0"
+    },
+    {
+      "Codigo": "3463",
+      "Descripcion": "Mano De Obra",
+      "PVP": "35"
+    },
+    {
+      "Codigo": "3496",
+      "Descripcion": "Montaje De Cubierta 5",
+      "PVP": "7"
+    },
+    {
+      "Codigo": "3497",
+      "Descripcion": "Instalación De Cubierta De Turismo",
+      "PVP": "3"
+    },
+    {
+      "Codigo": "3498",
+      "Descripcion": "Instalación De Cubierta De Camión",
+      "PVP": "5"
+    },
+    {
+      "Codigo": "3500",
+      "Descripcion": "Comprobacion De Niveles 2",
+      "PVP": "8"
+    },
+    {
+      "Codigo": "3501",
+      "Descripcion": "Diagnosis Deteccion/Borrado Fallos",
+      "PVP": "35"
+    },
+    {
+      "Codigo": "3502",
+      "Descripcion": "Reparacion Externa",
+      "PVP": "0"
     }
   ],
   "Usuarios": [
