@@ -257,11 +257,18 @@
 
 
   /*CSS TALLER*/
+  .btn-reserve {
+    background-color: red;
+  }
+  .carouselTall {
+    width: 80%;
+  }
   .reserve {
     margin-left: 296px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
   }
