@@ -210,16 +210,7 @@
   }
 
   .aside-dashboard {
-    position: fixed;
-    left: 0;
-    top:95px;
-    width: 300px;
-    height: 100%;
-    padding-left: 15px;
-    background-color: #d5d8d5;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
+    padding-right: 20px;
   }
 
   /*CSS BOTONES*/
@@ -950,14 +941,14 @@
     margin: 20px;
   }
   .content-op-1 {
-    width: 65%;
+    width: 45%;
     border-radius: 10px;
     border-left: 3px solid #239107 !important;
     background-color: #ffffff;
     overflow-y: scroll;
   }
   .content-op-2 {
-    width: 25%;
+    width: 45%;
     border-radius: 10px;
     border-left: 3px solid #239107 !important;
     background-color: #ffffff;
@@ -980,6 +971,7 @@
   }
 
   .count-tab {
+    margin-top: 20px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -993,6 +985,11 @@
     border-radius: 10px;
     margin: 10px;
   }
+  .count p, .count h2, .content-op-1 p,
+  .content-op-2 p,.content-op-4 p,.content-op-3 p{
+    font-family: "Arial";
+    font-size: 13px;
+  }
   .aside-user {
     display: flex;
     justify-content: center;
@@ -1003,18 +1000,8 @@
   }
 
   .aside-dashboard {
-    position: fixed;
-    left: 0;
-    top:95px;
-    width: 300px;
-    height: 100%;
-    padding-left: 15px;
-    background-color: #d5d8d5;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
+    padding-right: 20px;
   }
-
 
 
 

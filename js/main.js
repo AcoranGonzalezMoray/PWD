@@ -150,6 +150,10 @@ function loadComponenOther() {
   $(function (){$('#header').load("/PWM-TEMPLATES/component/header.html")});
   $(function (){$('#social').load("/PWM-TEMPLATES/component/social.html")});
 }
+function loadComponenEsc() {
+  $(function (){$('#footer').load("/PWM-TEMPLATES/component/footer.html")});
+  $(function (){$('#header').load("/PWM-TEMPLATES/component/header.html")});
+}
 function showCategoryMov(i){
   if(i==1) document.getElementById("aside").style="display:block;"
   else  document.getElementById("aside").style="display:none;"
