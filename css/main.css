@@ -219,23 +219,8 @@
   }
 
   .aside-dashboard {
-    position: fixed;
-    left: 0;
-    top:95px;
-    width: 300px;
-    height: 100%;
-    padding-left: 15px;
-    background-color: #d5d8d5;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
+    padding-right: 20px;
   }
-
-
-
-
-
-
 
   /*CSS BOTONES*/
   .btn-color {
@@ -272,11 +257,18 @@
 
 
   /*CSS TALLER*/
+  .btn-reserve {
+    background-color: red;
+  }
+  .carouselTall {
+    width: 80%;
+  }
   .reserve {
-    margin-left: 310px;
+    margin-left: 296px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
   }
@@ -309,6 +301,9 @@
     height: 100%;
     background-color: #d9ffd9;
   }
+  .aside-mov{
+    display: none;
+  }
   aside {
     position: fixed;
     left: 0;
@@ -323,6 +318,9 @@
     flex-direction: column;
     justify-content: left;
     color: white;
+  }
+  aside button{
+    display: none !important;
   }
   aside lu li a {
     color: white;
@@ -364,7 +362,9 @@
     flex-wrap: wrap;
     justify-content: center;
   }
-
+  .d-flex {
+    width: 100%;
+  }
   .filters {
     display: flex;
     flex-direction: row;
@@ -382,7 +382,7 @@
     margin: 30px;
   }
   .products {
-    margin-left: 310px;
+    margin-left: 296px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -870,6 +870,12 @@
     width: 170px !important;
     height: 350px !important;
   }
+  .img-product {
+    height: 40%;
+  }
+  .card-body {
+    height: 60%;
+  }
   /*Fuentes y Tamaño*/
   p, a, h2, h3 {
     font-family: "Arial Black";
@@ -953,14 +959,14 @@
     margin: 20px;
   }
   .content-op-1 {
-    width: 65%;
+    width: 45%;
     border-radius: 10px;
     border-left: 3px solid #239107 !important;
     background-color: #ffffff;
     overflow-y: scroll;
   }
   .content-op-2 {
-    width: 25%;
+    width: 45%;
     border-radius: 10px;
     border-left: 3px solid #239107 !important;
     background-color: #ffffff;
@@ -983,6 +989,7 @@
   }
 
   .count-tab {
+    margin-top: 20px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -996,6 +1003,11 @@
     border-radius: 10px;
     margin: 10px;
   }
+  .count p, .count h2, .content-op-1 p,
+  .content-op-2 p,.content-op-4 p,.content-op-3 p{
+    font-family: "Arial";
+    font-size: 13px;
+  }
   .aside-user {
     display: flex;
     justify-content: center;
@@ -1006,18 +1018,8 @@
   }
 
   .aside-dashboard {
-    position: fixed;
-    left: 0;
-    top:95px;
-    width: 300px;
-    height: 100%;
-    padding-left: 15px;
-    background-color: #d5d8d5;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
+    padding-right: 20px;
   }
-
 
 
 
@@ -1092,18 +1094,45 @@
     height: 100%;
     background-color: #d9ffd9;
   }
+  .aside-mov{
+    display: block;
+    width: 100% ;
+    height: 50px;
+    padding: 20px;
+  }
+  .aside-mov button{
+    width: 100% ;
+  }
   aside {
-    display: none;
     position: fixed;
     left: 0;
-    top:95px;
+    top:86px;
     width: 300px;
     height: 100%;
     padding-left: 15px;
+    padding-top: 56px !important;
     font-style: italic;
     background-color: rgba(42,45,49,1);
+    display: none;
+    flex-direction: column;
+    justify-content: left;
+    color: white;
+    z-index: 7;
+    overflow-y: scroll;
   }
-
+  aside button {
+    display: block;
+    width: 250px;
+    margin-bottom: 20px;
+  }
+  .nameC {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+  }
   .category-content {
     display: none;
     min-width: 160px;
@@ -1131,12 +1160,14 @@
     flex-wrap: wrap;
     justify-content: flex-end;
   }
-
+  .d-flex {
+    width: 100%;
+  }
   .filters {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 20px;
+    margin-inline: 20px;
   }
 
   .filters select {
@@ -1166,8 +1197,8 @@
   }
 
   .product img {
-    max-width: 200px;
-    max-height: 200px;
+    width: 115px;
+    height: 100px;
   }
 
 

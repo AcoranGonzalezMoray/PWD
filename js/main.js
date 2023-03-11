@@ -81,6 +81,15 @@ function filtrar(i, modo) {
   limpiarTienda();
   agregarProductos();
 }
+function buscar() {
+  let query = document.getElementById("query").value;
+  productos = baseProductos.filter(x => {
+    return removeAccents(x.NombreCorto).toLowerCase().toString().includes(removeAccents(query).toLowerCase().toString());
+  })
+
+  limpiarTienda();
+  agregarProductos();
+}
 function loadCategory(Catalogo){
   fetch('/PWM-TEMPLATES/json/archivo2.json')
     .then(response => response.json())
@@ -140,6 +149,105 @@ function loadComponenOther() {
   $(function (){$('#footer').load("/PWM-TEMPLATES/component/footer.html")});
   $(function (){$('#header').load("/PWM-TEMPLATES/component/header.html")});
   $(function (){$('#social').load("/PWM-TEMPLATES/component/social.html")});
+}
+function loadComponenEsc() {
+  $(function (){$('#footer').load("/PWM-TEMPLATES/component/footer.html")});
+  $(function (){$('#header').load("/PWM-TEMPLATES/component/header.html")});
+}
+function showCategoryMov(i){
+  if(i==1) document.getElementById("aside").style="display:block;"
+  else  document.getElementById("aside").style="display:none;"
+}
+
+//Funciones Reservas Servicios
+function loadServices() {
+  fetch('/PWM-TEMPLATES/json/archivo2.json')
+    .then(response => response.json())
+    .then(data => {
+      var serviciosTaller = data['ServiciosTaller'];
+      serviciosTaller.sort((a, b) => {
+        if (a.Descripcion < b.Descripcion) {
+          return -1;
+        }
+      })
+      const contenedorServicios = document.getElementById('serviciosTaller');
+
+      serviciosTaller.forEach(producto => {
+
+        fetch("/PWM-TEMPLATES/component/aside.html")
+          .then(response => response.text())
+          .then(data => {
+            //Categoria
+            var template = new DOMParser().parseFromString(data, "text/html").querySelector('.category')
+            template = template.cloneNode(true)
+            template.querySelector('.nameC').textContent = producto['Descripcion'];
+            contenedorServicios.appendChild(template);
+          })
+      });
+    })
+    .catch(error => console.error('Error al cargar el archivo JSON:', error));
+}
+function loadReserveHours() {
+
+  var daysOfWeek = document.querySelectorAll('.dayOfWeek')
+
+  var arrayDaysOfWeek = Array.from(daysOfWeek);
+
+  var fecha = new Date('2023-03-13');
+  var opciones = { day: '2-digit', month: '2-digit', year: 'numeric' };
+
+// Ahora podemos trabajar con el array de elementos
+  arrayDaysOfWeek.forEach(function(day) {
+
+    day.querySelector('.date').textContent = fecha.toLocaleDateString('es-ES', opciones);
+
+    var hora = new Date();
+    hora.setHours(8);
+    hora.setMinutes(0);
+
+    for (var i = 0; i < 20; i++) {
+      fetch("/PWM-TEMPLATES/component/reserveBoxItem.html")
+        .then(response => response.text())
+        .then(data => {
+          var template = new DOMParser().parseFromString(data, "text/html").querySelector('.reserve-box-item')
+          template = template.cloneNode(true);
+          template.querySelector('.hour').textContent = hora.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+          day.appendChild(template);
+          hora.setMinutes(hora.getMinutes() + 30);
+        })
+    }
+    fecha.setDate(fecha.getDate() + 1);
+  });
+
+  comprobarReservasOcupadas();
+}
+function comprobarReservasOcupadas(){
+  setTimeout(function() {
+    fetch('/PWM-TEMPLATES/json/archivo2.json')
+      .then(response => response.json())
+      .then(data => {
+        const reservas = data['Reservas Taller'];
+        reservas.forEach(reserva => {
+
+          var daysOfWeek = document.querySelectorAll('.dayOfWeek')
+          var arrayDaysOfWeek = Array.from(daysOfWeek);
+
+          arrayDaysOfWeek.forEach(function(day) {
+            var reserveItems = day.querySelectorAll('.reserve-box-item')
+            var arrayReserveItems = Array.from(reserveItems);
+
+            arrayReserveItems.forEach(function (reserveItem) {
+              console.log(reserveItem.querySelector('.hour').textContent)
+              console.log(day.querySelector('.date').textContent)
+              if (reserveItem.querySelector('.hour').textContent === reserva.Hora &&
+                day.querySelector('.date').textContent === reserva.Fecha) {
+                reserveItem.style.backgroundColor = 'red';
+              }
+            })
+          })
+        });
+      });
+  }, 2000);
 }
 
 
@@ -202,6 +310,8 @@ function validarFormulario() {
   return false;
 }
 
+
+//Pantalla de Carga
 $( document ).ajaxStop(function() {
   setTimeout(() => {
     $('#loading').hide()
@@ -209,96 +319,4 @@ $( document ).ajaxStop(function() {
   ;
 });
 
-function loadServices() {
-  fetch('/PWM-TEMPLATES/json/archivo2.json')
-    .then(response => response.json())
-    .then(data => {
-      var serviciosTaller = data['ServiciosTaller'];
-      serviciosTaller.sort((a, b) => {
-        if (a.Descripcion < b.Descripcion) {
-          return -1;
-        }
-      })
-      const contenedorServicios = document.getElementById('serviciosTaller');
-
-      serviciosTaller.forEach(producto => {
-
-        fetch("/PWM-TEMPLATES/component/aside.html")
-          .then(response => response.text())
-          .then(data => {
-            //Categoria
-            var template = new DOMParser().parseFromString(data, "text/html").querySelector('.category')
-            template = template.cloneNode(true)
-            template.querySelector('.nameC').textContent = producto['Descripcion'];
-            contenedorServicios.appendChild(template);
-          })
-      });
-    })
-    .catch(error => console.error('Error al cargar el archivo JSON:', error));
-}
-
-function loadReserveHours() {
-
-  var daysOfWeek = document.querySelectorAll('.dayOfWeek')
-
-  var arrayDaysOfWeek = Array.from(daysOfWeek);
-
-  var fecha = new Date('2023-03-13');
-  var opciones = { day: '2-digit', month: '2-digit', year: 'numeric' };
-
-// Ahora podemos trabajar con el array de elementos
-  arrayDaysOfWeek.forEach(function(day) {
-
-    day.querySelector('.date').textContent = fecha.toLocaleDateString('es-ES', opciones);
-
-    var hora = new Date();
-    hora.setHours(8);
-    hora.setMinutes(0);
-
-    for (var i = 0; i < 20; i++) {
-      fetch("/PWM-TEMPLATES/component/reserveBoxItem.html")
-        .then(response => response.text())
-        .then(data => {
-          var template = new DOMParser().parseFromString(data, "text/html").querySelector('.reserve-box-item')
-          template = template.cloneNode(true);
-          template.querySelector('.hour').textContent = hora.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
-          day.appendChild(template);
-          hora.setMinutes(hora.getMinutes() + 30);
-        })
-    }
-    fecha.setDate(fecha.getDate() + 1);
-  });
-
-  comprobarReservasOcupadas();
-}
-
-
-function comprobarReservasOcupadas(){
-  setTimeout(function() {
-    fetch('/PWM-TEMPLATES/json/archivo2.json')
-      .then(response => response.json())
-      .then(data => {
-        const reservas = data['Reservas Taller'];
-        reservas.forEach(reserva => {
-
-          var daysOfWeek = document.querySelectorAll('.dayOfWeek')
-          var arrayDaysOfWeek = Array.from(daysOfWeek);
-
-          arrayDaysOfWeek.forEach(function(day) {
-            var reserveItems = day.querySelectorAll('.reserve-box-item')
-            var arrayReserveItems = Array.from(reserveItems);
-
-            arrayReserveItems.forEach(function (reserveItem) {
-              console.log(reserveItem.querySelector('.hour').textContent)
-              console.log(day.querySelector('.date').textContent)
-              if (reserveItem.querySelector('.hour').textContent === reserva.Hora &&
-                day.querySelector('.date').textContent === reserva.Fecha) {
-                reserveItem.style.backgroundColor = 'red';
-              }
-            })
-          })
-        });
-      });
-  }, 2000);
-}
 
