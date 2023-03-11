@@ -4,7 +4,7 @@
 @media (min-width: 768px)  {
 
 
-  /*Prueba para dar forma a las scroll Bar*/
+  /*Prueba para dar forma a las scrollBar*/
   *::-webkit-scrollbar {
     width: 10px;
   }
@@ -483,9 +483,8 @@
 
   /*CSS SIGN UP IN */
   .imgUser {
-    width:150px;
-    height:150px;
-    border-radius:150px;
+    height:100px;
+    margin-bottom: 50px;
   }
   .register-login-form {
     display: flex;
@@ -1266,10 +1265,10 @@
 
   /*CSS SIGN UP IN */
   .imgUser {
-    width:150px;
-    height:150px;
-    border-radius:150px;
+    height:100px;
+    margin-bottom: 50px;
   }
+  
   .register-login-form {
     margin:30px;
     display: flex;

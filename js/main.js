@@ -189,12 +189,11 @@ function loadServices() {
 }
 function loadReserveHours() {
 
-  var daysOfWeek = document.querySelectorAll('.dayOfWeek')
-
-  var arrayDaysOfWeek = Array.from(daysOfWeek);
-
   var fecha = new Date('2023-03-13');
   var opciones = { day: '2-digit', month: '2-digit', year: 'numeric' };
+
+  var daysOfWeek = document.querySelectorAll('.dayOfWeek')
+  var arrayDaysOfWeek = Array.from(daysOfWeek);
 
 // Ahora podemos trabajar con el array de elementos
   arrayDaysOfWeek.forEach(function(day) {
@@ -218,7 +217,6 @@ function loadReserveHours() {
     }
     fecha.setDate(fecha.getDate() + 1);
   });
-
   comprobarReservasOcupadas();
 }
 function comprobarReservasOcupadas(){
