@@ -1,44 +1,29 @@
 /* RESPONSIVE CSS ========================================================================= */
-
 /*Tablets en horizonal y escritorios normales------------------------------------------------------------------------- */
-@media (min-width: 1000px)  {
-  /*Botones Servicios*/
-  .carousel-control-prev{
-    position: relative !important;
-  }
-  .carousel-control-next{
-    position: relative !important;
-  }
-  .control-btn {
-    display: flex;
-    justify-content: space-between;
-  }
+@media (min-width: 768px)  {
 
+
+  /*Prueba para dar forma a las scroll Bar*/
   /*Prueba para dar forma a las scrollBar*/
   *::-webkit-scrollbar {
     width: 10px;
   }
-
   ::-webkit-scrollbar-track {
     background-color: #d9ffd9;
     border-radius: 10px;
   }
-
   ::-webkit-scrollbar-thumb {
     background-color: rgba(42,45,49,1);
     border-radius: 10px;
   }
-
   aside::-webkit-scrollbar-track,div::-webkit-scrollbar-track {
     background-color: rgba(42,45,49,1);
     border-radius: 10px;
   }
-
   aside::-webkit-scrollbar-thumb,div::-webkit-scrollbar-thumb {
     background-color: #d9ffd9;
     border-radius: 10px;
   }
-
   /*Prueba Imagen fondo Productos*/
   .img-product {
     min-height: 200px;
@@ -46,12 +31,10 @@
     background-size: contain;
     background-repeat: no-repeat;
   }
-
   /*Scroll Barra Lateral Servicios Taller*/
   #serviciosTaller {
     overflow-y: scroll;
   }
-
   #reload {
     position: fixed;
     background-color: #21b916;
@@ -79,14 +62,9 @@
     background-color: #fff;
     z-index: 99;
   }
-
   #loading-image {
     z-index: 100;
-
   }
-
-
-
   .spinner {
     margin-top:30px;
     width: 56px;
@@ -97,7 +75,6 @@
     border-right-color: #21b916;
     animation: spinner-a4dj62 1s infinite linear;
   }
-
   .spinner::before,
   .spinner::after {
     content: "";
@@ -107,12 +84,10 @@
     border-radius: 50%;
     animation: spinner-a4dj62 2s infinite;
   }
-
   .spinner::after {
     margin: 8.9px;
     animation-duration: 3s;
   }
-
   @keyframes spinner-a4dj62 {
     100% {
       transform: rotate(1turn);
@@ -123,37 +98,31 @@
     font-family: "Arial Black";
     font-size: 1rem;
   }
-
   /*CSS PANEL DE CONTROL ROL: USER*/
   .user-image {
     margin: 30px;
     align-content: center;
     width: 50%;
   }
-
   hr {
     width: 100%;
     color: white;
   }
-
   .user-data {
     width: 50%;
     margin: 40px;
   }
-
   .name {
     display: flex;
     flex-direction: column;
     width: 70%;
     margin-bottom: 40px;
   }
-
   .change-name {
     width: 70%;
     margin-top: 15px;
     margin-bottom: 15px;
   }
-
   .password {
     display: flex;
     flex-direction: column;
@@ -164,35 +133,28 @@
     border-radius: 6px;
     margin: 10px;
   }
-
-
   .eliminate {
     text-align: center;
     background-color: darkred;
     border-radius: 6px;
     margin: 50px;
   }
-
   .eliminate:hover {
     background-color: red;
   }
-
   .profile {
     text-align: justify;
     width: 100%;
     display: flex;
     flex-direction: row;
   }
-
   .profile a {
     text-decoration: none;
     color: black;
   }
-
   .profile a:hover {
     color: #21b916;
   }
-
   /*CSS PANEL DE CONTROL ROL: ADMIN*/
   .content-tab {
     width: 100%;
@@ -214,7 +176,6 @@
     background-color: #ffffff;
     overflow-y: scroll;
   }
-
   .content-op-3 {
     width: 45%;
     border-radius: 10px;
@@ -229,7 +190,6 @@
     background-color: #ffffff;
     overflow-y: scroll;
   }
-
   .count-tab {
     width: 100%;
     display: flex;
@@ -252,12 +212,9 @@
   .aside-user h3 {
     margin-left: 10px;
   }
-
   .aside-dashboard {
     padding-right: 20px;
   }
-
-
   /*CSS BOTONES*/
   .btn-color {
     background-color: #378311;
@@ -267,12 +224,10 @@
     color: white;
     width: 100%;
   }
-
   .btn-color a:hover  {
     color: white;
     background-color: #36b920;
   }
-
   /*CSS QUE HACEMOS*/
   .whatwedo {
     display: flex;
@@ -280,18 +235,13 @@
     flex-direction: column;
     padding-inline: 50px;
   }
-
   .whatwedo h1, .whatwedo p {
     margin: 2rem;
     max-width: 60%;
   }
-
   .whatwedo h1 {
     color: #21b916;
   }
-
-
-
   /*CSS TALLER*/
   .btn-reserve {
     background-color: red;
@@ -320,11 +270,9 @@
     display: flex;
     flex-direction: column;
   }
-
   #btn-reserve {
     margin-bottom: 35px;
   }
-
   .reserve-box-item {
     background-color: white;
     margin: 15px;
@@ -354,7 +302,6 @@
     flex-direction: column;
     justify-content: left;
     color: white;
-    overflow-y: scroll;
   }
   aside button{
     display: none !important;
@@ -377,7 +324,6 @@
     height: 200px;
     overflow-y: scroll;
   }
-
   .category-content a {
     padding: 12px 16px;
     text-decoration: none;
@@ -385,7 +331,6 @@
     color: black;
     text-align: left;
   }
-
   .category:hover .category-content {
     display: block;
   }
@@ -408,7 +353,6 @@
     align-items: center;
     margin: 20px;
   }
-
   .filters select {
     margin-right: 10px;
     padding: 5px;
@@ -418,7 +362,6 @@
   .filters select {
     margin: 30px;
   }
-
   .products {
     margin-left: 296px;
     width: 100%;
@@ -427,7 +370,6 @@
     justify-content: space-evenly;
     align-items: center;
   }
-
   .product {
     padding: 15px;
     float: left;
@@ -435,7 +377,6 @@
     margin-right: 20px;
     margin-bottom: 30px;
   }
-
   .img-product {
     height: 12rem;
   }
@@ -448,7 +389,6 @@
     margin-top: 10px;
     margin-bottom: 5px;
   }
-
   .product p {
     font-size: 1rem;
     margin-top: 5px;
@@ -456,12 +396,9 @@
     height: 5rem;
     overflow: hidden;
   }
-
   .footer-store {
     position: static;
   }
-
-
   /*CSS COLOR*/
   .navbar-toggler , .navbar-toggler-icon {
     background-color: white!important;
@@ -470,16 +407,13 @@
     border-width: 1px !important;
     border-color: #21b916 !important;
   }
-
   .navbar-nav {
     padding: 5px;
     background-color: rgba(42,45,49,1) !important ;
   }
-
   nav {
     background-color: rgba(42,45,49,1);
   }
-
   .nav-link:hover,.dropdown-item:hover  {
     color: #36b920 !important;
   }
@@ -489,13 +423,15 @@
   .dropdown-item:hover  {
     background-color: rgba(42,45,49,1) !important;
   }
-
   footer div a:hover {
     color:  #36b920;
   }
 
   /*CSS SIGN UP IN */
   .imgUser {
+    width:150px;
+    height:150px;
+    border-radius:150px;
     height:100px;
     margin-bottom: 50px;
   }
@@ -506,7 +442,6 @@
     justify-content: center;
     align-items: center;
   }
-
   .register-login-form form {
     width: 450px;
     text-align: center;
@@ -524,12 +459,10 @@
     border: 1px solid #dbdbdb;
     border-radius: 5px;
   }
-
   .register-login-form h2 {
     font-size: 30px;
     margin-bottom: 30px;
   }
-
   .register-login-form input[type="text"],
   .register-login-form input[type="email"],
   .register-login-form input[type="password"] {
@@ -550,26 +483,20 @@
     margin-top: 20px;
     cursor: pointer;
   }
-
   .register-login-form .button:hover {
     background-color: #36b920;
     color: white;
   }
-
   .register-login-form p,.register-login-form a {
     margin-top: 20px;
     font-size: 14px;
   }
-
   .register-login-form a, .register-login-box a {
     color: #136c0c;
   }
-
   .register-login-form a:hover, .register-login-box a:hover {
     color: #21b916;
   }
-
-
   /*CSS UBICATION*/
   .dato-icono a:hover {
     color: #136c0c;
@@ -580,7 +507,6 @@
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
-
   }
   .ubication iframe {
     margin-bottom: 1rem;
@@ -593,46 +519,6 @@
     padding: 20px;
     width:50%;
   }
-
-  /*CSS BP_CARD*/
-  .bp_card {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    margin-top: 100px;
-    margin-bottom: 100px;
-  }
-
-  .description-bp_card {
-    padding-left: 100px;
-    width: 50%;
-  }
-
-  .description-bp_card h1, .description-bp_card h2 {
-    color: #21b916;
-  }
-
-  .checks {
-    align-items: center;
-    color: #21b916;
-    padding-left: 50px;
-  }
-
-  .checks-items {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .image-bp_card {
-    padding: 20px;
-    width: 40%;
-    background-image: url("/PWM-TEMPLATES/img/bp_card.png");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-
-
   /*CSS PRESENTATION*/
   .presentation {
     width: 100%;
@@ -642,7 +528,6 @@
     justify-content: center;
     margin-top: 5px;
   }
-
   .presentation h1 {
     color: #21b916;
     margin-bottom: 1rem;
@@ -650,30 +535,25 @@
   .presentation img {
     width: 600px;
   }
-
   .description {
     padding: 20px;
     width:50%;
   }
-
   /*CSS CAROUSEL*/
   .carousel-home {
     max-width: 100%;
     margin-bottom: 1.5rem;
   }
-
   .carousel-item img {
     max-height: 500px;
     margin-left: 25%;
   }
-
   .carousel-item {
     min-height: 500px;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
   }
-
   /*CSS  HEADER*/
   header {
     width: 100%;
@@ -682,7 +562,6 @@
     top: 0;
     z-index: 3;
   }
-
   nav{
     float: left;
     display: flex;
@@ -713,11 +592,7 @@
     font-size: 20px !important;
     color:white !important;
   }
-
-
-
   /*CSS FOOTER*/
-
   footer {
     border-top: 1px solid #000 !important;
     position: absolute;
@@ -727,13 +602,11 @@
     background-color: rgba(42,45,49,1);
     color: white;
     margin-top: 2px;
-
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
   }
-
   .footer-col1 {
     width: 30%;
   }
@@ -742,62 +615,49 @@
     text-decoration: none;
     color: white;
   }
-
   .footer-col2, footer-col3 {
     width: 40%;
   }
-
   .footer-logo {
     height: auto;
     width: 150px;
     margin-top: 10px;
     margin-bottom: 10px;
   }
-
   /*CSS MAIN*/
-
   main {
     background-color: #d9ffd9;
     margin-top: 100px;
   }
-
   .p-justify {
     text-align: justify;
     font-family: Arial, Helvetica, sans-serif;
   }
-
   /*Teléfono, Correo y Ubicación del index*/
   .dato-icono {
     display: flex;
     align-items: center;
     vertical-align: center;
   }
-
   .dato-icono h2 {
     margin: 1rem;
   }
-
   .dato-icono svg {
     width: 2rem;
     height: 2rem;
     color: #21b916;
   }
-
   .dato-icono a {
     text-decoration: none;
     color: black;
     margin: 1rem;
   }
-
   dato-icono a:hover {
     color: #21b916 !important;
   }
-
-
   /*Social*/
   /* --- Floating Share Buttons --- */
   /* Icons/Logos from FontAwesome4*/
-
   #floating-share-buttons {
     list-style-type: none;
     margin: 0;
@@ -806,7 +666,6 @@
     z-index: 3;
   }
   #floating-share-buttons li {
-
   }
   #floating-share-buttons a {
     color: #fff;
@@ -849,866 +708,9 @@
   ul#floating-share-buttons a:hover {
     width:4.5rem;
   }
-
 }
-
 /* Móviles en horizontal o tablets en vertical------------------------------------------------------------------------- */
-@media (max-width: 999px) {
-
-  /*CSS BP_CARD*/
-  .bp_card {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    align-items: center;
-  }
-
-  .description-bp_card {
-    padding-left: 100px;
-    max-width: 80%;
-    padding: 20px;
-  }
-
-  .description-bp_card h1, .description-bp_card h2 {
-    color: #21b916;
-  }
-
-  .checks {
-    align-items: center;
-    color: #21b916;
-    padding-left: 50px;
-  }
-
-  .checks-items {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .image-bp_card {
-    padding: 20px;
-    width: 80%;
-    min-height: 300px;
-    margin-top: 20px;
-    background-image: url("/PWM-TEMPLATES/img/bp_card.png");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-
-  /*Prueba para dar forma a las scrollBar*/
-  *::-webkit-scrollbar {
-    width: 10px;
-  }
-
-  ::-webkit-scrollbar-track {
-    background-color: #d9ffd9;
-    border-radius: 10px;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background-color: rgba(42,45,49,1);
-    border-radius: 10px;
-  }
-
-  aside::-webkit-scrollbar-track,div::-webkit-scrollbar-track {
-    background-color: rgba(42,45,49,1);
-    border-radius: 10px;
-  }
-
-  aside::-webkit-scrollbar-thumb,div::-webkit-scrollbar-thumb {
-    background-color: #d9ffd9;
-    border-radius: 10px;
-  }
-
-  /*Prueba Imagen fondo Productos*/
-  .img-product {
-    min-height: 200px;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-
-  /*Scroll Barra Lateral Servicios Taller*/
-  #serviciosTaller {
-    overflow-y: scroll;
-  }
-
-  #reload {
-    position: fixed;
-    background-color: #21b916;
-    bottom: 130px;
-    right: 5px;
-    color: white;
-    border-radius: 50% 20% / 10% 40%;
-  }
-  #reload svg {
-    width: 40px;
-    height: 40px;
-  }
-  /*Loader*/
-  #loading {
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    opacity: 1;
-    background-color: #fff;
-    z-index: 99;
-  }
-
-  #loading-image {
-    z-index: 100;
-
-  }
-
-
-
-  .spinner {
-    margin-top:30px;
-    width: 56px;
-    height: 56px;
-    display: grid;
-    border: 4.5px solid #0000;
-    border-radius: 50%;
-    border-right-color: #21b916;
-    animation: spinner-a4dj62 1s infinite linear;
-  }
-
-  .spinner::before,
-  .spinner::after {
-    content: "";
-    grid-area: 1/1;
-    margin: 2.2px;
-    border: inherit;
-    border-radius: 50%;
-    animation: spinner-a4dj62 2s infinite;
-  }
-
-  .spinner::after {
-    margin: 8.9px;
-    animation-duration: 3s;
-  }
-
-  @keyframes spinner-a4dj62 {
-    100% {
-      transform: rotate(1turn);
-    }
-  }
-  /*Fuentes y Tamaño*/
-  p, a, h2, h3 {
-    font-family: "Arial Black";
-    font-size: 1rem;
-  }
-
-  /*CSS PANEL DE CONTROL ROL: USER*/
-
-  .user-image {
-    margin: 30px;
-    align-content: center;
-    width: 50%;
-  }
-
-  hr {
-    width: 100%;
-    color: white;
-  }
-
-  .user-data {
-    width: 50%;
-    margin: 40px;
-  }
-
-  .name {
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-    margin-bottom: 40px;
-  }
-
-  .change-name {
-    width: 70%;
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-
-  .password {
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-    justify-content: center;
-  }
-  .password input {
-    border-radius: 6px;
-    margin: 10px;
-  }
-
-
-  #btnEliminarCuenta {
-    text-align: center;
-    background-color: darkred !important;
-    border-radius: 6px;
-    margin: 50px;
-  }
-
-  #btnEliminarCuenta:hover {
-    background-color: red !important;
-  }
-
-  .profile {
-    text-align: justify;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-  }
-
-  .profile a {
-    text-decoration: none;
-    color: black;
-  }
-
-  .profile a:hover {
-    color: #21b916;
-  }
-
-  /*CSS PANEL DE CONTROL ROL: ADMIN*/
-  .content-tab {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    margin: 20px;
-  }
-  .content-op-1 {
-    width: 65%;
-    border-radius: 10px;
-    border-left: 3px solid #239107 !important;
-    background-color: #ffffff;
-    overflow-y: scroll;
-  }
-  .content-op-2 {
-    width: 25%;
-    border-radius: 10px;
-    border-left: 3px solid #239107 !important;
-    background-color: #ffffff;
-    overflow-y: scroll;
-  }
-
-  .content-op-3 {
-    width: 45%;
-    border-radius: 10px;
-    border-left: 3px solid #239107 !important;
-    background-color: #ffffff;
-    overflow-y: scroll;
-  }
-  .content-op-4 {
-    width: 45%;
-    border-radius: 10px;
-    border-left: 3px solid #239107 !important;
-    background-color: #ffffff;
-    overflow-y: scroll;
-  }
-
-  .count-tab {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-  .count {
-    background-color: white;
-    border-left: 3px solid #239107 !important;
-    width: 15%;
-    text-align: center;
-    border-radius: 10px;
-    margin: 10px;
-  }
-  .aside-user {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .aside-user h3 {
-    margin-left: 10px;
-  }
-
-  .aside-dashboard {
-    padding-right: 20px;
-  }
-
-  /*CSS BOTONES*/
-  .btn-color {
-    background-color: #378311;
-    border-radius: 0.375rem;
-  }
-  .btn-color a {
-    color: white;
-    width: 100%;
-  }
-
-  .btn-color a:hover  {
-    color: white;
-    background-color: #36b920;
-  }
-
-  /*CSS QUE HACEMOS*/
-  .whatwedo {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-inline: 50px;
-  }
-
-  .whatwedo img {
-    max-width: 100%;
-  }
-
-  .whatwedo h1, .whatwedo p {
-    margin: 2rem;
-  }
-
-  .whatwedo h1 {
-    color: #21b916;
-  }
-
-
-
-  /*CSS TALLER*/
-  .btn-reserve {
-    background-color: red;
-  }
-
-  .btn {
-    background-color: #378311 !important;
-    color: white !important;
-  }
-
-  .btn:hover {
-    background-color: #36b920 !important;
-  }
-  .carouselTall {
-    width: 90%;
-  }
-  .reserve {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .reserve-box {
-    width: 100%;
-    height: 60vh;
-    background-color: #555555;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex-direction: column;
-    overflow-y: scroll;
-  }
-
-  #carouselExample {
-    margin-top: 20px;
-  }
-
-  .dayOfWeek {
-    margin: 10px;
-  }
-
-  #btn-reserve {
-    margin-bottom: 35px;
-  }
-
-  .reserve-box-item {
-    background-color: white;
-    margin: 15px;
-    height: 50px;
-  }
-  /*CSS TIENDA*/
-  /*CSS TIENDA*/
-  .main-tienda {
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-    background-color: #d9ffd9;
-  }
-  .aside-mov{
-    display: block;
-    width: 100% ;
-    height: 50px;
-    padding: 20px;
-  }
-  .aside-mov button{
-    width: 100% ;
-  }
-  aside {
-    position: fixed;
-    left: 0;
-    top:86px;
-    width: 300px;
-    height: 100%;
-    padding-left: 15px;
-    padding-top: 56px !important;
-    font-style: italic;
-    background-color: rgba(42,45,49,1);
-    display: none;
-    flex-direction: column;
-    justify-content: left;
-    color: white;
-    z-index: 7;
-    overflow-y: scroll;
-  }
-  aside button {
-    display: block;
-    width: 250px;
-    margin-bottom: 20px;
-  }
-  .nameC {
-    color: white;
-    text-decoration: none;
-    font-size: 25px;
-    margin-top: 0;
-    margin-bottom: .5rem;
-    font-weight: 500;
-  }
-  .category-content {
-    display: none;
-    min-width: 160px;
-    margin-left: 50px;
-  }
-
-  .category-content a {
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    color: black;
-    text-align: left;
-  }
-
-  .category:hover .category-content {
-    display: block;
-  }
-  .product-title {
-    text-align: center;
-  }
-  .product-aline {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .d-flex {
-    width: 100%;
-  }
-  .filters {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-inline: 20px;
-  }
-
-  .filters select {
-    margin-right: 10px;
-    padding: 5px;
-    font-size: 16px;
-    border-radius: 5px;
-  }
-  .filters select {
-    margin: 30px;
-  }
-  .products {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .product {
-    padding: 15px;
-    float: left;
-    text-align: center;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-bottom: 30px;
-    width: 43%;
-  }
-
-  .product h2 {
-    font-size: 1.2rem;
-    margin-top: 10px;
-    margin-bottom: 5px;
-  }
-
-  .product p {
-    font-size: 1rem;
-    margin-top: 5px;
-    margin-bottom: 10px;
-  }
-
-  .footer-store {
-    position: static;
-  }
-
-
-  /*CSS COLOR*/
-  .navbar-toggler , .navbar-toggler-icon {
-    background-color: white!important;
-  }
-  .navbar-toggler:hover{
-    border-width: 1px !important;
-    border-color: #21b916 !important;
-  }
-
-  .navbar-nav {
-    padding: 5px;
-    background-color: rgba(42,45,49,1) !important ;
-  }
-
-  nav {
-    background-color: rgba(42,45,49,1);
-  }
-
-  .nav-link:hover,.dropdown-item:hover  {
-    color: #36b920 !important;
-  }
-  .dropdown-menu {
-    background-color: rgba(42,45,49,1) !important;
-  }
-  .dropdown-item:hover  {
-    background-color: rgba(42,45,49,1) !important;
-  }
-
-  footer div a:hover {
-    color:  #36b920;
-  }
-
-  /*CSS SIGN UP IN */
-  .imgUser {
-    height:100px;
-    margin-bottom: 50px;
-  }
-  .register-login-form {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .register-login-form form {
-    width: 450px;
-    text-align: center;
-    background-color: #d9ffd9;
-    padding: 50px;
-    border: 1px solid #dbdbdb;
-    border-radius: 5px;
-  }
-  .register-login-box {
-    margin-top: 20px;
-    width: 450px;
-    text-align: center;
-    background-color: #d9ffd9;
-    padding: 50px;
-    border: 1px solid #dbdbdb;
-    border-radius: 5px;
-  }
-
-  .register-login-form h2 {
-    font-size: 30px;
-    margin-bottom: 30px;
-  }
-
-  .register-login-form input[type="text"],
-  .register-login-form input[type="email"],
-  .register-login-form input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #dbdbdb;
-    border-radius: 3px;
-  }
-  .register-login-form .button {
-    text-decoration: none;
-    background-color: #378311;
-    color: #fff;
-    font-weight: 600;
-    border: none;
-    border-radius: 3px;
-    padding: 10px 20px;
-    margin-top: 20px;
-    cursor: pointer;
-  }
-
-  .register-login-form .button:hover {
-    background-color: #36b920;
-    color: white;
-  }
-
-  .register-login-form p,.register-login-form a {
-    margin-top: 20px;
-    font-size: 14px;
-  }
-
-  .register-login-form a, .register-login-box a {
-    color: #136c0c;
-  }
-
-  .register-login-form a:hover, .register-login-box a:hover {
-    color: #21b916;
-  }
-
-
-  /*CSS UBICATION*/
-  .dato-icono a:hover {
-    color: #136c0c;
-  }
-  .ubication {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
-
-  }
-  .ubication iframe {
-    margin-bottom: 1rem;
-  }
-  .description-ubication{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    width:50%;
-  }
-
-
-  /*CSS PRESENTATION*/
-  .presentation {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-top: 5px;
-  }
-
-  .presentation h1 {
-    color: #21b916;
-    margin-bottom: 1rem;
-  }
-  .presentation img {
-    display: none;
-  }
-
-  .description {
-    padding: 20px;
-    max-width: 80%;
-  }
-
-  /*CSS CAROUSEL*/
-  .carousel-home {
-    max-width: 100%;
-    margin-bottom: 1.5rem;
-  }
-
-  .carousel-item img {
-    max-height: 500px;
-    margin-left: 25%;
-  }
-
-  .carousel-item {
-    min-height: 400px;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-
-  /*CSS  HEADER*/
-  header {
-    width: 100%;
-    position: fixed; /*absolute para que se mueva solo el ul*/
-    left: 0;
-    top: 0;
-    z-index: 3;
-  }
-
-  nav{
-    float: left;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-  }
-  .navbar-logo {
-    display: inline-block;
-    vertical-align: middle;
-    width: 90px;
-  }
-  .navbar-logo img{
-    display: block;
-    width: 130px;
-    height: 130px;
-    height: auto;
-  }
-  nav ul {
-    list-style: none;
-    height: fit-content;
-    position: fixed;
-    right: 15px;
-  }
-  .nav-link, .dropdown-item, .dropdown-menu{
-    float: left !important;
-    font-family: Arial, Helvetica, sans-serif !important;
-    font-size: 20px !important;
-    color:white !important;
-  }
-
-
-
-  /*CSS FOOTER*/
-
-  footer {
-    border-top: 1px solid #000 !important;
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: auto;
-    background-color: rgba(42,45,49,1);
-    color: white;
-    margin-top: 2px;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .footer-col1 {
-    width: 30%;
-  }
-  footer div p, footer div a  {
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    color: white;
-  }
-
-  .footer-col2, footer-col3 {
-    width: 40%;
-  }
-
-  .footer-logo {
-    height: auto;
-    width: 150px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-
-  /*CSS MAIN*/
-
-  main {
-    background-color: #d9ffd9;
-    margin-top: 100px;
-  }
-
-  .p-justify {
-    text-align: justify;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  /*Teléfono, Correo y Ubicación del index*/
-  .dato-icono {
-    display: flex;
-    align-items: center;
-    vertical-align: center;
-  }
-
-  .dato-icono h2 {
-    margin: 1rem;
-  }
-
-  .dato-icono svg {
-    width: 2rem;
-    height: 2rem;
-    color: #21b916;
-  }
-
-  .dato-icono a {
-    text-decoration: none;
-    color: black;
-    margin: 1rem;
-  }
-
-  dato-icono a:hover {
-    color: #21b916 !important;
-  }
-
-
-  /*Social*/
-  /* --- Floating Share Buttons --- */
-  /* Icons/Logos from FontAwesome4*/
-
-  #floating-share-buttons {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    font-size: 0;
-    z-index: 3;
-  }
-  #floating-share-buttons li {
-
-  }
-  #floating-share-buttons a {
-    color: #fff;
-    text-decoration:none;
-    font-size:14px;
-  }
-  #floating-share-buttons a.share-facebook {
-    background-color: #395793 ;
-  }
-  #floating-share-buttons a.share-pinterest {
-    background-color: #b8171c ;
-  }
-  #floating-share-buttons a.share-twitter {
-    background-color: #cc3ad2;
-  }
-  #floating-share-buttons a.share-linkedin {
-    background-color: #21577e ;
-  }
-  #floating-share-buttons a.share-whatsapp {
-    background-color: #48a91f ;
-  }
-  #floating-share-buttons a.share-mail {
-    background-color: #333 ;
-  }
-  ul#floating-share-buttons {
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    min-height: 100px;
-    padding: 0px;
-  }
-  ul#floating-share-buttons a {
-    width:3rem;
-    height:3rem;
-    align-items: center;
-    display: inline-flex;
-    justify-content: center;
-    transition: width 0.5s;
-  }
-  ul#floating-share-buttons a:hover {
-    width:4.5rem;
-  }
-
-}
-
-
+@media (max-width: 767px) { }
 /* Móviles en vertical------------------------------------------------------------------------- */
 @media (max-width: 480px) {
   /*Prueba Imagen fondo Productos*/
@@ -1718,7 +720,6 @@
     background-size: contain;
     background-repeat: no-repeat;
   }
-
   #reload {
     position: fixed;
     background-color: #21b916;
@@ -1746,14 +747,9 @@
     background-color: #fff;
     z-index: 99;
   }
-
   #loading-image {
     z-index: 100;
-
   }
-
-
-
   .spinner {
     margin-top:30px;
     width: 56px;
@@ -1764,7 +760,6 @@
     border-right-color: #21b916;
     animation: spinner-a4dj62 1s infinite linear;
   }
-
   .spinner::before,
   .spinner::after {
     content: "";
@@ -1774,12 +769,10 @@
     border-radius: 50%;
     animation: spinner-a4dj62 2s infinite;
   }
-
   .spinner::after {
     margin: 8.9px;
     animation-duration: 3s;
   }
-
   @keyframes spinner-a4dj62 {
     100% {
       transform: rotate(1turn);
@@ -1800,37 +793,31 @@
     font-family: "Arial Black";
     font-size: 1rem;
   }
-
   /*CSS PANEL DE CONTROL ROL: USER*/
   .user-image {
     margin: 30px;
     align-content: center;
     width: 50%;
   }
-
   hr {
     width: 100%;
     color: white;
   }
-
   .user-data {
     width: 50%;
     margin: 40px;
   }
-
   .name {
     display: flex;
     flex-direction: column;
     width: 70%;
     margin-bottom: 40px;
   }
-
   .change-name {
     width: 70%;
     margin-top: 15px;
     margin-bottom: 15px;
   }
-
   .password {
     display: flex;
     flex-direction: column;
@@ -1841,35 +828,28 @@
     border-radius: 6px;
     margin: 10px;
   }
-
-
   .eliminate {
     text-align: center;
     background-color: darkred;
     border-radius: 6px;
     margin: 50px;
   }
-
   .eliminate:hover {
     background-color: red;
   }
-
   .profile {
     text-align: justify;
     width: 100%;
     display: flex;
     flex-direction: row;
   }
-
   .profile a {
     text-decoration: none;
     color: black;
   }
-
   .profile a:hover {
     color: #21b916;
   }
-
   /*CSS PANEL DE CONTROL ROL: ADMIN*/
   .content-tab {
     width: 100%;
@@ -1891,7 +871,6 @@
     background-color: #ffffff;
     overflow-y: scroll;
   }
-
   .content-op-3 {
     width: 45%;
     border-radius: 10px;
@@ -1906,7 +885,6 @@
     background-color: #ffffff;
     overflow-y: scroll;
   }
-
   .count-tab {
     margin-top: 20px;
     width: 100%;
@@ -1935,16 +913,9 @@
   .aside-user h3 {
     margin-left: 10px;
   }
-
   .aside-dashboard {
     padding-right: 20px;
   }
-
-
-
-
-
-
   /*CSS BOTONES*/
   .btn-color {
     background-color: #378311;
@@ -1954,19 +925,16 @@
     color: white;
     width: 100%;
   }
-
   .btn-color a:hover  {
     color: white;
     background-color: #36b920;
   }
-
   /*CSS QUE HACEMOS*/
   .whatwedo {
     display: flex;
     align-items: center;
     flex-direction: column;
   }
-
   .whatwedo h1, .whatwedo p {
     margin: 20px;
   }
@@ -1974,8 +942,6 @@
     width: 100%;
     height: 250px;
   }
-
-
   /*CSS TALLER*/
   .reserve {
     width: 100%;
@@ -1993,13 +959,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
     overflow-y: scroll;
-
   }
-
   #btn-reserve {
     margin-bottom: 35px;
   }
-
   .reserve-box-item {
     background-color: white;
     margin: 15px;
@@ -2057,7 +1020,6 @@
     min-width: 160px;
     margin-left: 50px;
   }
-
   .category-content a {
     padding: 12px 16px;
     text-decoration: none;
@@ -2065,7 +1027,6 @@
     color: black;
     text-align: left;
   }
-
   .category:hover .category-content {
     display: block;
   }
@@ -2077,7 +1038,7 @@
     height: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-end;
   }
   .d-flex {
     width: 100%;
@@ -2088,7 +1049,6 @@
     align-items: center;
     margin-inline: 20px;
   }
-
   .filters select {
     margin-right: 10px;
     padding: 5px;
@@ -2102,37 +1062,30 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
   }
-
   .product {
     padding: 15px;
     float: left;
     text-align: center;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 20px;
     margin-bottom: 30px;
     width: 43%;
   }
-
   .product h2 {
     font-size: 1.2rem;
     margin-top: 10px;
     margin-bottom: 5px;
   }
-
   .product p {
     font-size: 1rem;
     margin-top: 5px;
     margin-bottom: 10px;
   }
-
   .footer-store {
     position: static;
   }
-
-
   /*CSS COLOR*/
   .navbar-toggler , .navbar-toggler-icon {
     background-color: white!important;
@@ -2141,16 +1094,13 @@
     border-width: 1px !important;
     border-color: #21b916 !important;
   }
-
   .navbar-nav {
     padding: 5px;
     background-color: rgba(42,45,49,1) !important ;
   }
-
   nav {
     background-color: rgba(42,45,49,1);
   }
-
   .nav-link:hover,.dropdown-item:hover  {
     color: #36b920 !important;
   }
@@ -2160,13 +1110,15 @@
   .dropdown-item:hover  {
     background-color: rgba(42,45,49,1) !important;
   }
-
   footer div a:hover {
     color:  #36b920;
   }
 
   /*CSS SIGN UP IN */
   .imgUser {
+    width:150px;
+    height:150px;
+    border-radius:150px;
     height:100px;
     margin-bottom: 50px;
   }
@@ -2179,7 +1131,6 @@
     justify-content: center;
     align-items: center;
   }
-
   .register-login-form form {
     width: 332px;
     text-align: center;
@@ -2197,12 +1148,10 @@
     border: 1px solid #dbdbdb;
     border-radius: 5px;
   }
-
   .register-login-form h2 {
     font-size: 30px;
     margin-bottom: 30px;
   }
-
   .register-login-form input[type="text"],
   .register-login-form input[type="email"],
   .register-login-form input[type="password"] {
@@ -2223,26 +1172,20 @@
     margin-top: 20px;
     cursor: pointer;
   }
-
   .register-login-form .button:hover {
     background-color: #36b920;
     color: white;
   }
-
   .register-login-form p,.register-login-form a {
     margin-top: 20px;
     font-size: 14px;
   }
-
   .register-login-form a, .register-login-box a {
     color: #136c0c;
   }
-
   .register-login-form a:hover, .register-login-box a:hover {
     color: #21b916;
   }
-
-
   /*CSS UBICATION*/
   .ubication iframe {
     width: 350px;
@@ -2255,7 +1198,6 @@
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
-
   }
   .ubication img {
     width: 350px;
@@ -2263,8 +1205,6 @@
   .description-ubication{
     display: none;
   }
-
-
   /*CSS PRESENTATION*/
   .presentation {
     width: 100%;
@@ -2278,12 +1218,10 @@
     width: 250px;
     display: none;
   }
-
   .description {
     padding: 20px;
     width:100%;
   }
-
   /*CSS CAROUSEL*/
   .carousel-home {
     width: 100%;
@@ -2297,7 +1235,6 @@
     background-size: contain;
     background-repeat: no-repeat;
   }
-
   /*CSS  HEADER*/
   header {
     width: 100%;
@@ -2306,7 +1243,6 @@
     top: 0;
     z-index: 3;
   }
-
   nav{
     float: left;
     display: flex;
@@ -2337,11 +1273,7 @@
     font-size: 20px !important;
     color:white !important;
   }
-
-
-
   /*CSS FOOTER*/
-
   footer {
     border-top: 1px solid #000 !important;
     position: absolute;
@@ -2351,13 +1283,11 @@
     background-color: rgba(42,45,49,1);
     color: white;
     margin-top: 2px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-
   .footer-col1 {
   }
   footer div p, footer div a  {
@@ -2373,29 +1303,23 @@
     margin-inline: 50%;
     margin-bottom: 50px;
   }
-
   .footer-logo {
     height: auto;
     width: 150px;
     margin-top: 10px;
     margin-bottom: 10px;
   }
-
   /*CSS MAIN*/
-
   main {
     background-color: #d9ffd9;
     margin-top: 100px;
   }
-
   .p-justify {
     text-align: justify;
   }
-
   /*Social*/
   /* --- Floating Share Buttons --- */
   /* Icons/Logos from FontAwesome4*/
-
   #floating-share-buttons {
     list-style-type: none;
     margin: 0;
@@ -2404,7 +1328,6 @@
     z-index: 3;
   }
   #floating-share-buttons li {
-
   }
   #floating-share-buttons a {
     color: #fff;
@@ -2454,13 +1377,4 @@
   ul#floating-share-buttons a:hover {
     width:4.5rem;
   }
-
-
 }
-
-
-
-
-
-
-
