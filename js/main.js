@@ -194,7 +194,7 @@ function loadReserveHours() {
 
   var daysOfWeek = document.querySelectorAll('.dayOfWeek')
   var arrayDaysOfWeek = Array.from(daysOfWeek);
-
+  x=0;
 // Ahora podemos trabajar con el array de elementos
   arrayDaysOfWeek.forEach(function(day) {
 
@@ -215,7 +215,9 @@ function loadReserveHours() {
           hora.setMinutes(hora.getMinutes() + 30);
         })
     }
-    fecha.setDate(fecha.getDate() + 1);
+    x++;
+    if(x%5==0)fecha.setDate(fecha.getDate() + 3);
+    else fecha.setDate(fecha.getDate() + 1);
   });
   comprobarReservasOcupadas();
 }
