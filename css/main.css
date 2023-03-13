@@ -353,6 +353,7 @@
     flex-direction: column;
     justify-content: left;
     color: white;
+    overflow-y: scroll;
   }
   aside button{
     display: none !important;
