@@ -18,11 +18,16 @@
 
     <main class="main-tienda" >
 
-      <aside class="shadow-lg p-3 mb-5 rounded" id="serviciosTaller"></aside>
+      <aside class="shadow-lg p-3 mb-5 rounded" id="serviciosTaller">
+        <button onclick="showServicesMov(0)" type="button" class="btn btn-success">Volver..</button>
+      </aside>
 
       <section class="reserve">
         <h1>Reserva</h1>
 
+        <div class="aside-mov" >
+          <button onclick="showServicesMov(1)" type="button" class="btn btn-light shadow-lg">Servicios</button>
+        </div>
         <div id="carouselExample" class="carousel slide carouselTall">
           <div class="carousel-inner">
             <div class="carousel-item active">

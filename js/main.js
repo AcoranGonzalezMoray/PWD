@@ -159,6 +159,11 @@ function showCategoryMov(i){
   else  document.getElementById("aside").style="display:none;"
 }
 
+function showServicesMov(i){
+  if(i==1) document.getElementById("serviciosTaller").style="display:block;"
+  else  document.getElementById("serviciosTaller").style="display:none;"
+}
+
 //Funciones Reservas Servicios
 function loadServices() {
   fetch('/PWM-TEMPLATES/json/archivo2.json')

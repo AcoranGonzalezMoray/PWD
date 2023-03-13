@@ -257,6 +257,7 @@
     padding-right: 20px;
   }
 
+
   /*CSS BOTONES*/
   .btn-color {
     background-color: #378311;
@@ -417,6 +418,7 @@
   .filters select {
     margin: 30px;
   }
+
   .products {
     margin-left: 296px;
     width: 100%;
@@ -1006,6 +1008,7 @@
   }
 
   /*CSS PANEL DE CONTROL ROL: USER*/
+
   .user-image {
     margin: 30px;
     align-content: center;
@@ -1047,15 +1050,15 @@
   }
 
 
-  .eliminate {
+  #btnEliminarCuenta {
     text-align: center;
-    background-color: darkred;
+    background-color: darkred !important;
     border-radius: 6px;
     margin: 50px;
   }
 
-  .eliminate:hover {
-    background-color: red;
+  #btnEliminarCuenta:hover {
+    background-color: red !important;
   }
 
   .profile {
@@ -1178,6 +1181,15 @@
   /*CSS TALLER*/
   .btn-reserve {
     background-color: red;
+  }
+
+  .btn {
+    background-color: #378311 !important;
+    color: white !important;
+  }
+
+  .btn:hover {
+    background-color: #36b920 !important;
   }
   .carouselTall {
     width: 90%;
@@ -1313,7 +1325,7 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
   }
 
@@ -2090,7 +2102,7 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
   }
 
