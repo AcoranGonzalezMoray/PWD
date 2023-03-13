@@ -591,6 +591,44 @@
     width:50%;
   }
 
+  /*CSS BP_CARD*/
+  .bp_card {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .description-bp_card {
+    padding-left: 100px;
+    width: 50%;
+  }
+
+  .description-bp_card h1, .description-bp_card h2 {
+    color: #21b916;
+  }
+
+  .checks {
+    align-items: center;
+    color: #21b916;
+    padding-left: 50px;
+  }
+
+  .checks-items {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .image-bp_card {
+    padding: 20px;
+    width: 40%;
+    background-image: url("/PWM-TEMPLATES/img/bp_card.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
 
   /*CSS PRESENTATION*/
   .presentation {
@@ -809,13 +847,12 @@
     width:4.5rem;
   }
 
-
-
-
 }
 
 /* Móviles en horizontal o tablets en vertical------------------------------------------------------------------------- */
-@media (max-width: 767px) { }
+@media (max-width: 767px) {
+
+}
 
 /* Móviles en vertical------------------------------------------------------------------------- */
 @media (max-width: 480px) {
