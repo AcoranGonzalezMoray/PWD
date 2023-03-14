@@ -6,6 +6,9 @@ var baseProductos = [];
 var aside = document.getElementById("aside");
 var asideOpen = 0;
 
+var reservaServicioHora = "";
+var reservaServicio     = "";
+
 // Agregar un evento click al objeto document
 document.addEventListener("click", function(event) {
   // Verificar si el clic se realizó fuera del elemento
@@ -186,6 +189,23 @@ function showServicesMov(i){
 }
 
 //Funciones Reservas Servicios
+function reservarServicio(){
+  alert(reservaServicioHora+"-> Servicio: "+reservaServicio)
+}
+function seleccionarHora(i,x) {
+  i.querySelector('.hour').style="color:white;background-color:green"
+  let h = i.querySelector('.hour').textContent
+  let d = x.querySelector('.date').textContent
+  reservaServicioHora = h+" "+d;
+
+}
+function seleccionarServicio(i) {
+
+  if(i.querySelector('.form-check-input[type=checkbox]').checked) {
+    reservaServicio = i.querySelector('.nameS').placeholder
+  }
+
+}
 function loadServices() {
   fetch('/PWM-TEMPLATES/json/archivo2.json')
     .then(response => response.json())
@@ -207,6 +227,7 @@ function loadServices() {
             var template = new DOMParser().parseFromString(data, "text/html").querySelector('.category')
             template = template.cloneNode(true)
             template.querySelector('.nameS').placeholder = producto['Descripcion'];
+            template.querySelector('.form-check-input[type=checkbox]').addEventListener("click", function(){seleccionarServicio(template);});
             contenedorServicios.appendChild(template);
           })
       });
@@ -237,6 +258,7 @@ function loadReserveHours() {
           var template = new DOMParser().parseFromString(data, "text/html").querySelector('.reserve-box-item')
           template = template.cloneNode(true);
           template.querySelector('.hour').textContent = hora.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+          template.querySelector('.hour').addEventListener("click", function(){seleccionarHora(template,day, daysOfWeek);});
           day.appendChild(template);
           hora.setMinutes(hora.getMinutes() + 30);
         })

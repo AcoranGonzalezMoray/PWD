@@ -863,6 +863,23 @@
 
 /*Tablets*/
 @media screen and (min-width: 768px) and (max-width: 1280px) {
+  /*Check Box Servicios*/
+  .form-check-input[type=checkbox] {
+    border-radius: .25em;
+    /* border: azure; */
+    border-color: #21b916 ;
+  }
+  .form-check-input:checked {
+    background-color:  #21b916 !important;
+    border-color: #21b916 !important;
+  }
+  .nameS{
+    background-color: rgba(42,45,49,1) !important;
+  }
+  .nameS::placeholder {
+    color: white !important;
+  }
+  /**/
   .control-btn{
     display: flex;
   }
@@ -1777,7 +1794,22 @@
 
 /* Móviles en vertical------------------------------------------------------------------------- */
 @media screen and (max-width: 767px) {
-
+  /*Check Box Servicios*/
+  .form-check-input[type=checkbox] {
+    border-radius: .25em;
+    /* border: azure; */
+    border-color: #21b916 ;
+  }
+  .form-check-input:checked {
+    background-color:  #21b916 !important;
+    border-color: #21b916 !important;
+  }
+  .nameS{
+    background-color: rgba(42,45,49,1) !important;
+  }
+  .nameS::placeholder {
+    color: white !important;
+  }
   /*Títulos*/
   h1 {
     color: #21b916 !important;
