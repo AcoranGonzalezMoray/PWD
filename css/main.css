@@ -1,7 +1,13 @@
 /* RESPONSIVE CSS ========================================================================= */
 /*Tablets en horizonal y escritorios normales------------------------------------------------------------------------- */
-@media screen and (min-width: 1329px)  {
-
+@media screen and (min-width: 1280px)  {
+  /*Botones Carousel*/
+  .control-btn{
+    display: flex;
+  }
+  .cp, .cn {
+    position: static !important;
+  }
   /*Títulos*/
   h1 {
     color: #21b916 !important;
@@ -250,7 +256,7 @@
     background-color: red;
   }
   .carouselTall {
-    width: 80%;
+    width: 100%;
   }
   .reserve {
     margin-left: 296px;
@@ -842,8 +848,13 @@
 }
 
 /*Tablets*/
-@media screen and (min-width: 768px) and (max-width: 1328px) {
-
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .control-btn{
+    display: flex;
+  }
+  .cp, .cn {
+    position: static !important;
+  }
   /*Títulos*/
   h1 {
     color: #21b916 !important;
@@ -1234,7 +1245,7 @@
   }
 
   .carouselTall {
-    width: 90%;
+    width: 100%;
   }
   .reserve {
     width: 100%;
