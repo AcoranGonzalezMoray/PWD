@@ -1,145 +1,176 @@
 <!DOCTYPE html>
 <html lang="es" xmlns="http://www.w3.org/1999/html">
-  <head>
-    <meta charset="utf-8">
-    <title>BP Santa Brígida</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/PWM-TEMPLATES/img/templatebox.png">
-    <link rel="stylesheet" href="\PWM-TEMPLATES\css\main.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<head>
+  <meta charset="utf-8">
+  <title>BP Santa Brígida</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/PWM-TEMPLATES/img/templatebox.png">
+  <link rel="stylesheet" href="\PWM-TEMPLATES\css\main.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
-  </head>
-  <body onload="loadComponenOther();loadServices();loadReserveHours()">
-    <div id="loading">
-      <img id="loading-image" src="/PWM-TEMPLATES/img/LOGO.png" alt="Loading..." />
-      <div class="spinner"></div>
+</head>
+<body onload="loadComponenOther();loadServices();loadReserveHours()">
+<div id="loading">
+  <img id="loading-image" src="/PWM-TEMPLATES/img/LOGO.png" alt="Loading..." />
+  <div class="spinner"></div>
+</div>
+<header class="shadow-lg" id="header"></header>
+
+<main class="main-tienda" >
+
+  <aside class="shadow-lg p-3 mb-5 rounded" id="serviciosTaller">
+    <button onclick="showServicesMov(0)" type="button" class="btn btn-success">Volver..</button>
+  </aside>
+
+  <section class="reserve">
+    <h1>Reserva</h1>
+
+    <div class="aside-mov" >
+      <button onclick="showServicesMov(1)" type="button" class="btn btn-light shadow-lg">Servicios</button>
     </div>
-    <header class="shadow-lg" id="header"></header>
+    <div id="carouselExample" class="carousel slide carouselTall carousel-dark">
 
-    <main class="main-tienda" >
-
-      <aside class="shadow-lg p-3 mb-5 rounded" id="serviciosTaller">
-        <button onclick="showServicesMov(0)" type="button" class="btn btn-success">Volver..</button>
-      </aside>
-
-      <section class="reserve">
-        <h1>Reserva</h1>
-
-        <div class="aside-mov" >
-          <button onclick="showServicesMov(1)" type="button" class="btn btn-light shadow-lg">Servicios</button>
-        </div>
-        <div id="carouselExample" class="carousel slide carouselTall">
-          <div class="control-btn">
-            <button class="carousel-control-prev cp" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon btn-reserve" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <article class="reserve-box shadow-lg p-3 mb-5 bg-body rounded">
-                  <div class="dayOfWeek">
-                    <h2>Lunes</h2>
-                    <p class="date">Fecha: aaaa-mm-dd</p>
-                  </div>
-
-                  <div class="dayOfWeek">
-                    <h2>Martes</h2>
-                    <p class="date">Fecha: aaaa-mm-dd</p>
-                  </div>
-
-                  <div class="dayOfWeek">
-                    <h2>Miércoles</h2>
-                    <p class="date">Fecha: aaaa-mm-dd</p>
-                  </div>
-
-                  <div class="dayOfWeek">
-                    <h2>Jueves</h2>
-                    <p class="date">Fecha: aaaa-mm-dd</p>
-                  </div>
-
-                  <div class="dayOfWeek">
-                    <h2>Viernes</h2>
-                    <p class="date">Fecha: aaaa-mm-dd</p>
-                  </div>
-                </article></article>
+      <div class="control-btn">
+        <button class="carousel-control-prev cp" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon btn-reserve" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <article class="reserve-box shadow-lg p-3 mb-5 bg-body rounded">
+              <div class="dayOfWeek">
+                <div class="dayOfWeekTitle">
+                  <h2>Lunes</h2>
+                  <p class="date">Fecha: aaaa-mm-dd</p>
+                </div>
               </div>
-              <div class="carousel-item">
-                <article class="reserve-box shadow-lg p-3 mb-5 bg-body rounded">
-                  <div class="dayOfWeek">
-                    <h2>Lunes</h2>
-                    <p class="date">Fecha: aaaa-mm-dd</p>
-                  </div>
 
-                  <div class="dayOfWeek">
-                    <h2>Martes</h2>
-                    <p class="date">Fecha: aaaa-mm-dd</p>
-                  </div>
-
-                  <div class="dayOfWeek">
-                    <h2>Miércoles</h2>
-                    <p class="date">Fecha: aaaa-mm-dd</p>
-                  </div>
-
-                  <div class="dayOfWeek">
-                    <h2>Jueves</h2>
-                    <p class="date">Fecha: aaaa-mm-dd</p>
-                  </div>
-
-                  <div class="dayOfWeek">
-                    <h2>Viernes</h2>
-                    <p class="date">Fecha: aaaa-mm-dd</p>
-                  </div>
-                </article></article>
+              <div class="dayOfWeek">
+                <div class="dayOfWeekTitle">
+                  <h2>Martes</h2>
+                  <p class="date">Fecha: aaaa-mm-dd</p>
+                </div>
               </div>
-              <div class="carousel-item">
-                <article class="reserve-box shadow-lg p-3 mb-5 bg-body rounded">
-                  <div class="dayOfWeek">
-                    <h2>Lunes</h2>
-                    <p class="date">Fecha: aaaa-mm-dd</p>
-                  </div>
 
-                  <div class="dayOfWeek">
-                    <h2>Martes</h2>
-                    <p class="date">Fecha: aaaa-mm-dd</p>
-                  </div>
-
-                  <div class="dayOfWeek">
-                    <h2>Miércoles</h2>
-                    <p class="date">Fecha: aaaa-mm-dd</p>
-                  </div>
-
-                  <div class="dayOfWeek">
-                    <h2>Jueves</h2>
-                    <p class="date">Fecha: aaaa-mm-dd</p>
-                  </div>
-
-                  <div class="dayOfWeek">
-                    <h2>Viernes</h2>
-                    <p class="date">Fecha: aaaa-mm-dd</p>
-                  </div>
-                </article></article>
+              <div class="dayOfWeek">
+                <div class="dayOfWeekTitle">
+                  <h2>Miércoles</h2>
+                  <p class="date">Fecha: aaaa-mm-dd</p>
+                </div>
               </div>
-            </div>
-            <button class="carousel-control-next cn" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-              <span class="carousel-control-next-icon btn-reserve" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+
+              <div class="dayOfWeek">
+                <div class="dayOfWeekTitle">
+                  <h2>Jueves</h2>
+                  <p class="date">Fecha: aaaa-mm-dd</p>
+                </div>
+              </div>
+
+              <div class="dayOfWeek">
+                <div class="dayOfWeekTitle">
+                  <h2>Viernes</h2>
+                  <p class="date">Fecha: aaaa-mm-dd</p>
+                </div>
+              </div>
+            </article></article>
+          </div>
+          <div class="carousel-item">
+            <article class="reserve-box shadow-lg p-3 mb-5 bg-body rounded">
+              <div class="dayOfWeek">
+                <div class="dayOfWeekTitle">
+                  <h2>Lunes</h2>
+                  <p class="date">Fecha: aaaa-mm-dd</p>
+                </div>
+              </div>
+
+              <div class="dayOfWeek">
+                <div class="dayOfWeekTitle">
+                  <h2>Martes</h2>
+                  <p class="date">Fecha: aaaa-mm-dd</p>
+                </div>
+              </div>
+
+              <div class="dayOfWeek">
+                <div class="dayOfWeekTitle">
+                  <h2>Miércoles</h2>
+                  <p class="date">Fecha: aaaa-mm-dd</p>
+                </div>
+              </div>
+
+              <div class="dayOfWeek">
+                <div class="dayOfWeekTitle">
+                  <h2>Jueves</h2>
+                  <p class="date">Fecha: aaaa-mm-dd</p>
+                </div>
+              </div>
+
+              <div class="dayOfWeek">
+                <div class="dayOfWeekTitle">
+                  <h2>Viernes</h2>
+                  <p class="date">Fecha: aaaa-mm-dd</p>
+                </div>
+              </div>
+            </article></article>
+          </div>
+          <div class="carousel-item">
+            <article class="reserve-box shadow-lg p-3 mb-5 bg-body rounded">
+              <div class="dayOfWeek">
+                <div class="dayOfWeekTitle">
+                  <h2>Lunes</h2>
+                  <p class="date">Fecha: aaaa-mm-dd</p>
+                </div>
+              </div>
+
+              <div class="dayOfWeek">
+                <div class="dayOfWeekTitle">
+                  <h2>Martes</h2>
+                  <p class="date">Fecha: aaaa-mm-dd</p>
+                </div>
+              </div>
+
+              <div class="dayOfWeek">
+                <div class="dayOfWeekTitle">
+                  <h2>Miércoles</h2>
+                  <p class="date">Fecha: aaaa-mm-dd</p>
+                </div>
+              </div>
+
+              <div class="dayOfWeek">
+                <div class="dayOfWeekTitle">
+                  <h2>Jueves</h2>
+                  <p class="date">Fecha: aaaa-mm-dd</p>
+                </div>
+              </div>
+
+              <div class="dayOfWeek">
+                <div class="dayOfWeekTitle">
+                  <h2>Viernes</h2>
+                  <p class="date">Fecha: aaaa-mm-dd</p>
+                </div>
+              </div>
+            </article></article>
           </div>
         </div>
+        <button class="carousel-control-next cn" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon btn-reserve" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
 
 
-        <div id="btn-reserve" class="btn-color">
-          <a ref="" class="btn">Reservar</a>
-        </div>
+    <div id="btn-reserve" class="btn-color">
+      <a ref="" class="btn">Reservar</a>
+    </div>
 
-        <footer class="footer-store" id="footer"></footer>
-      </section>
-    </main>
+    <footer class="footer-store" id="footer"></footer>
+  </section>
+</main>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
-    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
-    <script src="/PWM-TEMPLATES/js/main.js"></script>
-  </body>
+<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+<script src="/PWM-TEMPLATES/js/main.js"></script>
+</body>
 </html>
