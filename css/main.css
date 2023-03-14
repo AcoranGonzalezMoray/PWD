@@ -1,6 +1,6 @@
 /* RESPONSIVE CSS ========================================================================= */
 /*Tablets en horizonal y escritorios normales------------------------------------------------------------------------- */
-@media screen and (min-width: 992px)  {
+@media screen and (min-width: 1329px)  {
 
   /*Títulos*/
   h1 {
@@ -348,23 +348,24 @@
     justify-content: center;
   }
   .d-flex {
-    width: 100%;
+    width: 50%;
+    margin-inline: 5%;
   }
   .filters {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 20px;
+    width: 100%;
   }
+
   .filters select {
-    margin-right: 10px;
-    padding: 5px;
+    margin-block: 30px;
     font-size: 16px;
     border-radius: 5px;
+    width: 50%;
+    margin-inline: 5%;
   }
-  .filters select {
-    margin: 30px;
-  }
+
   .products {
     margin-left: 296px;
     width: 100%;
@@ -582,7 +583,6 @@
   .description-bp_card {
     padding-left: 100px;
     max-width: 80%;
-    padding: 20px;
     color: white;
   }
 
@@ -805,7 +805,7 @@
 }
 
 /*Tablets*/
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 1328px) {
 
   /*Títulos*/
   h1 {
@@ -1195,6 +1195,7 @@
   .btn:hover {
     background-color: #36b920 !important;
   }
+
   .carouselTall {
     width: 90%;
   }
@@ -1317,19 +1318,14 @@
     width: 100%;
   }
 
-  .form-select {
-    width: 50% !important;
-  }
-
   .filters select {
-    margin-right: 10px;
-    padding: 5px;
+    margin-inline: 5%;
+    margin-block: 30px;
     font-size: 16px;
     border-radius: 5px;
+    width: 50%;
   }
-  .filters select {
-    margin: 30px;
-  }
+
   .products {
     width: 100%;
     display: flex;
@@ -2046,6 +2042,16 @@
     height: 250px;
   }
   /*CSS TALLER*/
+
+  .btn {
+    background-color: #378311 !important;
+    color: white !important;
+  }
+
+  .btn:hover {
+    background-color: #36b920 !important;
+  }
+
   .reserve {
     width: 100%;
     display: flex;
