@@ -520,6 +520,96 @@
     padding: 20px;
     width:50%;
   }
+
+  /*CSS SEMICIRCLES*/
+  .semicircles-container {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .semicircle {
+    transform: rotate(180deg);
+    position: absolute;
+    bottom: 0;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+
+  }
+
+  .semicircle-down {
+    position: absolute;
+    top: 0;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+  }
+
+  .first {
+    background-color: darkgreen;
+    z-index: 3;
+    width: 100%;
+    height: 50px;
+  }
+
+  .second {
+    background-color: green;
+    z-index: 2;
+    width: 100%;
+    height: 80px;
+  }
+
+  .third {
+    background-color: #21b916;
+    z-index: 1;
+    width: 100%;
+    height: 100px;
+  }
+
+  /*CSS BP_CARD*/
+  .bp_card {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    background-color: darkgreen;
+  }
+
+  .description-bp_card {
+    padding-left: 100px;
+    max-width: 80%;
+    padding: 20px;
+    color: white;
+  }
+
+  .description-bp_card h1, .description-bp_card h2 {
+    color: #21b916;
+  }
+
+  .checks {
+    align-items: center;
+    color: #21b916;
+    padding-left: 50px;
+  }
+
+  .checks-items {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .image-bp_card {
+    padding: 20px;
+    width: 80%;
+    min-height: 300px;
+    margin-top: 20px;
+    background-image: url("/PWM-TEMPLATES/img/bp_card.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+
   /*CSS PRESENTATION*/
   .presentation {
     width: 100%;
@@ -561,7 +651,7 @@
     position: fixed; /*absolute para que se mueva solo el ul*/
     left: 0;
     top: 0;
-    z-index: 3;
+    z-index: 50;
   }
   nav{
     float: left;
@@ -664,7 +754,7 @@
     margin: 0;
     padding: 0;
     font-size: 0;
-    z-index: 3;
+    z-index: 30;
   }
   #floating-share-buttons li {
   }
@@ -713,6 +803,53 @@
 
 /*Tablets*/
 @media screen and (min-width: 768px) and (max-width: 991px) {
+
+  /*CSS SEMICIRCLES*/
+  .semicircles-container {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .semicircle {
+    transform: rotate(180deg);
+    position: absolute;
+    bottom: 0;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+
+  }
+
+  .semicircle-down {
+    position: absolute;
+    top: 0;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+  }
+
+  .first {
+    background-color: darkgreen;
+    z-index: 3;
+    width: 100%;
+    height: 50px;
+  }
+
+  .second {
+    background-color: green;
+    z-index: 2;
+    width: 100%;
+    height: 80px;
+  }
+
+  .third {
+    background-color: #21b916;
+    z-index: 1;
+    width: 100%;
+    height: 100px;
+  }
+
 
   /*CSS BP_CARD*/
   .bp_card {
@@ -1395,7 +1532,7 @@
     position: fixed; /*absolute para que se mueva solo el ul*/
     left: 0;
     top: 0;
-    z-index: 3;
+    z-index: 50;
   }
 
   nav{
