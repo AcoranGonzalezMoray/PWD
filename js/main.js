@@ -200,13 +200,13 @@ function loadServices() {
 
       serviciosTaller.forEach(producto => {
 
-        fetch("/PWM-TEMPLATES/component/aside.html")
+        fetch("/PWM-TEMPLATES/component/asideCheckBox.html")
           .then(response => response.text())
           .then(data => {
             //Categoria
             var template = new DOMParser().parseFromString(data, "text/html").querySelector('.category')
             template = template.cloneNode(true)
-            template.querySelector('.nameC').textContent = producto['Descripcion'];
+            template.querySelector('.nameS').placeholder = producto['Descripcion'];
             contenedorServicios.appendChild(template);
           })
       });

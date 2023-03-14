@@ -1,6 +1,22 @@
 /* RESPONSIVE CSS ========================================================================= */
 /*Tablets en horizonal y escritorios normales------------------------------------------------------------------------- */
 @media screen and (min-width: 1280px)  {
+  /*Check Box Servicios*/
+  .form-check-input[type=checkbox] {
+    border-radius: .25em;
+    /* border: azure; */
+    border-color: #21b916 ;
+  }
+  .form-check-input:checked {
+    background-color:  #21b916 !important;
+    border-color: #21b916 !important;
+  }
+  .nameS{
+    background-color: rgba(42,45,49,1) !important;
+  }
+  .nameS::placeholder {
+    color: white !important;
+  }
   /*Botones Carousel*/
   .control-btn{
     display: flex;
@@ -443,7 +459,7 @@
     height:100px;
     margin-bottom: 50px;
   }
-  
+
   .register-login-form {
     display: flex;
     flex-direction: column;
