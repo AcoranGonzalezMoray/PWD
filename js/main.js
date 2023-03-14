@@ -3,6 +3,20 @@
 var productos =[];
 var baseProductos = [];
 
+var aside = document.getElementById("aside");
+var asideOpen = 0;
+
+// Agregar un evento click al objeto document
+document.addEventListener("click", function(event) {
+  // Verificar si el clic se realizó fuera del elemento
+  if (!aside.contains(event.target) && asideOpen === 1) {
+    // Si el clic se realizó fuera del elemento, ocultarlo
+    aside.style.display = "none";
+    asideOpen = 0;
+  }
+});
+
+
 //Funciones Tienda !IMPORTANTE
 function loadProducts(Catalogo) {
   fetch('/PWM-TEMPLATES/json/archivo2.json')
@@ -154,14 +168,21 @@ function loadComponenEsc() {
   $(function (){$('#footer').load("/PWM-TEMPLATES/component/footer.html")});
   $(function (){$('#header').load("/PWM-TEMPLATES/component/header.html")});
 }
+
 function showCategoryMov(i){
   if(i==1) document.getElementById("aside").style="display:block;"
   else  document.getElementById("aside").style="display:none;"
+  setTimeout(function() {
+    asideOpen = i;
+  }, 500);
 }
 
 function showServicesMov(i){
   if(i==1) document.getElementById("serviciosTaller").style="display:block;"
   else  document.getElementById("serviciosTaller").style="display:none;"
+  setTimeout(function() {
+    asideOpen = i;
+  }, 500);
 }
 
 //Funciones Reservas Servicios
