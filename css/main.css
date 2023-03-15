@@ -654,57 +654,27 @@
     width:50%;
   }
   /*CSS CAROUSEL*/
-  .smoke-effect {
-    position: relative;
-    overflow: hidden;
-  }
 
-  .smoke-effect::before {
-    content: "";
-    position: absolute;
-    top: -100%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to top, #d9ffd9 50%, rgb(73, 253, 73, 1) 70%);
-    transform: scale(2);
-    filter: blur(30px);
-    opacity: 0;
-    animation: smoke 5s ease-in-out infinite;
-  }
-
-  @keyframes smoke {
-    0% {
-      top: 100%;
-      transform: scale(0.5);
-      opacity: 0;
-    }
-    50% {
-      top: 50%;
-      transform: scale(1.5);
-      opacity: 1;
-    }
-    100% {
-      top: -100%;
-      transform: scale(2);
-      opacity: 0;
-    }
-  }
-
- .carousel-home {
-   margin-bottom: 50px;
- }
-
-  .carousel-item img {
-    max-height: 500px;
-    margin-left: 25%;
-  }
   .carousel-item {
     min-height: 500px;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
   }
+
+  .carousel-item .carouselBackground {
+    min-width: 500px;
+    min-height: 500px;
+    background-position: center;
+    background-size: contain;
+    filter: opacity(.3) blur(3px);
+  }
+
+  .carousel-home {
+    margin-bottom: 50px;
+  }
+
+
   /*CSS  HEADER*/
   header {
     width: 100%;
