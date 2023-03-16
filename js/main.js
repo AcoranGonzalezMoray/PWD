@@ -51,7 +51,7 @@ document.addEventListener("click", function(event) {
   }
 });
 
-
+var imagesArray = [];
 //Funciones Tienda !IMPORTANTE
 function loadProducts(Catalogo) {
   fetch('/PWM-TEMPLATES/json/archivo2.json')
@@ -197,7 +197,6 @@ function loadComponenHome() {
   }
   $(function (){$('#footer').load("/PWM-TEMPLATES/component/footer.html")});
 
-  $(function (){$('#carousel').load("/PWM-TEMPLATES/component/carousel.html")});
   $(function (){$('#social').load("/PWM-TEMPLATES/component/social.html")});
 }
 function loadComponenOther() {
@@ -443,7 +442,51 @@ function loadWhatWeDo() {
       document.querySelector(".p-justify").innerHTML = presentacion;
     });
 }
+function loadCarouselImages() {
 
+  var carousel;
+
+  fetch('/PWM-TEMPLATES/json/archivo2.json')
+    .then(response => response.json())
+    .then(data1 => {
+      data1['ImagenesCarouselHome'].forEach((image) => {
+        imagesArray.push(image['ruta']);
+      });
+      return fetch('/PWM-TEMPLATES/component/carousel.html')
+    })
+    .then(response => response.text())
+    .then(data2 => {
+      carousel = new DOMParser().parseFromString(data2, "text/html").querySelector('.carousel-home');
+      var carouselInner = carousel.querySelector('.carousel-inner')
+      var carouselItem = carouselInner.querySelector('.carousel-item');
+      var indicators = carousel.querySelector('.carousel-indicators');
+
+      imagesArray.forEach((image, index) => {
+
+        var button = document.createElement('button');
+        button.setAttribute('type', 'button');
+        button.setAttribute('data-bs-target', '#carouselExampleIndicators');
+        button.setAttribute('data-bs-slide-to', index);
+        button.setAttribute('aria-label', 'Slide ' + (index + 1));
+
+        if (index === 0) {
+          carouselItem.style.backgroundImage = 'url(' + image + ')';
+          carouselItem.querySelector('.carouselBackground').style.backgroundImage = 'url(' + image + ')';
+          button.classList.add('active');
+          button.setAttribute('aria-current', 'true');
+        } else {
+          carouselItem = carouselItem.cloneNode(true);
+          carouselItem.classList.remove('active')
+          carouselItem.style.backgroundImage = 'url(' + image + ')';
+          carouselItem.querySelector('.carouselBackground').style.backgroundImage = 'url(' + image + ')';
+        }
+        carouselInner.appendChild(carouselItem)
+        indicators.appendChild(button);
+      })
+      document.getElementById('carousel').appendChild(carousel);
+    })
+    .catch(error => console.error(error));
+}
 //Pantalla de Carga
 $( document ).ajaxStop(function() {
   setTimeout(() => {
