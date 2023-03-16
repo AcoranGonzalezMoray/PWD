@@ -9,6 +9,38 @@ var asideOpen = 0;
 var reservaServicioHora = [];
 var reservaServicio     = [];
 var reservadosServicioHora = [];
+
+
+
+
+// Sesiones
+
+function loggin(){
+  var email= document.getElementById("email").value;
+  var con= document.getElementById("contrasena").value;
+  console.log("i")
+  fetch('/PWM-TEMPLATES/json/archivo2.json')
+    .then(response => response.json())
+    .then(data => {
+      productos = data['Usuarios'];
+      //"Email": "usuario1@example.com",
+      // "Password": "contraseña1"
+      // Recorrer el arreglo de productos
+      productos.forEach(producto => {
+        if(producto.Email.localeCompare(email)==0){
+          /*Guardando los datos en el LocalStorage*/
+          sessionStorage.setItem("EMAIL", email);
+          sessionStorage.setItem("PS", con);
+        }
+      });
+      window.location.href = "/PWM-TEMPLATES/index.html";
+    })
+    .catch(error => console.error('Error al cargar el archivo JSON:', error));
+
+}
+
+
+
 // Agregar un evento click al objeto document
 document.addEventListener("click", function(event) {
   // Verificar si el clic se realizó fuera del elemento
@@ -157,19 +189,33 @@ const removeAccents = (str) => {
   return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 }
 function loadComponenHome() {
+  console.log(sessionStorage.getItem("email"))
+  if(sessionStorage.getItem("EMAIL")){
+    $(function (){$('#header').load("/PWM-TEMPLATES/component/headerLog.html")});
+  }else{
+    $(function (){$('#header').load("/PWM-TEMPLATES/component/header.html")});
+  }
   $(function (){$('#footer').load("/PWM-TEMPLATES/component/footer.html")});
-  $(function (){$('#header').load("/PWM-TEMPLATES/component/header.html")});
+
   $(function (){$('#carousel').load("/PWM-TEMPLATES/component/carousel.html")});
   $(function (){$('#social').load("/PWM-TEMPLATES/component/social.html")});
 }
 function loadComponenOther() {
   $(function (){$('#footer').load("/PWM-TEMPLATES/component/footer.html")});
-  $(function (){$('#header').load("/PWM-TEMPLATES/component/header.html")});
+  if(sessionStorage.getItem("EMAIL")){
+    $(function (){$('#header').load("/PWM-TEMPLATES/component/headerLog.html")});
+  }else{
+    $(function (){$('#header').load("/PWM-TEMPLATES/component/header.html")});
+  }
   $(function (){$('#social').load("/PWM-TEMPLATES/component/social.html")});
 }
 function loadComponenEsc() {
   $(function (){$('#footer').load("/PWM-TEMPLATES/component/footer.html")});
-  $(function (){$('#header').load("/PWM-TEMPLATES/component/header.html")});
+  if(sessionStorage.getItem("EMAIL")){
+    $(function (){$('#header').load("/PWM-TEMPLATES/component/headerLog.html")});
+  }else{
+    $(function (){$('#header').load("/PWM-TEMPLATES/component/header.html")});
+  }
 }
 
 function showCategoryMov(i){
