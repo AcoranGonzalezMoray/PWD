@@ -2,13 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>BP Santa Brígida</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/PWM-TEMPLATES/img/templatebox.png">
+    <link rel="shortcut icon" href="/PWM-TEMPLATES/img/LOGO.png">
     <link rel="stylesheet" href="\PWM-TEMPLATES\css\main.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   </head>
-  <body onload="loadComponenOther()">
+  <body onload="loadComponenOther();loadWhatWeDo()">
   <div id="loading">
     <img id="loading-image" src="/PWM-TEMPLATES/img/LOGO.png" alt="Loading..." />
       <div class="spinner"></div>
@@ -19,33 +20,21 @@
       <div class="whatwedo">
         <h1>¿Qué Hacemos?</h1>
         <img src="https://www.estacionbpsantabrigida.com/uploads/yDqEIzja/1059696-DSCF9059-c20ad.w1024.jpg"/>
-        <p class="p-justify">La estación BP Santa Brígida es una gran zona de servicio para su automóvil donde le
-          ofrecemos una respuesta a la medida de sus necesidades.<br>
-          <br>
-          ABIERTO LAS 24 HORAS, CON SERVICIO ATENDIDO EN PISTA DE 6:00 A 22:00.<br>
-          <br>
-          TIENDA ABIERTA 24 HORAS con amplia gama de artículos, alimentación, higiene personal, artículos de un sólo
-          uso, gas, productos de limpieza para su coche y para la casa, artículos de regalo, comida para su mascota y
-          muchos antojos.<br>
-          <br>
-          ZONA DE AUTOLAVADO abierta de 7:00 a 21:00 horas todos los días de la semana, provista de 2 puentes de lavado,
-          2 Jet Wash, 1 soplador-secador, 1 dispensador de papel secante, 2 aspiradoras. Todo ello en unas amplias y
-          cómodas instalaciones.<br>
-          <br>
-          TALLER, servicio rápido para el mantenimiento de su automóvil (cambio de aceite, filtros, bujías, pastillas
-          de freno, amortiguadores, revisión pre-ITV). Venta, montaje, equilibrado y reparación de neumáticos.
-          Alineación de dirección a las cuatro ruedas, avalada por 30 años de experiencia.<br>
-          <br>
-          VENTA DE VEHÍCULOS NUEVOS Y DE OCASIÓN, con una amplia gama así como Peugeot, Mitsubishi, Fiat, Subaru,
-          SSangYong, Jeep, Alfa Romeo, Lancia…
+        <p class="p-justify">
+          <!--Se carga una descripción detallada de la empresa desde el json-->
         </p>
       </div>
     </main>
 
 
     <footer id="footer"></footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+            crossorigin="anonymous">
+    </script>
     <script src="/PWM-TEMPLATES/js/main.js"></script>
   </body>
 </html>

@@ -2570,7 +2570,7 @@
       "Servicio": "Servicio que se solicita"
     }
   ],
-  "ServiciosTaller" : [
+  "ServiciosTaller": [
     {
       "Codigo": "3006",
       "Descripcion": "Engrase",
@@ -2828,5 +2828,7 @@
       "Email": "usuario3@example.com",
       "Password": "contraseña3"
     }
-  ]
+  ],
+  "Presentacion": "Estación de servicios BP Santa Brígida fundada en el año 1982, cuenta con unas amplias, cómodas y modernas instalaciones, gracias a nuestro carácter emprendedor y afán de mejora constante, siempre de la mano de nuestro personal que ofrece un servicio  de calidad.<br><br>Ponemos a su disposición los siguientes servicios: Gasolinera, taller multimarca, autolavado, tienda abierta 24 horas, autorepuestos y gas.",
+  "QueHacemos": "La estación BP Santa Brígida es una gran zona de servicio para su automóvil donde le ofrecemos una respuesta a la medida de sus necesidades.<br><br>ABIERTO LAS 24 HORAS, CON SERVICIO ATENDIDO EN PISTA DE 6:00 A 22:00.<br><br>TIENDA ABIERTA 24 HORAS con amplia gama de artículos, alimentación, higiene personal, artículos de un sólo uso, gas, productos de limpieza para su coche y para la casa, artículos de regalo, comida para su mascota y muchos antojos.<br><br>ZONA DE AUTOLAVADO abierta de 7:00 a 21:00 horas todos los días de la semana, provista de 2 puentes de lavado, 2 Jet Wash, 1 soplador-secador, 1 dispensador de papel secante, 2 aspiradoras. Todo ello en unas amplias y cómodas instalaciones.<br><br>TALLER, servicio rápido para el mantenimiento de su automóvil (cambio de aceite, filtros, bujías, pastillas de freno, amortiguadores, revisión pre-ITV). Venta, montaje, equilibrado y reparación de neumáticos. Alineación de dirección a las cuatro ruedas, avalada por 30 años de experiencia."
 }
