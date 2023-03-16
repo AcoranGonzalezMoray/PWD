@@ -6,9 +6,9 @@ var baseProductos = [];
 var aside = document.getElementById("aside");
 var asideOpen = 0;
 
-var reservaServicioHora = "";
-var reservaServicio     = "";
-
+var reservaServicioHora = [];
+var reservaServicio     = [];
+var reservadosServicioHora = [];
 // Agregar un evento click al objeto document
 document.addEventListener("click", function(event) {
   // Verificar si el clic se realizó fuera del elemento
@@ -190,19 +190,41 @@ function showServicesMov(i){
 
 //Funciones Reservas Servicios
 function reservarServicio(){
-  alert(reservaServicioHora+"-> Servicio: "+reservaServicio)
+  document.getElementById('reservaFecha').placeholder = reservaServicioHora[1]
+  document.getElementById('reservaServicio').placeholder = reservaServicio[1]
 }
 function seleccionarHora(i,x) {
-  i.querySelector('.hour').style="color:white;background-color:green"
+  i.querySelector('.hour').parentElement.style="background-color:green;"
+  i.querySelector('.hour').style="color:white;background-color:green;"
   let h = i.querySelector('.hour').textContent
   let d = x.querySelector('.date').textContent
-  reservaServicioHora = h+" "+d;
+  if(reservaServicioHora.length==0){
+    reservaServicioHora[0] = i;
+    reservaServicioHora[1] = h+" "+d;
+  }else{
+    //var Verificacion = true
+    //for (i = 0; i < reservadosServicioHora.length; i++) {
+      //if(reservadosServicioHora[i][0].localeCompare(h)==0 &&
+       // reservadosServicioHora[i][1].localeCompare(d)==0) Verificacion = false;
+    //}
+    reservaServicioHora[0].querySelector('.hour').parentElement.style="background-color:white;"
+    reservaServicioHora[0].querySelector('.hour').style="color:black;background-color:white"
+    reservaServicioHora[0] = i;
+    reservaServicioHora[1] = h+" "+d;
+
+  }
 
 }
 function seleccionarServicio(i) {
 
-  if(i.querySelector('.form-check-input[type=checkbox]').checked) {
-    reservaServicio = i.querySelector('.nameS').placeholder
+  if(i.querySelector('.form-check-input[type=checkbox]').checked &&
+  reservaServicio.length == 0) {
+    reservaServicio[0] = i
+    reservaServicio[1] = i.querySelector('.nameS').placeholder
+  }else{
+    reservaServicio[0].querySelector('.form-check-input[type=checkbox]').checked = false;
+    reservaServicio[0] = i
+    reservaServicio[1] = i.querySelector('.nameS').placeholder
   }
 
 }
@@ -276,7 +298,6 @@ function comprobarReservasOcupadas(){
       .then(data => {
         const reservas = data['Reservas Taller'];
         reservas.forEach(reserva => {
-
           var daysOfWeek = document.querySelectorAll('.dayOfWeek')
           var arrayDaysOfWeek = Array.from(daysOfWeek);
 
@@ -289,6 +310,7 @@ function comprobarReservasOcupadas(){
               console.log(day.querySelector('.date').textContent)
               if (reserveItem.querySelector('.hour').textContent === reserva.Hora &&
                 day.querySelector('.date').textContent === reserva.Fecha) {
+                //reservadosServicioHora.push([reserva.Hora,reserva.Fecha])
                 reserveItem.style.backgroundColor = 'red';
               }
             })

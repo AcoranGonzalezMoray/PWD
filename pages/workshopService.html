@@ -15,7 +15,6 @@
   <div class="spinner"></div>
 </div>
 <header class="shadow-lg" id="header"></header>
-
 <main class="main-tienda" >
 
   <aside class="shadow-lg p-3 mb-5 rounded" id="serviciosTaller">
@@ -159,10 +158,43 @@
     </div>
 
 
-    <div id="btn-reserve" class="btn-color" onclick="reservarServicio()">
+    <div id="btn-reserve" class="btn-color" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="reservarServicio()" >
       <a ref="" class="btn">Reservar</a>
     </div>
 
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="reservaServicio" class="form-label">Servicio</label>
+                <input readonly=true  class="form-control" id="reservaServicio" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="reservaFecha" class="form-label">Fecha de Reserva</label>
+                <input readonly=true class="form-control" id="reservaFecha">
+              </div>
+              <div class="mb-3">
+                <label for="reservaFecha" class="form-label">Marca Y Modelo de Vehiculo</label>
+                <input class="form-control" >
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Confirmo que he leido los datos de la reserva</label>
+              </div>
+
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary " data-bs-dismiss="modal">Cancelar</button>
+            <button type="submit" class="btn btn-primary ">Reservar</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <footer class="footer-store" id="footer"></footer>
   </section>
 </main>
