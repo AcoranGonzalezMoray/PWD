@@ -358,6 +358,23 @@ function validarFormulario() {
   return false;
 }
 
+function loadPresentation() {
+  fetch('/PWM-TEMPLATES/json/archivo2.json')
+    .then(response => response.json())
+    .then(data => {
+      const presentacion = data['Presentacion'];
+      document.querySelector(".p-justify").innerHTML = presentacion;
+    });
+}
+
+function loadWhatWeDo() {
+  fetch('/PWM-TEMPLATES/json/archivo2.json')
+    .then(response => response.json())
+    .then(data => {
+      const presentacion = data['QueHacemos'];
+      document.querySelector(".p-justify").innerHTML = presentacion;
+    });
+}
 
 //Pantalla de Carga
 $( document ).ajaxStop(function() {

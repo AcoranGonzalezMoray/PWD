@@ -667,7 +667,7 @@
     min-height: 500px;
     background-position: center;
     background-size: contain;
-    filter: opacity(.3) blur(3px);
+    filter: opacity(.3);
   }
 
   .carousel-home {
