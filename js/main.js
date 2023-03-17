@@ -10,12 +10,75 @@ var reservaServicioHora = [];
 var reservaServicio     = [];
 var reservadosServicioHora = [];
 
+var imagesArray = [];
+
+var carrito=[];
 
 
+//Carrito
+function añadirProductoAlCarrito(producto) {
+  // Anyadimos el Nodo a nuestro carrito
+  carrito.push(producto)
+  // Actualizamos el carrito
+  renderizarCarrito();
 
+}
+function eliminarProductoAlCarrito(producto) {
+  // Anyadimos el Nodo a nuestro carrito
+  carrito.splice(carrito.indexOf(producto),1)
+  // Actualizamos el carrito
+  renderizarCarrito();
+
+}
+function vaciarCarrito() {
+  // Actualizamos el carrito
+  carrito=[]
+  renderizarCarrito ()
+}
+function renderizarCarrito (){
+  var contenedorCarrito = document.getElementById('modal-carrito')
+  while(contenedorCarrito.hasChildNodes()){
+    contenedorCarrito.removeChild(contenedorCarrito .firstChild);
+  }
+  document.getElementById('numberProducts').textContent = carrito.length
+  // Recorrer el arreglo de productos
+  carrito.forEach(producto => {
+    fetch("/PWM-TEMPLATES/component/productoCarrito.html")
+      .then(response => response.text())
+      .then(data => {
+        var template = new DOMParser().parseFromString(data, "text/html").querySelector('.card')
+        template = template.cloneNode(true);
+        template.querySelector('.card-title').textContent = producto.querySelector('.card-text').textContent
+        template.querySelector('.card-text').textContent = producto.querySelector('.card-title').textContent
+        template.querySelector('.img-product-cart').style.backgroundImage = producto.querySelector('.img-product').style.backgroundImage
+        template.querySelector('.add-buttons').addEventListener('click',function (){añadirProductoAlCarrito(producto)});
+        template.querySelector('.quite-buttons').addEventListener('click',function (){eliminarProductoAlCarrito(producto)});
+        contenedorCarrito.appendChild(template)
+      })
+  });
+  totalCarrito();
+
+}
+function abrirCarrito(){
+  document.querySelector(".fade:not(.show)").style = "display:block;opacity:1;z-index:100;display:flex;align-items:center"
+  document.querySelector(".dark").style = "display:block"
+}
+function cerrarCarrito(){
+  document.querySelector(".fade:not(.show)").style = "display:none;opacity:0"
+  document.querySelector(".dark").style = "display:none"
+}
+function totalCarrito(){
+  var total=0;
+  carrito.forEach(producto =>{
+    total += parseFloat((producto.querySelector('.card-title').textContent).split('€')[0].replace(',','.'))
+  })
+  document.querySelector('#mount-cart').textContent = total.toFixed(2);
+
+
+}
 // Sesiones
-
 function loggin(){
+  carrito=[]
   var email= document.getElementById("email").value;
   var con= document.getElementById("contrasena").value;
   console.log("i")
@@ -40,7 +103,6 @@ function loggin(){
 }
 
 
-
 // Agregar un evento click al objeto document
 document.addEventListener("click", function(event) {
   // Verificar si el clic se realizó fuera del elemento
@@ -51,7 +113,7 @@ document.addEventListener("click", function(event) {
   }
 });
 
-var imagesArray = [];
+
 //Funciones Tienda !IMPORTANTE
 function loadProducts(Catalogo) {
   fetch('/PWM-TEMPLATES/json/archivo2.json')
@@ -72,7 +134,7 @@ function loadProducts(Catalogo) {
             template.querySelector('.card-text').textContent = producto['NombreCorto'];
             template.querySelector('.card-title').textContent = producto['PVP'];
             template.querySelector('.img-product').style.backgroundImage = "url('" + producto['IMAGEN'] + "')";
-
+            template.querySelector('.btn-color').addEventListener("click", function(){añadirProductoAlCarrito(template)});
             contenedorProductos.appendChild(template);
           })
       });
@@ -90,7 +152,7 @@ function agregarProductos () {
         template.querySelector('.card-text').textContent = producto['NombreCorto'];
         template.querySelector('.card-title').textContent = producto['PVP'];
         template.querySelector('.img-product').style.backgroundImage = "url('" + producto['IMAGEN'] + "')";
-
+        template.querySelector('.btn-color').addEventListener("click", function(){añadirProductoAlCarrito(template)});
         contenedorProductos.appendChild(template);
       })
   });
