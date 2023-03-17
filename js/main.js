@@ -16,6 +16,17 @@ var carrito=[];
 
 
 //Carrito
+function actualizarCarritoGlobal(){
+  var tmp_list = []
+  carrito.forEach(producto =>{
+    tmp_list.push(producto.outerHTML)
+  })
+  sessionStorage.setItem("carrito", JSON.stringify(tmp_list));
+}
+function añadirProductoAlCarritoSilent(producto) {
+  // Anyadimos el Nodo a nuestro carrito
+  carrito.push(producto)
+}
 function añadirProductoAlCarrito(producto) {
   // Anyadimos el Nodo a nuestro carrito
   carrito.push(producto)
@@ -36,6 +47,7 @@ function vaciarCarrito() {
   renderizarCarrito ()
 }
 function renderizarCarrito (){
+  console.log(carrito.length+"RENDER")
   var contenedorCarrito = document.getElementById('modal-carrito')
   while(contenedorCarrito.hasChildNodes()){
     contenedorCarrito.removeChild(contenedorCarrito .firstChild);
@@ -54,9 +66,11 @@ function renderizarCarrito (){
         template.querySelector('.add-buttons').addEventListener('click',function (){añadirProductoAlCarrito(producto)});
         template.querySelector('.quite-buttons').addEventListener('click',function (){eliminarProductoAlCarrito(producto)});
         contenedorCarrito.appendChild(template)
+        console.log("AGREGA")
       })
   });
   totalCarrito();
+  actualizarCarritoGlobal()
 
 }
 function abrirCarrito(){
@@ -78,10 +92,8 @@ function totalCarrito(){
 }
 // Sesiones
 function loggin(){
-  carrito=[]
   var email= document.getElementById("email").value;
   var con= document.getElementById("contrasena").value;
-  console.log("i")
   fetch('/PWM-TEMPLATES/json/archivo2.json')
     .then(response => response.json())
     .then(data => {
@@ -251,7 +263,6 @@ const removeAccents = (str) => {
   return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 }
 function loadComponenHome() {
-  console.log(sessionStorage.getItem("email"))
   if(sessionStorage.getItem("EMAIL")){
     $(function (){$('#header').load("/PWM-TEMPLATES/component/headerLog.html")});
   }else{
@@ -551,10 +562,25 @@ function loadCarouselImages() {
 }
 //Pantalla de Carga
 $( document ).ajaxStop(function() {
+
+  //console.log($.parseHTML( sessionStorage.getItem("carrito") )[2])
+  if(sessionStorage.getItem("carrito")){
+    var tmp = sessionStorage.getItem("carrito")
+    tmp = JSON.parse(tmp)
+     tmp.forEach(producto => {
+       console.log("a")
+        añadirProductoAlCarritoSilent($.parseHTML(producto)[0])
+      })
+    renderizarCarrito()
+  }
+
+
+
   setTimeout(() => {
     $('#loading').hide()
   }, 700);
   ;
 });
+
 
 
