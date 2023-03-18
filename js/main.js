@@ -3,7 +3,6 @@
 var productos =[];
 var baseProductos = [];
 
-var aside = document.getElementById("aside");
 var asideOpen = 0;
 
 var reservaServicioHora = [];
@@ -136,6 +135,7 @@ function loggin(){
 // Agregar un evento click al objeto document
 document.addEventListener("click", function(event) {
   // Verificar si el clic se realizó fuera del elemento
+  var aside = document.querySelector('aside');
   if (!aside.contains(event.target) && asideOpen === 1) {
     // Si el clic se realizó fuera del elemento, ocultarlo
     aside.style.display = "none";
@@ -367,16 +367,10 @@ function seleccionarHora(i,x) {
     reservaServicioHora[0] = i;
     reservaServicioHora[1] = h+" "+d;
   }else{
-    //var Verificacion = true
-    //for (i = 0; i < reservadosServicioHora.length; i++) {
-      //if(reservadosServicioHora[i][0].localeCompare(h)==0 &&
-       // reservadosServicioHora[i][1].localeCompare(d)==0) Verificacion = false;
-    //}
     reservaServicioHora[0].querySelector('.hour').parentElement.style="background-color:white;"
     reservaServicioHora[0].querySelector('.hour').style="color:black;background-color:white"
     reservaServicioHora[0] = i;
     reservaServicioHora[1] = h+" "+d;
-
   }
 
 }
@@ -420,129 +414,6 @@ function loadServices() {
       });
     })
     .catch(error => console.error('Error al cargar el archivo JSON:', error));
-}
-function loadReserveHours() {
-
-  var fecha = new Date('2023-03-13');
-  var opciones = { day: '2-digit', month: '2-digit', year: 'numeric' };
-
-  var daysOfWeek = document.querySelectorAll('.dayOfWeek')
-  var arrayDaysOfWeek = Array.from(daysOfWeek);
-  x=0;
-// Ahora podemos trabajar con el array de elementos
-  arrayDaysOfWeek.forEach(function(day) {
-
-    day.querySelector('.date').textContent = fecha.toLocaleDateString('es-ES', opciones);
-
-    var hora = new Date();
-    hora.setHours(8);
-    hora.setMinutes(0);
-
-    for (var i = 0; i < 20; i++) {
-      fetch("/PWM-TEMPLATES/component/reserveBoxItem.html")
-        .then(response => response.text())
-        .then(data => {
-          var template = new DOMParser().parseFromString(data, "text/html").querySelector('.reserve-box-item')
-          template = template.cloneNode(true);
-          template.querySelector('.hour').textContent = hora.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
-          template.querySelector('.hour').addEventListener("click", function(){seleccionarHora(template,day, daysOfWeek);});
-          day.appendChild(template);
-          hora.setMinutes(hora.getMinutes() + 30);
-        })
-    }
-    x++;
-    if(x%5==0)fecha.setDate(fecha.getDate() + 3);
-    else fecha.setDate(fecha.getDate() + 1);
-  });
-  comprobarReservasOcupadas();
-}
-function comprobarReservasOcupadas(){
-  setTimeout(function() {
-    fetch('/PWM-TEMPLATES/json/archivo2.json')
-      .then(response => response.json())
-      .then(data => {
-        const reservas = data['Reservas Taller'];
-        reservas.forEach(reserva => {
-          var daysOfWeek = document.querySelectorAll('.dayOfWeek')
-          var arrayDaysOfWeek = Array.from(daysOfWeek);
-
-          arrayDaysOfWeek.forEach(function(day) {
-            var reserveItems = day.querySelectorAll('.reserve-box-item')
-            var arrayReserveItems = Array.from(reserveItems);
-
-            arrayReserveItems.forEach(function (reserveItem) {
-              console.log(reserveItem.querySelector('.hour').textContent)
-              console.log(day.querySelector('.date').textContent)
-              if (reserveItem.querySelector('.hour').textContent === reserva.Hora &&
-                day.querySelector('.date').textContent === reserva.Fecha) {
-                //reservadosServicioHora.push([reserva.Hora,reserva.Fecha])
-                reserveItem.style.backgroundColor = 'red';
-              }
-            })
-          })
-        });
-      });
-  }, 2000);
-}
-
-
-//No Usado
-function validarFormulario() {
-  // Obtener los valores de los campos del formulario
-  var nombreCompleto = document.getElementById("nombreCompleto").value;
-  var correoElectronico = document.getElementById("correoElectronico").value;
-  var contrasena = document.getElementById("contrasena").value;
-  var repetirContrasena = document.getElementById("repetirContrasena").value;
-
-
-  // Validar que se haya ingresado la misma contraseña en ambos campos
-  if (contrasena !== repetirContrasena) {
-    alert("Las contraseñas no coinciden.");
-    return false;
-  }
-
-  // Si todos los campos son válidos, crear un objeto con los datos del usuario
-  var usuario = {
-    "Username": nombreCompleto,
-    "Email": correoElectronico,
-    "Password": contrasena
-  };
-
-// Convertir el objeto a formato JSON
-  var usuarioJSON = JSON.stringify(usuario);
-
-  fetch('/PWM-TEMPLATES/json/archivo2.json')
-    .then(response => response.json())
-    .then(data => {
-      data['Usuarios'].push(usuarioJSON);
-
-      // Enviar la solicitud de actualización al servidor
-      fetch('/PWM-TEMPLATES/json/archivo2.json', {
-        method: 'PUT', // Usar el método HTTP PUT para actualizar el archivo
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(data) // Enviar el objeto JSON actualizado al servidor
-      })
-        .then(response => {
-          if (response.ok) {
-            console.log('Archivo JSON actualizado correctamente');
-          } else {
-            throw new Error('Error al actualizar el archivo JSON');
-          }
-        })
-        .catch(error => console.error(error));
-    })
-    .catch(error => console.error('Error al cargar el archivo JSON:', error));
-
-  // Mostrar un mensaje de éxito
-  alert("¡Registro exitoso!");
-
-  // Redirigir al usuario a la página de inicio de sesión
-  window.location.href = "/PWM-TEMPLATES/pages/signIn.html";
-
-  // Evitar que se envíe el formulario
-  return false;
 }
 
 function loadPresentation() {
@@ -607,6 +478,104 @@ function loadCarouselImages() {
     })
     .catch(error => console.error(error));
 }
+
+function loadReserveBox() {
+
+  var fecha = new Date('2023-03-13');
+  var opciones = { day: '2-digit', month: '2-digit', year: 'numeric' };
+
+  var carousel = document.getElementById('carouselExample')
+  var carouselInner = carousel.querySelector('.carousel-inner')
+  var carouselItem = carouselInner.querySelector('.carousel-item')
+
+  var reserveBox;
+  var daysOfWeek;
+  var arrayDaysOfWeek;
+
+  fetch("/PWM-TEMPLATES/component/reserveBox.html")
+    .then(response => response.text())
+    .then(data1 => {
+      reserveBox = new DOMParser().parseFromString(data1, "text/html").querySelector('.reserve-box');
+      return fetch("/PWM-TEMPLATES/component/reserveBoxItem.html");
+    })
+    .then(response => response.text())
+    .then(data2 => {
+
+      var reserveBoxItem = new DOMParser().parseFromString(data2, "text/html").querySelector('.reserve-box-item')
+
+      for (var j = 0; j < 3; j++) {
+        daysOfWeek = reserveBox.querySelectorAll('.dayOfWeek')
+        arrayDaysOfWeek = Array.from(daysOfWeek);
+
+        arrayDaysOfWeek.forEach(function(day) {
+
+          day.querySelector('.date').textContent = fecha.toLocaleDateString('es-ES', opciones);
+
+          var hora = new Date();
+          hora.setHours(8);
+          hora.setMinutes(0);
+
+          for (var i = 0; i < 20; i++) {
+            reserveBoxItem.querySelector('.hour').textContent = hora.toLocaleTimeString([], {
+              hour: '2-digit',
+              minute: '2-digit'
+            });
+            day.appendChild(reserveBoxItem);
+            reserveBoxItem = reserveBoxItem.cloneNode(true)
+            hora.setMinutes(hora.getMinutes() + 30);
+          }
+
+          fecha.setDate(fecha.getDate() + 1)
+        })
+        carouselItem.appendChild(reserveBox)
+        carouselInner.appendChild(carouselItem)
+        carouselItem = carouselItem.cloneNode(false);
+        carouselItem.classList.remove('active')
+        reserveBox = reserveBox.cloneNode(true);
+        fecha.setDate(fecha.getDate() + 2)
+      }
+
+      return fetch('/PWM-TEMPLATES/json/archivo2.json')
+    })
+    .then(response => response.json())
+    .then(data3 => {
+      const reservas = data3['Reservas Taller'];
+      reservas.forEach(reserva => {
+
+        daysOfWeek = document.querySelectorAll('.dayOfWeek')
+        arrayDaysOfWeek = Array.from(daysOfWeek)
+
+        arrayDaysOfWeek.forEach(function(day) {
+          var reserveItems = day.querySelectorAll('.reserve-box-item')
+          var arrayReserveItems = Array.from(reserveItems);
+
+          arrayReserveItems.forEach(function (reserveItem) {
+            if (reserveItem.querySelector('.hour').textContent === reserva.Hora &&
+              day.querySelector('.date').textContent === reserva.Fecha) {
+              reserveItem.style.backgroundColor = 'red';
+            }
+          })
+        })
+      });
+      loadReserveBoxListeners()
+    });
+}
+
+function loadReserveBoxListeners() {
+
+  const daysOfWeek = document.querySelectorAll('.dayOfWeek')
+  const arrayDaysOfWeek = Array.from(daysOfWeek);
+
+  arrayDaysOfWeek.forEach(function(day) {
+    const reserveBoxItems = day.querySelectorAll('.reserve-box-item')
+    const reserveBoxItemsArray = Array.from(reserveBoxItems)
+    reserveBoxItemsArray.forEach(function (reserveBoxItem) {
+      reserveBoxItem.querySelector('.hour').addEventListener("click", function () {
+        seleccionarHora(reserveBoxItem, day);
+      });
+    })
+  });
+}
 //Pantalla de Carga
 $( document ).ajaxStop(function() {
 
@@ -620,8 +589,6 @@ $( document ).ajaxStop(function() {
       })
     renderizarCarrito()
   }
-
-
 
   setTimeout(() => {
     $('#loading').hide()
