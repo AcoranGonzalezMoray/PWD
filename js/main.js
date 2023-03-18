@@ -101,6 +101,7 @@ function loggin(){
   var email= document.getElementById("email").value;
   var con= document.getElementById("contrasena").value;
   var rol=false;
+  var conn = false
   fetch('/PWM-TEMPLATES/json/archivo2.json')
     .then(response => response.json())
     .then(data => {
@@ -111,20 +112,24 @@ function loggin(){
       productos.forEach(producto => {
         if(email.localeCompare('admin1@example.com')==0){
           rol=true;
-
+          conn=true
         }
         if(producto.Email.localeCompare(email)==0){
           /*Guardando los datos en el LocalStorage*/
-
+          conn=true
           sessionStorage.setItem("EMAIL", email);
           sessionStorage.setItem("PS", con);
 
         }
       });
-      if (rol){
-        window.location.href = "/PWM-TEMPLATES/pages/dashboard/dashboardAdmin.html";
-      } else {
-        window.location.href = "/PWM-TEMPLATES/index.html";
+      if(conn){
+        if (rol){
+          window.location.href = "/PWM-TEMPLATES/pages/dashboard/dashboardAdmin.html";
+        } else {
+          window.location.href = "/PWM-TEMPLATES/index.html";
+        }
+      }else{
+        window.location.href = "/PWM-TEMPLATES/pages/signIn.html";
       }
     })
     .catch(error => console.error('Error al cargar el archivo JSON:', error));
