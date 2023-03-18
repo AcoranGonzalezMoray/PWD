@@ -27,11 +27,14 @@ function añadirProductoAlCarritoSilent(producto) {
   carrito.push(producto)
 }
 function añadirProductoAlCarrito(producto) {
-  // Anyadimos el Nodo a nuestro carrito
-  carrito.push(producto)
-  // Actualizamos el carrito
-  renderizarCarrito();
-
+    if(sessionStorage.getItem('EMAIL')){
+      // Anyadimos el Nodo a nuestro carrito
+      carrito.push(producto)
+      // Actualizamos el carrito
+      renderizarCarrito();
+    }else{
+      window.location.href = "/PWM-TEMPLATES/pages/signIn.html";
+    }
 }
 function eliminarProductoAlCarrito(producto) {
   // Anyadimos el Nodo a nuestro carrito
@@ -264,29 +267,58 @@ const removeAccents = (str) => {
 }
 function loadComponenHome() {
   if(sessionStorage.getItem("EMAIL")){
-    $(function (){$('#header').load("/PWM-TEMPLATES/component/headerLog.html")});
+    fetch('/PWM-TEMPLATES/component/headerLog.html')
+      .then(response => response.text())
+      .then(data => {
+        document.querySelector('#header').innerHTML = data;
+      });
   }else{
-    $(function (){$('#header').load("/PWM-TEMPLATES/component/header.html")});
+    fetch('/PWM-TEMPLATES/component/header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.querySelector('#header').innerHTML = data;
+      });
   }
-  $(function (){$('#footer').load("/PWM-TEMPLATES/component/footer.html")});
+  fetch('/PWM-TEMPLATES/component/footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.querySelector('#footer').innerHTML = data;
+    });
 
   $(function (){$('#social').load("/PWM-TEMPLATES/component/social.html")});
 }
 function loadComponenOther() {
-  $(function (){$('#footer').load("/PWM-TEMPLATES/component/footer.html")});
+  fetch('/PWM-TEMPLATES/component/footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.querySelector('#footer').innerHTML = data;
+    });
   if(sessionStorage.getItem("EMAIL")){
     $(function (){$('#header').load("/PWM-TEMPLATES/component/headerLog.html")});
   }else{
     $(function (){$('#header').load("/PWM-TEMPLATES/component/header.html")});
+
   }
   $(function (){$('#social').load("/PWM-TEMPLATES/component/social.html")});
 }
 function loadComponenEsc() {
-  $(function (){$('#footer').load("/PWM-TEMPLATES/component/footer.html")});
+  fetch('/PWM-TEMPLATES/component/footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.querySelector('#footer').innerHTML = data;
+    });
   if(sessionStorage.getItem("EMAIL")){
-    $(function (){$('#header').load("/PWM-TEMPLATES/component/headerLog.html")});
+    fetch('/PWM-TEMPLATES/component/headerLog.html')
+      .then(response => response.text())
+      .then(data => {
+        document.querySelector('#header').innerHTML = data;
+      });
   }else{
-    $(function (){$('#header').load("/PWM-TEMPLATES/component/header.html")});
+    fetch('/PWM-TEMPLATES/component/header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.querySelector('#header').innerHTML = data;
+      });
   }
 }
 
@@ -548,6 +580,8 @@ $( document ).ajaxStop(function() {
   }, 700);
   ;
 });
+
+
 
 
 

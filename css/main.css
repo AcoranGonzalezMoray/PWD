@@ -884,6 +884,60 @@
 
 /*Tablets*/
 @media screen and (min-width: 768px) and (max-width: 1279px) {
+  /*Carrito*/
+  .borrar {
+    background-color: red !important;
+  }
+  .total {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  .total > div {
+    display: flex;
+  }
+
+  .dark {
+    display: none;
+    background-color: black;
+    opacity: 0.8;
+    width: 100%;
+    height: 1200px;
+  }
+  .card-body-cart{
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .add-quite-buttons{
+    display: flex;
+    flex-direction: column;
+  }
+  .img-product-cart{
+    min-height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .modal-dialog{
+    max-width: unset !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+  .carrito{
+    width: 600px !important;
+  }
+  #modal-carrito .card {
+    height: 120px !important;
+    width: 100% !important;
+  }
+  #modal-carrito {
+    overflow-y: scroll;
+    max-height: 500px;
+  }
   /*Check Box Servicios*/
   .form-check-input[type=checkbox] {
     border-radius: .25em;
@@ -1815,6 +1869,72 @@
 
 /* Móviles en vertical------------------------------------------------------------------------- */
 @media screen and (max-width: 767px) {
+  /*Carrito*/
+  .modal-footer-cart {
+    justify-content: flex-start !important;
+  }
+  .modal-footer>* {
+    margin: unset !important;
+  }
+  .row>*{
+    width: 50% !important;
+  }
+  .borrar {
+    background-color: red !important;
+  }
+  .total {
+    margin-right: 2px;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  .total > div {
+    display: flex;
+  }
+
+  .dark {
+    display: none;
+    background-color: black;
+    opacity: 0.8;
+    width: 100%;
+    height: 1200px;
+  }
+  .card-body-cart{
+    display: flex !important;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .card-body-cart h5{
+    font-size: 13px;
+  }
+  .add-quite-buttons{
+    display: flex;
+    flex-direction: column;
+  }
+  .img-product-cart{
+    min-height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .modal-dialog{
+    max-width: unset !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+  .carrito{
+    width: 600px !important;
+  }
+  #modal-carrito .card {
+    height: 120px !important;
+    width: 100% !important;
+  }
+  #modal-carrito {
+    overflow-y: scroll;
+    max-height: 500px;
+  }
   /*Check Box Servicios*/
   .form-check-input[type=checkbox] {
     border-radius: .25em;
