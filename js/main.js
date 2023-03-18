@@ -27,14 +27,14 @@ function añadirProductoAlCarritoSilent(producto) {
   carrito.push(producto)
 }
 function añadirProductoAlCarrito(producto) {
-    if(sessionStorage.getItem('EMAIL')){
-      // Anyadimos el Nodo a nuestro carrito
-      carrito.push(producto)
-      // Actualizamos el carrito
-      renderizarCarrito();
-    }else{
-      window.location.href = "/PWM-TEMPLATES/pages/signIn.html";
-    }
+  if(sessionStorage.getItem('EMAIL')){
+    // Anyadimos el Nodo a nuestro carrito
+    carrito.push(producto)
+    // Actualizamos el carrito
+    renderizarCarrito();
+  }else{
+    window.location.href = "/PWM-TEMPLATES/pages/signIn.html";
+  }
 }
 function eliminarProductoAlCarrito(producto) {
   // Anyadimos el Nodo a nuestro carrito
@@ -280,20 +280,29 @@ function loadCategory(Catalogo){
 const removeAccents = (str) => {
   return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 }
-function loadComponenHome() {
+function header(){
   if(sessionStorage.getItem("EMAIL")){
-    fetch('/PWM-TEMPLATES/component/headerLog.html')
-      .then(response => response.text())
-      .then(data => {
-        document.querySelector('#header').innerHTML = data;
-      });
+    $.ajax({
+      type: "GET",
+      url: "/PWM-TEMPLATES/component/headerLog.html",
+      success: function (result) {
+        document.querySelector('#header').innerHTML = result;
+      },
+    });
+    //$(function (){$('#header').load("/PWM-TEMPLATES/component/headerLog.html")});
   }else{
-    fetch('/PWM-TEMPLATES/component/header.html')
-      .then(response => response.text())
-      .then(data => {
-        document.querySelector('#header').innerHTML = data;
-      });
+    $.ajax({
+      type: "GET",
+      url: "/PWM-TEMPLATES/component/header.html",
+      success: function (result) {
+        document.querySelector('#header').innerHTML = result;
+      },
+    });
+    //$(function (){$('#header').load("/PWM-TEMPLATES/component/header.html")});
   }
+}
+function loadComponenHome() {
+  header()
   fetch('/PWM-TEMPLATES/component/footer.html')
     .then(response => response.text())
     .then(data => {
@@ -306,24 +315,12 @@ function loadComponenHome() {
     });
 }
 function loadComponenOther() {
+  header()
   fetch('/PWM-TEMPLATES/component/footer.html')
     .then(response => response.text())
     .then(data => {
       document.querySelector('#footer').innerHTML = data;
     });
-  if(sessionStorage.getItem("EMAIL")){
-    fetch('/PWM-TEMPLATES/component/headerLog.html')
-      .then(response => response.text())
-      .then(data => {
-        document.querySelector('#header').innerHTML = data;
-      });
-  }else{
-    fetch('/PWM-TEMPLATES/component/header.html')
-      .then(response => response.text())
-      .then(data => {
-        document.querySelector('#header').innerHTML = data;
-      });
-  }
   fetch('/PWM-TEMPLATES/component/social.html')
     .then(response => response.text())
     .then(data => {
@@ -331,24 +328,12 @@ function loadComponenOther() {
     });
 }
 function loadComponenEsc() {
+  header()
   fetch('/PWM-TEMPLATES/component/footer.html')
     .then(response => response.text())
     .then(data => {
       document.querySelector('#footer').innerHTML = data;
     });
-  if(sessionStorage.getItem("EMAIL")){
-    fetch('/PWM-TEMPLATES/component/headerLog.html')
-      .then(response => response.text())
-      .then(data => {
-        document.querySelector('#header').innerHTML = data;
-      });
-  }else{
-    fetch('/PWM-TEMPLATES/component/header.html')
-      .then(response => response.text())
-      .then(data => {
-        document.querySelector('#header').innerHTML = data;
-      });
-  }
 }
 
 function showCategoryMov(i){
@@ -391,7 +376,7 @@ function seleccionarHora(i,x) {
 function seleccionarServicio(i) {
 
   if(i.querySelector('.form-check-input[type=checkbox]').checked &&
-  reservaServicio.length == 0) {
+    reservaServicio.length == 0) {
     reservaServicio[0] = i
     reservaServicio[1] = i.querySelector('.nameS').placeholder
   }else{
@@ -591,7 +576,7 @@ function loadReserveBoxListeners() {
   });
 }
 //Pantalla de Carga
-document.addEventListener("DOMContentLoaded", () => {
+$( document ).ajaxStop(function() {
 
   //console.log($.parseHTML( sessionStorage.getItem("carrito") )[2])
   if(sessionStorage.getItem("carrito")){
@@ -609,6 +594,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }, 700);
   ;
 });
+
 
 
 
