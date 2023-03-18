@@ -28,11 +28,14 @@ function añadirProductoAlCarritoSilent(producto) {
   carrito.push(producto)
 }
 function añadirProductoAlCarrito(producto) {
-  // Anyadimos el Nodo a nuestro carrito
-  carrito.push(producto)
-  // Actualizamos el carrito
-  renderizarCarrito();
-
+    if(sessionStorage.getItem('EMAIL')){
+      // Anyadimos el Nodo a nuestro carrito
+      carrito.push(producto)
+      // Actualizamos el carrito
+      renderizarCarrito();
+    }else{
+      window.location.href = "/PWM-TEMPLATES/pages/signIn.html";
+    }
 }
 function eliminarProductoAlCarrito(producto) {
   // Anyadimos el Nodo a nuestro carrito
