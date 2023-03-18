@@ -94,9 +94,14 @@ function totalCarrito(){
 
 }
 // Sesiones
+function logout() {
+  sessionStorage.clear();
+  window.location.href = '/PWM-TEMPLATES/index.html'
+}
 function loggin(){
   var email= document.getElementById("email").value;
   var con= document.getElementById("contrasena").value;
+  var rol=false;
   fetch('/PWM-TEMPLATES/json/archivo2.json')
     .then(response => response.json())
     .then(data => {
@@ -105,13 +110,23 @@ function loggin(){
       // "Password": "contraseña1"
       // Recorrer el arreglo de productos
       productos.forEach(producto => {
+        if(email.localeCompare('admin1@example.com')==0){
+          rol=true;
+
+        }
         if(producto.Email.localeCompare(email)==0){
           /*Guardando los datos en el LocalStorage*/
+
           sessionStorage.setItem("EMAIL", email);
           sessionStorage.setItem("PS", con);
+
         }
       });
-      window.location.href = "/PWM-TEMPLATES/index.html";
+      if (rol){
+        window.location.href = "/PWM-TEMPLATES/pages/dashboard/dashboardAdmin.html";
+      } else {
+        window.location.href = "/PWM-TEMPLATES/index.html";
+      }
     })
     .catch(error => console.error('Error al cargar el archivo JSON:', error));
 

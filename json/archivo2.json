@@ -2827,6 +2827,11 @@
       "Username": "usuario3",
       "Email": "usuario3@example.com",
       "Password": "contraseña3"
+    },
+    {
+      "Username": "admin1",
+      "Email": "admin1@example.com",
+      "Password": "contraseña"
     }
   ],
   "Presentacion": "Estación de servicios BP Santa Brígida fundada en el año 1982, cuenta con unas amplias, cómodas y modernas instalaciones, gracias a nuestro carácter emprendedor y afán de mejora constante, siempre de la mano de nuestro personal que ofrece un servicio  de calidad.<br><br>Ponemos a su disposición los siguientes servicios: Gasolinera, taller multimarca, autolavado, tienda abierta 24 horas, autorepuestos y gas.",
