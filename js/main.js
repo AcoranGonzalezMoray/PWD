@@ -299,8 +299,11 @@ function loadComponenHome() {
     .then(data => {
       document.querySelector('#footer').innerHTML = data;
     });
-
-  $(function (){$('#social').load("/PWM-TEMPLATES/component/social.html")});
+  fetch('/PWM-TEMPLATES/component/social.html')
+    .then(response => response.text())
+    .then(data => {
+      document.querySelector('#social').innerHTML = data;
+    });
 }
 function loadComponenOther() {
   fetch('/PWM-TEMPLATES/component/footer.html')
@@ -309,12 +312,23 @@ function loadComponenOther() {
       document.querySelector('#footer').innerHTML = data;
     });
   if(sessionStorage.getItem("EMAIL")){
-    $(function (){$('#header').load("/PWM-TEMPLATES/component/headerLog.html")});
+    fetch('/PWM-TEMPLATES/component/headerLog.html')
+      .then(response => response.text())
+      .then(data => {
+        document.querySelector('#header').innerHTML = data;
+      });
   }else{
-    $(function (){$('#header').load("/PWM-TEMPLATES/component/header.html")});
-
+    fetch('/PWM-TEMPLATES/component/header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.querySelector('#header').innerHTML = data;
+      });
   }
-  $(function (){$('#social').load("/PWM-TEMPLATES/component/social.html")});
+  fetch('/PWM-TEMPLATES/component/social.html')
+    .then(response => response.text())
+    .then(data => {
+      document.querySelector('#social').innerHTML = data;
+    });
 }
 function loadComponenEsc() {
   fetch('/PWM-TEMPLATES/component/footer.html')
@@ -577,16 +591,16 @@ function loadReserveBoxListeners() {
   });
 }
 //Pantalla de Carga
-$( document ).ajaxStop(function() {
+document.addEventListener("DOMContentLoaded", () => {
 
   //console.log($.parseHTML( sessionStorage.getItem("carrito") )[2])
   if(sessionStorage.getItem("carrito")){
     var tmp = sessionStorage.getItem("carrito")
     tmp = JSON.parse(tmp)
-     tmp.forEach(producto => {
-       console.log("a")
-        añadirProductoAlCarritoSilent($.parseHTML(producto)[0])
-      })
+    tmp.forEach(producto => {
+      console.log("a")
+      añadirProductoAlCarritoSilent($.parseHTML(producto)[0])
+    })
     renderizarCarrito()
   }
 
@@ -595,8 +609,6 @@ $( document ).ajaxStop(function() {
   }, 700);
   ;
 });
-
-
 
 
 
