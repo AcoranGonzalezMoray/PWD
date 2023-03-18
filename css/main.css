@@ -1870,6 +1870,9 @@
 /* Móviles en vertical------------------------------------------------------------------------- */
 @media screen and (max-width: 767px) {
   /*Carrito*/
+  .modal-footer-cart {
+    justify-content: flex-start !important;
+  }
   .modal-footer>* {
     margin: unset !important;
   }
@@ -1880,7 +1883,7 @@
     background-color: red !important;
   }
   .total {
-    width: 50%;
+    margin-right: 2px;
     display: flex;
     flex-direction: row;
     align-content: flex-end;
@@ -1902,6 +1905,9 @@
     display: flex !important;
     justify-content: space-between;
     align-items: flex-start;
+  }
+  .card-body-cart h5{
+    font-size: 13px;
   }
   .add-quite-buttons{
     display: flex;
