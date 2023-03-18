@@ -1,6 +1,10 @@
 /* RESPONSIVE CSS ========================================================================= */
 /*Tablets en horizonal y escritorios normales------------------------------------------------------------------------- */
 @media screen and (min-width: 1280px)  {
+  /*Modal Service*/
+  .modal-content-service{
+    width: 500px !important;
+  }
   /*Carrito*/
   .total {
     width: 50%;
@@ -884,6 +888,10 @@
 
 /*Tablets*/
 @media screen and (min-width: 768px) and (max-width: 1279px) {
+  /*Modal Service*/
+  .modal-content-service{
+    width: 500px !important;
+  }
   /*Carrito*/
   .borrar {
     background-color: red !important;
@@ -1869,6 +1877,10 @@
 
 /* Móviles en vertical------------------------------------------------------------------------- */
 @media screen and (max-width: 767px) {
+  /*Modal Service*/
+  .modal-content-service{
+    width: 500px !important;
+  }
   /*Carrito*/
   .modal-footer-cart {
     justify-content: flex-start !important;

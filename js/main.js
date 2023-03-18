@@ -354,8 +354,12 @@ function showServicesMov(i){
 
 //Funciones Reservas Servicios
 function reservarServicio(){
-  document.getElementById('reservaFecha').placeholder = reservaServicioHora[1]
-  document.getElementById('reservaServicio').placeholder = reservaServicio[1]
+  if(sessionStorage.getItem('EMAIL')){
+    document.getElementById('reservaFecha').placeholder = reservaServicioHora[1]
+    document.getElementById('reservaServicio').placeholder = reservaServicio[1]
+  }else{
+    window.location.href = "/PWM-TEMPLATES/pages/signIn.html";
+  }
 }
 function seleccionarHora(i,x) {
   i.querySelector('.hour').parentElement.style="background-color:green;"
