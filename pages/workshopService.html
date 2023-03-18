@@ -9,7 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
-<body onload="loadComponenOther();loadServices();loadReserveHours()">
+<body onload="loadComponenOther();loadServices();loadReserveBox()">
 <div id="loading">
   <img id="loading-image" src="/PWM-TEMPLATES/img/LOGO.png" alt="Loading..." />
   <div class="spinner"></div>
@@ -36,118 +36,7 @@
         </button>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <article class="reserve-box shadow-lg p-3 mb-5 bg-body rounded">
-              <div class="dayOfWeek">
-                <div class="dayOfWeekTitle">
-                  <h2>Lunes</h2>
-                  <p class="date">Fecha: aaaa-mm-dd</p>
-                </div>
-              </div>
-
-              <div class="dayOfWeek">
-                <div class="dayOfWeekTitle">
-                  <h2>Martes</h2>
-                  <p class="date">Fecha: aaaa-mm-dd</p>
-                </div>
-              </div>
-
-              <div class="dayOfWeek">
-                <div class="dayOfWeekTitle">
-                  <h2>Miércoles</h2>
-                  <p class="date">Fecha: aaaa-mm-dd</p>
-                </div>
-              </div>
-
-              <div class="dayOfWeek">
-                <div class="dayOfWeekTitle">
-                  <h2>Jueves</h2>
-                  <p class="date">Fecha: aaaa-mm-dd</p>
-                </div>
-              </div>
-
-              <div class="dayOfWeek">
-                <div class="dayOfWeekTitle">
-                  <h2>Viernes</h2>
-                  <p class="date">Fecha: aaaa-mm-dd</p>
-                </div>
-              </div>
-            </article></article>
-          </div>
-          <div class="carousel-item">
-            <article class="reserve-box shadow-lg p-3 mb-5 bg-body rounded">
-              <div class="dayOfWeek">
-                <div class="dayOfWeekTitle">
-                  <h2>Lunes</h2>
-                  <p class="date">Fecha: aaaa-mm-dd</p>
-                </div>
-              </div>
-
-              <div class="dayOfWeek">
-                <div class="dayOfWeekTitle">
-                  <h2>Martes</h2>
-                  <p class="date">Fecha: aaaa-mm-dd</p>
-                </div>
-              </div>
-
-              <div class="dayOfWeek">
-                <div class="dayOfWeekTitle">
-                  <h2>Miércoles</h2>
-                  <p class="date">Fecha: aaaa-mm-dd</p>
-                </div>
-              </div>
-
-              <div class="dayOfWeek">
-                <div class="dayOfWeekTitle">
-                  <h2>Jueves</h2>
-                  <p class="date">Fecha: aaaa-mm-dd</p>
-                </div>
-              </div>
-
-              <div class="dayOfWeek">
-                <div class="dayOfWeekTitle">
-                  <h2>Viernes</h2>
-                  <p class="date">Fecha: aaaa-mm-dd</p>
-                </div>
-              </div>
-            </article></article>
-          </div>
-          <div class="carousel-item">
-            <article class="reserve-box shadow-lg p-3 mb-5 bg-body rounded">
-              <div class="dayOfWeek">
-                <div class="dayOfWeekTitle">
-                  <h2>Lunes</h2>
-                  <p class="date">Fecha: aaaa-mm-dd</p>
-                </div>
-              </div>
-
-              <div class="dayOfWeek">
-                <div class="dayOfWeekTitle">
-                  <h2>Martes</h2>
-                  <p class="date">Fecha: aaaa-mm-dd</p>
-                </div>
-              </div>
-
-              <div class="dayOfWeek">
-                <div class="dayOfWeekTitle">
-                  <h2>Miércoles</h2>
-                  <p class="date">Fecha: aaaa-mm-dd</p>
-                </div>
-              </div>
-
-              <div class="dayOfWeek">
-                <div class="dayOfWeekTitle">
-                  <h2>Jueves</h2>
-                  <p class="date">Fecha: aaaa-mm-dd</p>
-                </div>
-              </div>
-
-              <div class="dayOfWeek">
-                <div class="dayOfWeekTitle">
-                  <h2>Viernes</h2>
-                  <p class="date">Fecha: aaaa-mm-dd</p>
-                </div>
-              </div>
-            </article></article>
+            <!--Se carga el contenido del carousel desde el json-->
           </div>
         </div>
         <button class="carousel-control-next cn" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
