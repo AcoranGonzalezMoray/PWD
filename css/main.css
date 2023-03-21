@@ -1,6 +1,6 @@
 /* RESPONSIVE CSS ========================================================================= */
 /*Tablets en horizonal y escritorios normales------------------------------------------------------------------------- */
-@media screen and (min-width: 1280px)  {
+@media screen and (min-width: 1200px)  {
   /*Modal Service*/
   .modal-content-service{
     width: 500px !important;
@@ -890,7 +890,7 @@
 }
 
 /*Tablets*/
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   /*Modal Service*/
   .modal-content-service{
     width: 500px !important;

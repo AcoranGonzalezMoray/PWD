@@ -1,139 +1,135 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="/PWM-TEMPLATES/img/LOGO.png">
-  <link rel="stylesheet" type="text/css" href="\PWM-TEMPLATES\css\main.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <title>BP Santa Brígida</title>
-</head>
-<body>
-<header class="header-dashboard shadow-sm" id="header"></header>
-<main class="main-tienda" >
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/PWM-TEMPLATES/img/LOGO.png">
+    <link rel="stylesheet" type="text/css" href="\PWM-TEMPLATES\css\main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>BP Santa Brígida</title>
+  </head>
+  <body onload="loadComponenEsc()">
+    <header class="header-dashboard shadow-sm" id="header"></header>
+    <main class="main-tienda" >
 
-  <aside class="aside-dashboard shadow-lg p-3 mb-5 rounded">
-    <div id="aside-color">
-      <div class="aside-user" >
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-circle"
-             viewBox="0 0 16 16">
-          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-          <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805
-          10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-        </svg><br>
-        <h3>Usuario</h3>
-      </div>
-      <p>Funcionalidades</p>
-      <div class="accordion" id="accordionPanelsStayOpenExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
-                    aria-controls="panelsStayOpen-collapseOne">
-              Accordion Item #1
-            </button>
-          </h2>
-          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
-               aria-labelledby="panelsStayOpen-headingOne">
-            <div class="accordion-body">
-              <strong>This is the first item's accordion body.</strong>
+      <aside class="aside-dashboard shadow-lg p-3 mb-5 rounded">
+        <div id="aside-color">
+          <div class="aside-user" >
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-circle"
+                 viewBox="0 0 16 16">
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+              <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805
+              10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+            </svg><br>
+            <h3>Usuario</h3>
+          </div>
+          <p>Funcionalidades</p>
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne">
+                  Accordion Item #1
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                   aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseTwo">
+                  Accordion Item #2
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                   aria-labelledby="panelsStayOpen-headingTwo">
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseThree">
+                  Accordion Item #3
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                   aria-labelledby="panelsStayOpen-headingThree">
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong>
+                </div>
+              </div>
             </div>
           </div>
+
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
-                    aria-controls="panelsStayOpen-collapseTwo">
-              Accordion Item #2
-            </button>
-          </h2>
-          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
-               aria-labelledby="panelsStayOpen-headingTwo">
-            <div class="accordion-body">
-              <strong>This is the first item's accordion body.</strong>
+      </aside>
+
+
+
+      <section class="products" id="Profile">
+        <h1>Tu perfil</h1>
+        <hr>
+        <div class="profile">
+          <div class="user-data">
+            <div class="name">
+              <p> <strong>Nombre de usuario</strong></p>
+              <input class="shadow-lg" type="text" readonly value="name">
+              <div  class="btn-color change-name">
+                <a ref="" class="btn">Cambiar nombre</a>
+              </div>
+              <p> <strong>E-mail</strong></p>
+              <input class="shadow-lg" type="text" readonly value="example@example.com">
+              <div  class="btn-color change-name">
+                <a ref="" class="btn">Cambiar correo</a>
+              </div>
+            </div>
+
+            <div class="password">
+              <input class="shadow-lg" type="password" placeholder="Contraseña antigua">
+              <input class="shadow-lg" type="password" placeholder="Contraseña nueva">
+              <input class="shadow-lg" type="password" placeholder="Contraseña nueva">
+              <div  class="btn-color">
+                <a ref="#" class="btn">Cambiar contraseña</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
-                    aria-controls="panelsStayOpen-collapseThree">
-              Accordion Item #3
-            </button>
-          </h2>
-          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
-               aria-labelledby="panelsStayOpen-headingThree">
-            <div class="accordion-body">
-              <strong>This is the first item's accordion body.</strong>
-            </div>
+
+          <div class="user-image">
+            <img src="https://www.estacionbpsantabrigida.com/uploads/aznbULhD/1059692-DSCF9018-2-c20ad.w1900.jpg" class="d-block w-100" alt="TEMPLATE">
           </div>
-        </div>
-      </div>
-
-    </div>
-  </aside>
 
 
-
-  <section class="products" id="Profile">
-    <h1>Tu perfil</h1>
-    <hr>
-    <div class="profile">
-      <div class="user-data">
-        <div class="name">
-          <p> <strong>Nombre de usuario</strong></p>
-          <input class="shadow-lg" type="text" readonly value="name">
-          <div  class="btn-color change-name">
-            <a ref="" class="btn">Cambiar nombre</a>
-          </div>
-          <p> <strong>E-mail</strong></p>
-          <input class="shadow-lg" type="text" readonly value="example@example.com">
-          <div  class="btn-color change-name">
-            <a ref="" class="btn">Cambiar correo</a>
-          </div>
         </div>
 
-        <div class="password">
-          <input class="shadow-lg" type="password" placeholder="Contraseña antigua">
-          <input class="shadow-lg" type="password" placeholder="Contraseña nueva">
-          <input class="shadow-lg" type="password" placeholder="Contraseña nueva">
-          <div  class="btn-color">
-            <a ref="#" class="btn">Cambiar contraseña</a>
-          </div>
+        <div  class="eliminate">
+          <a ref="" id = "btnEliminarCuenta" class="btn">Eliminar cuenta</a>
         </div>
-      </div>
+        <div  class="eliminate">
+          <a onclick="logout()" id= "btnCerrarSesion" class="btn">Cerrar sesión</a>
+        </div>
+        <footer class="footer-store" id="footer"></footer>
+      </section>
+    </main>
 
-      <div class="user-image">
-        <img src="/PWM-TEMPLATES/img/templatebox.png" class="d-block w-100" alt="TEMPLATE">
-      </div>
-
-
-    </div>
-
-    <div  class="eliminate">
-      <a ref="" id = "btnEliminarCuenta" class="btn">Eliminar cuenta</a>
-    </div>
-    <div  class="eliminate">
-      <a onclick="logout()" id= "btnCerrarSesion" class="btn">Cerrar sesión</a>
-    </div>
-    <footer class="footer-store" id="footer"></footer>
-  </section>
-</main>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous">
-</script>
-<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
-        crossorigin="anonymous">
-</script>
-<script>
-  $(function (){$('#footer').load("/PWM-TEMPLATES/component/footer.html")});
-  $(function (){$('#header').load("/PWM-TEMPLATES/component/headerLog.html")});
-</script>
-<script src="/PWM-TEMPLATES/js/main.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+            crossorigin="anonymous">
+    </script>
+    <script src="/PWM-TEMPLATES/js/main.js"></script>
+  </body>
 </html>
