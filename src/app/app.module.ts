@@ -18,6 +18,14 @@ import { CartProductComponent } from './cart-product/cart-product.component';
 import { AppHomeComponent } from './app-home/app-home.component';
 import { RouterModule } from '@angular/router';
 import { LoadingScreenComponent } from './loading-screen/loading-screen.component';
+import { AppWorkshopStoreComponent } from './app-workshop-store/app-workshop-store.component';
+import { AppWorkshopServiceComponent } from './app-workshop-service/app-workshop-service.component';
+import { AppWhatWeDoComponent } from './app-what-we-do/app-what-we-do.component';
+import { AppStoreComponent } from './app-store/app-store.component';
+import { AppSignUpComponent } from './app-sign-up/app-sign-up.component';
+import { AppSignInComponent } from './app-sign-in/app-sign-in.component';
+import { AppDashboardAdminComponent } from './app-dashboard-admin/app-dashboard-admin.component';
+import { AppDashboardUserComponent } from './app-dashboard-user/app-dashboard-user.component';
 
 
 
@@ -38,14 +46,20 @@ import { LoadingScreenComponent } from './loading-screen/loading-screen.componen
     CategoryAsideComponent,
     CartProductComponent,
     AppHomeComponent,
-    LoadingScreenComponent
+    LoadingScreenComponent,
+    AppWorkshopStoreComponent,
+    AppWorkshopServiceComponent,
+    AppWhatWeDoComponent,
+    AppStoreComponent,
+    AppSignUpComponent,
+    AppSignInComponent,
+    AppDashboardAdminComponent,
+    AppDashboardUserComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot([
-      {path: '', component: AppHomeComponent},
-    ])
+    RouterModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
