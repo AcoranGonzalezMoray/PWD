@@ -13,7 +13,7 @@ const routes: Routes = [
   {path: 'quehacemos', component: AppWhatWeDoComponent},
   {path: 'tienda-taller', component: AppWorkshopStoreComponent},
   {path: 'tienda', component: AppStoreComponent},
-  {path: 'servicios', component: AppWorkshopServiceComponent},
+  {path: 'servicios-taller', component: AppWorkshopServiceComponent},
   {path: 'iniciar-sesion', component: AppSignInComponent},
   {path: 'registrarse', component: AppSignUpComponent},
 ];
