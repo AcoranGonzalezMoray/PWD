@@ -3,18 +3,18 @@
     <form class="shadow-lg">
       <img class="imgUser" src="/PWM-TEMPLATES/img/LOGO.png">
       <h2>Regístrate</h2>
-      <input required id="nombreCompleto" class="shadow-lg" type="text" placeholder="Nombre completo">
+      <input required id="nombreCompleto" class="shadow-lg" type="text" placeholder="Nombre completo" #userName>
 
-      <input required pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$" id="correoElectronico" class="shadow-lg" type="email"
+      <input required pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$" id="correoElectronico" class="shadow-lg" type="email" #email
         placeholder="Correo electrónico">
 
-      <input required minlength="6" maxlength="9" id="contrasena" class="shadow-lg" type="password"
+      <input required minlength="6" maxlength="9" id="contrasena" class="shadow-lg" type="password" #password
         placeholder="Contraseña">
 
-      <input required minlength="6" maxlength="9" id="repetirContrasena" class="shadow-lg" type="password"
+      <input required minlength="6" maxlength="9" id="repetirContrasena" class="shadow-lg" type="password" #confirmPass
         placeholder="Repetir Contraseña">
 
-      <button type="submit" value="Submit" class="button">Registrate</button>
+      <button type="submit" value="Submit" class="button" (click)="userService.SignUp(email.value, password.value, confirmPass.value, userName.value)">Registrate</button>
 
       <p>Al registrarte, aceptas nuestras Condiciones, la Política de datos y la Política de cookies.</p>
     </form>

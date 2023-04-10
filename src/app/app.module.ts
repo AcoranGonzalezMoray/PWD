@@ -26,9 +26,11 @@ import { AppSignUpComponent } from './app-sign-up/app-sign-up.component';
 import { AppSignInComponent } from './app-sign-in/app-sign-in.component';
 import { AppDashboardAdminComponent } from './app-dashboard-admin/app-dashboard-admin.component';
 import { AppDashboardUserComponent } from './app-dashboard-user/app-dashboard-user.component';
-
-
-
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideAuth,getAuth } from '@angular/fire/auth';
+import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { AngularFireModule } from '@angular/fire/compat';
 
 @NgModule({
   declarations: [
@@ -60,6 +62,10 @@ import { AppDashboardUserComponent } from './app-dashboard-user/app-dashboard-us
     BrowserModule,
     AppRoutingModule,
     RouterModule,
+    //provideFirebaseApp(() => initializeApp(environment.firebase)),
+    AngularFireModule.initializeApp(environment.firebase),
+    provideAuth(() => getAuth()),
+    provideFirestore(() => getFirestore()),
   ],
   providers: [],
   bootstrap: [AppComponent]
