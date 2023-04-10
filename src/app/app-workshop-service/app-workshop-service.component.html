@@ -1,5 +1,8 @@
 <body>
-  <app-header class="shadow-lg" id="header"></app-header>
+  <header class="shadow-lg" id="header">
+    <app-header *ngIf="!userService.isLoggedIn" class="shadow-lg" id="header"></app-header>
+    <app-header-log *ngIf="userService.isLoggedIn" class="shadow-lg" ></app-header-log>
+  </header>
   <main class="main-tienda">
 
     <aside class="shadow-lg p-3 mb-5 rounded" id="serviciosTaller">

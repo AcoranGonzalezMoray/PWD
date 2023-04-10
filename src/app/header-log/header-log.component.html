@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
         <a class="navbar-logo" href="#">
-            <img class="logo" src="/PWM-TEMPLATES/img/LOGO.png">
+            <img class="logo" src="../assets/img/LOGO.png">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -10,13 +10,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="\PWM-TEMPLATES\index.html">Inicio</a>
+                    <a class="nav-link active" aria-current="page" routerLink="/">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="/PWM-TEMPLATES/pages/whatWeDo.html">¿Qué hacemos?</a>
+                    <a class="nav-link " routerLink="/quehacemos">¿Qué hacemos?</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="/PWM-TEMPLATES/pages/store.html">Tienda</a>
+                    <a class="nav-link " routerLink="/tienda">Tienda</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle text-primary text-white" href="#" id="navbarDropdown"
@@ -24,8 +24,8 @@
                         Taller
                     </a>
                     <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="/PWM-TEMPLATES/pages/workshopStore.html">Productos</a></li>
-                        <li><a class="dropdown-item" href="/PWM-TEMPLATES/pages/workshopService.html">Servicios</a></li>
+                        <li><a class="dropdown-item" routerLink="/tienda-taller">Productos</a></li>
+                        <li><a class="dropdown-item" routerLink="/servicios-taller">Servicios</a></li>
                     </ul>
                 </li>
                 <li style="display: flex;align-items: center;" class="nav-item">
@@ -43,7 +43,7 @@
                     </button>
                 </li>
                 <li style="display: flex;align-items: center;margin-inline: 15px" class="nav-item">
-                    <a href="/PWM-TEMPLATES/pages/dashboard/dashboardUser.html">
+                    <a routerLink="/dashboard">
                         <svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
                             fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
                             <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />

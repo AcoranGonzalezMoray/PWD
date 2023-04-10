@@ -1,6 +1,6 @@
 <body>
   <div class="register-login-form">
-    <form class="shadow-lg">
+    <article class="shadow-lg">
       <img class="imgUser" src="/PWM-TEMPLATES/img/LOGO.png">
       <h2>Regístrate</h2>
       <input required id="nombreCompleto" class="shadow-lg" type="text" placeholder="Nombre completo" #userName>
@@ -14,10 +14,10 @@
       <input required minlength="6" maxlength="9" id="repetirContrasena" class="shadow-lg" type="password" #confirmPass
         placeholder="Repetir Contraseña">
 
-      <button type="submit" value="Submit" class="button" (click)="userService.SignUp(email.value, password.value, confirmPass.value, userName.value)">Registrate</button>
+      <button  class="button" (click)="userService.SignUp(email.value, password.value, confirmPass.value, userName.value)">Registrate</button>
 
       <p>Al registrarte, aceptas nuestras Condiciones, la Política de datos y la Política de cookies.</p>
-    </form>
+    </article>
     <div class="register-login-box shadow-lg">
       <a href="\PWM-TEMPLATES\pages\signIn.html">¿Ya tienes una cuenta? Inicia Sesion</a>
     </div>

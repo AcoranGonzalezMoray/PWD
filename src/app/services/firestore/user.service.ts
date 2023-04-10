@@ -11,8 +11,8 @@ import { Router } from '@angular/router';
   providedIn: 'root',
 })
 export class UserService {
-  userData: any; 
-  DisplayName:any;
+  userData: any;
+  DisplayName: any;
   constructor(
     public afs: AngularFirestore, // Inject Firestore service
     public afAuth: AngularFireAuth, // Inject Firebase auth service
@@ -50,18 +50,15 @@ export class UserService {
       });
   }
 
-  SignUp(email: string,password:string, confirmPass:string,displayName: string) {
+  SignUp(email: string, password: string, confirmPass: string, displayName: string) {
     return this.afAuth
       .createUserWithEmailAndPassword(email, password)
       .then((result) => {
-       //this.SendVerificationMail();
+        //this.SendVerificationMail();
         this.DisplayName = displayName;
-        alert("holita")
         this.SetUserData(result.user);
-        alert("que plasta")
         sessionStorage.setItem('user', JSON.stringify(result.user));
         this.router.navigate(['/']);
-        alert("adiosin")
       })
       .catch((error) => {
         window.alert(error.message);
@@ -88,12 +85,12 @@ export class UserService {
   }
 
   get isLoggedIn(): boolean {
-    if(sessionStorage.getItem('user')){
-      var obj =sessionStorage.getItem('user');
+    if (sessionStorage.getItem('user')) {
+      var obj = sessionStorage.getItem('user');
       obj = JSON.parse(obj!);
       console.log(obj);
       return true;
-    }else{
+    } else {
       return false;
     }
   }
@@ -123,7 +120,7 @@ export class UserService {
     const userData: User = {
       uid: user.uid,
       email: user.email,
-      userName:this.DisplayName,
+      userName: this.DisplayName,
       reservations: [],
       orders: [],
       phoneNumber: 0,

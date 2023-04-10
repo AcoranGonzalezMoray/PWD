@@ -7,6 +7,7 @@ import { AppStoreComponent } from './app-store/app-store.component';
 import { AppWhatWeDoComponent } from './app-what-we-do/app-what-we-do.component';
 import { AppWorkshopServiceComponent } from './app-workshop-service/app-workshop-service.component';
 import { AppWorkshopStoreComponent } from './app-workshop-store/app-workshop-store.component';
+import { AppDashboardUserComponent } from './app-dashboard-user/app-dashboard-user.component';
 
 const routes: Routes = [
   {path: '', component: AppHomeComponent},
@@ -16,6 +17,7 @@ const routes: Routes = [
   {path: 'servicios-taller', component: AppWorkshopServiceComponent},
   {path: 'iniciar-sesion', component: AppSignInComponent},
   {path: 'registrarse', component: AppSignUpComponent},
+  {path: 'dashboard', component: AppDashboardUserComponent},
 ];
 
 @NgModule({

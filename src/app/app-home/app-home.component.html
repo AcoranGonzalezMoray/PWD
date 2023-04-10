@@ -1,5 +1,9 @@
 <body>
-    <app-header class="shadow-lg" id="header"></app-header>
+    <header class="shadow-lg" id="header">
+        <app-header *ngIf="!userService.isLoggedIn" class="shadow-lg" id="header"></app-header>
+        <app-header-log *ngIf="userService.isLoggedIn" class="shadow-lg" ></app-header-log>
+    </header>
+
     <app-social id="social"></app-social>
     <main>
 

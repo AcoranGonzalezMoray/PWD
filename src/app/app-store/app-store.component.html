@@ -1,5 +1,8 @@
 <body>
-    <app-header class="shadow-lg" id="header"></app-header>
+    <header class="shadow-lg" id="header">
+        <app-header *ngIf="!userService.isLoggedIn" class="shadow-lg" id="header"></app-header>
+        <app-header-log *ngIf="userService.isLoggedIn" class="shadow-lg" ></app-header-log>
+      </header>
 
     <main class="main-tienda">
 
@@ -36,7 +39,7 @@
                 </div>
                 <div id="contenedor-productos" class="product-aline">
                     <!--Contenido Generado por main.js-->
-
+                    <app-product *ngFor="let elemento of  products" [img]="elemento.img" [shortName]="elemento.shortName" [pvp]="elemento.pvp"></app-product>
                 </div>
             </div>
             <div id="reload" onclick="loadProducts('Catalogo Tienda')">

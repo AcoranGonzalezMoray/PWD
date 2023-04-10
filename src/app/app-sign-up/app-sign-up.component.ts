@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
 import { UserService } from '../services/firestore/user.service';
 
 @Component({
