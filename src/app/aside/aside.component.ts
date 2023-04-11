@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-aside',
@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./aside.component.css']
 })
 export class AsideComponent {
-
+  @Input() category = "";
+  @Input() subcategories : { Subcategoria: String; }[] | undefined;
+  constructor(){
+    console.log(this.subcategories)
+  }
 }

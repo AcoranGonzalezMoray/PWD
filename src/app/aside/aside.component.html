@@ -1,3 +1,8 @@
 <div class="category">
-    <a class="nameC">CATEGORIA 1</a>
+    <a class="nameC">{{category}}</a>
+    <div class="category-content">
+        <a *ngFor="let sub of subcategories" style="color:white" id="{{sub.Subcategoria}}">
+            {{sub.Subcategoria}}
+        </a>
+    </div>
 </div>
