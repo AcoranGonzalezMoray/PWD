@@ -1,7 +1,7 @@
 <div class="category">
     <a class="nameC">{{category}}</a>
     <div class="category-content">
-        <a *ngFor="let sub of subcategories" style="color:white" id="{{sub.Subcategoria}}">
+        <a *ngFor="let sub of subcategories" style="color:white" id="{{sub.Subcategoria}}" #id (click)="handleClick(id.id)">
             {{sub.Subcategoria}}
         </a>
     </div>

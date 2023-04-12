@@ -1,5 +1,5 @@
-import { Component, Input } from '@angular/core';
-
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { PaginationService } from '../services/firestore/pagination.service';
 @Component({
   selector: 'app-aside',
   templateUrl: './aside.component.html',
@@ -8,7 +8,13 @@ import { Component, Input } from '@angular/core';
 export class AsideComponent {
   @Input() category = "";
   @Input() subcategories : { Subcategoria: String; }[] | undefined;
-  constructor(){
-    console.log(this.subcategories)
+  @Output() cambioLista = new EventEmitter<string>();
+
+  
+  constructor(public paginationService: PaginationService){
   }
+  async handleClick(id: string) {
+    this.cambioLista.emit(id);
+  }
+  
 }

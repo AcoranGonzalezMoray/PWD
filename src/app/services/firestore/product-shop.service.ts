@@ -17,7 +17,7 @@ export class ProductShopService {
   }
   //Obtiene un producto
   public getProduct(documentId: string) {
-    return this.firestore.collection('ProductosTienda').doc(documentId).snapshotChanges();
+    //return this.firestore.collection('ProductosTienda').doc(documentId).snapshotChanges();
   }
   //Elimina un producto
   public deleteProduct(documentId: string) {
@@ -25,7 +25,7 @@ export class ProductShopService {
   }
   //Obtiene todos los productos
   public getProducts() {
-    return this.firestore.collection('ProductosTienda').snapshotChanges();
+    //return this.firestore.collection('ProductosTienda').snapshotChanges();
   }
   //Actualiza un producto
   public updateProduct(documentId: string, product: Product) {
