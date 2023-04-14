@@ -1,25 +1,55 @@
 <body>
   <div class="register-login-form">
-    <article class="shadow-lg">
-      <img class="imgUser" src="/PWM-TEMPLATES/img/LOGO.png">
+    <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()" class="shadow-lg">
+      <img class="imgUser" src="../../assets/img/LOGO.png">
       <h2>Regístrate</h2>
-      <input required id="nombreCompleto" class="shadow-lg" type="text" placeholder="Nombre completo" #userName>
+      <input  id="nombreCompleto" class="shadow-lg" type="text" placeholder="Nombre completo" 
+      formControlName="userName">
 
-      <input required pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$" id="correoElectronico" class="shadow-lg" type="email" #email
-        placeholder="Correo electrónico">
+      <input required id="correoElectronico" class="shadow-lg" type="email" 
+      formControlName="email" placeholder="Correo electrónico">
 
-      <input required minlength="6" maxlength="9" id="contrasena" class="shadow-lg" type="password" #password
-        placeholder="Contraseña">
+      <input required minlength="6" maxlength="9" id="contrasena" class="shadow-lg" type="password" 
+      formControlName="password" placeholder="Contraseña">
 
-      <input required minlength="6" maxlength="9" id="repetirContrasena" class="shadow-lg" type="password" #confirmPass
-        placeholder="Repetir Contraseña">
+      <input required minlength="6" maxlength="9" id="repetirContrasena" class="shadow-lg" type="password"
+      formControlName="confirmPass"  placeholder="Repetir Contraseña">
 
-      <button  class="button" (click)="userService.SignUp(email.value, password.value, confirmPass.value, userName.value)">Registrate</button>
+      <button type="submit"  class="button" >Registrate</button>
 
       <p>Al registrarte, aceptas nuestras Condiciones, la Política de datos y la Política de cookies.</p>
-    </article>
+
+
+
+
+
+
+
+
+      <!--Aviso de Errores-->
+      <div style="color: red;" *ngIf="notSame && checkoutForm.get('confirmPass')?.touched">
+        Las contraseñas no coinciden.
+      </div>
+      <div style="color: red;" *ngIf="checkoutForm.get('userName')?.invalid && checkoutForm.get('userName')?.touched">
+        Introduzca un nombre de usuario.
+      </div>
+      <div style="color: red;" *ngIf="checkoutForm.get('email')?.invalid && checkoutForm.get('email')?.touched">
+        El email no es válido.
+      </div>
+      <div style="color: red;" 
+      *ngIf="checkoutForm.get('confirmPass')?.invalid && checkoutForm.get('confirmPass')?.touched
+      ||
+      checkoutForm.get('password')?.invalid && checkoutForm.get('password')?.touched
+      ">
+        Contraseñas no válidas, debe tener entre 6-9 caracateres
+      </div>
+      
+      
+    </form>
     <div class="register-login-box shadow-lg">
-      <a href="\PWM-TEMPLATES\pages\signIn.html">¿Ya tienes una cuenta? Inicia Sesion</a>
+      <a routerLink="/iniciar-sesion">¿Ya tienes una cuenta? Inicia Sesion</a>
+      o
+      <a routerLink="/">Volver</a>
     </div>
   </div>
 </body>

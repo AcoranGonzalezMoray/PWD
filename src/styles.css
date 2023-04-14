@@ -533,7 +533,7 @@
       border: 1px solid #dbdbdb;
       border-radius: 5px;
     }
-    .register-login-form article {
+    .register-login-form form {
       width: 450px;
       text-align: center;
       background-color: #d9ffd9;

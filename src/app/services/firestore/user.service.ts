@@ -88,7 +88,6 @@ export class UserService {
     if (sessionStorage.getItem('user')) {
       var obj = sessionStorage.getItem('user');
       obj = JSON.parse(obj!);
-      console.log(obj);
       return true;
     } else {
       return false;
