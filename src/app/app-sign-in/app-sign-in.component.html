@@ -11,6 +11,12 @@
       <br>
       <br>
       <a href="#"> ¿Has olvidado la contraseña? </a>
+      <div style="color: red;" *ngIf="checkoutForm.get('email')?.invalid && checkoutForm.get('email')?.touched">
+        El email no es válido.
+      </div>
+      <div style="color: red;" *ngIf="checkoutForm.get('password')?.invalid && checkoutForm.get('password')?.touched">
+        Contraseña no válidas, debe tener entre 6-9 caracateres
+      </div>
   </form>
     <div class="register-login-box shadow-lg">
       <p>¿No tienes una cuenta? <a routerLink="/registrarse">Regístrate</a> </p>
