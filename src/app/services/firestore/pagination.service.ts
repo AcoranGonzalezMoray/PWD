@@ -13,27 +13,41 @@ export class PaginationService {
   constructor(private firestore: AngularFirestore,) { }
 
 
-  async getFirstquery(coleccion:string,field:string,query:string){
-    console.log(coleccion, field, query)
+  async getFirstquery(coleccion:string,field:string,query:string, order:string){
+    console.log(order)
+    var order1 = order.split('.')[0]
+    const direction: OrderByDirection = order.endsWith('.desc') ? 'desc' : 'asc';
+    const fieldDuplicate = field=='NombreCorto' && order1== 'NombreCorto' ? true : false;
     query = query.toLocaleUpperCase()
-    const response =await this.firestore.collection(coleccion).ref.where(field,'>=',query).where(field,'<=',query+ "\uf8ff").limit(10).get();
+    var response;
+    if(!fieldDuplicate){
+       response =await this.firestore.collection(coleccion).ref.where(field,'>=',query).where(field,'<=',query+ "\uf8ff").orderBy(field).orderBy(order1, direction).limit(10).get();
+    }else{
+      response =await this.firestore.collection(coleccion).ref.where(field,'>=',query).where(field,'<=',query+ "\uf8ff").orderBy(order1, direction).limit(10).get();
+    }
     const data = response.docs;
     this.cantidadDocs = data.length;
     this.lastDocument = data[data.length - 1];
     this.productList = data.map(doc => doc.data());
-    console.log(data.map(doc => doc.data()));
     return this.productList;
   }
-  async getNextquery(coleccion:string,field:string,query:string) {
+  async getNextquery(coleccion:string,field:string,query:string, order:string) {
     // 10 siguientes
+    var order1 = order.split('.')[0]
+    const direction: OrderByDirection = order.endsWith('.desc') ? 'desc' : 'asc';
+    const fieldDuplicate = field=='NombreCorto' && order1== 'NombreCorto' ? true : false;
     query = query.toLocaleUpperCase()
-    const response2 =await this.firestore.collection(coleccion).ref.where(field,'>=',query).where(field,'<=',query+ "\uf8ff").startAfter(this.lastDocument).limit(10).get();
+    var response2;
+    if(!fieldDuplicate){
+       response2 =await this.firestore.collection(coleccion).ref.where(field,'>=',query).where(field,'<=',query+ "\uf8ff").orderBy(field).orderBy(order1, direction).startAfter(this.lastDocument).limit(10).get();
+    }else{
+      response2 =await this.firestore.collection(coleccion).ref.where(field,'>=',query).where(field,'<=',query+ "\uf8ff").orderBy(order1, direction).startAfter(this.lastDocument).limit(10).get();
+    }
     const data2 = response2.docs;
     this.cantidadDocs += data2.length;
     if (data2.length > 0) {
       this.lastDocument = data2[data2.length - 1];
       this.productList = [...this.productList, ...data2.map(doc => doc.data())];
-      console.log(this.productList);
     } else {
       console.log("No hay más documentos");
     }
@@ -51,7 +65,6 @@ export class PaginationService {
     this.cantidadDocs = data.length;
     this.lastDocument = data[data.length - 1];
     this.productList = data.map(doc => doc.data());
-    console.log(this.productList);
     return this.productList;
   }
 
@@ -66,7 +79,6 @@ export class PaginationService {
     if (data2.length > 0) {
       this.lastDocument = data2[data2.length - 1];
       this.productList = [...this.productList, ...data2.map(doc => doc.data())];
-      console.log(this.productList);
     } else {
       console.log("No hay más documentos");
     }
