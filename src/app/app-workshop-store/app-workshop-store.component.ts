@@ -83,7 +83,7 @@ export class AppWorkshopStoreComponent {
 
   categoriesLoad() {
     if (!localStorage.getItem("categoriesWorkshop")) {
-      this.categoryWorkshopService.getCategories('CategoriasTaller').subscribe((catsSnapshot) => {
+      this.categoryWorkshopService.getCategoriesInRealTime('CategoriasTaller').subscribe((catsSnapshot) => {
         this.categories = [];
 
         catsSnapshot.forEach((catData: any) => {

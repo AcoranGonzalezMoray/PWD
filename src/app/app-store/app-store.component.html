@@ -40,7 +40,16 @@
                 </div>
                 <div id="contenedor-productos" class="product-aline">
                     <!--Contenido Generado por main.js-->
-                    <app-product *ngFor="let elemento of  productList" [img]="elemento.IMAGEN" [shortName]="elemento.NombreCorto" [pvp]="elemento.PVP"></app-product>
+                    <app-product *ngFor="let elemento of  productList" 
+                    [CATEGORIA]="elemento.CATEGORIA"
+                    [CodBarras]="elemento.CodBarras"
+                    [FAMILIA]="elemento.FAMILIA"
+                    [IMAGEN]="elemento.IMAGEN"
+                    [NombreCorto]="elemento.NombreCorto"
+                    [PROVEEDOR]="elemento.PROVEEDOR"
+                    [PVP]="elemento.PVP"
+                    [posCode]="elemento.posCode"
+                    ></app-product>
                 </div>
             </div>
             <div id="reload" (click)="reload()">

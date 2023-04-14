@@ -15,14 +15,18 @@ export class CategoryService {
   }
   //Obtiene una categoria
   public getCategory(colec:string,documentId: string) {
-    return this.firestore.collection(colec).doc(documentId).snapshotChanges();
+    return this.firestore.collection(colec).doc(documentId).get();
   }
   //Elimina una categoria
   public deleteCategory(colec:string,documentId: string) {
     return this.firestore.collection(colec).doc(documentId).delete();
   }
   //Obtiene todos las categorias
-  public getCategories(colec:string) {
+  public getCategoriesNotInRealTime(colec:string) {
+      return this.firestore.collection(colec).get();
+    }
+  //Obtiene todos las categorias
+  public getCategoriesInRealTime(colec:string) {
     return this.firestore.collection(colec).snapshotChanges();
   }
   //Actualiza una cateogria

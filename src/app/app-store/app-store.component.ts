@@ -84,7 +84,7 @@ export class AppStoreComponent implements OnInit {
 
   categoriesLoad() {
     if (!localStorage.getItem("categoriesShop")) {
-      this.categoryShopService.getCategories('CategoriasTienda').subscribe((catsSnapshot) => {
+      this.categoryShopService.getCategoriesInRealTime('CategoriasTienda').subscribe((catsSnapshot) => {
         this.categories = [];
 
         catsSnapshot.forEach((catData: any) => {

@@ -1,9 +1,9 @@
-<div class="card product shadow-lg" id="product-template">
-    <div class="img-product" style="background-image: url({{img}});"></div>
+<div #name class="card product shadow-lg" id="product-template">
+    <div class="img-product" style="background-image: url({{IMAGEN}});"></div>
     <div class="card-body">
-      <p class="card-text">{{shortName}}</p>
-      <h5 class="card-title">{{pvp}}</h5>
-      <div  class="btn-color ">
+      <p class="card-text">{{NombreCorto}}</p>
+      <h5 class="card-title">{{PVP}}</h5>
+      <div (click)="log()" class="btn-color ">
         <a ref="" class="btn">Añadir</a>
       </div>
     </div>
