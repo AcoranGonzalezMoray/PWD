@@ -19,6 +19,17 @@ export class HeaderLogComponent implements OnInit{
   }
   carritoVisible = false;
 
+  reservar(){
+    this.cartService.addReservation({
+      Nombre: "",
+      Productos: this.cart,
+      Dia:"Lunes 26 de septiembre 2023",
+      Hora:"3456",
+      Telefono:"600622",
+      Total: this.total
+  }) 
+    console.log('sd')
+  }
   abrirCarrito() {
     this.totalF()
     this.carritoVisible = true;
