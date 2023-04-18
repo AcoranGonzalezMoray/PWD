@@ -29,8 +29,9 @@ import { AppDashboardUserComponent } from './app-dashboard-user/app-dashboard-us
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideAuth,getAuth } from '@angular/fire/auth';
-import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { provideFirestore,getFirestore, FirestoreModule } from '@angular/fire/firestore';
 import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFirestoreCollection } from '@angular/fire/compat/firestore';
 
 @NgModule({
   declarations: [

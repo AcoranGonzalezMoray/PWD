@@ -8,10 +8,8 @@
   <main>
     <div class="whatwedo">
       <h1>¿Qué Hacemos?</h1>
-      <img src="https://www.estacionbpsantabrigida.com/uploads/yDqEIzja/1059696-DSCF9059-c20ad.w1024.jpg" />
-      <p class="p-justify">
-        <!--Se carga una descripción detallada de la empresa desde el json-->
-      </p>
+      <img src={{imageUrl}} />
+      <p class="p-justify" [innerHTML]="textoQueHacemos?.Texto"></p>
     </div>
   </main>
 
