@@ -1,4 +1,5 @@
 /* RESPONSIVE CSS ========================================================================= */
+@import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
 /*Tablets en horizonal y escritorios normales------------------------------------------------------------------------- */
 @media screen and (min-width: 1280px)  {
     /*Modal Service*/

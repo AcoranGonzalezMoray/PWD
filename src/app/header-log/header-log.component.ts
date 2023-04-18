@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ShoppingCartService } from '../services/firestore/shoppingCart.service';
 import { Product } from '../services/firestore/interfaces/product';
+import { uuidv4 } from '@firebase/util';
 
 @Component({
   selector: 'app-header-log',
@@ -19,16 +20,25 @@ export class HeaderLogComponent implements OnInit{
   }
   carritoVisible = false;
 
-  reservar(){
+  reservar(fecha:string, hora:string){
+    var data = sessionStorage.getItem('userData')
+    var user= {userName: '', phoneNumber: 0}
+    data !== null? user = JSON.parse(data):null
+    
     this.cartService.addReservation({
-      Nombre: "",
+      UUIDV4: uuidv4(),
+      Nombre:user.userName,
       Productos: this.cart,
-      Dia:"Lunes 26 de septiembre 2023",
-      Hora:"3456",
-      Telefono:"600622",
-      Total: this.total
+      Dia:fecha,
+      Hora:hora,
+      Telefono:user.phoneNumber,
+      Total: this.total,
+      FechaRealizacon: Date()
   }) 
-    console.log('sd')
+
+
+
+
   }
   abrirCarrito() {
     this.totalF()

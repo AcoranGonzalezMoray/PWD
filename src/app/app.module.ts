@@ -26,11 +26,15 @@ import { AppSignUpComponent } from './app-sign-up/app-sign-up.component';
 import { AppSignInComponent } from './app-sign-in/app-sign-in.component';
 import { AppDashboardAdminComponent } from './app-dashboard-admin/app-dashboard-admin.component';
 import { AppDashboardUserComponent } from './app-dashboard-user/app-dashboard-user.component';
-import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+//import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { AngularFireModule } from '@angular/fire/compat';
+import {MatDatepickerModule} from '@angular/material/datepicker'
+import {MatNativeDateModule} from '@angular/material/core'
+import {MatInputModule} from '@angular/material/input'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -59,6 +63,10 @@ import { AngularFireModule } from '@angular/fire/compat';
     AppDashboardUserComponent
   ],
   imports: [
+    BrowserAnimationsModule ,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatInputModule,
     BrowserModule,
     AppRoutingModule,
     RouterModule,
