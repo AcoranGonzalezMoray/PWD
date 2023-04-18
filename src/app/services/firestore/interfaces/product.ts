@@ -1,10 +1,10 @@
 export interface Product {
-    category:string,
-    barCode:string,
-    family:string,
-    img:string,
-    shortName:string,
-    supplier:string,
-    pvp: string,
-    posCode:string
+    CATEGORIA:string,
+    CodBarras:string,
+    FAMILIA:string,
+    IMAGEN:string,
+    NombreCorto:string,
+    PROVEEDOR:string,
+    PVP:string,
+    posCode:string,
 }

@@ -29,7 +29,7 @@
                     </ul>
                 </li>
                 <li style="display: flex;align-items: center;" class="nav-item">
-                    <button onclick="abrirCarrito()" type="button" class="btn btn-success position-relative">
+                    <button (click)="abrirCarrito()" type="button" class="btn btn-success position-relative">
                         <svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
                             fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
                             <path
@@ -37,7 +37,7 @@
                         </svg>
                         <span id="numberProducts"
                             class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                            0
+                            {{cart.length}}
                             <span class="visually-hidden">unread messages</span>
                         </span>
                     </button>
@@ -60,23 +60,33 @@
 
 
 <!-- Modal -->
-<div class="dark"></div>
+<div class="dark"  [ngClass]="{'show': carritoVisible}" [style.display]="carritoVisible ? 'block' : 'none'" ></div>
 <div id="carrito" class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
+    aria-hidden="true" [ngClass]="{'show': carritoVisible}" [style.display]="carritoVisible ? 'flex' : 'none'" [style.opacity]="carritoVisible ? '1' : '0'" [style.zIndex]="carritoVisible ? '100' : '-1'" [style.alignItems]="carritoVisible ? 'center' : 'unset'">
     <div class="modal-dialog">
         <div class="modal-content carrito">
             <div id="modal-carrito" class="modal-body">
                 <h1>CARRITO</h1>
+                <app-cart-product *ngFor="let elemento of  cart" 
+                [CATEGORIA]="elemento.CATEGORIA"
+                [CodBarras]="elemento.CodBarras"
+                [FAMILIA]="elemento.FAMILIA"
+                [IMAGEN]="elemento.IMAGEN"
+                [NombreCorto]="elemento.NombreCorto"
+                [PROVEEDOR]="elemento.PROVEEDOR"
+                [PVP]="elemento.PVP"
+                [posCode]="elemento.posCode"
+                ></app-cart-product>
             </div>
             <div class="modal-footer modal-footer-cart">
                 <div class="total">
                     <div>
-                        <h3>Total: <h3 id="mount-cart">0,00</h3>€</h3>
+                        <h3>Total: <h3 id="mount-cart">{{total}}</h3>€</h3>
                     </div>
                 </div>
-                <button onclick="cerrarCarrito()" type="submit" class="btn btn-success "
+                <button (click)="cerrarCarrito()" type="submit" class="btn btn-success "
                     data-bs-dismiss="modal">Cancelar</button>
-                <button onclick="vaciarCarrito()" class="btn btn-danger borrar">
+                <button  class="btn btn-danger borrar" (click)="vaciarCarrito()">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-cart-x" viewBox="0 0 16 16">
                         <path
@@ -85,7 +95,7 @@
                             d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
                     </svg>
                 </button>
-                <button type="submit" class="btn btn-success ">Reservar</button>
+                <button type="submit" class="btn btn-success " (click)="reservar()">Reservar</button>
             </div>
         </div>
     </div>
