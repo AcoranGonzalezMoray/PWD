@@ -6,113 +6,55 @@
   <main class="main-tienda">
 
     <aside class="aside-dashboard shadow-lg p-3 mb-5 rounded">
-      <div id="aside-color">
-        <div class="aside-user">
-          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-circle"
-            viewBox="0 0 16 16">
-            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805
-          10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
-          </svg><br>
-          <h3>Usuario</h3>
-        </div>
-        <p>Funcionalidades</p>
-        <div class="accordion" id="accordionPanelsStayOpenExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
-                aria-controls="panelsStayOpen-collapseOne">
-                Accordion Item #1
-              </button>
-            </h2>
-            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
-              aria-labelledby="panelsStayOpen-headingOne">
-              <div class="accordion-body">
-                <strong>This is the first item's accordion body.</strong>
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
-                aria-controls="panelsStayOpen-collapseTwo">
-                Accordion Item #2
-              </button>
-            </h2>
-            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
-              aria-labelledby="panelsStayOpen-headingTwo">
-              <div class="accordion-body">
-                <strong>This is the first item's accordion body.</strong>
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
-                aria-controls="panelsStayOpen-collapseThree">
-                Accordion Item #3
-              </button>
-            </h2>
-            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
-              aria-labelledby="panelsStayOpen-headingThree">
-              <div class="accordion-body">
-                <strong>This is the first item's accordion body.</strong>
-              </div>
+        <div class=" aside-color">
+          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+            <span class="fs-4">Dashboard</span>
+          </a>
+          <hr>
+          <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item">
+              <a #a0 (click)="typeF(0, a0, a1, a2) "  class="nav-link  active" aria-current="page">
+                <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+                Mi Cuenta
+              </a>
+            </li>
+            <li>
+              <a #a1 (click)="typeF(1, a0, a1, a2)" class="nav-link text-white">
+                <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
+                Reservas Productos
+              </a>
+            </li>
+            <li>
+              <a #a2 (click)="typeF(2, a0, a1, a2)"class="nav-link text-white">
+                <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
+                Reservas Taller
+              </a>
+            </li>
+ 
+          </ul>
+          <div style="position:fixed; bottom:50px;">
+            <hr>
+            <div class="dropdown">
+              <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="https://th.bing.com/th/id/OIP.OzrDfJDiHwacHn6ynsrGnQHaF7?w=223&h=180&c=7&r=0&o=5&pid=1.7" alt="" width="32" height="32" class="rounded-circle me-2">
+                <strong>{{user.email}}</strong>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+                <li><a class="dropdown-item" href="#">.....</a></li>
+                <li><a class="dropdown-item" href="#">.....</a></li>
+                <li><a class="dropdown-item" href="#">......</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a (click)="userService.SignOut()" class="dropdown-item" href="#">Cerrar Sesion</a></li>
+              </ul>
             </div>
           </div>
         </div>
-
-      </div>
     </aside>
+    
+    <app-mi-cuenta *ngIf="type==0"></app-mi-cuenta>
+    <app-mi-reserva-producto *ngIf="type==1"></app-mi-reserva-producto>
 
-
-
-    <section class="products" id="Profile">
-      <h1>Tu perfil</h1>
-      <hr>
-      <div class="profile">
-        <div class="user-data">
-          <div class="name">
-            <p> <strong>Nombre de usuario</strong></p>
-            <input class="shadow-lg" type="text" readonly value="name">
-            <div class="btn-color change-name">
-              <a ref="" class="btn">Cambiar nombre</a>
-            </div>
-            <p> <strong>E-mail</strong></p>
-            <input class="shadow-lg" type="text" readonly value="example@example.com">
-            <div class="btn-color change-name">
-              <a ref="" class="btn">Cambiar correo</a>
-            </div>
-          </div>
-
-          <div class="password">
-            <input class="shadow-lg" type="password" placeholder="Contraseña antigua">
-            <input class="shadow-lg" type="password" placeholder="Contraseña nueva">
-            <input class="shadow-lg" type="password" placeholder="Contraseña nueva">
-            <div class="btn-color">
-              <a ref="#" class="btn">Cambiar contraseña</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="user-image">
-          <img src="/PWM-TEMPLATES/img/templatebox.png" class="d-block w-100" alt="TEMPLATE">
-        </div>
-
-
-      </div>
-
-      <div class="eliminate">
-        <a ref="" id="btnEliminarCuenta" class="btn">Eliminar cuenta</a>
-      </div>
-      <div class="eliminate">
-        <a (click)="userService.SignOut()" id="btnCerrarSesion" class="btn">Cerrar sesión</a>
-      </div>
-      <footer class="footer-store" id="footer"></footer>
-    </section>
   </main>
 
 </body>

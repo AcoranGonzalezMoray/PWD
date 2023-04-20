@@ -41,6 +41,18 @@ export class ShoppingCartService {
   });
   }
 
+
+  updateUserData(){
+    var objeto = {uid: ''}
+    var data = sessionStorage.getItem('user')
+    if (data !== null) objeto = JSON.parse(data);
+    this.firestore.collection('USUARIOS').doc(objeto.uid).ref.get().then(doc => {
+      if (doc.exists) {
+        sessionStorage.setItem('userData',  JSON.stringify(doc.data()))
+      } 
+    });
+  }
+
   public getContentCart(){
     var data = sessionStorage.getItem('user')
     var objeto = {uid: ''}

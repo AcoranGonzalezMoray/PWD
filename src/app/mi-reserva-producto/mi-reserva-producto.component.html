@@ -1,0 +1,35 @@
+<div class="container">
+  <h1 class="title">Mis Reservas</h1>
+  <div class="reservas">
+    <div class="reserva" *ngFor="let reserva of pedidos">
+      <div class="reserva-header">
+        <h2>{{ reserva.UUIDV4 }}</h2>
+        <p>{{ reserva.FechaRealizacon | date: 'dd/MM/yyyy' }}</p>
+      </div>
+      <div class="reserva-body">
+        <div class="reserva-item">
+          <label>Nombre:</label>
+          <span>{{ reserva.Nombre }}</span>
+        </div>
+        <div class="reserva-item">
+          <label>Fecha:</label>
+          <span>{{ reserva.Dia }} {{ reserva.Hora }}</span>
+        </div>
+        <div class="reserva-item">
+          <label>Teléfono:</label>
+          <span>{{ reserva.Telefono }}</span>
+        </div>
+        <div class="reserva-item">
+          <label>Productos:</label>
+          <ul>
+            <li *ngFor="let producto of reserva.Productos,let i = index">{{ i + 1 }} - {{producto.NombreCorto}}</li>
+          </ul>
+        </div>
+        <div class="reserva-item">
+          <label>Total a pagar en caja:</label>
+          <span>{{ reserva.Total }} €</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,43 @@
+<section class="perfil" id="Profile">
+    <h1  class="tuPerfil">Tu perfil</h1>
+    <hr>
+    <div class="profile">
+      <div class="user-data">
+        <div class="name">
+          <p> <strong>E-mail</strong></p>
+          <input class="shadow-lg" type="text" readonly value="{{user.email}}">
+          <br>
+          <p> <strong>Nombre de usuario</strong></p>
+          <input #name  class="shadow-lg" type="text"  value="{{user.userName}}">
+          <div class="btn-color change-name">
+            <a ref="" (click)="cambiarNombre(name.value)" class="btn">Cambiar nombre</a>
+          </div>
+
+
+        </div>
+
+        <div class="password">
+          <input class="shadow-lg"  #pw0 minlength="6" maxlength="9" type="password" placeholder="Contraseña antigua">
+          <input class="shadow-lg"  minlength="6" maxlength="9" #conNueva type="password" placeholder="Contraseña nueva">
+          <input class="shadow-lg" #conNueva2  minlength="6" maxlength="9" type="password" placeholder="Contraseña nueva">
+          <div class="btn-color">
+            <a ref="#" (click)=" cambiarContrasena(conNueva.value,conNueva2.value, pw0.value)" class="btn">Cambiar contraseña</a>
+          </div>
+        </div>
+        <p *ngIf="!contra"  style="color: red;" >*Repite bien la contraseña</p>
+        <p *ngIf="cambio" style="color: green;">*Contraseña actualizada</p>
+        
+      </div>
+
+      <div class="user-image">
+        <img width="100%" src="https://firebasestorage.googleapis.com/v0/b/bp-santa-brigida.appspot.com/o/carouselActive.jpg?alt=media&token=a52a695f-cb7e-41a0-a5a7-1f93e500c390" alt="TEMPLATE">
+      </div>
+
+
+    </div>
+
+    <div class="eliminate">
+      <a ref="" id="btnEliminarCuenta" class="btn">Eliminar cuenta</a>
+    </div>
+    <footer class="footer-store" id="footer"></footer>
+  </section>

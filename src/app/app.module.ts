@@ -36,6 +36,8 @@ import {MatNativeDateModule} from '@angular/material/core'
 import {MatInputModule} from '@angular/material/input'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularFirestoreCollection } from '@angular/fire/compat/firestore';
+import { MiCuentaComponent } from './mi-cuenta/mi-cuenta.component';
+import { MiReservaProductoComponent } from './mi-reserva-producto/mi-reserva-producto.component';
 
 
 @NgModule({
@@ -62,7 +64,9 @@ import { AngularFirestoreCollection } from '@angular/fire/compat/firestore';
     AppSignUpComponent,
     AppSignInComponent,
     AppDashboardAdminComponent,
-    AppDashboardUserComponent
+    AppDashboardUserComponent,
+    MiCuentaComponent,
+    MiReservaProductoComponent
   ],
   imports: [
     BrowserAnimationsModule ,

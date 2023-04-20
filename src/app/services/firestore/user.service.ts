@@ -7,6 +7,8 @@ import {
   AngularFirestoreDocument,
 } from '@angular/fire/compat/firestore';
 import { Router } from '@angular/router';
+
+
 @Injectable({
   providedIn: 'root',
 })
@@ -133,6 +135,31 @@ export class UserService {
       sessionStorage.removeItem('user');
       sessionStorage.removeItem('userData')
       this.router.navigate(['/']);
+    });
+  }
+
+  async updatePassword(newPassword: string, passwd:string): Promise<void> {
+    this.afAuth.authState.subscribe(async (user) => {
+      if (user && user.email) {
+        var credential = auth.EmailAuthProvider.credential(user.email,passwd);
+        var result = await user.reauthenticateWithCredential(credential);
+        await result.user?.updatePassword(newPassword)
+      }
+    });
+  }
+  
+  
+  changeName(newName:string){
+    var tmp = {uid : ''}
+    var data = sessionStorage.getItem('userData')
+    data !== null? tmp = JSON.parse(data):null
+
+    this.afs.collection('USUARIOS').doc(tmp.uid).update({ ['userName']: newName });
+
+    this.afs.collection('USUARIOS').doc(tmp.uid).ref.get().then(doc => {
+      if (doc.exists) {
+        sessionStorage.setItem('userData',  JSON.stringify(doc.data()))
+      } 
     });
   }
 }

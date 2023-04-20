@@ -81,17 +81,19 @@
             <form style="display: flex;justify-content: space-around;">
                 <mat-form-field appearance="fill">
                     <mat-label>Choose a date</mat-label>
-                        <input #fecha (click)="picker.open()" (focus)="picker.open()" matInput [matDatepicker]="picker">
+                        <input required #fecha (click)="picker.open()" (focus)="picker.open()" matInput [matDatepicker]="picker">
                         <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
                         <mat-datepicker #picker></mat-datepicker>
                 </mat-form-field>
                 <mat-form-field appearance="fill">
                     <mat-label>Hora:</mat-label>
-                    <input #hora type="email" matInput  placeholder="hh:mm" required>
+                    <input #hora type="time" matInput  placeholder="hh:mm" required>
                 </mat-form-field>
-              </form>
-              
-
+            </form>
+              <p style="    color: red;
+              text-align: center;" *ngIf="!fechaHora">*Ingrese la fecha y hora</p>
+              <p style="    color: red;
+              text-align: center;" *ngIf="!productos">*Ingrese almenos 1 producto</p>
             <div class="modal-footer modal-footer-cart">
                 <div class="total">
                     <div>
