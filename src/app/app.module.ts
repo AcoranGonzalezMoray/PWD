@@ -38,6 +38,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularFirestoreCollection } from '@angular/fire/compat/firestore';
 import { MiCuentaComponent } from './mi-cuenta/mi-cuenta.component';
 import { MiReservaProductoComponent } from './mi-reserva-producto/mi-reserva-producto.component';
+import { CalendarComponent } from './calendar/calendar.component';
 
 
 @NgModule({
@@ -66,7 +67,8 @@ import { MiReservaProductoComponent } from './mi-reserva-producto/mi-reserva-pro
     AppDashboardAdminComponent,
     AppDashboardUserComponent,
     MiCuentaComponent,
-    MiReservaProductoComponent
+    MiReservaProductoComponent,
+    CalendarComponent
   ],
   imports: [
     BrowserAnimationsModule ,
