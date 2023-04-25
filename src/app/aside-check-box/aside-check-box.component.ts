@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-aside-check-box',
@@ -9,8 +9,11 @@ export class AsideCheckBoxComponent {
   @Input() DESCRIPCION = "pRUEBA";
   @Input() CODIGO = "";
   @Input() PVP = "";
-
+  @Output () checkResponse: EventEmitter< string | null | undefined> = new EventEmitter();
   constructor(){
-    console.log(this.DESCRIPCION)
+  }
+
+  checkTrue(txt:string | null | undefined){
+    this.checkResponse.emit(txt)
   }
 }
