@@ -15,7 +15,7 @@ export class ShoppingCartService {
     private firestore: AngularFirestore,
   ) {}
 
-  public addReservation(newDataAny:Object){
+  public addOrder(newDataAny:Object){
     var data = sessionStorage.getItem('user')
     var objeto = {uid: ''}
     if (data !== null) {
@@ -27,10 +27,10 @@ export class ShoppingCartService {
   userDocRef.get().toPromise().then((docSnapshot:any|undefined) => {
     if (docSnapshot.exists) {
       const data = docSnapshot.data();
-      const contacts = data.reservations || []; // Si no hay contactos previos, crea un array vacío
-      const fieldValue = data.reservations;
+      const contacts = data.orders || []; // Si no hay contactos previos, crea un array vacío
+      const fieldValue = data.orders;
       const newArray = contacts.concat(newDataAny); // Agrega el nuevo contacto al array existente
-      userDocRef.update({ reservations: newArray})
+      userDocRef.update({ orders: newArray})
       .then(() => {
         console.log('Contacto agregado exitosamente');
       })

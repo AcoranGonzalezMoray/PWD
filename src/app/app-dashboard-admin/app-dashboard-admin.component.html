@@ -26,65 +26,75 @@
       </div>
       <div class="count-tab">
         <div class="count shadow-lg">
-          <p>Nº XXXX</p>
-          <h2>00.00</h2>
+          <p>Nº de Usuarios</p>
+          <h2>{{ numberOfUsers }}</h2>
         </div>
 
         <div class="count shadow-lg">
-          <p>Nº XXXX</p>
-          <h2>00.00</h2>
+          <p>Nº de Pedidos</p>
+          <h2>{{ numberOfOrders }}</h2>
         </div>
 
         <div class="count shadow-lg">
-          <p>Nº XXXX</p>
-          <h2>00.00</h2>
-        </div>
-
-        <div class="count shadow-lg">
-          <p>Nº XXXX</p>
-          <h2>00.00</h2>
+          <p>Nº de Reservas</p>
+          <h2>{{ numberOfReservations }}</h2>
         </div>
       </div>
 
       <div class="content-tab">
         <div class="content-op-1 shadow-lg">
-          <h1>TITLE</h1>
-          <p>lorem..........................</p>
-          <p>lorem..........................</p>
-          <p>lorem..........................</p>
-          <p>lorem..........................</p>
-          <p>lorem..........................</p>
-          <p>lorem..........................</p>
+          <h1>Usuarios</h1>
+          <p *ngFor="let user of users | async">
+            {{ user.userName }} - {{ user.email }}
+          </p>
         </div>
         <div class="content-op-2 shadow-lg">
-          <h1>TITLE</h1>
-          <p>lorem..........................</p>
-          <p>lorem..........................</p>
-          <p>lorem..........................</p>
-          <p>lorem..........................</p>
-          <p>lorem..........................</p>
-          <p>lorem..........................</p>
+          <h1>Pedidos</h1>
+          <p *ngFor="let order of orders | async" (click)="getshowOrderDetails(order)">
+            {{ order.Nombre }} - {{ order.Dia }} - {{ order.Hora }}
+          </p>
+        </div>
+        <div class="reservas">
+          <div class="reserva" *ngIf="showOrderDetails">
+            <div class="reserva-header">
+              <h2>{{ selectedOrder?.UUIDV4 }}</h2>
+              <p>{{ selectedOrder?.FechaRealizacon | date: 'dd/MM/yyyy' }}</p>
+            </div>
+            <div class="reserva-body">
+              <div class="reserva-item">
+                <label>Nombre:</label>
+                <span>{{ selectedOrder?.Nombre }}</span>
+              </div>
+              <div class="reserva-item">
+                <label>Fecha:</label>
+                <span>{{ selectedOrder?.Dia }} {{ selectedOrder?.Hora }}</span>
+              </div>
+              <div class="reserva-item">
+                <label>Teléfono:</label>
+                <span>{{ selectedOrder?.Telefono }}</span>
+              </div>
+              <div class="reserva-item">
+                <label>Productos:</label>
+                <ul>
+                  <li *ngFor="let producto of selectedOrder?.Productos,let i = index">{{ i + 1 }} - {{producto.NombreCorto}}</li>
+                </ul>
+              </div>
+              <div class="reserva-item">
+                <label>Total a pagar en caja:</label>
+                <span>{{ selectedOrder?.Total }} €</span>
+              </div>
+              <button (click)="hideOrderDetails()">Ocultar detalles</button>
+            </div>
+          </div>
         </div>
       </div>
 
       <div class="content-tab">
         <div class="content-op-3 shadow-lg">
-          <h1>TITLE</h1>
-          <p>lorem..........................</p>
-          <p>lorem..........................</p>
-          <p>lorem..........................</p>
-          <p>lorem..........................</p>
-          <p>lorem..........................</p>
-          <p>lorem..........................</p>
-        </div>
-        <div class="content-op-4 shadow-lg">
-          <h1>TITLE</h1>
-          <p>lorem..........................</p>
-          <p>lorem..........................</p>
-          <p>lorem..........................</p>
-          <p>lorem..........................</p>
-          <p>lorem..........................</p>
-          <p>lorem..........................</p>
+          <h1>Reservas de Taller</h1>
+          <p *ngFor=" let reserve of reservations | async">
+            {{ reserve.Nombre }} - {{ reserve.Dia }} - {{ reserve.Hora }}
+          </p>
         </div>
       </div>
 
