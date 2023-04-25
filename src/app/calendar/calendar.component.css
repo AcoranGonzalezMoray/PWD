@@ -1,0 +1,8 @@
+.demo-inline-calendar-card {
+    width: 50%;
+}
+
+.mat-calendar-body-selected {
+    background-color: #21b916 !important;
+    color: #fff;
+}

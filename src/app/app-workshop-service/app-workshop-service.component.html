@@ -7,31 +7,22 @@
 
     <aside class="shadow-lg p-3 mb-5 rounded" id="serviciosTaller">
       <button onclick="showServicesMov(0)" type="button" class="btn btn-success">Volver..</button>
-      <app-aside-check-box *ngFor="let elemento of  categories" [DESCRIPCION]="elemento.DESCRIPCION"  ></app-aside-check-box>
+      <app-aside-check-box (checkResponse)="check($event)"  *ngFor="let elemento of  categories" [DESCRIPCION]="elemento.DESCRIPCION"  ></app-aside-check-box>
     </aside>
 
     <section class="reserve">
       <h1>Reserva</h1>
-      <app-calendar></app-calendar>
       <div class="aside-mov">
         <button onclick="showServicesMov(1)" type="button" class="btn btn-light shadow-lg">Servicios</button>
       </div>
       <div id="carouselExample" class="carousel slide carouselTall carousel-dark">
 
         <div class="control-btn">
-          <button class="carousel-control-prev cp" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon btn-reserve" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              
+              <app-calendar (valueResponse)="select($event)" class="calendar"></app-calendar>
             </div>
           </div>
-          <button class="carousel-control-next cn" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon btn-reserve" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
       </div>
 
@@ -49,12 +40,12 @@
               <form>
                 <div class="mb-3">
                   <label for="reservaServicio" class="form-label">Servicio</label>
-                  <input readonly=true class="form-control" id="reservaServicio" aria-describedby="emailHelp">
+                  <input value={{checked}} readonly=true class="form-control" id="reservaServicio" aria-describedby="emailHelp">
                   <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                 </div>
                 <div class="mb-3">
                   <label for="reservaFecha" class="form-label">Fecha de Reserva</label>
-                  <input readonly=true class="form-control" id="reservaFecha">
+                  <input value={{selected}} readonly=true class="form-control" id="reservaFecha">
                 </div>
                 <div class="mb-3">
                   <label for="reservaFecha" class="form-label">Marca Y Modelo de Vehiculo</label>

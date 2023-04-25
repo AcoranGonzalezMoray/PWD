@@ -33,6 +33,7 @@ import { provideFirestore,getFirestore, FirestoreModule } from '@angular/fire/fi
 import { AngularFireModule } from '@angular/fire/compat';
 import {MatDatepickerModule} from '@angular/material/datepicker'
 import {MatNativeDateModule} from '@angular/material/core'
+import {MatCardModule} from '@angular/material/card'
 import {MatInputModule} from '@angular/material/input'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularFirestoreCollection } from '@angular/fire/compat/firestore';
@@ -72,6 +73,7 @@ import { CalendarComponent } from './calendar/calendar.component';
   ],
   imports: [
     BrowserAnimationsModule ,
+    MatCardModule,
     MatDatepickerModule,
     MatNativeDateModule,
     MatInputModule,
