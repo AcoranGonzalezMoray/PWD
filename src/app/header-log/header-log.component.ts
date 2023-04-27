@@ -33,7 +33,7 @@ export class HeaderLogComponent implements OnInit{
       var user= {userName: '', phoneNumber: 0}
       data !== null? user = JSON.parse(data):null
       
-      this.cartService.addReservation({
+      this.cartService.addOrder({
         UUIDV4: uuidv4(),
         Nombre:user.userName,
         Productos: this.cart,

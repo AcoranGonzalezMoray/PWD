@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ShoppingCartService } from '../services/firestore/shoppingCart.service';
-import { Product } from '../services/firestore/interfaces/product';
+
 @Component({
   selector: 'app-mi-reserva-producto',
   templateUrl: './mi-reserva-producto.component.html',
@@ -28,9 +28,9 @@ export class MiReservaProductoComponent {
  constructor(shp: ShoppingCartService){
     //shp.updateUserData()
     var data = sessionStorage.getItem('userData')
-    var objeto = {uid: '', reservations:[]}
+    var objeto = {uid: '', orders:[]}
     if (data !== null) objeto = JSON.parse(data);
-    this.pedidos = objeto.reservations
+    this.pedidos = objeto.orders
     
  }
 }
