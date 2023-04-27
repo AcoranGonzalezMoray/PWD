@@ -5,8 +5,8 @@
   </header>
   <main class="main-tienda">
 
-    <aside class="shadow-lg p-3 mb-5 rounded" id="serviciosTaller">
-      <button onclick="showServicesMov(0)" type="button" class="btn btn-success">Volver..</button>
+    <aside  class="shadow-lg p-3 mb-5 rounded" id="serviciosTaller">
+      <button (click)="showCategoryMov(false)" type="button" class="btn btn-success">Volver..</button>
       <app-aside-check-box (checkResponse)="check($event)" *ngFor="let elemento of  categories"
         [DESCRIPCION]="elemento.DESCRIPCION"></app-aside-check-box>
     </aside>
@@ -14,7 +14,7 @@
     <section class="reserve">
       <h1>Reserva</h1>
       <div class="aside-mov">
-        <button onclick="showServicesMov(1)" type="button" class="btn btn-light shadow-lg">Servicios</button>
+        <button (click)="showCategoryMov(true)" type="button" class="btn btn-light shadow-lg">Servicios</button>
       </div>
       <div id="carouselExample" class="carousel slide carouselTall carousel-dark">
 

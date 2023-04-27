@@ -23,6 +23,13 @@ export class AppWorkshopServiceComponent implements OnInit {
   ngOnInit(): void {
     this.categoriesLoad()
   }
+
+  showCategoryMov(i:boolean){
+    const aside:any = document.querySelector("#serviciosTaller")
+    i?aside.style="display:block;":aside.style="display:none;"
+  }
+
+
   reservar(fecha:string, hora:string, servicio:string, MarcaModelo:string){
     if(fecha=='' || hora=='' || servicio=='' || MarcaModelo=='' ){
 
