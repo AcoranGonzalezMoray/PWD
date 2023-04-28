@@ -25,12 +25,8 @@
   <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="true">
     <div class="carousel-indicators"></div>
     <div class="carousel-inner">
-      <div *ngFor="let imagen of imagenes; let i = index"
-        [ngClass]="{'carousel-item': true, 'active': i === imagenActivaIndex}"
-        [style.backgroundImage]="'url(' + imagen + ')'">
-        <div *ngFor="let imagen of imagenes; let i = index"
-          [ngClass]="{'carouselBackground': true, 'active': i === imagenActivaIndex}"
-          [style.backgroundImage]="'url(' + imagen + ')'">
+      <div *ngFor="let imagen of imagenes; let i = index"[ngClass]="{'carousel-item': true,'active': i === imagenActivaIndex}"[style.backgroundImage]="'url(' + imagen + ')'">
+        <div [ngClass]="{'carouselBackground': true, 'active': i === imagenActivaIndex}" [style.backgroundImage]="'url(' + imagen + ')'">
 
         </div>
       </div>
