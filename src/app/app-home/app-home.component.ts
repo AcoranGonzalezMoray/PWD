@@ -5,6 +5,7 @@ import { Firestore, collection, collectionData } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
 import { AngularFirestore, AngularFirestoreDocument} from '@angular/fire/compat/firestore';
 import { Text } from '../services/firestore/interfaces/text';
+import { ImageLoaderService } from '../services/firestore/image-loader.service';
 
 @Component({
   selector: 'app-app-home',
@@ -14,8 +15,9 @@ import { Text } from '../services/firestore/interfaces/text';
 export class AppHomeComponent {
 
   textoPresentacion: Text | undefined
+  bpUrl : string = ''
 
-  constructor(public userService: UserService, public textReader: TextReaderService) {
+  constructor(public userService: UserService, public textReader: TextReaderService, private imageLoader: ImageLoaderService,) {
     
     this.textReader.getTextoByTitulo('Presentacion').subscribe(textos => {
       if (textos.length > 0) {
@@ -23,6 +25,12 @@ export class AppHomeComponent {
       }
     });
     
+  }
+
+  ngOnInit () {
+    this.imageLoader.getRef('bp_card.png').getDownloadURL().subscribe(url => {
+      this.bpUrl = url;
+    });
   }
 
   
