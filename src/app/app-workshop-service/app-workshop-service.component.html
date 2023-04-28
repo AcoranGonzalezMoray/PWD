@@ -1,65 +1,71 @@
 <body>
   <header class="shadow-lg" id="header">
     <app-header *ngIf="!userService.isLoggedIn" class="shadow-lg" id="header"></app-header>
-    <app-header-log *ngIf="userService.isLoggedIn" class="shadow-lg" ></app-header-log>
+    <app-header-log *ngIf="userService.isLoggedIn" class="shadow-lg"></app-header-log>
   </header>
   <main class="main-tienda">
 
-    <aside class="shadow-lg p-3 mb-5 rounded" id="serviciosTaller">
-      <button onclick="showServicesMov(0)" type="button" class="btn btn-success">Volver..</button>
-      <app-aside-check-box *ngFor="let elemento of  categories" [DESCRIPCION]="elemento.DESCRIPCION"  ></app-aside-check-box>
+    <aside  class="shadow-lg p-3 mb-5 rounded" id="serviciosTaller">
+      <button (click)="showCategoryMov(false)" type="button" class="btn btn-success">Volver..</button>
+      <app-aside-check-box (checkResponse)="check($event)" *ngFor="let elemento of  categories"
+        [DESCRIPCION]="elemento.DESCRIPCION"></app-aside-check-box>
     </aside>
 
     <section class="reserve">
       <h1>Reserva</h1>
-      <app-calendar></app-calendar>
       <div class="aside-mov">
-        <button onclick="showServicesMov(1)" type="button" class="btn btn-light shadow-lg">Servicios</button>
+        <button (click)="showCategoryMov(true)" type="button" class="btn btn-light shadow-lg">Servicios</button>
       </div>
       <div id="carouselExample" class="carousel slide carouselTall carousel-dark">
 
         <div class="control-btn">
-          <button class="carousel-control-prev cp" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon btn-reserve" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              
+              <app-calendar (valueResponse)="select($event)" class="calendar"></app-calendar>
             </div>
           </div>
-          <button class="carousel-control-next cn" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon btn-reserve" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
       </div>
 
 
-      <div id="btn-reserve" class="btn-color" data-bs-toggle="modal" data-bs-target="#exampleModal"
-        onclick="reservarServicio()">
+      <div id="btn-reserve" class="btn-color" data-bs-toggle="modal" data-bs-target="#exampleModal2">
         <a ref="" class="btn">Reservar</a>
       </div>
 
       <!-- Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal2 modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content modal-content-service">
             <div class="modal-body">
               <form>
                 <div class="mb-3">
                   <label for="reservaServicio" class="form-label">Servicio</label>
-                  <input readonly=true class="form-control" id="reservaServicio" aria-describedby="emailHelp">
-                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                  <input #servicio value={{checked}} readonly=true class="form-control" id="reservaServicio"
+                    aria-describedby="emailHelp">
                 </div>
                 <div class="mb-3">
                   <label for="reservaFecha" class="form-label">Fecha de Reserva</label>
-                  <input readonly=true class="form-control" id="reservaFecha">
+                  <input #fecha value={{selected}} readonly=true class="form-control" id="reservaFecha">
                 </div>
                 <div class="mb-3">
                   <label for="reservaFecha" class="form-label">Marca Y Modelo de Vehiculo</label>
-                  <input class="form-control">
+                  <input #marca class="form-control">
                 </div>
+                <form style="display: flex;justify-content: space-around;">
+                  <mat-form-field appearance="fill">
+                    <mat-label>Hora:</mat-label>
+                    <input #horaFecha type="time" matInput placeholder="hh:mm" required>
+                  </mat-form-field>
+                </form>
+                <p style="    color: red;
+              text-align: center;" *ngIf="servicio.value==''">*Escoja un servicio</p>
+                <p style="    color: red;
+                text-align: center;" *ngIf="fecha.value==''">*Escoja una fecha</p>
+                <p style="    color: red;
+                  text-align: center;" *ngIf="horaFecha.value==''">*Ingrese la hora</p>
+                <p style="    color: red;
+                  text-align: center;" *ngIf="marca.value==''">*Ingrese la marca y modelo de vehiculo</p>
                 <div class="mb-3 form-check">
                   <input type="checkbox" class="form-check-input" id="exampleCheck1">
                   <label class="form-check-label" for="exampleCheck1">Confirmo que he leido los datos de la
@@ -69,8 +75,13 @@
               </form>
             </div>
             <div class="modal-footer">
-              <button type="submit" class="btn btn-primary " data-bs-dismiss="modal">Cancelar</button>
-              <button type="submit" class="btn btn-primary ">Reservar</button>
+              <div id="btn-reserve" class="btn-color">
+                <a class="btn" onclick="$('#exampleModal2').modal('hide');">Cancelar</a>
+              </div>
+              <div id="btn-reserve" class="btn-color">
+                <a class="btn" (click)="reservar(fecha.value, horaFecha.value, servicio.value, marca.value)">Reservar</a>
+              </div>
+
             </div>
           </div>
         </div>

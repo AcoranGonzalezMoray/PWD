@@ -33,12 +33,14 @@ import { provideFirestore,getFirestore, FirestoreModule } from '@angular/fire/fi
 import { AngularFireModule } from '@angular/fire/compat';
 import {MatDatepickerModule} from '@angular/material/datepicker'
 import {MatNativeDateModule} from '@angular/material/core'
+import {MatCardModule} from '@angular/material/card'
 import {MatInputModule} from '@angular/material/input'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularFirestoreCollection } from '@angular/fire/compat/firestore';
 import { MiCuentaComponent } from './mi-cuenta/mi-cuenta.component';
 import { MiReservaProductoComponent } from './mi-reserva-producto/mi-reserva-producto.component';
 import { CalendarComponent } from './calendar/calendar.component';
+import { MiReservaServicioComponent } from './mi-reserva-servicio/mi-reserva-servicio.component';
 
 
 @NgModule({
@@ -68,10 +70,12 @@ import { CalendarComponent } from './calendar/calendar.component';
     AppDashboardUserComponent,
     MiCuentaComponent,
     MiReservaProductoComponent,
-    CalendarComponent
+    CalendarComponent,
+    MiReservaServicioComponent
   ],
   imports: [
     BrowserAnimationsModule ,
+    MatCardModule,
     MatDatepickerModule,
     MatNativeDateModule,
     MatInputModule,

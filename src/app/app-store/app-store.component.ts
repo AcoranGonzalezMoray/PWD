@@ -20,7 +20,6 @@ export class AppStoreComponent implements OnInit {
   private coleccion: string = '';
   private field: string = '';
   private queryText: string = '';
-
   constructor(
     public userService: UserService,
     public productShopService: ProductShopService,
@@ -33,7 +32,11 @@ export class AppStoreComponent implements OnInit {
     this.categoriesLoad()
   }
 
-
+  showCategoryMov(i:boolean){
+    const aside:any = document.querySelector("#aside")
+    i?aside.style="display:block;":aside.style="display:none;"
+  }
+  
   @HostListener('window:scroll', ['$event'])
   async onScroll(event: any) {
     if (this.bottomReached() && !this.loading) {

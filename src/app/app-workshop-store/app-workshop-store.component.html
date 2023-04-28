@@ -7,7 +7,7 @@
   <main class="main-tienda">
 
       <aside id="aside" class="shadow-lg  mb-5 rounded">
-          <button onclick="showCategoryMov(0)" type="button" class="btn btn-success">Volver..</button>
+          <button (click)="showCategoryMov(false)" type="button" class="btn btn-success">Volver..</button>
           <app-aside *ngFor="let category of categories" [category]="category.category" [subcategories]="category.subcategory" (cambioLista)="updateCategory($event)"></app-aside>
       </aside>
 
@@ -15,7 +15,7 @@
           <div>
               <h1 class="product-title">Productos Taller</h1>
               <div class="aside-mov">
-                  <button onclick="showCategoryMov(1)" type="button"
+                  <button (click)="showCategoryMov(true)"  type="button"
                       class="btn btn-light shadow-lg">Categorias</button>
               </div>
               <div class="filters">
