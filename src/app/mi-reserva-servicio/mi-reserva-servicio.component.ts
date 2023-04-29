@@ -14,7 +14,7 @@ export class MiReservaServicioComponent {
   UUIDV4: 'uuidv4()',
   Nombre:'user.userName',
   Servicio: 'servicio',
-  MarcaModelo: 'MarcaModelo',
+  Vehiculo: 'MarcaModelo',
   Dia:'fecha',
   Hora:'hora',
   Telefono:'user.phoneNumber',
