@@ -13,7 +13,7 @@
         </svg><br>
         <h3> Administrador</h3>
       </div>
-      <p>Funcionlidades</p>
+      <p>Funcionalidades</p>
 
 
     </aside>
@@ -38,18 +38,8 @@
         <div class="count shadow-lg">
           <p>Nº de Reservas</p>
           <h2>{{ numberOfReservations }}</h2>
-          <h2>00.00</h2>
         </div>
 
-        <div class="count shadow-lg">
-          <p>Nº de Reservas Taller</p>
-          <h2>00.00</h2>
-        </div>
-
-        <div class="count shadow-lg">
-          <p>Nº de Pedidos</p>
-          <h2>00.00</h2>
-        </div>
       </div>
 
       <div class="content-tab">
@@ -59,12 +49,14 @@
             {{ user.userName }} - {{ user.email }}
           </p>
         </div>
+
         <div class="content-op-2 shadow-lg">
           <h1>Pedidos</h1>
           <p *ngFor="let order of orders | async" (click)="getshowOrderDetails(order)">
             {{ order.Nombre }} - {{ order.Dia }} - {{ order.Hora }}
           </p>
         </div>
+
         <div class="reservas">
           <div class="reserva" *ngIf="showOrderDetails">
             <div class="reserva-header">
@@ -94,24 +86,58 @@
                 <label>Total a pagar en caja:</label>
                 <span>{{ selectedOrder?.Total }} €</span>
               </div>
-              <button (click)="hideOrderDetails()">Ocultar detalles</button>
+              <button class="btn" (click)="hideOrderDetails()">Ocultar detalles</button>
+              <button class="btn red" (click)="deleteOrder(selectedOrder?.UUIDV4, selectedOrder?.Nombre);
+                      hideOrderDetails()">
+                Eliminar Pedido
+              </button>
             </div>
           </div>
-
-        </div>
-        <div class="content-op-2 shadow-lg">
-          <h1>Reservas de Taller</h1>
         </div>
       </div>
 
       <div class="content-tab">
         <div class="content-op-3 shadow-lg">
           <h1>Reservas de Taller</h1>
-          <p *ngFor=" let reserve of reservations | async">
+          <p *ngFor=" let reserve of reservations | async" (click)="getshowReserveDetails(reserve)">
             {{ reserve.Nombre }} - {{ reserve.Dia }} - {{ reserve.Hora }}
           </p>
-          <h1>Pedidos</h1>
-          <app-mi-reserva-producto></app-mi-reserva-producto>
+        </div>
+
+        <div class="reservas">
+          <div class="reserva" *ngIf="showReserveDetails">
+            <div class="reserva-header">
+              <h2>{{ selectedReserve?.UUIDV4 }}</h2>
+              <p>{{ selectedReserve?.FechaRealizacon | date: 'dd/MM/yyyy' }}</p>
+            </div>
+            <div class="reserva-body">
+              <div class="reserva-item">
+                <label>Nombre:</label>
+                <span>{{ selectedReserve?.Nombre }}</span>
+              </div>
+              <div class="reserva-item">
+                <label>Fecha:</label>
+                <span>{{ selectedReserve?.Dia }} {{ selectedReserve?.Hora }}</span>
+              </div>
+              <div class="reserva-item">
+                <label>Teléfono:</label>
+                <span>{{ selectedReserve?.Telefono }}</span>
+              </div>
+              <div class="reserva-item">
+                <label>Servicio que se solicita:</label>
+                <span>{{ selectedReserve?.Servicio }}</span>
+              </div>
+              <div class="reserva-item">
+                <label>Vehículo:</label>
+                <span>{{ selectedReserve?.Vehiculo }}</span>
+              </div>
+              <button class="btn" (click)="hideReserveDetails()">Ocultar detalles</button>
+              <button class="btn red" (click)="deleteReserve(selectedReserve?.UUIDV4, selectedReserve?.Nombre);
+                      hideReserveDetails()">
+                Eliminar Reserva
+              </button>
+            </div>
+          </div>
         </div>
       </div>
 

@@ -23,6 +23,10 @@ export class AppDashboardAdminComponent {
   public selectedOrder: Order | undefined;
   public showOrderDetails = false;
 
+  public selectedReserve: Reserve | undefined
+
+  public showReserveDetails = false;
+
   constructor(private dashboardAdminService: DashboardAdminService) {
     this.users = this.dashboardAdminService.getUsers()
     this.orders = this.dashboardAdminService.getOrders()
@@ -39,15 +43,6 @@ export class AppDashboardAdminComponent {
     this.dashboardAdminService.getNumberOfReservations().subscribe(numberOfReservations => {
       this.numberOfReservations = numberOfReservations;
     });
-
-    //this.usersCollection = this.firestore.collection<User>('USUARIOS').valueChanges();
-    //
-    //     this.firestore.collection<User>('USUARIOS').get().subscribe(snapshot => {
-    //       snapshot.forEach(doc => {
-    //         const user = doc.data() as User;
-    //         this.reservas.push(user.reservations.every);
-    //       });
-    //     });
   }
 
   getshowOrderDetails(order: Order) {
@@ -57,5 +52,22 @@ export class AppDashboardAdminComponent {
 
   hideOrderDetails() {
     this.showOrderDetails = false;
+  }
+
+  deleteOrder(orderId: any, userName: any) {
+    this.dashboardAdminService.deleteOrder(orderId, userName);
+  }
+
+  getshowReserveDetails(reserve: Reserve) {
+    this.selectedReserve = reserve;
+    this.showReserveDetails = true;
+  }
+
+  hideReserveDetails() {
+    this.showReserveDetails = false;
+  }
+
+  deleteReserve(reserveId: any, userName: any) {
+    this.dashboardAdminService.deleteReserve(reserveId, userName);
   }
 }
