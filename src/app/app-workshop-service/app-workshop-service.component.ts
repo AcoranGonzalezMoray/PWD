@@ -38,17 +38,17 @@ export class AppWorkshopServiceComponent implements OnInit {
       var data = sessionStorage.getItem('userData')
       var user= {userName: '', phoneNumber: 0}
       data !== null? user = JSON.parse(data):null
-      
+
       this.cartService.addReservation({
         UUIDV4: uuidv4(),
         Nombre:user.userName,
         Servicio: servicio,
-        MarcaModelo: MarcaModelo,
+        Vehiculo: MarcaModelo,
         Dia:fecha,
         Hora:hora,
         Telefono:user.phoneNumber,
         FechaRealizacon: Date()
-      }) 
+      })
       //this.router.navigate(['/dashboard'])
 
     }
