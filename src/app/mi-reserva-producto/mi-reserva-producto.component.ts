@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ShoppingCartService } from '../services/firestore/shoppingCart.service';
-import { Product } from '../services/firestore/interfaces/product';
+
 @Component({
   selector: 'app-mi-reserva-producto',
   templateUrl: './mi-reserva-producto.component.html',

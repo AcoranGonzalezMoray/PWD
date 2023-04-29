@@ -38,6 +38,17 @@
         <div class="count shadow-lg">
           <p>Nº de Reservas</p>
           <h2>{{ numberOfReservations }}</h2>
+          <h2>00.00</h2>
+        </div>
+
+        <div class="count shadow-lg">
+          <p>Nº de Reservas Taller</p>
+          <h2>00.00</h2>
+        </div>
+
+        <div class="count shadow-lg">
+          <p>Nº de Pedidos</p>
+          <h2>00.00</h2>
         </div>
       </div>
 
@@ -86,6 +97,10 @@
               <button (click)="hideOrderDetails()">Ocultar detalles</button>
             </div>
           </div>
+
+        </div>
+        <div class="content-op-2 shadow-lg">
+          <h1>Reservas de Taller</h1>
         </div>
       </div>
 
@@ -95,6 +110,8 @@
           <p *ngFor=" let reserve of reservations | async">
             {{ reserve.Nombre }} - {{ reserve.Dia }} - {{ reserve.Hora }}
           </p>
+          <h1>Pedidos</h1>
+          <app-mi-reserva-producto></app-mi-reserva-producto>
         </div>
       </div>
 

@@ -41,7 +41,31 @@ export class ShoppingCartService {
   });
   }
 
-
+  public addReservation(newDataAny:Object){
+    var data = sessionStorage.getItem('user')
+    var objeto = {uid: ''}
+    if (data !== null) {
+      objeto = JSON.parse(data);
+      console.log(objeto.uid);
+    }
+    const newData = { name: 'Juan' }; // Nuevo valor del campo name
+    const userDocRef = this.firestore.collection('USUARIOS').doc(objeto.uid);
+  userDocRef.get().toPromise().then((docSnapshot:any|undefined) => {
+    if (docSnapshot.exists) {
+      const data = docSnapshot.data();
+      const contacts = data.orders || []; // Si no hay contactos previos, crea un array vacío
+      const fieldValue = data.orders;
+      const newArray = contacts.concat(newDataAny); // Agrega el nuevo contacto al array existente
+      userDocRef.update({ orders: newArray})
+      .then(() => {
+        console.log('Contacto agregado exitosamente');
+      })
+      .catch((error) => {
+        console.error('Error al agregar contacto: ', error);
+      });
+    }
+  });
+  }
   updateUserData(){
     var objeto = {uid: ''}
     var data = sessionStorage.getItem('user')
@@ -49,7 +73,7 @@ export class ShoppingCartService {
     this.firestore.collection('USUARIOS').doc(objeto.uid).ref.get().then(doc => {
       if (doc.exists) {
         sessionStorage.setItem('userData',  JSON.stringify(doc.data()))
-      } 
+      }
     });
   }
 
@@ -66,7 +90,7 @@ export class ShoppingCartService {
         shoppingCart.forEach((productCart: Product)=>{
             this.cart.push(productCart)
         })
-      }  
+      }
       });
     return this.cart
   }

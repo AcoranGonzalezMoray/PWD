@@ -40,6 +40,7 @@ import { AngularFirestoreCollection } from '@angular/fire/compat/firestore';
 import { MiCuentaComponent } from './mi-cuenta/mi-cuenta.component';
 import { MiReservaProductoComponent } from './mi-reserva-producto/mi-reserva-producto.component';
 import { CalendarComponent } from './calendar/calendar.component';
+import { MiReservaServicioComponent } from './mi-reserva-servicio/mi-reserva-servicio.component';
 
 
 @NgModule({
@@ -69,7 +70,8 @@ import { CalendarComponent } from './calendar/calendar.component';
     AppDashboardUserComponent,
     MiCuentaComponent,
     MiReservaProductoComponent,
-    CalendarComponent
+    CalendarComponent,
+    MiReservaServicioComponent
   ],
   imports: [
     BrowserAnimationsModule ,

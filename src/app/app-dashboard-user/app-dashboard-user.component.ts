@@ -1,12 +1,15 @@
 import { Component } from '@angular/core';
 import { UserService } from '../services/firestore/user.service';
 import { ShoppingCartService } from '../services/firestore/shoppingCart.service';
+import { ImageLoaderService } from '../services/firestore/image-loader.service';
+
 @Component({
   selector: 'app-app-dashboard-user',
   templateUrl: './app-dashboard-user.component.html',
   styleUrls: ['./app-dashboard-user.component.css']
 })
 export class AppDashboardUserComponent {
+  imageUrl = ''
   public user = {email: '', userName:''}
   public type = 0
   public type0 = true

@@ -710,7 +710,6 @@
       width: 80%;
       min-height: 300px;
       margin-top: 20px;
-      background-image: url("/PWM-TEMPLATES/img/bp_card.png");
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
@@ -917,6 +916,10 @@
   
   /*Tablets*/
   @media screen and (min-width: 768px) and (max-width: 1279px) {
+    .card {
+      width: 250px !important;
+      height: 450px !important;
+    }
     /*Modal Service*/
     .modal-content-service{
       width: 500px !important;
@@ -1086,7 +1089,6 @@
       width: 80%;
       min-height: 300px;
       margin-top: 20px;
-      background-image: url("/PWM-TEMPLATES/img/bp_card.png");
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
@@ -2095,7 +2097,6 @@
       width: 80%;
       min-height: 300px;
       margin-top: 20px;
-      background-image: url("/PWM-TEMPLATES/img/bp_card.png");
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;

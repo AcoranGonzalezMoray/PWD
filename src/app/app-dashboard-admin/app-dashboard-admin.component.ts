@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+
 import { Observable } from 'rxjs';
 import { DashboardAdminService } from '../services/firestore/dashboard-admin.service';
 import { Order } from '../services/firestore/interfaces/order';
@@ -38,6 +39,15 @@ export class AppDashboardAdminComponent {
     this.dashboardAdminService.getNumberOfReservations().subscribe(numberOfReservations => {
       this.numberOfReservations = numberOfReservations;
     });
+
+    //this.usersCollection = this.firestore.collection<User>('USUARIOS').valueChanges();
+    //
+    //     this.firestore.collection<User>('USUARIOS').get().subscribe(snapshot => {
+    //       snapshot.forEach(doc => {
+    //         const user = doc.data() as User;
+    //         this.reservas.push(user.reservations.every);
+    //       });
+    //     });
   }
 
   getshowOrderDetails(order: Order) {

@@ -32,7 +32,11 @@ export class AppWorkshopStoreComponent {
     this.categoriesLoad()
   }
 
-
+  showCategoryMov(i:boolean){
+    const aside:any = document.querySelector("#aside")
+    i?aside.style="display:block;":aside.style="display:none;"
+  }
+  
   @HostListener('window:scroll', ['$event'])
   async onScroll(event: any) {
     if (this.bottomReached() && !this.loading) {
