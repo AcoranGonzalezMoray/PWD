@@ -6,6 +6,7 @@ import { FileUploadService } from "../services/firestore/file-upload.service";
 import { Order } from '../services/firestore/interfaces/order';
 import { User } from '../services/firestore/interfaces/user';
 import { Reserve } from '../services/firestore/interfaces/reserve';
+import * as bootstrap from 'bootstrap';
 
 @Component({
   selector: 'app-app-dashboard-admin',
@@ -22,11 +23,8 @@ export class AppDashboardAdminComponent {
   public reservations: Observable<Reserve[]>
   public numberOfReservations: number | undefined
   public selectedOrder: Order | undefined;
-  public showOrderDetails = false;
 
   public selectedReserve: Reserve | undefined
-
-  public showReserveDetails = false;
 
   constructor(private dashboardAdminService: DashboardAdminService, private uploadService: FileUploadService) {
     this.users = this.dashboardAdminService.getUsers()
@@ -46,29 +44,17 @@ export class AppDashboardAdminComponent {
     });
   }
 
-  getshowOrderDetails(order: Order) {
-    this.selectedOrder = order;
-    this.showOrderDetails = true;
-  }
-
-  hideOrderDetails() {
-    this.showOrderDetails = false;
-  }
-
   deleteOrder(orderId: any, userName: any) {
     this.dashboardAdminService.deleteOrder(orderId, userName);
-  }
-
-  getshowReserveDetails(reserve: Reserve) {
-    this.selectedReserve = reserve;
-    this.showReserveDetails = true;
-  }
-
-  hideReserveDetails() {
-    this.showReserveDetails = false;
   }
 
   deleteReserve(reserveId: any, userName: any) {
     this.dashboardAdminService.deleteReserve(reserveId, userName);
   }
+
+  showModal(modalId: string) {
+    const modal = new bootstrap.Modal(document.getElementById(modalId) as HTMLElement);
+    modal.show();
+  }
+
 }

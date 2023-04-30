@@ -68,92 +68,18 @@
 
         <div class="content-op-2 shadow-lg">
           <h1>Pedidos</h1>
-          <p *ngFor="let order of orders | async" (click)="getshowOrderDetails(order)">
+          <p *ngFor="let order of orders | async" (click)="selectedOrder = order; showModal('orderDetailsModal')">
             {{ order.Nombre }} - {{ order.Dia }} - {{ order.Hora }}
           </p>
-        </div>
-
-        <div class="reservas">
-          <div class="reserva" *ngIf="showOrderDetails">
-            <div class="reserva-header">
-              <h2>{{ selectedOrder?.UUIDV4 }}</h2>
-              <p>{{ selectedOrder?.FechaRealizacon | date: 'dd/MM/yyyy' }}</p>
-            </div>
-            <div class="reserva-body">
-              <div class="reserva-item">
-                <label>Nombre:</label>
-                <span>{{ selectedOrder?.Nombre }}</span>
-              </div>
-              <div class="reserva-item">
-                <label>Fecha:</label>
-                <span>{{ selectedOrder?.Dia }} {{ selectedOrder?.Hora }}</span>
-              </div>
-              <div class="reserva-item">
-                <label>Teléfono:</label>
-                <span>{{ selectedOrder?.Telefono }}</span>
-              </div>
-              <div class="reserva-item">
-                <label>Productos:</label>
-                <ul>
-                  <li *ngFor="let producto of selectedOrder?.Productos,let i = index">{{ i + 1 }} - {{producto.NombreCorto}}</li>
-                </ul>
-              </div>
-              <div class="reserva-item">
-                <label>Total a pagar en caja:</label>
-                <span>{{ selectedOrder?.Total }} €</span>
-              </div>
-              <button class="btn" (click)="hideOrderDetails()">Ocultar detalles</button>
-              <button class="btn red" (click)="deleteOrder(selectedOrder?.UUIDV4, selectedOrder?.Nombre);
-                    hideOrderDetails()">
-                Eliminar Pedido
-              </button>
-            </div>
-          </div>
         </div>
       </div>
 
       <div class="content-tab">
         <div class="content-op-3 shadow-lg">
           <h1>Reservas de Taller</h1>
-          <p *ngFor=" let reserve of reservations | async" (click)="getshowReserveDetails(reserve)">
+          <p *ngFor=" let reserve of reservations | async" (click)="selectedReserve = reserve; showModal('reserveDetailsModal')">
             {{ reserve.Nombre }} - {{ reserve.Dia }} - {{ reserve.Hora }}
           </p>
-        </div>
-
-        <div class="reservas">
-          <div class="reserva" *ngIf="showReserveDetails">
-            <div class="reserva-header">
-              <h2>{{ selectedReserve?.UUIDV4 }}</h2>
-              <p>{{ selectedReserve?.FechaRealizacon | date: 'dd/MM/yyyy' }}</p>
-            </div>
-            <div class="reserva-body">
-              <div class="reserva-item">
-                <label>Nombre:</label>
-                <span>{{ selectedReserve?.Nombre }}</span>
-              </div>
-              <div class="reserva-item">
-                <label>Fecha:</label>
-                <span>{{ selectedReserve?.Dia }} {{ selectedReserve?.Hora }}</span>
-              </div>
-              <div class="reserva-item">
-                <label>Teléfono:</label>
-                <span>{{ selectedReserve?.Telefono }}</span>
-              </div>
-              <div class="reserva-item">
-                <label>Servicio que se solicita:</label>
-                <span>{{ selectedReserve?.Servicio }}</span>
-              </div>
-              <div class="reserva-item">
-                <label>Vehículo:</label>
-                <span>{{ selectedReserve?.Vehiculo }}</span>
-              </div>
-              <button class="btn" (click)="hideReserveDetails()">Ocultar detalles</button>
-              <button class="btn red" (click)="deleteReserve(selectedReserve?.UUIDV4, selectedReserve?.Nombre);
-                      hideReserveDetails()">
-                Eliminar Reserva
-              </button>
-            </div>
-          </div>
         </div>
       </div>
 
@@ -183,6 +109,99 @@
           </div>
         </div>
       </div>
+
+      <div class="modal fade" id="orderDetailsModal" tabindex="-1" aria-labelledby="orderDetailsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="orderDetailsModalLabel">Detalles del pedido</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="reserva-header">
+                <h2>{{ selectedOrder?.UUIDV4 }}</h2>
+                <p>{{ selectedOrder?.FechaRealizacon | date: 'dd/MM/yyyy' }}</p>
+              </div>
+              <div class="reserva-body">
+                <div class="reserva-item">
+                  <label>Nombre:</label>
+                  <span>{{ selectedOrder?.Nombre }}</span>
+                </div>
+                <div class="reserva-item">
+                  <label>Fecha:</label>
+                  <span>{{ selectedOrder?.Dia }} {{ selectedOrder?.Hora }}</span>
+                </div>
+                <div class="reserva-item">
+                  <label>Teléfono:</label>
+                  <span>{{ selectedOrder?.Telefono }}</span>
+                </div>
+                <div class="reserva-item">
+                  <label>Productos:</label>
+                  <ul>
+                    <li *ngFor="let producto of selectedOrder?.Productos,let i = index">{{ i + 1 }} - {{producto.NombreCorto}}</li>
+                  </ul>
+                </div>
+                <div class="reserva-item">
+                  <label>Total a pagar en caja:</label>
+                  <span>{{ selectedOrder?.Total }} €</span>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn red" (click)="deleteOrder(selectedOrder?.UUIDV4, selectedOrder?.Nombre);">
+                Eliminar Reserva
+              </button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="reserveDetailsModal" tabindex="-1" aria-labelledby="orderDetailsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="reserveDetailsModalLabel">Detalles del pedido</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="reserva-header">
+                <h2>{{ selectedReserve?.UUIDV4 }}</h2>
+                <p>{{ selectedReserve?.FechaRealizacon | date: 'dd/MM/yyyy' }}</p>
+              </div>
+              <div class="reserva-body">
+                <div class="reserva-item">
+                  <label>Nombre:</label>
+                  <span>{{ selectedReserve?.Nombre }}</span>
+                </div>
+                <div class="reserva-item">
+                  <label>Fecha:</label>
+                  <span>{{ selectedReserve?.Dia }} {{ selectedReserve?.Hora }}</span>
+                </div>
+                <div class="reserva-item">
+                  <label>Teléfono:</label>
+                  <span>{{ selectedReserve?.Telefono }}</span>
+                </div>
+                <div class="reserva-item">
+                  <label>Servicio que se solicita:</label>
+                  <span>{{ selectedReserve?.Servicio }}</span>
+                </div>
+                <div class="reserva-item">
+                  <label>Vehículo:</label>
+                  <span>{{ selectedReserve?.Vehiculo }}</span>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn red" (click)="deleteReserve(selectedReserve?.UUIDV4, selectedReserve?.Nombre);">
+                Eliminar Reserva
+              </button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
 
       <div>
         <a onclick="logout()" class="btn red">Cerrar sesión</a>
