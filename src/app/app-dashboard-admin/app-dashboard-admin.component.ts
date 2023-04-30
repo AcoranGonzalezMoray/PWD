@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { Observable } from 'rxjs';
 import { DashboardAdminService } from '../services/firestore/dashboard-admin.service';
+import { FileUploadService } from "../services/firestore/file-upload.service";
 import { Order } from '../services/firestore/interfaces/order';
 import { User } from '../services/firestore/interfaces/user';
 import { Reserve } from '../services/firestore/interfaces/reserve';
@@ -27,7 +28,7 @@ export class AppDashboardAdminComponent {
 
   public showReserveDetails = false;
 
-  constructor(private dashboardAdminService: DashboardAdminService) {
+  constructor(private dashboardAdminService: DashboardAdminService, private uploadService: FileUploadService) {
     this.users = this.dashboardAdminService.getUsers()
     this.orders = this.dashboardAdminService.getOrders()
     this.reservations = this.dashboardAdminService.getReservations()

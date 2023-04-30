@@ -13,9 +13,25 @@
         </svg><br>
         <h3> Administrador</h3>
       </div>
-      <p>Funcionalidades</p>
-
-
+      <ul class="nav nav-pills flex-column mb-auto">
+        <li class="nav-item">
+          <a #a0  class="nav-link  active" aria-current="page">
+            <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+            Información General
+          </a>
+        <li data-bs-toggle="modal" data-bs-target="#imagesModal">
+          <a #a1 class="nav-link text-white">
+            <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
+            Agregar Imagen
+          </a>
+        </li>
+        <li>
+          <a #a2 class="nav-link text-white">
+            <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
+            Gestionar Productos
+          </a>
+        </li>
+      </ul>
     </aside>
 
 
@@ -88,7 +104,7 @@
               </div>
               <button class="btn" (click)="hideOrderDetails()">Ocultar detalles</button>
               <button class="btn red" (click)="deleteOrder(selectedOrder?.UUIDV4, selectedOrder?.Nombre);
-                      hideOrderDetails()">
+                    hideOrderDetails()">
                 Eliminar Pedido
               </button>
             </div>
@@ -141,11 +157,35 @@
         </div>
       </div>
 
+      <div class="modal fade" id="imagesModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Subir Imagen</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="container">
+                <div>
+                  <h4>Imágenes</h4>
+                </div>
+                <div class="my-3">
+                  <app-file-upload></app-file-upload>
+                </div>
+                <div class="my-2">
+                  <app-files-list></app-files-list>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
-
-
-      <div class="eliminate">
-        <a onclick="logout()" class="btn">Cerrar sesión</a>
+      <div>
+        <a onclick="logout()" class="btn red">Cerrar sesión</a>
       </div>
 
       <footer class="footer-store" id="footer"></footer>

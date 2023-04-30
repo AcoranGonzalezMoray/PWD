@@ -41,6 +41,9 @@ import { MiCuentaComponent } from './mi-cuenta/mi-cuenta.component';
 import { MiReservaProductoComponent } from './mi-reserva-producto/mi-reserva-producto.component';
 import { CalendarComponent } from './calendar/calendar.component';
 import { MiReservaServicioComponent } from './mi-reserva-servicio/mi-reserva-servicio.component';
+import { FileUploadComponent } from './file-upload/file-upload.component';
+import { FileDeetailsComponent } from './file-deetails/file-deetails.component';
+import { FilesListComponent } from './files-list/files-list.component';
 
 
 @NgModule({
@@ -71,7 +74,10 @@ import { MiReservaServicioComponent } from './mi-reserva-servicio/mi-reserva-ser
     MiCuentaComponent,
     MiReservaProductoComponent,
     CalendarComponent,
-    MiReservaServicioComponent
+    MiReservaServicioComponent,
+    FileUploadComponent,
+    FileDeetailsComponent,
+    FilesListComponent
   ],
   imports: [
     BrowserAnimationsModule ,
