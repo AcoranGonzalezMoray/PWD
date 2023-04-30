@@ -33,13 +33,9 @@ export class FileUploadService {
 
   getFiles(numFiles: number): Observable<FileUpload[]> {
     return this.filesCollection
-      .valueChanges({ limitToLast: numFiles })
-      .pipe(
-        map(fileUploads => fileUploads.map(
-          fileUpload => ({ ...fileUpload, key: fileUpload.key })
-        ))
-      );
+      .valueChanges({ limitToLast: numFiles });
   }
+
   deleteFile(fileUpload: FileUpload): void {
     this.deleteFileDatabase(fileUpload.key)
       .then(() => {
@@ -48,12 +44,14 @@ export class FileUploadService {
       .catch(error => console.log(error));
   }
 
-  private saveFileData(fileUpload: FileUpload): void {
-    console.log(fileUpload.name);
-    console.log(fileUpload.url);
+  private saveFileData(fileUpload: FileUpload): Promise<void> {
     const jsonData = JSON.parse(JSON.stringify(fileUpload));
-    this.filesCollection.add(jsonData);
+    return this.filesCollection.add(jsonData).then(docRef => {
+      const docId = docRef.id;
+      return docRef.set({ ...jsonData, key: docId });
+    });
   }
+
   private deleteFileDatabase(key: string): Promise<void> {
     return this.filesCollection.doc(key).delete();
   }
