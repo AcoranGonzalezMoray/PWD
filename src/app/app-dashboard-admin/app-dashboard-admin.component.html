@@ -148,7 +148,7 @@
               </div>
             </div>
             <div class="modal-footer">
-              <button class="btn red" (click)="deleteOrder(selectedOrder?.UUIDV4, selectedOrder?.Nombre);">
+              <button class="btn red" data-bs-dismiss="modal" (click)="deleteOrder(selectedOrder?.UUIDV4, selectedOrder?.Nombre);">
                 Eliminar Reserva
               </button>
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -193,7 +193,7 @@
               </div>
             </div>
             <div class="modal-footer">
-              <button class="btn red" (click)="deleteReserve(selectedReserve?.UUIDV4, selectedReserve?.Nombre);">
+              <button class="btn red" data-bs-dismiss="modal" (click)="deleteReserve(selectedReserve?.UUIDV4, selectedReserve?.Nombre);">
                 Eliminar Reserva
               </button>
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
