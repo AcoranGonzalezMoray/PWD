@@ -1,13 +1,24 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, NgModule, OnInit} from '@angular/core';
 
 import { Observable } from 'rxjs';
 import { DashboardAdminService } from '../services/firestore/dashboard-admin.service';
-import { FileUploadService } from "../services/firestore/file-upload.service";
+import { ProductShopService } from "../services/firestore/product-shop.service";
+import { AngularFirestore } from "@angular/fire/compat/firestore";
 import { Order } from '../services/firestore/interfaces/order';
 import { User } from '../services/firestore/interfaces/user';
 import { Reserve } from '../services/firestore/interfaces/reserve';
 import * as bootstrap from 'bootstrap';
+import {Product} from "../services/firestore/interfaces/product";
+import {map} from "rxjs/operators";
+import { FormsModule } from '@angular/forms';
 
+@NgModule({
+  imports: [
+    FormsModule
+  ]
+})
+
+export class AppModule { }
 @Component({
   selector: 'app-app-dashboard-admin',
   templateUrl: './app-dashboard-admin.component.html',
@@ -23,10 +34,12 @@ export class AppDashboardAdminComponent {
   public reservations: Observable<Reserve[]>
   public numberOfReservations: number | undefined
   public selectedOrder: Order | undefined;
-
   public selectedReserve: Reserve | undefined
+  public products: Observable<Product[]> | undefined
+  public product: Product | undefined;
 
-  constructor(private dashboardAdminService: DashboardAdminService, private uploadService: FileUploadService) {
+  constructor(private dashboardAdminService: DashboardAdminService, private  productShopService: ProductShopService,
+              private firestore: AngularFirestore) {
     this.users = this.dashboardAdminService.getUsers()
     this.orders = this.dashboardAdminService.getOrders()
     this.reservations = this.dashboardAdminService.getReservations()
@@ -55,6 +68,95 @@ export class AppDashboardAdminComponent {
   showModal(modalId: string) {
     const modal = new bootstrap.Modal(document.getElementById(modalId) as HTMLElement);
     modal.show();
+  }
+
+  searchProduct(nombre: string) {
+    this.products = this.firestore.collection('ProductosTienda', ref => ref.where('NombreCorto',
+      '==', nombre.toUpperCase()))
+      .snapshotChanges().pipe(
+       map(actions => actions.map(a => {
+        const data = a.payload.doc.data() as Product;
+        const id = a.payload.doc.id;
+        return { id, ...data };
+      }))
+    );
+    this.products.subscribe((products: Product[]) => {
+      this.product = products[0];
+    });
+
+  }
+
+  async saveChanges() {
+    const formData = {
+      NombreCorto: (document.getElementById('ProductName') as HTMLInputElement).value,
+      FAMILIA: (document.getElementById('ProductFamily') as HTMLInputElement).value,
+      CATEGORIA: (document.getElementById('ProductCategory') as HTMLInputElement).value,
+      PROVEEDOR: (document.getElementById('ProductProveedor') as HTMLInputElement).value,
+      PVP: (document.getElementById('ProductPvp') as HTMLInputElement).value,
+      IMAGEN: (document.getElementById('ProductImage') as HTMLInputElement).value,
+      CodBarras: (document.getElementById('ProductCodBarras') as HTMLInputElement).value,
+      posCode: (document.getElementById('ProductPosCode') as HTMLInputElement).value
+    };
+
+    const productosTiendaRef = await this.firestore.collection('ProductosTienda', ref => ref.where(
+      'CodBarras', '==', formData.CodBarras
+    ))
+      .get()
+      .toPromise()
+      .then(querySnapshot => {
+        if (querySnapshot && querySnapshot.docs && querySnapshot.docs.length > 0) {
+          return querySnapshot.docs[0].id;
+        } else {
+          return "null";
+        }
+      });
+
+    const productRef = this.firestore.collection('ProductosTienda').doc(productosTiendaRef);
+    productRef.get().subscribe((doc) => {
+      if (doc.exists) {
+        // Update the existing document
+        productRef.update(formData).then(() => {
+          console.log('Document updated successfully');
+        }).catch((error) => {
+          console.error('Error updating document:', error);
+        });
+      } else {
+        // Create a new document
+        this.firestore.collection('ProductosTienda').add(formData).then((docRef) => {
+          console.log('Document created with ID: ', docRef.id);
+        }).catch((error) => {
+          console.error('Error creating document:', error);
+        });
+      }
+    });
+  }
+
+  async deleteProduct() {
+    const codBarras = (document.getElementById('ProductCodBarras') as HTMLInputElement).value;
+
+    const productosTiendaRef = await this.firestore.collection('ProductosTienda', ref => ref.where(
+      'CodBarras', '==', codBarras
+    ))
+      .get()
+      .toPromise()
+      .then(querySnapshot => {
+        if (querySnapshot && querySnapshot.docs && querySnapshot.docs.length > 0) {
+          return querySnapshot.docs[0].id;
+        } else {
+          return null;
+        }
+      });
+
+    if (productosTiendaRef) {
+      const productRef = this.firestore.collection('ProductosTienda').doc(productosTiendaRef);
+      productRef.delete().then(() => {
+        console.log('Document deleted successfully');
+      }).catch((error) => {
+        console.error('Error deleting document:', error);
+      });
+    } else {
+      console.log('Product not found');
+    }
   }
 
 }

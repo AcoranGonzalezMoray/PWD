@@ -25,7 +25,7 @@
             Agregar Imagen
           </a>
         </li>
-        <li>
+        <li data-bs-toggle="modal" data-bs-target="#productsModal">
           <a #a2 class="nav-link text-white">
             <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
             Gestionar Productos
@@ -104,6 +104,68 @@
               </div>
             </div>
             <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="productsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="productsModalLabel">Gestión de Productos</h1>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Buscar Producto" aria-label="Search" #searchText>
+                <button class="btn btn-outline-success" type="button" (click)="searchProduct(searchText.value)">Buscar</button>
+              </form>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="container">
+                <form>
+                  <div class="mb-3">
+                    <label for="ProductName" class="form-label">Nombre</label>
+                    <input class="form-control" id="ProductName" value="{{product?.NombreCorto}}" #ProductName>
+                  </div>
+                  <div class="mb-3">
+                    <label for="ProductFamily" class="form-label">Familia</label>
+                    <input class="form-control" id="ProductFamily" value="{{product?.FAMILIA}}" #ProductFamily>
+                  </div>
+                  <div class="mb-3">
+                    <label for="ProductCategory" class="form-label">Categoría</label>
+                    <input class="form-control" id="ProductCategory" value="{{product?.CATEGORIA}}" #ProductCategory>
+                  </div>
+                  <div class="mb-3">
+                    <label for="ProductProveedor" class="form-label">Proveedor</label>
+                    <input class="form-control" id="ProductProveedor" value="{{product?.PROVEEDOR}}" #ProductProveedor>
+                  </div>
+                  <div class="mb-3">
+                    <label for="ProductPvp" class="form-label">PVP</label>
+                    <input class="form-control" id="ProductPvp" value="{{product?.PVP}}" #ProductPvp>
+                  </div>
+                  <div class="mb-3">
+                    <label for="ProductImage" class="form-label">Imagen</label>
+                    <input type="url" class="form-control" id="ProductImage" aria-describedby="ProductImageHelp"
+                           value="{{product?.IMAGEN}}" #ProductImage>
+                    <div id="ProductImageHelp" class="form-text">Introduzca en este campo la url de la imagen.</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="ProductCodBarras" class="form-label">Código de Barras</label>
+                    <input type="number" class="form-control" id="ProductCodBarras" value="{{product?.CodBarras}}" #ProductCodBarras>
+                  </div>
+                  <div class="mb-3">
+                    <label for="ProductPosCode" class="form-label">Pos Code</label>
+                    <input type="number" class="form-control" id="ProductPosCode" value="{{product?.posCode}}" #ProductposCode>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn red" data-bs-dismiss="modal" (click)="deleteProduct();">
+                Eliminar Producto
+              </button>
+              <button type="submit" class="btn btn-primary" (click)="saveChanges()" data-bs-dismiss="modal">Guardar Cambios</button>
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
             </div>
           </div>
