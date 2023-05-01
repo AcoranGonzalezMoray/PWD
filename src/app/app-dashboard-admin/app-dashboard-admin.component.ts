@@ -7,7 +7,6 @@ import { AngularFirestore } from "@angular/fire/compat/firestore";
 import { Order } from '../services/firestore/interfaces/order';
 import { User } from '../services/firestore/interfaces/user';
 import { Reserve } from '../services/firestore/interfaces/reserve';
-import * as bootstrap from 'bootstrap';
 import {Product} from "../services/firestore/interfaces/product";
 import {map} from "rxjs/operators";
 import { FormsModule } from '@angular/forms';
@@ -63,11 +62,6 @@ export class AppDashboardAdminComponent {
 
   deleteReserve(reserveId: any, userName: any) {
     this.dashboardAdminService.deleteReserve(reserveId, userName);
-  }
-
-  showModal(modalId: string) {
-    const modal = new bootstrap.Modal(document.getElementById(modalId) as HTMLElement);
-    modal.show();
   }
 
   searchProduct(nombre: string) {

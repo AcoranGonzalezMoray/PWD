@@ -68,7 +68,7 @@
 
         <div class="content-op-2 shadow-lg">
           <h1>Pedidos</h1>
-          <p *ngFor="let order of orders | async" (click)="selectedOrder = order; showModal('orderDetailsModal')">
+          <p *ngFor="let order of orders | async" (click)="selectedOrder = order" data-bs-toggle="modal" data-bs-target="#orderDetailsModal">
             {{ order.Nombre }} - {{ order.Dia }} - {{ order.Hora }}
           </p>
         </div>
@@ -77,7 +77,7 @@
       <div class="content-tab">
         <div class="content-op-3 shadow-lg">
           <h1>Reservas de Taller</h1>
-          <p *ngFor=" let reserve of reservations | async" (click)="selectedReserve = reserve; showModal('reserveDetailsModal')">
+          <p *ngFor=" let reserve of reservations | async" (click)="selectedReserve = reserve" data-bs-toggle="modal" data-bs-target="#reserveDetailsModal">
             {{ reserve.Nombre }} - {{ reserve.Dia }} - {{ reserve.Hora }}
           </p>
         </div>
