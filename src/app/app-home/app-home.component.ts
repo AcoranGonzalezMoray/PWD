@@ -1,9 +1,6 @@
 import { UserService } from '../services/firestore/user.service';
 import { TextReaderService } from '../services/firestore/text-reader.service';
-import { Component, inject } from '@angular/core';
-import { Firestore, collection, collectionData } from '@angular/fire/firestore';
-import { Observable } from 'rxjs';
-import { AngularFirestore, AngularFirestoreDocument} from '@angular/fire/compat/firestore';
+import { Component } from '@angular/core';
 import { Text } from '../services/firestore/interfaces/text';
 import { ImageLoaderService } from '../services/firestore/image-loader.service';
 

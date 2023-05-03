@@ -31,6 +31,8 @@ export class AppWorkshopServiceComponent implements OnInit {
 
 
   reservar(fecha:string, hora:string, servicio:string, MarcaModelo:string){
+
+    this.log()
     if(fecha=='' || hora=='' || servicio=='' || MarcaModelo=='' ){
 
     }else{
@@ -88,5 +90,10 @@ export class AppWorkshopServiceComponent implements OnInit {
       tmp = localStorage.getItem("categoriesService")
       this.categories = JSON.parse(tmp);
     }
+  }
+
+
+  log(){
+    sessionStorage.getItem('user')?null:this.router.navigate(['iniciar-sesion'])
   }
 }
