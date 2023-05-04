@@ -18,7 +18,7 @@
     .total > div > h3 {
       display: flex;
     }
-  
+
     .dark {
       display: none;
       background-color: black;
@@ -84,7 +84,7 @@
     h1 {
       color: #21b916 !important;
     }
-  
+
     /*Prueba para dar forma a las scrollBar*/
     *::-webkit-scrollbar {
       width: 10px;
@@ -185,9 +185,9 @@
       align-content: center;
       width: 50%;
     }
-  
-  
-  
+
+
+
     hr {
       width: 100%;
       color: white;
@@ -438,7 +438,7 @@
       align-items: center;
       width: 100%;
     }
-  
+
     .filters select {
       margin-block: 30px;
       font-size: 16px;
@@ -529,13 +529,13 @@
     app-footer div a:hover {
       color:  #36b920;
     }
-  
+
     /*CSS SIGN UP IN */
     .imgUser {
       height:100px;
       margin-bottom: 50px;
     }
-  
+
     .register-login-form {
       display: flex;
       flex-direction: column;
@@ -628,7 +628,7 @@
       padding: 20px;
       width:50%;
     }
-  
+
     /*CSS SEMICIRCLES*/
     .semicircles-container {
       position: relative;
@@ -637,44 +637,44 @@
       display: flex;
       justify-content: center;
     }
-  
+
     .semicircle {
       transform: rotate(180deg);
       position: absolute;
       bottom: 0;
       border-bottom-left-radius: 50%;
       border-bottom-right-radius: 50%;
-  
+
     }
-  
+
     .semicircle-down {
       position: absolute;
       top: 0;
       border-bottom-left-radius: 50%;
       border-bottom-right-radius: 50%;
     }
-  
+
     .first {
       background-color: darkgreen;
       z-index: 3;
       width: 100%;
       height: 50px;
     }
-  
+
     .second {
       background-color: green;
       z-index: 2;
       width: 100%;
       height: 80px;
     }
-  
+
     .third {
       background-color: #21b916;
       z-index: 1;
       width: 100%;
       height: 100px;
     }
-  
+
     /*CSS BP_CARD*/
     .bp_card {
       display: flex;
@@ -683,28 +683,28 @@
       align-items: center;
       background-color: darkgreen;
     }
-  
+
     .description-bp_card {
       padding-left: 100px;
       max-width: 80%;
       color: white;
     }
-  
+
     .description-bp_card h1, .description-bp_card h2 {
       color: #21b916;
     }
-  
+
     .checks {
       align-items: center;
       color: #21b916;
       padding-left: 50px;
     }
-  
+
     .checks-items {
       display: flex;
       flex-direction: row;
     }
-  
+
     .image-bp_card {
       padding: 20px;
       width: 80%;
@@ -714,8 +714,8 @@
       background-size: contain;
       background-repeat: no-repeat;
     }
-  
-  
+
+
     /*CSS PRESENTATION*/
     .presentation {
       width: 100%;
@@ -737,14 +737,14 @@
       width:50%;
     }
     /*CSS CAROUSEL*/
-  
+
     .carousel-item {
       min-height: 500px;
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
     }
-  
+
     .carousel-item .carouselBackground {
       min-width: 500px;
       min-height: 500px;
@@ -752,12 +752,12 @@
       background-size: contain;
       filter: opacity(.3);
     }
-  
+
     .carousel-home {
       margin-bottom: 50px;
     }
-  
-  
+
+
     /*CSS  HEADER*/
     app-header, app-header-log{
       width: 100%;
@@ -913,7 +913,7 @@
       width:4.5rem;
     }
   }
-  
+
   /*Tablets*/
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     .card {
@@ -939,7 +939,7 @@
     .total > div > h3 {
       display: flex;
     }
-  
+
     .dark {
       display: none;
       background-color: black;
@@ -1005,7 +1005,7 @@
     h1 {
       color: #21b916 !important;
     }
-  
+
     /*CSS SEMICIRCLES*/
     .semicircles-container {
       position: relative;
@@ -1014,45 +1014,45 @@
       display: flex;
       justify-content: center;
     }
-  
+
     .semicircle {
       transform: rotate(180deg);
       position: absolute;
       bottom: 0;
       border-bottom-left-radius: 50%;
       border-bottom-right-radius: 50%;
-  
+
     }
-  
+
     .semicircle-down {
       position: absolute;
       top: 0;
       border-bottom-left-radius: 50%;
       border-bottom-right-radius: 50%;
     }
-  
+
     .first {
       background-color: darkgreen;
       z-index: 3;
       width: 100%;
       height: 50px;
     }
-  
+
     .second {
       background-color: green;
       z-index: 2;
       width: 100%;
       height: 80px;
     }
-  
+
     .third {
       background-color: #21b916;
       z-index: 1;
       width: 100%;
       height: 100px;
     }
-  
-  
+
+
     /*CSS BP_CARD*/
     .bp_card {
       display: flex;
@@ -1061,29 +1061,29 @@
       align-items: center;
       background-color: darkgreen;
     }
-  
+
     .description-bp_card {
       padding-left: 100px;
       max-width: 80%;
       padding: 20px;
       color: white;
     }
-  
+
     .description-bp_card h1, .description-bp_card h2 {
       color: #21b916;
     }
-  
+
     .checks {
       align-items: center;
       color: #21b916;
       padding-left: 50px;
     }
-  
+
     .checks-items {
       display: flex;
       flex-direction: row;
     }
-  
+
     .image-bp_card {
       padding: 20px;
       width: 80%;
@@ -1093,32 +1093,32 @@
       background-size: contain;
       background-repeat: no-repeat;
     }
-  
+
     /*Prueba para dar forma a las scrollBar*/
     *::-webkit-scrollbar {
       width: 10px;
     }
-  
+
     ::-webkit-scrollbar-track {
       background-color: #d9ffd9;
       border-radius: 10px;
     }
-  
+
     ::-webkit-scrollbar-thumb {
       background-color: rgba(42,45,49,1);
       border-radius: 10px;
     }
-  
+
     aside::-webkit-scrollbar-track,div::-webkit-scrollbar-track {
       background-color: rgba(42,45,49,1);
       border-radius: 10px;
     }
-  
+
     aside::-webkit-scrollbar-thumb,div::-webkit-scrollbar-thumb {
       background-color: #d9ffd9;
       border-radius: 10px;
     }
-  
+
     /*Prueba Imagen fondo Productos*/
     .img-product {
       min-height: 200px;
@@ -1126,12 +1126,12 @@
       background-size: contain;
       background-repeat: no-repeat;
     }
-  
+
     /*Scroll Barra Lateral Servicios Taller*/
     #serviciosTaller {
       overflow-y: scroll;
     }
-  
+
     #reload {
       position: fixed;
       background-color: #21b916;
@@ -1159,14 +1159,14 @@
       background-color: #fff;
       z-index: 99;
     }
-  
+
     #loading-image {
       z-index: 100;
-  
+
     }
-  
-  
-  
+
+
+
     .spinner {
       margin-top:30px;
       width: 56px;
@@ -1177,7 +1177,7 @@
       border-right-color: #21b916;
       animation: spinner-a4dj62 1s infinite linear;
     }
-  
+
     .spinner::before,
     .spinner::after {
       content: "";
@@ -1187,12 +1187,12 @@
       border-radius: 50%;
       animation: spinner-a4dj62 2s infinite;
     }
-  
+
     .spinner::after {
       margin: 8.9px;
       animation-duration: 3s;
     }
-  
+
     @keyframes spinner-a4dj62 {
       100% {
         transform: rotate(1turn);
@@ -1203,37 +1203,37 @@
       font-family: "Arial Black";
       font-size: 1rem;
     }
-  
+
     /*CSS PANEL DE CONTROL ROL: USER*/
-  
+
     .user-image {
       margin: 30px;
       width: 50%;
     }
-  
+
     hr {
       width: 100%;
       color: white;
     }
-  
+
     .user-data {
       width: 50%;
       margin: 40px;
     }
-  
+
     .name {
       display: flex;
       flex-direction: column;
       width: 70%;
       margin-bottom: 40px;
     }
-  
+
     .change-name {
       width: 70%;
       margin-top: 15px;
       margin-bottom: 15px;
     }
-  
+
     .password {
       display: flex;
       flex-direction: column;
@@ -1244,43 +1244,43 @@
       border-radius: 6px;
       margin: 10px;
     }
-  
-  
+
+
     #btnEliminarCuenta {
       text-align: center;
       background-color: darkred !important;
       border-radius: 6px;
       margin: 50px;
     }
-  
+
     #btnEliminarCuenta:hover {
       background-color: red !important;
     }
-  
+
     #btnCerrarSesion {
       background-color: darkred !important;
     }
-  
+
     #btnCerrarSesion:hover {
       background-color: red !important;
     }
-  
+
     .profile {
       text-align: justify;
       width: 100%;
       display: flex;
       flex-direction: row;
     }
-  
+
     .profile a {
       text-decoration: none;
       color: black;
     }
-  
+
     .profile a:hover {
       color: #21b916;
     }
-  
+
     /*CSS PANEL DE CONTROL ROL: ADMIN*/
     .content-tab {
       width: 100%;
@@ -1302,7 +1302,7 @@
       background-color: #ffffff;
       overflow-y: scroll;
     }
-  
+
     .content-op-3 {
       width: 45%;
       border-radius: 10px;
@@ -1317,7 +1317,7 @@
       background-color: #ffffff;
       overflow-y: scroll;
     }
-  
+
     .count-tab {
       width: 100%;
       display: flex;
@@ -1340,11 +1340,11 @@
     .aside-user h3 {
       margin-left: 10px;
     }
-  
+
     .aside-dashboard {
       padding-right: 20px;
     }
-  
+
     /*CSS BOTONES*/
     .btn-color {
       background-color: #378311;
@@ -1354,12 +1354,12 @@
       color: white;
       width: 100%;
     }
-  
+
     .btn-color a:hover  {
       color: white;
       background-color: #36b920;
     }
-  
+
     /*CSS QUE HACEMOS*/
     .whatwedo {
       display: flex;
@@ -1367,35 +1367,35 @@
       flex-direction: column;
       padding-inline: 50px;
     }
-  
+
     .whatwedo img {
       max-width: 100%;
     }
-  
+
     .whatwedo h1, .whatwedo p {
       margin: 2rem;
     }
-  
+
     .whatwedo h1 {
       color: #21b916;
     }
-  
-  
-  
+
+
+
     /*CSS TALLER*/
     .btn-reserve {
       background-color: red;
     }
-  
+
     .btn {
       background-color: #378311 !important;
       color: white !important;
     }
-  
+
     .btn:hover {
       background-color: #36b920 !important;
     }
-  
+
     .carouselTall {
       width: 100%;
     }
@@ -1415,25 +1415,25 @@
       flex-direction: column;
       overflow-y: scroll;
     }
-  
+
     #carouselExample {
       margin-top: 20px;
     }
-  
+
     .dayOfWeek {
       margin: 10px;
     }
-  
+
     #btn-reserve {
       margin-bottom: 35px;
     }
-  
+
     .reserve-box-item {
       background-color: white;
       margin: 15px;
       height: 50px;
     }
-  
+
     /*CSS TIENDA*/
     .main-tienda {
       display: flex;
@@ -1485,7 +1485,7 @@
       min-width: 160px;
       margin-left: 50px;
     }
-  
+
     .category-content a {
       padding: 12px 16px;
       text-decoration: none;
@@ -1493,7 +1493,7 @@
       color: black;
       text-align: left;
     }
-  
+
     .category:hover .category-content {
       display: block;
     }
@@ -1517,7 +1517,7 @@
       align-items: center;
       width: 100%;
     }
-  
+
     .filters select {
       margin-inline: 5%;
       margin-block: 30px;
@@ -1525,7 +1525,7 @@
       border-radius: 5px;
       width: 50%;
     }
-  
+
     .products {
       width: 100%;
       display: flex;
@@ -1533,7 +1533,7 @@
       justify-content: center;
       align-items: center;
     }
-  
+
     .product {
       padding: 15px;
       float: left;
@@ -1543,24 +1543,26 @@
       margin-bottom: 30px;
       width: 43%;
     }
-  
+
     .product h2 {
       font-size: 1.2rem;
       margin-top: 10px;
       margin-bottom: 5px;
     }
-  
+
     .product p {
       font-size: 1rem;
       margin-top: 5px;
       margin-bottom: 10px;
+      height: 5rem;
+      overflow: hidden;
     }
-  
+
     .footer-store {
       position: static;
     }
-  
-  
+
+
     /*CSS COLOR*/
     .navbar-toggler , .navbar-toggler-icon {
       background-color: white!important;
@@ -1569,16 +1571,16 @@
       border-width: 1px !important;
       border-color: #21b916 !important;
     }
-  
+
     .navbar-nav {
       padding: 5px;
       background-color: rgba(42,45,49,1) !important ;
     }
-  
+
     nav {
       background-color: rgba(42,45,49,1);
     }
-  
+
     .nav-link:hover,.dropdown-item:hover  {
       color: #36b920 !important;
     }
@@ -1588,11 +1590,11 @@
     .dropdown-item:hover  {
       background-color: rgba(42,45,49,1) !important;
     }
-  
+
     app-footer div a:hover {
       color:  #36b920;
     }
-  
+
     /*CSS SIGN UP IN */
     .imgUser {
       height:100px;
@@ -1605,7 +1607,7 @@
       justify-content: center;
       align-items: center;
     }
-  
+
     .register-login-form form {
       width: 450px;
       text-align: center;
@@ -1631,12 +1633,12 @@
       border: 1px solid #dbdbdb;
       border-radius: 5px;
     }
-  
+
     .register-login-form h2 {
       font-size: 30px;
       margin-bottom: 30px;
     }
-  
+
     .register-login-form input[type="text"],
     .register-login-form input[type="email"],
     .register-login-form input[type="password"] {
@@ -1657,26 +1659,26 @@
       margin-top: 20px;
       cursor: pointer;
     }
-  
+
     .register-login-form .button:hover {
       background-color: #36b920;
       color: white;
     }
-  
+
     .register-login-form p,.register-login-form a {
       margin-top: 20px;
       font-size: 14px;
     }
-  
+
     .register-login-form a, .register-login-box a {
       color: #136c0c;
     }
-  
+
     .register-login-form a:hover, .register-login-box a:hover {
       color: #21b916;
     }
-  
-  
+
+
     /*CSS UBICATION*/
     .dato-icono a:hover {
       color: #136c0c;
@@ -1687,7 +1689,7 @@
       justify-content: space-around;
       flex-direction: column;
       align-items: center;
-  
+
     }
     .ubication iframe {
       margin-bottom: 1rem;
@@ -1700,8 +1702,8 @@
       padding: 20px;
       width: 90%;
     }
-  
-  
+
+
     /*CSS PRESENTATION*/
     .presentation {
       width: 100%;
@@ -1711,7 +1713,7 @@
       justify-content: center;
       margin-top: 5px;
     }
-  
+
     .presentation h1 {
       color: #21b916;
       margin-bottom: 1rem;
@@ -1719,30 +1721,30 @@
     .presentation img {
       display: none;
     }
-  
+
     .description {
       padding: 20px;
       max-width: 80%;
     }
-  
+
     /*CSS CAROUSEL*/
     .carousel-home {
       max-width: 100%;
       margin-bottom: 1.5rem;
     }
-  
+
     .carousel-item img {
       max-height: 500px;
       margin-left: 25%;
     }
-  
+
     .carousel-item {
       min-height: 400px;
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
     }
-  
+
     /*CSS  HEADER*/
     app-header, app-header-log{
       width: 100%;
@@ -1751,7 +1753,7 @@
       top: 0;
       z-index: 50;
     }
-  
+
     nav{
       float: left;
       display: flex;
@@ -1782,11 +1784,11 @@
       font-size: 20px !important;
       color:white !important;
     }
-  
-  
-  
+
+
+
     /*CSS FOOTER*/
-  
+
     app-footer {
       border-top: 1px solid #000 !important;
       position: absolute;
@@ -1822,51 +1824,51 @@
       margin-top: 10px;
       margin-bottom: 10px;
     }
-  
+
     /*CSS MAIN*/
-  
+
     main {
       background-color: #d9ffd9;
       margin-top: 93px;
     }
-  
+
     .p-justify {
       text-align: justify;
       font-family: Arial, Helvetica, sans-serif;
     }
-  
+
     /*Teléfono, Correo y Ubicación del index*/
     .dato-icono {
       display: flex;
       align-items: center;
       vertical-align: center;
     }
-  
+
     .dato-icono h2 {
       margin: 1rem;
     }
-  
+
     .dato-icono svg {
       width: 2rem;
       height: 2rem;
       color: #21b916;
     }
-  
+
     .dato-icono a {
       text-decoration: none;
       color: black;
       margin: 1rem;
     }
-  
+
     dato-icono a:hover {
       color: #21b916 !important;
     }
-  
-  
+
+
     /*Social*/
     /* --- Floating Share Buttons --- */
     /* Icons/Logos from FontAwesome4*/
-  
+
     #floating-share-buttons {
       list-style-type: none;
       margin: 0;
@@ -1875,7 +1877,7 @@
       z-index: 30;
     }
     #floating-share-buttons li {
-  
+
     }
     #floating-share-buttons a {
       color: #fff;
@@ -1918,9 +1920,9 @@
     ul#floating-share-buttons a:hover {
       width:4.5rem;
     }
-  
+
   }
-  
+
   /* Móviles en vertical------------------------------------------------------------------------- */
   @media screen and (max-width: 767px) {
     /*Modal Service*/
@@ -1951,7 +1953,7 @@
     .total > div > h3 {
       display: flex;
     }
-  
+
     .dark {
       display: none;
       background-color: black;
@@ -2013,7 +2015,7 @@
     h1 {
       color: #21b916 !important;
     }
-  
+
     /*CSS SEMICIRCLES*/
     .semicircles-container {
       position: relative;
@@ -2022,45 +2024,45 @@
       display: flex;
       justify-content: center;
     }
-  
+
     .semicircle {
       transform: rotate(180deg);
       position: absolute;
       bottom: 0;
       border-bottom-left-radius: 50%;
       border-bottom-right-radius: 50%;
-  
+
     }
-  
+
     .semicircle-down {
       position: absolute;
       top: 0;
       border-bottom-left-radius: 50%;
       border-bottom-right-radius: 50%;
     }
-  
+
     .first {
       background-color: darkgreen;
       z-index: 3;
       width: 100%;
       height: 50px;
     }
-  
+
     .second {
       background-color: green;
       z-index: 2;
       width: 100%;
       height: 80px;
     }
-  
+
     .third {
       background-color: #21b916;
       z-index: 1;
       width: 100%;
       height: 100px;
     }
-  
-  
+
+
     /*CSS BP_CARD*/
     .bp_card {
       background-color: darkgreen;
@@ -2069,29 +2071,29 @@
       width: 100%;
       align-items: center;
     }
-  
+
     .description-bp_card {
       padding-left: 100px;
       max-width: 80%;
       padding: 20px;
       color: white;
     }
-  
+
     .description-bp_card h1, .description-bp_card h2 {
       color: #21b916;
     }
-  
+
     .checks {
       align-items: center;
       color: #21b916;
       padding-left: 50px;
     }
-  
+
     .checks-items {
       display: flex;
       flex-direction: row;
     }
-  
+
     .image-bp_card {
       padding: 20px;
       width: 80%;
@@ -2101,7 +2103,7 @@
       background-size: contain;
       background-repeat: no-repeat;
     }
-  
+
     /*Prueba Imagen fondo Productos*/
     .img-product {
       min-height: 100px;
@@ -2193,9 +2195,9 @@
       width: 100%;
       color: white;
     }
-  
-  
-  
+
+
+
     .user-data {
       width: 100%;
       margin: 40px;
@@ -2234,27 +2236,27 @@
     #btnEliminarCuenta {
       background-color: darkred !important;
     }
-  
+
     #btnEliminarCuenta:hover {
       background-color: red !important;
     }
-  
+
     #btnCerrarSesion {
       background-color: darkred !important;
     }
-  
+
     #btnCerrarSesion:hover {
       background-color: red !important;
     }
-  
+
     .eliminate:hover {
       background-color: red;
     }
-  
+
     #Profile {
       justify-content: flex-start;
     }
-  
+
     .profile {
       text-align: justify;
       width: 100%;
@@ -2361,21 +2363,21 @@
       height: 250px;
     }
     /*CSS TALLER*/
-  
+
     .btn {
       background-color: #378311 !important;
       color: white !important;
     }
-  
+
     .btn:hover {
       background-color: #36b920 !important;
     }
-  
+
     #carouselExample {
       max-width: 100%;
       padding: 5%;
     }
-  
+
     .reserve {
       width: 100%;
       display: flex;
@@ -2383,11 +2385,11 @@
       justify-content: center;
       align-items: center;
     }
-  
+
     .reserve h1 {
       margin: 15px;
     }
-  
+
     .dayOfWeek {
       margin-bottom: 10px;
       display: flex;
@@ -2395,21 +2397,21 @@
       overflow-x: scroll;
       overflow-y: scroll;
     }
-  
+
     .dayOfWeek p {
       font-size: small;
     }
-  
+
     .dayOfWeek h2 {
       font-size: 1rem;
     }
-  
+
     .dayOfWeekTitle {
       display: flex;
       flex-direction: column;
     }
-  
-  
+
+
     .reserve-box {
       width: 100%;
       background-color: #555555;
@@ -2418,7 +2420,7 @@
       justify-content: flex-start;
       overflow-x: scroll;
     }
-  
+
     #btn-reserve {
       margin-bottom: 35px;
     }
@@ -2433,7 +2435,7 @@
       text-overflow: ellipsis;
       margin-inline: 5%;
     }
-  
+
     .main-tienda {
       display: flex;
       flex-direction: row;
@@ -2520,11 +2522,11 @@
       font-size: 16px;
       border-radius: 5px;
     }
-  
+
     .form-select {
       width: 50% !important;
     }
-  
+
     .products {
       width: 100%;
       display: flex;
@@ -2533,7 +2535,6 @@
       align-items: center;
     }
     .product {
-      padding: 15px;
       float: left;
       text-align: center;
       margin-right: 10px;
@@ -2550,6 +2551,8 @@
       font-size: 1rem;
       margin-top: 5px;
       margin-bottom: 10px;
+      height: 6rem;
+      overflow: hidden;
     }
     .footer-store {
       position: static;
@@ -2581,13 +2584,13 @@
     app-footer div a:hover {
       color:  #36b920;
     }
-  
+
     /*CSS SIGN UP IN */
     .imgUser {
       height:100px;
       margin-bottom: 50px;
     }
-  
+
     .register-login-form {
       margin:30px;
       display: flex;
@@ -2851,5 +2854,5 @@
       width:4.5rem;
     }
   }
-  
-  
+
+
