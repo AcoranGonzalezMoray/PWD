@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { UserService } from '../services/firestore/user.service';
 import { ShoppingCartService } from '../services/firestore/shoppingCart.service';
 import { ImageLoaderService } from '../services/firestore/image-loader.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-app-dashboard-user',
@@ -10,15 +11,21 @@ import { ImageLoaderService } from '../services/firestore/image-loader.service';
 })
 export class AppDashboardUserComponent {
   imageUrl = ''
-  public user = {email: '', userName:''}
+  public user = {email: '', userName:'', role:''}
   public type = 0
   public type0 = true
   public type1 = false
   public type2 = false
-  constructor(public  userService: UserService,shp: ShoppingCartService){
-    shp.updateUserData()
+  public isAdmin = false
+
+  constructor(public  userService: UserService,shp: ShoppingCartService, router: Router){
+    
     var data = sessionStorage.getItem('userData')
-    data !== null? this.user = JSON.parse(data):null
+    !data?router.navigate(['']):null
+    data? this.user = JSON.parse(data):null
+
+    this.user.role=='admin'?this.isAdmin=true:null 
+    shp.updateUserData()
 
   }
 

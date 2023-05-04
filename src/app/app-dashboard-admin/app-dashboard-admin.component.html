@@ -1,5 +1,8 @@
 <body>
-  <app-header class="header-dashboard shadow-sm" id="header"></app-header>
+  <header class="header-dashboard shadow-sm" id="header">
+    <app-header *ngIf="!userService.isLoggedIn" class="shadow-lg" id="header"></app-header>
+    <app-header-log *ngIf="userService.isLoggedIn" class="shadow-lg" ></app-header-log>
+  </header>
   <main class="main-tienda">
 
     <aside id="aside" class="aside-dashboard shadow-lg  mb-5 rounded">

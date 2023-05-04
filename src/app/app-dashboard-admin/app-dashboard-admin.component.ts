@@ -10,6 +10,8 @@ import { Reserve } from '../services/firestore/interfaces/reserve';
 import {Product} from "../services/firestore/interfaces/product";
 import {map} from "rxjs/operators";
 import { FormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
+import { UserService } from '../services/firestore/user.service';
 
 @NgModule({
   imports: [
@@ -38,7 +40,12 @@ export class AppDashboardAdminComponent {
   public product: Product | undefined;
 
   constructor(private dashboardAdminService: DashboardAdminService, private  productShopService: ProductShopService,
-              private firestore: AngularFirestore) {
+  private firestore: AngularFirestore, private router:Router,public  userService: UserService) {
+    var user = {email: '', userName:'', role:'user'}
+    var data = sessionStorage.getItem('userData')
+    data?user = JSON.parse(data):null
+
+    data && user.role!='admin'?router.navigate(['']):null    
     this.users = this.dashboardAdminService.getUsers()
     this.orders = this.dashboardAdminService.getOrders()
     this.reservations = this.dashboardAdminService.getReservations()

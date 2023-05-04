@@ -41,9 +41,7 @@
                 <strong>{{user.email}}</strong>
               </a>
               <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
-                <li><a class="dropdown-item" href="#">.....</a></li>
-                <li><a class="dropdown-item" href="#">.....</a></li>
-                <li><a class="dropdown-item" href="#">......</a></li>
+                <li *ngIf="isAdmin"><a class="dropdown-item" routerLink="/dashboardAdmin">Dashboard Administrator</a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li><a (click)="userService.SignOut()" class="dropdown-item" href="#">Cerrar Sesion</a></li>
               </ul>
@@ -55,6 +53,7 @@
     <app-mi-cuenta *ngIf="type==0"></app-mi-cuenta>
     <app-mi-reserva-producto *ngIf="type==1"></app-mi-reserva-producto>
     <app-mi-reserva-servicio *ngIf="type==2"></app-mi-reserva-servicio>
+    
   </main>
-  <app-footer id="footer"></app-footer>
+  
 </body>
