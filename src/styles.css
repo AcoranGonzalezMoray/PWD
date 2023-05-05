@@ -2,6 +2,22 @@
 @import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
 /*Tablets en horizonal y escritorios normales------------------------------------------------------------------------- */
 @media screen and (min-width: 1280px)  {
+
+  /*Calendario de servicios del taller*/
+  .mat-mdc-card{
+    margin-bottom: 2rem !important;
+  }
+
+  .calendar p {
+    margin-top: 2rem;
+  }
+
+  .reserve .btn-color {
+    margin-bottom: 2rem;
+  }
+
+
+
     /*Modal Service*/
     .modal-content-service{
       width: 500px !important;
@@ -916,6 +932,22 @@
 
   /*Tablets*/
   @media screen and (min-width: 768px) and (max-width: 1279px) {
+
+    /*Calendario de servicios del taller*/
+    .mat-mdc-card{
+      width: 80% !important;
+      margin-bottom: 2rem !important;
+    }
+
+    .calendar p {
+      margin-top: 2rem;
+      max-width: 80%;
+    }
+
+    .reserve .btn-color {
+      margin-bottom: 2rem;
+    }
+
     .card {
       width: 250px !important;
       height: 450px !important;
@@ -1925,6 +1957,22 @@
 
   /* Móviles en vertical------------------------------------------------------------------------- */
   @media screen and (max-width: 767px) {
+
+    /*Calendario de servicios del taller*/
+    .mat-mdc-card{
+      width: 80% !important;
+      margin-bottom: 2rem !important;
+    }
+
+    .calendar p {
+      max-width: 80%;
+    }
+
+    .reserve .btn-color {
+      margin-bottom: 2rem;
+    }
+
+
     /*Modal Service*/
     .modal-content-service{
       width: 500px !important;
@@ -1985,7 +2033,7 @@
       justify-content: center !important;
     }
     .carrito{
-      width: 600px !important;
+      width: 90% !important;
     }
     #modal-carrito .card {
       height: 120px !important;

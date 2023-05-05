@@ -16,19 +16,11 @@
       <div class="aside-mov">
         <button (click)="showCategoryMov(true)" type="button" class="btn btn-light shadow-lg">Servicios</button>
       </div>
-      <div id="carouselExample" class="carousel slide carouselTall carousel-dark">
 
-        <div class="control-btn">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <app-calendar (valueResponse)="select($event)" class="calendar"></app-calendar>
-            </div>
-          </div>
-        </div>
-      </div>
+      <app-calendar (valueResponse)="select($event)" class="calendar"></app-calendar>
 
 
-      <div id="btn-reserve" class="btn-color" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+      <div class="btn-color" data-bs-toggle="modal" data-bs-target="#exampleModal2">
         <a ref="" class="btn">Reservar</a>
       </div>
 
