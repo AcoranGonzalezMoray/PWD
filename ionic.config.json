@@ -1,0 +1,7 @@
+{
+  "name": "ionic-bp-santa-brigida",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
