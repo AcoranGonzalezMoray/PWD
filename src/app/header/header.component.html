@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-logo" href="#">
+      <img class="logo" src="../assets/LOGO.png">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+        <li class="nav-item">
+          <a class="nav-link active" routerLink="/" >Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " routerLink="/quehacemos">¿Qué hacemos?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " routerLink="/tienda">Tienda</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-primary text-white" href="#" id="navbarDropdown" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false">
+            Taller
+          </a>
+          <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" routerLink="/tienda-taller">Productos</a></li>
+            <li><a class="dropdown-item" routerLink="/servicios-taller">Servicios</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-primary text-white" routerLink="/iniciar-sesion">MiArea</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+

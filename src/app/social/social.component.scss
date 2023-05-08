@@ -1,0 +1,40 @@
+
+#floating-share-buttons a {
+  color: #fff;
+  text-decoration:none;
+  font-size:14px;
+}
+
+#floating-share-buttons a.share-facebook {
+  background-color: #395793 ;
+}
+#floating-share-buttons a.share-twitter {
+  background-color: #cc3ad2;
+}
+#floating-share-buttons a.share-whatsapp {
+  background-color: #48a91f ;
+}
+#floating-share-buttons a.share-mail {
+  background-color: #333 ;
+}
+
+ul#floating-share-buttons {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  min-height: 100px;
+  padding: 0px;
+}
+
+ul#floating-share-buttons a {
+  width:3rem;
+  height:3rem;
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  transition: width 0.5s;
+}
+
+ul#floating-share-buttons a:hover {
+  width:4.5rem;
+}
