@@ -8,6 +8,7 @@ import {HeaderComponent} from "../header/header.component";
 import { HomePageRoutingModule } from './home-routing.module';
 import {SocialComponent} from "../social/social.component";
 import {CarouselComponent} from "../carousel/carousel.component";
+import {FooterComponent} from "../footer/footer.component";
 
 
 @NgModule({
@@ -17,6 +18,6 @@ import {CarouselComponent} from "../carousel/carousel.component";
     IonicModule,
     HomePageRoutingModule,
   ],
-  declarations: [HomePage, HeaderComponent, SocialComponent, CarouselComponent]
+    declarations: [HomePage, HeaderComponent, SocialComponent, CarouselComponent, FooterComponent]
 })
 export class HomePageModule {}

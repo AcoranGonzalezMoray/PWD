@@ -104,3 +104,60 @@
       width: 100%;
       height: 100px;
     }
+
+    /*CSS UBICATION*/
+    .dato-icono a:hover {
+      color: #136c0c;
+    }
+    .ubication {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      align-items: center;
+    }
+    .ubication iframe {
+      margin-bottom: 1rem;
+    }
+    .description-ubication{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      width:50%;
+    }
+
+    /*Teléfono, Correo y Ubicación del index*/
+
+    .dato-icono {
+      display: flex;
+      align-items: center;
+      vertical-align: center;
+    }
+    .dato-icono h2 {
+      margin: 1rem;
+    }
+    .dato-icono svg {
+      width: 2rem;
+      height: 2rem;
+      color: #21b916;
+    }
+    .dato-icono a {
+      text-decoration: none;
+      color: black;
+      margin: 1rem;
+    }
+    dato-icono a:hover {
+      color: #21b916 !important;
+    }
+
+    /*CSS MAIN*/
+    main {
+      background-color: #d9ffd9;
+      margin-top: 93px;
+    }
+    .p-justify {
+      text-align: justify;
+      font-family: Arial, Helvetica, sans-serif;
+    }
