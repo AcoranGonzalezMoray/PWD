@@ -1,0 +1,30 @@
+
+
+<ion-content [fullscreen]="true">
+  <body>
+  <div class="register-login-form">
+    <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()" class="shadow-lg">
+      <img class="imgUser" src="../../assets/LOGO.png">
+      <h2>Inicia Sesion</h2>
+      <input id="email" required pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$" class="shadow-lg" type="email"
+             formControlName="email" placeholder="Correo electrónico">
+      <input id="contrasena" required minlength="6" maxlength="9" class="shadow-lg" type="password"
+             formControlName="password" placeholder="Contraseña">
+      <button class="button"  type="submit">Iniciar Sesion</button>
+      <br>
+      <br>
+      <a href="#"> ¿Has olvidado la contraseña? </a>
+      <div style="color: red;" *ngIf="checkoutForm.get('email')?.invalid && checkoutForm.get('email')?.touched">
+        El email no es válido.
+      </div>
+      <div style="color: red;" *ngIf="checkoutForm.get('password')?.invalid && checkoutForm.get('password')?.touched">
+        Contraseña no válidas, debe tener entre 6-9 caracateres
+      </div>
+    </form>
+    <div class="register-login-box shadow-lg">
+      <p>¿No tienes una cuenta? <a routerLink="/sign-up">Regístrate</a></p>
+      <a routerLink="/">Volver</a>
+    </div>
+  </div>
+  </body>
+</ion-content>
