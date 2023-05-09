@@ -1,84 +1,86 @@
-<body>
-  <header class="shadow-lg" id="header">
-    <app-header *ngIf="!userService.isLoggedIn" class="shadow-lg" id="header"></app-header>
-    <!--<app-header-log *ngIf="userService.isLoggedIn" class="shadow-lg"></app-header-log>-->
-  </header>
-  <main class="main-tienda">
-
-    <aside  class="shadow-lg p-3 mb-5 rounded" id="serviciosTaller">
-      <button (click)="showCategoryMov(false)" type="button" class="btn btn-success">Volver..</button>
-      <app-aside-check-box (checkResponse)="check($event)" *ngFor="let elemento of  categories"
-        [DESCRIPCION]="elemento.DESCRIPCION"></app-aside-check-box>
-    </aside>
-
-    <section class="reserve">
-      <h1>Reserva</h1>
-      <div class="aside-mov">
-        <button (click)="showCategoryMov(true)" type="button" class="btn btn-light shadow-lg">Servicios</button>
-      </div>
-
-      <app-calendar (valueResponse)="select($event)" class="calendar"></app-calendar>
-
-      <div class="btn-color" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-        <a ref="" class="btn">Reservar</a>
-      </div>
-
-      <!-- Modal -->
-      <div class="modal2 modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content modal-content-service">
-            <div class="modal-body">
-              <form>
-                <div class="mb-3">
-                  <label for="reservaServicio" class="form-label">Servicio</label>
-                  <input #servicio value={{checked}} readonly=true class="form-control" id="reservaServicio"
-                    aria-describedby="emailHelp">
-                </div>
-                <div class="mb-3">
-                  <label for="reservaFecha" class="form-label">Fecha de Reserva</label>
-                  <input #fecha value={{selected}} readonly=true class="form-control" id="reservaFecha">
-                </div>
-                <div class="mb-3">
-                  <label for="reservaFecha" class="form-label">Marca Y Modelo de Vehiculo</label>
-                  <input #marca class="form-control">
-                </div>
-                <form style="display: flex;justify-content: space-around;">
-                  <mat-form-field appearance="fill">
-                    <mat-label>Hora:</mat-label>
-                    <input #horaFecha type="time" matInput placeholder="hh:mm" required>
-                  </mat-form-field>
+<ion-content scrollY="true">
+  <body>
+    <header class="shadow-lg" id="header">
+      <app-header *ngIf="!userService.isLoggedIn" class="shadow-lg" id="header"></app-header>
+      <app-header-log *ngIf="userService.isLoggedIn" class="shadow-lg"></app-header-log>
+    </header>
+    <main class="main-tienda">
+  
+      <aside  class="shadow-lg p-3 mb-5 rounded" id="serviciosTaller">
+        <button (click)="showCategoryMov(false)" type="button" class="btn btn-success">Volver..</button>
+        <app-aside-check-box (checkResponse)="check($event)" *ngFor="let elemento of  categories"
+          [DESCRIPCION]="elemento.DESCRIPCION"></app-aside-check-box>
+      </aside>
+  
+      <section class="reserve">
+        <h1>Reserva</h1>
+        <div class="aside-mov">
+          <button (click)="showCategoryMov(true)" type="button" class="btn btn-light shadow-lg">Servicios</button>
+        </div>
+  
+        <app-calendar (valueResponse)="select($event)" class="calendar"></app-calendar>
+  
+        <div class="btn-color" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+          <a ref="" class="btn">Reservar</a>
+        </div>
+  
+        <!-- Modal -->
+        <div class="modal2 modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content modal-content-service">
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="reservaServicio" class="form-label">Servicio</label>
+                    <input #servicio value={{checked}} readonly=true class="form-control" id="reservaServicio"
+                      aria-describedby="emailHelp">
+                  </div>
+                  <div class="mb-3">
+                    <label for="reservaFecha" class="form-label">Fecha de Reserva</label>
+                    <input #fecha value={{selected}} readonly=true class="form-control" id="reservaFecha">
+                  </div>
+                  <div class="mb-3">
+                    <label for="reservaFecha" class="form-label">Marca Y Modelo de Vehiculo</label>
+                    <input #marca class="form-control">
+                  </div>
+                  <form style="display: flex;justify-content: space-around;">
+                    <mat-form-field appearance="fill">
+                      <mat-label>Hora:</mat-label>
+                      <input #horaFecha type="time" matInput placeholder="hh:mm" required>
+                    </mat-form-field>
+                  </form>
+                  <p style="    color: red;
+                text-align: center;" *ngIf="servicio.value==''">*Escoja un servicio</p>
+                  <p style="    color: red;
+                  text-align: center;" *ngIf="fecha.value==''">*Escoja una fecha</p>
+                  <p style="    color: red;
+                    text-align: center;" *ngIf="horaFecha.value==''">*Ingrese la hora</p>
+                  <p style="    color: red;
+                    text-align: center;" *ngIf="marca.value==''">*Ingrese la marca y modelo de vehiculo</p>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Confirmo que he leido los datos de la
+                      reserva</label>
+                  </div>
+  
                 </form>
-                <p style="    color: red;
-              text-align: center;" *ngIf="servicio.value==''">*Escoja un servicio</p>
-                <p style="    color: red;
-                text-align: center;" *ngIf="fecha.value==''">*Escoja una fecha</p>
-                <p style="    color: red;
-                  text-align: center;" *ngIf="horaFecha.value==''">*Ingrese la hora</p>
-                <p style="    color: red;
-                  text-align: center;" *ngIf="marca.value==''">*Ingrese la marca y modelo de vehiculo</p>
-                <div class="mb-3 form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Confirmo que he leido los datos de la
-                    reserva</label>
+              </div>
+              <div class="modal-footer">
+                <div id="btn-reserve" class="btn-color">
+                  <a class="btn" onclick="$('#exampleModal2').modal('hide');">Cancelar</a>
                 </div>
-
-              </form>
-            </div>
-            <div class="modal-footer">
-              <div id="btn-reserve" class="btn-color">
-                <a class="btn" onclick="$('#exampleModal2').modal('hide');">Cancelar</a>
+                <div id="btn-reserve" class="btn-color">
+                  <a class="btn" (click)="reservar(fecha.value, horaFecha.value, servicio.value, marca.value)" onclick="$('#exampleModal2').modal('hide');">Reservar</a>
+                </div>
+  
               </div>
-              <div id="btn-reserve" class="btn-color">
-                <a class="btn" (click)="reservar(fecha.value, horaFecha.value, servicio.value, marca.value)" onclick="$('#exampleModal2').modal('hide');">Reservar</a>
-              </div>
-
             </div>
           </div>
         </div>
-      </div>
-      <app-footer class="footer-store" id="footer"></app-footer>
-    </section>
-  </main>
-
-</body>
+        <app-footer class="footer-store" id="footer"></app-footer>
+      </section>
+    </main>
+  
+  </body>
+</ion-content>

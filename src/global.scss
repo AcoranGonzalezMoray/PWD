@@ -11,9 +11,7 @@
 
  /*OVERFLOW-Y DE LAS PAGINAS*/
 
-app-home, app-what-we-do, app-workshop-service, app-store {
-  overflow-y: scroll !important;
-}
+
 
 /* Core CSS required for Ionic components to work properly */
 @import "@ionic/angular/css/core.css";

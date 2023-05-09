@@ -10,13 +10,13 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" routerLink="/">Inicio</a>
+          <a class="nav-link active" aria-current="page" (click)="navigationLink('')">Inicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " routerLink="/what-we-do">¿Qué hacemos?</a>
+          <a class="nav-link " (click)="navigationLink('what-we-do')" >¿Qué hacemos?</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " routerLink="/store">Tienda</a>
+          <a class="nav-link " (click)="navigationLink('store')">Tienda</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle text-primary text-white" href="#" id="navbarDropdown"
@@ -24,8 +24,8 @@
             Taller
           </a>
           <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" routerLink="/tienda-taller">Productos</a></li>
-            <li><a class="dropdown-item" routerLink="/workshop-service">Servicios</a></li>
+            <li><a class="dropdown-item" (click)="navigationLink('workshop-store')" >Productos</a></li>
+            <li><a class="dropdown-item" (click)="navigationLink('workshop-service')" >Servicios</a></li>
           </ul>
         </li>
         <li style="display: flex;align-items: center;" class="nav-item">
@@ -43,7 +43,7 @@
           </button>
         </li>
         <li style="display: flex;align-items: center;margin-inline: 15px" class="nav-item">
-          <a routerLink="/dashboard">
+          <a (click)="navigationLink('dashboard-user')" >
             <svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
                  fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
               <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />

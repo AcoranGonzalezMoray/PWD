@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, QueryList, ViewChildren } from '@angular/core';
+import { Component,OnInit} from '@angular/core';
 import { CategoryService } from '../services/category.service';
 import { UserService } from '../services/user.service';
 import { ShoppingCartService } from '../services/shopping-cart.service';

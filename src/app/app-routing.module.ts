@@ -30,7 +30,19 @@ const routes: Routes = [
   {
     path: 'store',
     loadChildren: () => import('./store/store.module').then( m => m.StorePageModule)
+  },  {
+    path: 'workshop-store',
+    loadChildren: () => import('./workshop-store/workshop-store.module').then( m => m.WorkshopStorePageModule)
   },
+  {
+    path: 'dashboard-user',
+    loadChildren: () => import('./dashboard-user/dashboard-user.module').then( m => m.DashboardUserPageModule)
+  },
+  {
+    path: 'dashboard-admin',
+    loadChildren: () => import('./dashboard-admin/dashboard-admin.module').then( m => m.DashboardAdminPageModule)
+  },
+
 ];
 
 @NgModule({

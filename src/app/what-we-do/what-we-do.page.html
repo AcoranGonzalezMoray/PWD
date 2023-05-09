@@ -1,15 +1,18 @@
-<body>
-  <app-header *ngIf="!userService.isLoggedIn" class="shadow-lg" id="header"></app-header>
-  <app-header-log *ngIf="userService.isLoggedIn" class="shadow-lg" ></app-header-log>
-  <app-social id="social"></app-social>
-  <main>
-    <div class="whatwedo">
-      <h1>¿Qué Hacemos?</h1>
-      <img src={{imageUrl}} />
-      <p class="p-justify" [innerHTML]="textoQueHacemos?.Texto"></p>
-    </div>
-  </main>
+<ion-content scrollY="true">
+  <body>
+    <app-header *ngIf="!userService.isLoggedIn" class="shadow-lg" id="header"></app-header>
+    <app-header-log *ngIf="userService.isLoggedIn" class="shadow-lg" ></app-header-log>
+    <app-social id="social"></app-social>
+    <main>
+      <div class="whatwedo">
+        <h1>¿Qué Hacemos?</h1>
+        <img src={{imageUrl}} />
+        <p class="p-justify" [innerHTML]="textoQueHacemos?.Texto"></p>
+      </div>
+    </main>
+  
+  
+    <app-footer id="footer"></app-footer>
+  </body>
+</ion-content>
 
-
-  <app-footer id="footer"></app-footer>
-</body>

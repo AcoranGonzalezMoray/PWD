@@ -28,7 +28,15 @@ import { CalendarComponent } from './calendar/calendar.component';
 import { StorePage } from "./store/store.page";
 import { AsideComponent } from "./aside/aside.component";
 import { ProductComponent } from "./product/product.component";
-
+import { WorkshopStorePage } from './workshop-store/workshop-store.page';
+import { DashboardUserPage } from './dashboard-user/dashboard-user.page';
+import { MyAccountComponent } from './my-account/my-account.component';
+import { MyReserveProductComponent } from './my-reserve-product/my-reserve-product.component';
+import { MyReserveServiceComponent } from './my-reserve-service/my-reserve-service.component';
+import { FileUploadComponent } from './file-upload/file-upload.component';
+import { DashboardAdminPage } from './dashboard-admin/dashboard-admin.page';
+import { FilesListComponent } from './files-list/files-list.component';
+import { FileDetailsComponent } from './file-details/file-details.component';
 @NgModule({
   declarations: [AppComponent,
     SocialComponent,
@@ -44,7 +52,17 @@ import { ProductComponent } from "./product/product.component";
     CartProductComponent,
     StorePage,
     AsideComponent,
-    ProductComponent
+    ProductComponent,
+    WorkshopStorePage,
+    DashboardUserPage,
+    MyAccountComponent,
+    MyReserveProductComponent,
+    MyReserveServiceComponent,
+    DashboardUserPage,
+    DashboardAdminPage,
+    FileUploadComponent,
+    FilesListComponent,
+    FileDetailsComponent
   ],
 
   imports: [BrowserModule,

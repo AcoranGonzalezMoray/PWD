@@ -1,14 +1,15 @@
-import { Component, OnInit} from '@angular/core';
+import { Component,OnInit} from '@angular/core';
 import { UserService } from '../services/user.service';
 import { ProductShopService } from '../services/product-shop.service';
 import { CategoryService } from '../services/category.service';
 import { PaginationService } from '../services/pagination.service';
+
 @Component({
-  selector: 'app-store',
-  templateUrl: './store.page.html',
-  styleUrls: ['./store.page.scss'],
+  selector: 'app-workshop-store',
+  templateUrl: './workshop-store.page.html',
+  styleUrls: ['./workshop-store.page.scss'],
 })
-export class StorePage implements OnInit {
+export class WorkshopStorePage implements OnInit {
 
   public products: any[] = [];
   public categories: any[] = [];
@@ -24,20 +25,20 @@ export class StorePage implements OnInit {
   constructor(
     public userService: UserService,
     public productShopService: ProductShopService,
-    public categoryShopService: CategoryService,
+    public categoryWorkshopService: CategoryService,
     public paginationService: PaginationService
   ) { }
 
   async ngOnInit(): Promise<void> {
-    this.productList = [...await this.paginationService.getFirstDocuments('ProductosTienda', this.orderValue)];
+    this.productList = [...await this.paginationService.getFirstDocuments('ProductosTaller', this.orderValue)];
     this.categoriesLoad()
   }
 
-  showCategoryMov(i: boolean) {
-    const aside: any = document.querySelector("#aside")
-    i ? aside.style = "display:block;" : aside.style = "display:none;"
+  showCategoryMov(i:boolean){
+    const aside:any = document.querySelector("#aside")
+    i?aside.style="display:block;":aside.style="display:none;"
   }
-
+  
   async logScrolling($event:any) {
     // only send the event once
     if(this.scrollDepthTriggered) {return;}
@@ -55,7 +56,7 @@ export class StorePage implements OnInit {
       if (this.queryBoolean) {
         this.productList = [...await this.paginationService.getNextquery(this.coleccion, this.field, this.queryText, this.orderValue)];
       } else {
-        this.productList = [...await this.paginationService.getNextDocuments('ProductosTienda', this.orderValue)];
+        this.productList = [...await this.paginationService.getNextDocuments('ProductosTaller', this.orderValue)];
       }
        // Establecer la bandera de carga en progreso
       this.scrollDepthTriggered= false;
@@ -63,17 +64,16 @@ export class StorePage implements OnInit {
   }
 
 
-
   async selectLoad(order: Event) {
     const inputElement = order.target as HTMLInputElement;
     this.orderValue = inputElement.value;
     this.productList = []
-    if (this.queryBoolean) {
+    if(this.queryBoolean){
       this.productList = [...await this.paginationService.getFirstquery(this.coleccion, this.field, this.queryText, this.orderValue)];
-    } else {
-      this.productList = [...await this.paginationService.getFirstDocuments('ProductosTienda', this.orderValue)];
+    }else{
+      this.productList = [...await this.paginationService.getFirstDocuments('ProductosTaller', this.orderValue)];
     }
-
+    
   }
 
   async queryFunc(coleccion: string, field: string, query: string) {
@@ -92,8 +92,8 @@ export class StorePage implements OnInit {
   }
 
   categoriesLoad() {
-    if (!localStorage.getItem("categoriesShop")) {
-      this.categoryShopService.getCategoriesInRealTime('CategoriasTienda').subscribe((catsSnapshot) => {
+    if (!localStorage.getItem("categoriesWorkshop")) {
+      this.categoryWorkshopService.getCategoriesInRealTime('CategoriasTaller').subscribe((catsSnapshot) => {
         this.categories = [];
 
         catsSnapshot.forEach((catData: any) => {
@@ -103,22 +103,21 @@ export class StorePage implements OnInit {
               subcategory: catData.payload.doc.data().Subcategorias
             }
           );
-          localStorage.setItem("categoriesShop", JSON.stringify(this.categories))
+          localStorage.setItem("categoriesWorkshop", JSON.stringify(this.categories))
         })
       });
     }
-    if (localStorage.getItem("categoriesShop")) {
+    if (localStorage.getItem("categoriesWorkshop")) {
       let tmp: any;
-      tmp = localStorage.getItem("categoriesShop")
+      tmp = localStorage.getItem("categoriesWorkshop")
       this.categories = JSON.parse(tmp);
     }
   }
   async reload() {
-    this.productList = [...await this.paginationService.getFirstDocuments('ProductosTienda', this.orderValue)];
+    this.productList = [...await this.paginationService.getFirstDocuments('ProductosTaller', this.orderValue)];
     this.queryBoolean = false;
   }
   updateCategory(Category: string) {
-    this.CategoryFunc('ProductosTienda', 'CATEGORIA', Category);
+    this.CategoryFunc('ProductosTaller', 'CATEGORIA', Category);
   }
-
 }

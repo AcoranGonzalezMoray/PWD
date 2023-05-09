@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ShoppingCartService } from '../services/shopping-cart.service';
 import { Product } from '../interfaces/product';
 import { uuidv4 } from '@firebase/util';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-header-log',
@@ -14,9 +15,18 @@ export class HeaderLogComponent  implements OnInit {
   public total:number =0.0;
   public fechaHora = true;
   public productos = true;
-  constructor(public cartService:ShoppingCartService){
+
+  constructor(public cartService:ShoppingCartService, public navCtrl: NavController){
 
   }
+
+
+  navigationLink(page:string)
+  {
+     this.navCtrl.navigateRoot(page)
+  } 
+
+
   ngOnInit(): void {
     this.cart = this.cartService.getContentCart()
   }
