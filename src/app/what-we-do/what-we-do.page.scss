@@ -1,0 +1,19 @@
+/*CSS QUE HACEMOS*/
+.whatwedo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-inline: 50px;
+}
+.whatwedo h1, .whatwedo p {
+  margin: 2rem;
+  max-width: 80%;
+}
+
+.whatwedo img {
+  min-width: 80%;
+}
+
+.whatwedo h1 {
+  color: #21b916;
+}

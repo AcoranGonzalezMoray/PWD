@@ -1,3 +1,10 @@
+#floating-share-buttons {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  z-index: 4;
+}
 
 #floating-share-buttons a {
   color: #fff;
@@ -37,12 +44,4 @@ ul#floating-share-buttons a {
 
 ul#floating-share-buttons a:hover {
   width:4.5rem;
-}
-
-#floating-share-buttons {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  font-size: 0;
-  z-index: 4;
 }

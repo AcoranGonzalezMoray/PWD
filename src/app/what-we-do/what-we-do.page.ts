@@ -31,7 +31,7 @@ export class WhatWeDoPage implements OnInit {
     });
   }
   async ngOnInit() {
-    this.imageLoader.getRef('imagenHome.jpg').getDownloadURL().subscribe(url => {
+    this.imageLoader.getRef('instalaciones.jpg').getDownloadURL().subscribe(url => {
       this.imageUrl = url;
     });
 
