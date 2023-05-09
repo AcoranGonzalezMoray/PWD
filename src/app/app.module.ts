@@ -23,10 +23,11 @@ import {MatDatepickerModule} from '@angular/material/datepicker'
 import {MatNativeDateModule} from '@angular/material/core'
 import {MatCardModule} from '@angular/material/card'
 import {MatInputModule} from '@angular/material/input'
-
 import { CartProductComponent } from "./cart-product/cart-product.component";
-
 import { CalendarComponent } from './calendar/calendar.component';
+import { StorePage } from "./store/store.page";
+import { AsideComponent } from "./aside/aside.component";
+import { ProductComponent } from "./product/product.component";
 
 @NgModule({
   declarations: [AppComponent,
@@ -40,7 +41,10 @@ import { CalendarComponent } from './calendar/calendar.component';
     WhatWeDoPage,
     WorkshopServicePage,
     HomePage,
-    CartProductComponent
+    CartProductComponent,
+    StorePage,
+    AsideComponent,
+    ProductComponent
   ],
 
   imports: [BrowserModule,
