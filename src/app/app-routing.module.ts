@@ -10,7 +10,15 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
+  },  {
+    path: 'what-we-do',
+    loadChildren: () => import('./what-we-do/what-we-do.module').then( m => m.WhatWeDoPageModule)
   },
+  {
+    path: 'workshop-service',
+    loadChildren: () => import('./workshop-service/workshop-service.module').then( m => m.WorkshopServicePageModule)
+  },
+
 ];
 
 @NgModule({
