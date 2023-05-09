@@ -6,7 +6,6 @@ import { Product } from '../interfaces/product';
   providedIn: 'root'
 })
 export class ShoppingCartService {
-
   public cart:Product[] = []
 
   constructor(
@@ -22,6 +21,7 @@ export class ShoppingCartService {
     }
     const newData = { name: 'Juan' }; // Nuevo valor del campo name
     const userDocRef = this.firestore.collection('USUARIOS').doc(objeto.uid);
+
     userDocRef.get().toPromise().then((docSnapshot:any|undefined) => {
       if (docSnapshot.exists) {
         const data = docSnapshot.data();
@@ -29,12 +29,12 @@ export class ShoppingCartService {
         const fieldValue = data.orders;
         const newArray = contacts.concat(newDataAny); // Agrega el nuevo contacto al array existente
         userDocRef.update({ orders: newArray})
-          .then(() => {
-            console.log('Contacto agregado exitosamente');
-          })
-          .catch((error) => {
-            console.error('Error al agregar contacto: ', error);
-          });
+        .then(() => {
+          console.log('Contacto agregado exitosamente');
+        })
+        .catch((error) => {
+          console.error('Error al agregar contacto: ', error);
+        });
       }
     });
   }

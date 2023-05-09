@@ -1,5 +1,5 @@
 import { Injectable, NgZone } from '@angular/core';
-import { User } from '../interfaces/user';
+import { User } from '../interfaces/user'
 import * as auth from 'firebase/auth';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
 import {
@@ -8,11 +8,12 @@ import {
 } from '@angular/fire/compat/firestore';
 import { Router } from '@angular/router';
 
+
+
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class UserService {
-
   userData: any;
   DisplayName: any;
   uid:any;
@@ -21,9 +22,7 @@ export class UserService {
     public afAuth: AngularFireAuth, // Inject Firebase auth service
     public router: Router,
     public ngZone: NgZone, // NgZone service to remove outside scope warning
-  ) {
-
-  }
+  ) {}
 
   SignIn(email: string, password: string) {
     return this.afAuth
@@ -147,8 +146,6 @@ export class UserService {
       }
     });
   }
-
-
   changeName(newName:string){
     var tmp = {uid : ''}
     var data = sessionStorage.getItem('userData')
