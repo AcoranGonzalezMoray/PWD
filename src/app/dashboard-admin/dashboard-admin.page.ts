@@ -165,7 +165,7 @@ export class DashboardAdminPage implements OnInit {
   }
 
   showCategoryMov(i: boolean) {
-    const aside: any = document.querySelector("#aside")
+    const aside: any = document.querySelector("#asideAdmin")
     i ? aside.style = "display:block;" : aside.style = "display:none;"
   }
 }
