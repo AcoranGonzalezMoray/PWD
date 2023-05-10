@@ -21,6 +21,9 @@
 /* RESPONSIVE CSS ========================================================================= */
 @import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
 /*Tablets en horizonal y escritorios normales------------------------------------------------------------------------- */
+.modal-backdrop {
+  z-index: -1 !important;
+}
 @media screen and (min-width: 1280px)  {
 
   /*Calendario de servicios del taller*/
