@@ -95,6 +95,6 @@ export class WorkshopServicePage implements OnInit {
 
 
   log(){
-    sessionStorage.getItem('user')?null:this.router.navigate(['iniciar-sesion'])
+    sessionStorage.getItem('user')?null:this.router.navigate(['sign-in'])
   }
 }

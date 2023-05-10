@@ -22,7 +22,11 @@
 @import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
 /*Tablets en horizonal y escritorios normales------------------------------------------------------------------------- */
 .modal-backdrop {
-  z-index: -1 !important;
+  display: none;
+}
+
+.modal {
+  background: rgba(0, 0, 0, 0.5);
 }
 @media screen and (min-width: 1280px)  {
 
