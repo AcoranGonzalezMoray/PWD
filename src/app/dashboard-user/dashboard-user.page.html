@@ -6,8 +6,9 @@
     </header>
     <main class="main-tienda">
   
-      <aside class="aside-dashboard shadow-lg p-3 mb-5 rounded">
+      <aside id="aside" class="aside-dashboard shadow-lg p-3 mb-5 rounded">
           <div class=" aside-color">
+            <button (click)="showCategoryMov(false)" type="button" class="btn btn-success">Volver..</button>
             <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
               <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
               <span class="fs-4">Dashboard</span>
@@ -50,10 +51,16 @@
             </div>
           </div>
       </aside>
-      
-      <app-my-account *ngIf="type==0"></app-my-account>
-      <app-my-reserve-product *ngIf="type==1"></app-my-reserve-product>
-      <app-my-reserve-service *ngIf="type==2"></app-my-reserve-service>
+
+      <div  style="display: flex; flex-direction: column;">
+        <div class="aside-mov">
+          <button (click)="showCategoryMov(true)" type="button"class="btn btn-light shadow-lg">Funciones</button>
+        </div>
+        <app-my-account *ngIf="type==0"></app-my-account>
+        <app-my-reserve-product *ngIf="type==1"></app-my-reserve-product>
+        <app-my-reserve-service *ngIf="type==2"></app-my-reserve-service>
+      </div>
+
       
     </main>
     

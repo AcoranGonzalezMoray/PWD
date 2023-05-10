@@ -163,4 +163,9 @@ export class DashboardAdminPage implements OnInit {
       console.log('Product not found');
     }
   }
+
+  showCategoryMov(i: boolean) {
+    const aside: any = document.querySelector("#aside")
+    i ? aside.style = "display:block;" : aside.style = "display:none;"
+  }
 }

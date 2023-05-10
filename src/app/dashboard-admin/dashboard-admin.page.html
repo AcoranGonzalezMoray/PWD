@@ -7,7 +7,7 @@
     <main class="main-tienda">
   
       <aside id="aside" class="aside-dashboard shadow-lg  mb-5 rounded">
-        <button onclick="showCategoryMov(0)" type="button" class="btn btn-success">Volver..</button>
+        <button (click)="showCategoryMov(false)" type="button" class="btn btn-success">Volver..</button>
         <div class="aside-user">
           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-circle"
             viewBox="0 0 16 16">
@@ -42,7 +42,7 @@
   
       <section class="products">
         <div class="aside-mov">
-          <button onclick="showCategoryMov(1)" type="button" class="btn btn-light shadow-lg">Funciones</button>
+          <button (click)="showCategoryMov(true)" type="button"class="btn btn-light shadow-lg">Funciones</button>
         </div>
         <div class="count-tab">
           <div class="count shadow-lg">
@@ -270,7 +270,7 @@
   
   
         <div>
-          <a onclick="logout()" class="btn red">Cerrar sesión</a>
+          <a (click)="userService.SignOut()"class="btn red">Cerrar sesión</a>
         </div>
   
         <footer class="footer-store" id="footer"></footer>

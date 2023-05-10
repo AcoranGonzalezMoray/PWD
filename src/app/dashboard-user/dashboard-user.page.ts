@@ -63,4 +63,10 @@ export class DashboardUserPage {
     }
 
   }
+
+
+  showCategoryMov(i: boolean) {
+    const aside: any = document.querySelector("#aside")
+    i ? aside.style = "display:block;" : aside.style = "display:none;"
+  }
 }
