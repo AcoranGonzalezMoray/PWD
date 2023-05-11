@@ -13,7 +13,7 @@ import { Router } from '@angular/router';
 export class DashboardUserPage {
 
   imageUrl = ''
-  public user = {email: '', userName:'', role:''}
+  public user = {email: '', userName:'', role:'', image:'', uid:''}
   public type = 0
   public type0 = true
   public type1 = false
@@ -25,10 +25,9 @@ export class DashboardUserPage {
     var data = sessionStorage.getItem('userData')
     !data?router.navigate(['']):null
     data? this.user = JSON.parse(data):null
-
     this.user.role=='admin'?this.isAdmin=true:null 
     shp.updateUserData()
-
+    
   }
 
   typeF(number:number, a0:Element,a1:Element,a2:Element){
@@ -62,6 +61,11 @@ export class DashboardUserPage {
         break;
     }
 
+  }
+
+  onChildButtonClicked() {
+    var data = sessionStorage.getItem('userData')
+    data? this.user = JSON.parse(data):null
   }
 
 

@@ -9,7 +9,7 @@
       <aside id="aside" class="aside-dashboard shadow-lg p-3 mb-5 rounded">
           <div class=" aside-color">
             <button (click)="showCategoryMov(false)" type="button" class="btn btn-success">Volver..</button>
-            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            <a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
               <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
               <span class="fs-4">Dashboard</span>
             </a>
@@ -39,7 +39,8 @@
               <hr>
               <div class="dropdown">
                 <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-                  <img src="https://th.bing.com/th/id/OIP.OzrDfJDiHwacHn6ynsrGnQHaF7?w=223&h=180&c=7&r=0&o=5&pid=1.7" alt="" width="32" height="32" class="rounded-circle me-2">
+                  <img *ngIf="user.image==''"  src="https://th.bing.com/th/id/OIP.OzrDfJDiHwacHn6ynsrGnQHaF7?w=223&h=180&c=7&r=0&o=5&pid=1.7" alt="" width="32" height="32" class="rounded-circle me-2">
+                  <img *ngIf="user.image!=''"  src="{{user.image}}" alt="" width="32" height="32" class="rounded-circle me-2">
                   <strong>{{user.email}}</strong>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
@@ -52,11 +53,11 @@
           </div>
       </aside>
 
-      <div  style="display: flex; flex-direction: column;">
+      <div class="mv"  style="display: flex; flex-direction: column;">
         <div class="aside-mov">
           <button (click)="showCategoryMov(true)" type="button"class="btn btn-light shadow-lg">Funciones</button>
         </div>
-        <app-my-account *ngIf="type==0"></app-my-account>
+        <app-my-account (buttonClicked)="onChildButtonClicked()" *ngIf="type==0"></app-my-account>
         <app-my-reserve-product *ngIf="type==1"></app-my-reserve-product>
         <app-my-reserve-service *ngIf="type==2"></app-my-reserve-service>
       </div>

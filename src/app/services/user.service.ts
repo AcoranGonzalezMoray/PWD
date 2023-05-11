@@ -46,19 +46,24 @@ export class UserService {
       });
   }
 
-  SignUp(email: string, password: string, confirmPass: string, displayName: string) {
+  SignUp(email: string, password: string, confirmPass: string, displayName: string, url:string) {
     return this.afAuth
       .createUserWithEmailAndPassword(email, password)
       .then((result) => {
         //this.SendVerificationMail();
         this.DisplayName = displayName;
-        this.SetUserData(result.user);
-        sessionStorage.setItem('user', JSON.stringify(result.user));
+        this.SetUserData(result.user, url);
+        sessionStorage.setItem('user', JSON.stringify(result.user))
+        this.afs.collection('USUARIOS').doc(result.user!.uid).get().subscribe((doc)=>{
+          sessionStorage.setItem('userData', JSON.stringify(doc.data()));
+        })
+      }).then(()=>{
         this.router.navigate(['/']);
       })
       .catch((error) => {
         window.alert(error.message);
       });
+
   }
 
   SendVerificationMail() {
@@ -98,19 +103,19 @@ export class UserService {
     });
   }
 
-  AuthLogin(provider: any) {
-    return this.afAuth
-      .signInWithPopup(provider)
-      .then((result) => {
-        this.router.navigate(['dashboard']);
-        this.SetUserData(result.user);
-      })
-      .catch((error) => {
-        window.alert(error);
-      });
-  }
+ AuthLogin(provider: any) {
+   return this.afAuth
+     .signInWithPopup(provider)
+    .then((result) => {
+       this.router.navigate(['dashboard']);
+      this.SetUserData(result.user, '');
+    })
+    .catch((error) => {
+      window.alert(error);
+  });
+ }
 
-  SetUserData(user: any) {
+  SetUserData(user: any, url: string) {
     const userRef: AngularFirestoreDocument<any> = this.afs.doc(
       `USUARIOS/${user.uid}`
     );
@@ -122,7 +127,8 @@ export class UserService {
       orders: [],
       phoneNumber: 0,
       role: "user",
-      shoppingcart: []
+      shoppingcart: [],
+      image: url
     };
     return userRef.set(userData, {
       merge: true,
@@ -158,5 +164,9 @@ export class UserService {
         sessionStorage.setItem('userData',  JSON.stringify(doc.data()))
       }
     });
+  }
+
+  getAfs(){
+    return this.afs
   }
 }

@@ -6,5 +6,6 @@ export interface User {
   orders: [],
   phoneNumber: number,
   role: string,
-  shoppingcart: []
+  shoppingcart: [],
+  image: string
 }

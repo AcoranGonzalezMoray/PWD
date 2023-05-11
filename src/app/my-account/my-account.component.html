@@ -16,7 +16,7 @@
 
       </div>
 
-      <div class="password">
+      <div style="display: none;" class="password">
         <input class="shadow-lg"  #pw0 minlength="6" maxlength="9" type="password" placeholder="Contraseña antigua">
         <input class="shadow-lg"  minlength="6" maxlength="9" #conNueva type="password" placeholder="Contraseña nueva">
         <input class="shadow-lg" #conNueva2  minlength="6" maxlength="9" type="password" placeholder="Contraseña nueva">
@@ -30,9 +30,20 @@
     </div>
 
     <div class="user-image">
-      <img width="100%" src="https://firebasestorage.googleapis.com/v0/b/bp-santa-brigida.appspot.com/o/carouselActive.jpg?alt=media&token=a52a695f-cb7e-41a0-a5a7-1f93e500c390" alt="TEMPLATE">
+      <img width="100%" *ngIf="user.image!=''" width="100%" src="{{user.image}}" alt="TEMPLATE">
+      <img width="100%" *ngIf="user.image==''" src="https://th.bing.com/th/id/OIP.OzrDfJDiHwacHn6ynsrGnQHaF7?w=223&h=180&c=7&r=0&o=5&pid=1.7" alt="TEMPLATE">
+      <input type="file" (change)="onFileSelected($event)">
+      <div style="display: flex; flex-direction: row;">
+        <div style="margin-right: 30px;" class="btn-color change-name">
+          <a (click)="onSubmit()" class="btn">Cambiar imagen</a>
+        </div>
+        <div class="btn-color change-name">
+          <a (click)="onSubmitDelete()" class="btn">Borrar image</a>
+        </div>
+      </div>
+      
     </div>
-
+    
 
   </div>
 

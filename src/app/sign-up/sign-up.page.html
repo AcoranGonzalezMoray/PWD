@@ -15,11 +15,13 @@
 
       <input required minlength="6" maxlength="9" id="repetirContrasena" class="shadow-lg" type="password"
              formControlName="confirmPass"  placeholder="Repetir Contraseña">
-
+      <p>Subir imagen de perfil (opcional): </p>
+      <input type="file" (change)="onFileSelected($event)">
       <button type="submit"  class="button" >Registrate</button>
-
-      <p>Al registrarte, aceptas nuestras Condiciones, la Política de datos y la Política de cookies.</p>
-
+      <div></div>
+      
+      <p><ion-checkbox></ion-checkbox> Al registrarte, aceptas nuestras Condiciones, la Política de datos y la Política de cookies.</p>
+      
 
       <!--Aviso de Errores-->
       <div style="color: red;" *ngIf="notSame && checkoutForm.get('confirmPass')?.touched">
