@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Songs List
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let song of songsList | async">
+      <ion-label>{{song.artist_name}}</ion-label>
+      <ion-note slot="end">{{song.song_name}}</ion-note>
+    </ion-item>
+  </ion-list>
+</ion-content>
