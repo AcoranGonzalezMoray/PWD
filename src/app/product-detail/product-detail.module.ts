@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { StorePageRoutingModule } from './store-routing.module';
-import { SQLite } from '@ionic-native/sqlite/ngx';
+import { ProductDetailPageRoutingModule } from './product-detail-routing.module';
+
+import { ProductDetailPage } from './product-detail.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    StorePageRoutingModule
+    ProductDetailPageRoutingModule
   ],
-  declarations: [],
-  providers: [SQLite]
+  declarations: []
 })
-export class StorePageModule {}
+export class ProductDetailPageModule {}

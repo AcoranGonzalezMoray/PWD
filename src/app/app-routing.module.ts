@@ -46,7 +46,11 @@ const routes: Routes = [
   {
     path: 'test-sqlite',
     loadChildren: () => import('./test-sqlite/test-sqlite.module').then( m => m.TestSqlitePageModule)
+  },  {
+    path: 'product-detail',
+    loadChildren: () => import('./product-detail/product-detail.module').then( m => m.ProductDetailPageModule)
   },
+
 
 ];
 

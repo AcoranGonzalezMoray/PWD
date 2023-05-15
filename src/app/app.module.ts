@@ -37,6 +37,7 @@ import { FileUploadComponent } from './file-upload/file-upload.component';
 import { DashboardAdminPage } from './dashboard-admin/dashboard-admin.page';
 import { FilesListComponent } from './files-list/files-list.component';
 import { FileDetailsComponent } from './file-details/file-details.component';
+import { ProductDetailPage } from './product-detail/product-detail.page';
 @NgModule({
   declarations: [AppComponent,
     SocialComponent,
@@ -62,7 +63,8 @@ import { FileDetailsComponent } from './file-details/file-details.component';
     DashboardAdminPage,
     FileUploadComponent,
     FilesListComponent,
-    FileDetailsComponent
+    FileDetailsComponent,
+    ProductDetailPage,
   ],
 
   imports: [BrowserModule,

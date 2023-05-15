@@ -1,13 +1,7 @@
 import { Component } from '@angular/core';
 import { SQLite, SQLiteObject } from "@ionic-native/sqlite/ngx";
 import { BehaviorSubject } from 'rxjs';
-
-
-export interface Song {
-  id: number;
-  artist_name: string;
-  song_name: string;
-}
+import { Product } from '../interfaces/product';
 
 
 @Component({
@@ -18,42 +12,70 @@ export interface Song {
 
 export class TestSqlitePage {
   private storage!: SQLiteObject;
-  songsList: BehaviorSubject<Song[]> = new BehaviorSubject<Song[]>([]);
+  productList: BehaviorSubject<Product[]> = new BehaviorSubject<Product[]>([]);
 
-  constructor(private sqlite: SQLite) {
-
-  }
+  constructor(private sqlite: SQLite) { }
 
   ionViewDidEnter() {
-    this.getSongs();
+    //this.getProducts(); 
+    
   }
 
-  async getSongs() {
+  async getProducts() {
     this.storage = await this.sqlite.create({
-      name: 'mydb.db',
+      name: 'mydbProducts.db',
       location: 'default'
     });
-    this.storage.executeSql('DROP TABLE IF EXISTS songtable', [])
-    this.storage.executeSql('CREATE TABLE IF NOT EXISTS songtable(id INTEGER PRIMARY KEY AUTOINCREMENT, artist_name TEXT, song_name TEXT)', []);
-    this.storage.executeSql('INSERT INTO songtable (artist_name, song_name) VALUES ("Oruba", "Song1")', []);
-    this.storage.executeSql('INSERT INTO songtable (artist_name, song_name) VALUES ("Oruba", "Song2")', []);
-    this.storage.executeSql('INSERT INTO songtable (artist_name, song_name) VALUES ("Oruba", "Song3")', []);
-    this.storage.executeSql('SELECT * FROM songtable', []).then(res => {this.pushSong(res)});
+    this.storage.executeSql('DROP TABLE IF EXISTS favouriteProductsTable', [])
+    this.storage.executeSql('CREATE TABLE IF NOT EXISTS favouriteProductsTable( CodBarras varchar(255) PRIMARY KEY, CATEGORIA varchar(255), FAMILIA varchar(255),IMAGEN varchar(255), NombreCorto varchar(255),PROVEEDOR varchar(255), PVP varchar(255), posCode varchar(255))', [])
+    this.storage.executeSql('SELECT * FROM favouriteProductsTable', []).then(res => { this.pushProduct(res) });
   }
 
-
-
-  pushSong(res:any){
-    let items: Song[] = [];
+  pushProduct(res: any) {
+    let items: Product[] = [];
     for (let i = 0; i < res.rows.length; i++) {
       items.push({
-        id: res.rows.item(i).id,
-        artist_name: res.rows.item(i).artist_name,
-        song_name: res.rows.item(i).song_name
+        CATEGORIA: res.rows.item(i).CATEGORIA,
+        CodBarras: res.rows.item(i).CodBarras,
+        FAMILIA: res.rows.item(i).FAMILIA,
+        IMAGEN: res.rows.item(i).IMAGEN,
+        NombreCorto: res.rows.item(i).NombreCorto,
+        posCode: res.rows.item(i).posCode,
+        PROVEEDOR: res.rows.item(i).PROVEEDOR,
+        PVP: res.rows.item(i).PVP,
       });
     }
-    this.songsList.next(items);
+    this.productList.next(items);
   }
 
+  addProduct(CodBarras: string, CATEGORIA: string, FAMILIA: string, IMAGEN: string, NombreCorto: string,
+    PROVEEDOR: string, PVP: string, posCode: string) {
+    // validation
+    if (!CodBarras.length || !CATEGORIA.length || !FAMILIA.length || !IMAGEN.length || !NombreCorto.length
+      || !PROVEEDOR.length || !PVP.length || !posCode.length) {
+      alert('Provide CodBarras, CATEGORIA, FAMILIA, IMAGEN, NombreCorto, PROVEEDOR, PVP, posCode');
+      return;
+    }
+    this.storage.executeSql(`INSERT INTO favouriteProductsTable (codBarras, CATEGORIA, FAMILIA, IMAGEN, NombreCorto, PROVEEDOR, PVP, posCode) VALUES ('${CodBarras}', '${CATEGORIA}', '${FAMILIA}', '${IMAGEN}', '${NombreCorto}', '${PROVEEDOR}', '${PVP}', '${posCode}')`, [])
+      .then(() => {
+        alert("Success");
+        this.storage.executeSql('SELECT * FROM favouriteProductsTable', []).then(res => { this.pushProduct(res) });
+      }, (e) => { alert(JSON.stringify(e.err)); });
+  }
 
+  deletefavouriteProduct(CodBarras: string) {
+    this.storage.executeSql(`
+      DELETE FROM favouriteProductsTable WHERE CodBarras = ${CodBarras}`, [])
+      .then(() => {
+        alert("User deleted!");
+        this.storage.executeSql('SELECT * FROM favouriteProductsTable', []).then(res => { this.pushProduct(res) });
+      })
+      .catch(e => {
+        alert(JSON.stringify(e))
+      });
+  }
+
+  get getProductList() {
+    return this.productList
+  }
 }

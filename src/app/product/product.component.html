@@ -3,8 +3,19 @@
   <div class="card-body">
     <p class="card-text">{{NombreCorto}}</p>
     <h5 class="card-title">{{PVP}}</h5>
-    <div (click)="log()" class="btn-color ">
-      <a ref="" class="btn">Añadir</a>
+    <div style="
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+  ">
+      <div (click)="log()" class="btn-color ">
+        <a ref="" class="btn">Añadir</a>
+      </div>
+      <div (click)="ver()" class="btn-color ">
+        <a ref="" class="btn">Ver</a>
+      </div>
     </div>
+
   </div>
 </div>

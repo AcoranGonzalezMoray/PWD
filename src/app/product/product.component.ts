@@ -1,7 +1,8 @@
 import { Component, Input } from '@angular/core';
 import { ShoppingCartService } from '../services/shopping-cart.service';
 import { Product } from '../interfaces/product';
-import { Router } from '@angular/router';
+import { NavigationExtras, Router } from '@angular/router';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-product',
@@ -19,7 +20,7 @@ export class ProductComponent {
   @Input() posCode="";
 
 
-  constructor( public cart:ShoppingCartService, public routes:Router) { }
+  constructor( public cart:ShoppingCartService, public routes:Router,private navCtrl: NavController) { }
 
 
   log(){
@@ -40,4 +41,20 @@ export class ProductComponent {
 
     }
   }
+
+  ver() {
+    const producto :Product =  {
+      CATEGORIA: this.CATEGORIA,
+      CodBarras: this.CodBarras,
+      FAMILIA: this.FAMILIA,
+      IMAGEN: this.IMAGEN,
+      NombreCorto: this.NombreCorto,
+      PROVEEDOR: this.PROVEEDOR,
+      PVP: this.PVP,
+      posCode: this.posCode,
+    }
+    sessionStorage.setItem('productDetail', JSON.stringify(producto))
+    this.routes.navigate(['/product-detail'])
+  }
+
 }

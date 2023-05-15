@@ -8,9 +8,9 @@
 
 <ion-content>
   <ion-list>
-    <ion-item *ngFor="let song of songsList | async">
-      <ion-label>{{song.artist_name}}</ion-label>
-      <ion-note slot="end">{{song.song_name}}</ion-note>
+    <ion-item *ngFor="let p of productList | async">
+      <ion-label>{{p.NombreCorto}}</ion-label>
+      <ion-note slot="end">{{p.NombreCorto}}</ion-note>
     </ion-item>
   </ion-list>
 </ion-content>
