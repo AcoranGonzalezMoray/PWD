@@ -21,7 +21,11 @@ log.txt
 /.ionic
 /www
 /platforms
-/plugins
+/plugins/*
+!/plugins/fetch.json
+!/plugins/cordova-sqlite-storage
+!/plugins/android.json
+
 
 # Compiled output
 /dist
