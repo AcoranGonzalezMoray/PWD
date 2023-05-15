@@ -1,0 +1,49 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>PRODUCTOS FAVORITOS</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button routerLink="/dashboard-user" expand="block">Volver atrás</ion-button>
+  <table>
+    <ng-container  *ngFor="let product of productListSql.value">
+      <tr (click)="viewDetail(product)">
+        <td>
+          <ion-card>
+            <img src="{{ product.IMAGEN }}" width="100">
+          </ion-card>
+          
+        </td>
+        <td>
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>{{ product.NombreCorto }}</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <p>Categoría: {{ product.CATEGORIA }}</p>
+              <p>Familia: {{ product.FAMILIA }}</p>
+              <p>Código de barras: {{ product.CodBarras }}</p>
+              <p>Proveedor: {{ product.PROVEEDOR }}</p>
+              <p>PVP: {{ product.PVP }}</p>
+              <p>Código de posición: {{ product.posCode }}</p>
+            </ion-card-content>
+            <div style="
+              display: flex;
+              flex-direction: row;
+              justify-content: space-around;
+              align-content: stretch;
+              margin: 10px;
+          ">
+              <svg (click)="deleteProduct(product)" style="color:red" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+              </svg>
+            </div>
+          </ion-card>
+        </td>
+      </tr>
+    </ng-container>
+  </table>
+  
+</ion-content>
+

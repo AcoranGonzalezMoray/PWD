@@ -38,6 +38,7 @@ import { DashboardAdminPage } from './dashboard-admin/dashboard-admin.page';
 import { FilesListComponent } from './files-list/files-list.component';
 import { FileDetailsComponent } from './file-details/file-details.component';
 import { ProductDetailPage } from './product-detail/product-detail.page';
+import { SQLite } from '@ionic-native/sqlite/ngx';
 @NgModule({
   declarations: [AppComponent,
     SocialComponent,
@@ -81,7 +82,7 @@ import { ProductDetailPage } from './product-detail/product-detail.page';
     MatDatepickerModule,
     MatInputModule,
     MatNativeDateModule],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
+  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }, SQLite],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -50,6 +50,10 @@ const routes: Routes = [
     path: 'product-detail',
     loadChildren: () => import('./product-detail/product-detail.module').then( m => m.ProductDetailPageModule)
   },
+  {
+    path: 'product-favorite',
+    loadChildren: () => import('./product-favorite/product-favorite.module').then( m => m.ProductFavoritePageModule)
+  },
 
 
 ];

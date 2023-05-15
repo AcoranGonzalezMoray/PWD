@@ -15,6 +15,6 @@ import { SQLite } from '@ionic-native/sqlite/ngx';
     StorePageRoutingModule
   ],
   declarations: [],
-  providers: [SQLite]
+  providers: []
 })
 export class StorePageModule {}
